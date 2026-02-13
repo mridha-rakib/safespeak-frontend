@@ -1,12 +1,13 @@
 
 > next-start@0.1.0 dev
-> next dev
+> next dev -p 3010
 
    ▲ Next.js 15.5.7
-   - Local:        http://localhost:3005
-   - Network:      http://192.168.0.102:3005
+   - Local:        http://localhost:3010
+   - Network:      http://192.168.0.102:3010
 
  ✓ Starting...
- ✓ Ready in 1960ms
+ ✓ Ready in 1850ms
  ○ Compiling /dashboard ...
- ✓ Compiled /dashboard in 47.7s (4482 modules)
+ ✓ Compiled /dashboard in 25.4s (4501 modules)
+[?25h

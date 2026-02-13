@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///E:/projects/sta/safe-speak-frontend/src/app/loading.tsx"],"sourcesContent":["\"use client\";\n\nimport { CircularProgress } from \"@nextui-org/react\";\n\r\nexport default function Loading() {\r\n  return (\r\n    <CircularProgress\r\n      className=\"mx-auto\"\r\n      classNames={{\r\n        svg: \"w-36 h-36\",\r\n      }}\r\n      aria-label=\"Loading page...\"\r\n    />\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;AAEA;AAFA;;;AAIe,SAAS;IACtB,qBACE,4TAAC,8WAAgB;QACf,WAAU;QACV,YAAY;YACV,KAAK;QACP;QACA,cAAW;;;;;;AAGjB;KAVwB","debugId":null}}]
+}

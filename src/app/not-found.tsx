@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardBody } from "@nextui-org/react";
 import { IconFileUnknown } from "@tabler/icons-react";
 
