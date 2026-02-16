@@ -22,13 +22,11 @@ const faqItems: FaqItem[] = [
   },
   {
     question: "Lorem ipsum dolor sit amet",
-    answer:
-      "Vestibulum euismod nibh in risus bibendum, sit amet pretium sem pellentesque.",
+    answer: "Vestibulum euismod nibh in risus bibendum, sit amet pretium sem pellentesque.",
   },
   {
     question: "Lorem ipsum dolor sit amet consectetur.",
-    answer:
-      "Integer lacinia vitae turpis id varius. Sed sit amet ex risus. Donec malesuada bibendum nibh.",
+    answer: "Integer lacinia vitae turpis id varius. Sed sit amet ex risus. Donec malesuada bibendum nibh.",
   },
   {
     question: "Lorem ipsum dolor sit amet consectetur.",
@@ -42,37 +40,39 @@ export default function FaqSection() {
 
   return (
     <section className="bg-[#d9e8f3]">
-      <div className="mx-auto flex min-h-[1332px] w-full max-w-[1440px] flex-col gap-[10px] px-[64px] pb-[128px] pt-[128px]">
-        <div className="w-full">
-          <h3 className="text-[52px] font-extrabold leading-none text-[#ff8f00]">FAQ</h3>
-        </div>
+      <div className="landing-shell">
+        <div className="landing-content landing-section">
+          <div className="w-full">
+            <h3 className="text-3xl font-extrabold text-[#ff8f00] sm:text-4xl lg:text-5xl 2xl:text-6xl">FAQ</h3>
+          </div>
 
-        <div className="mx-auto mt-16 w-full max-w-[860px]">
-          {faqItems.map((item, idx) => {
-            const isOpen = openIndex === idx;
-            return (
-              <div key={item.question + idx} className="border-b border-[#c6d1dc] py-5">
-                <button
-                  type="button"
-                  onClick={() => setOpenIndex(isOpen ? -1 : idx)}
-                  className="flex w-full items-start justify-between gap-6 text-left"
-                >
-                  <span className="text-[34px] font-semibold leading-[1.18] text-[#111827]">
-                    {item.question}
-                  </span>
-                  <span className="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#0b5fa6] text-white">
-                    {isOpen ? <IconMinus size={18} stroke={2.5} /> : <IconPlus size={18} stroke={2.5} />}
-                  </span>
-                </button>
+          <div className="mx-auto mt-8 w-full max-w-4xl sm:mt-10">
+            {faqItems.map((item, idx) => {
+              const isOpen = openIndex === idx;
+              return (
+                <div key={item.question + idx} className="border-b border-[#c6d1dc] py-4 sm:py-5">
+                  <button
+                    type="button"
+                    onClick={() => setOpenIndex(isOpen ? -1 : idx)}
+                    className="flex w-full items-start justify-between gap-4 text-left sm:gap-6"
+                  >
+                    <span className="text-xl font-semibold leading-tight text-[#111827] sm:text-2xl lg:text-3xl">
+                      {item.question}
+                    </span>
+                    <span className="mt-1 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#0b5fa6] text-white">
+                      {isOpen ? <IconMinus size={18} stroke={2.5} /> : <IconPlus size={18} stroke={2.5} />}
+                    </span>
+                  </button>
 
-                {isOpen && (
-                  <div className="mt-5 rounded-[10px] bg-[#0b5fa6] p-4">
-                    <p className="text-[14px] leading-[1.55] text-white/95">{item.answer}</p>
-                  </div>
-                )}
-              </div>
-            );
-          })}
+                  {isOpen && (
+                    <div className="mt-4 rounded-[10px] bg-[#0b5fa6] p-4">
+                      <p className="text-sm leading-[1.55] text-white/95">{item.answer}</p>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
