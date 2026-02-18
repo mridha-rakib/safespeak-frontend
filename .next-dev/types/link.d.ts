@@ -38,6 +38,7 @@ declare namespace __next_route_internal_types__ {
     | `/dashboard/notifications`
     | `/dashboard/settings`
     | `/guestbook`
+    | `/login`
     | `/profile`
   type DynamicRoutes<T extends string = string> = never
 

@@ -27,8 +27,8 @@ export default function Hero() {
         style={{
           width: "1039px",
           height: "1039px",
-          top: "339.58px",
-          left: "88px",
+          top: "209.58px",
+          left: "calc(50% - 600px + 88px)",
         }}
       >
         <Image
@@ -37,53 +37,58 @@ export default function Hero() {
           width={1039}
           height={1039}
           priority
-          className="h-full w-full object-contain opacity-80"
+          className="h-full w-full object-contain"
         />
       </div>
 
-      <div className="relative z-10 w-full px-4 pb-16 pt-6 sm:px-6 sm:pb-20 md:px-8 lg:px-10 lg:pb-24 xl:min-h-[906px] xl:px-[150px] 2xl:pb-28">
-        <div className="grid items-center gap-10 md:grid-cols-[1fr,0.95fr] lg:gap-12 2xl:gap-16">
+      <div className="firstfold-container relative z-10 pb-16 pt-6 sm:pb-20 lg:pb-24 xl:h-[906px] 2xl:pb-28">
+        <div className="grid items-center gap-10 md:grid-cols-[1fr,0.95fr] lg:gap-12 xl:grid-cols-1 2xl:gap-16">
           <div className="space-y-4">
             <h1 className="max-w-[860px] text-[34px] font-extrabold uppercase leading-[1.25] tracking-[-0.5px] text-white sm:text-[40px] sm:leading-[1.35] xl:text-[48.6px] xl:leading-[84px]">
-              <span className="text-[var(--safe-orange)]">AN APP</span>{" "}
-              <span>THAT TALKS FOR YOU</span>
-              <br />
-              <span>EMPOWERS YOU</span>
+              <span className="block xl:whitespace-nowrap">
+                <span className="text-[var(--safe-orange)]">AN APP</span>{" "}
+                <span>THAT TALKS FOR YOU</span>
+              </span>
+              <span className="block">EMPOWERS YOU</span>
             </h1>
-            <p className="text-sm font-semibold text-white/85 sm:text-base">
+            <p className="text-sm font-semibold text-white/85 sm:text-base xl:whitespace-nowrap">
               Download the app now from our iOS & Android store.
             </p>
 
-            <div className="flex flex-col gap-4 pt-2 sm:gap-5">
-              <div className="flex flex-col gap-2.5">
+            <div className="flex flex-col gap-3 pt-2 sm:gap-4 sm:pt-3">
+              <div className="flex w-[188px] flex-col items-start gap-2.5">
                 <Image
                   src={indicator}
                   alt="Download indicator arrow"
-                  className="h-9 w-auto sm:h-11"
+                  className="h-9 w-auto self-center sm:h-11 xl:translate-x-1"
                 />
                 <Image
                   src={appleLink}
                   alt="Download on the App Store"
-                  className="h-11 w-auto sm:h-[50px]"
+                  className="h-11 w-[188px] sm:h-[50px]"
                 />
                 <Image
                   src={androidLink}
                   alt="Get it on Google Play"
-                  className="h-11 w-auto sm:h-[50px]"
+                  className="h-11 w-[188px] sm:h-[50px]"
+                />
+                <Image
+                  src={qrCode}
+                  alt="SafeSpeak QR"
+                  className="h-[60px] w-[60px]"
                 />
               </div>
-              <Image src={qrCode} alt="SafeSpeak QR" className="h-14 w-auto sm:h-[60px]" />
             </div>
           </div>
 
-          <div className="relative flex justify-center md:justify-end">
-            <div className="flex items-end gap-2 sm:gap-4 lg:gap-6 drop-shadow-[var(--shadow-card)]">
+          <div className="relative flex justify-center md:justify-end xl:static">
+            <div className="flex items-end gap-2 drop-shadow-[var(--shadow-card)] sm:gap-4 lg:gap-6 xl:absolute xl:left-[430px] xl:top-[98px] xl:h-[672px] xl:w-[610px] xl:items-end xl:gap-6">
               <Image
                 src={phoneLeft}
                 alt="SafeSpeak app preview"
                 width={308}
                 height={640}
-                className="h-[290px] w-auto sm:h-[360px] md:h-[430px] lg:h-[500px] 2xl:h-[560px]"
+                className="h-[290px] w-auto sm:h-[360px] md:h-[430px] lg:h-[500px] xl:h-[520px] 2xl:h-[560px]"
                 priority
               />
               <Image
@@ -91,7 +96,7 @@ export default function Hero() {
                 alt="SafeSpeak voice preview"
                 width={308}
                 height={640}
-                className="h-[300px] w-auto sm:h-[370px] md:h-[440px] lg:h-[520px] 2xl:h-[580px]"
+                className="h-[300px] w-auto sm:h-[370px] md:h-[440px] lg:h-[520px] xl:h-[540px] 2xl:h-[580px]"
                 priority
               />
             </div>
