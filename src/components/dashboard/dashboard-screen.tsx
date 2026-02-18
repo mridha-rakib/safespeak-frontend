@@ -30,6 +30,11 @@ const pageFont = Plus_Jakarta_Sans({
   weight: ["400", "500", "600", "700", "800"],
 });
 
+const SPHERE_SIZE = 220; // diameter in px
+const SPHERE_RING = 14; // thickness of the visible ring
+const SPHERE_HALO = 22; // soft glow outside the ring
+const SPHERE_TOP = 264; // offset from top of the grid area
+
 function NavItem({
   href,
   icon,
@@ -143,203 +148,245 @@ function EmergencyToolbar() {
 }
 
 function HomeDashboardPage() {
+  const ringDiameter = SPHERE_SIZE + SPHERE_RING * 2;
+  const haloDiameter = ringDiameter + SPHERE_HALO * 2;
+  const sphereOffset = (haloDiameter - SPHERE_SIZE) / 2;
+  const ringOffset = (haloDiameter - ringDiameter) / 2;
+
   return (
     <div className="px-3 pb-4 pt-3 sm:px-4 sm:pb-5 sm:pt-4">
-      <div className="relative mx-auto w-full xl:h-[824.224px] xl:max-w-[1120px]">
-        <div className="grid grid-cols-1 gap-3 xl:grid-cols-[258.3095703125px_548.16845703125px_258.3095703125px] xl:justify-between xl:gap-[3.94px]">
-          <article className="relative h-[210px] overflow-hidden rounded-[18px] border border-white/25 xl:h-[390.422119140625px] xl:w-[258.3095703125px] xl:justify-self-start xl:rounded-[23.66px] xl:border-[0.99px]">
-            <Image
-              src={domesticViolenceImage}
-              alt="Domestic violence"
-              fill
-              className="object-cover"
-            />
-            <div className="from-[#6D94FF]/88 absolute inset-0 bg-gradient-to-b to-[#0034FF]/95" />
-            <div className="absolute bottom-4 left-4">
-              <h3 className="max-w-[190px] text-[32.86px] font-bold leading-[100%] text-white">
-                Domestic
-                <br />
-                violence
-              </h3>
-              <p className="mt-2 max-w-[165px] text-xs text-white/85">
-                Abusive behaviour used to control a partner.
-              </p>
-            </div>
-          </article>
-
-          <article className="dashboard-safespeak-card relative h-[210px] overflow-hidden rounded-[18px] border border-white/20 xl:h-[390.422119140625px] xl:w-[548.16845703125px] xl:rounded-[23.66px] xl:border-[0.99px]">
-            <div className="absolute inset-0 z-[2] bg-[radial-gradient(95%_74%_at_50%_78%,rgba(160,253,255,0.58)_0%,rgba(160,253,255,0.18)_40%,rgba(160,253,255,0)_100%)]" />
-            <div className="absolute inset-0 z-[4] flex h-full flex-col items-center justify-center text-center xl:gap-[3.94px] xl:pb-[110px] xl:pt-[26.29px]">
-              <div className="flex max-w-[340px] flex-col items-center pt-1 xl:h-[140.67633056640625px] xl:w-[340px] xl:gap-[8.56px] xl:pt-[17.12px]">
-                <p className="text-[11px] font-semibold text-white/90 xl:text-[11px] xl:leading-[100%]">
-                  SafeSpeak
-                </p>
-                <h3 className="mt-1 text-[48px] font-extrabold leading-[0.9] text-white xl:mt-0 xl:text-[48px] xl:leading-[100%]">
-                  Let&apos;s talk with
-                  <br />
-                  SafeSpeak
-                </h3>
-              </div>
-            </div>
-            <div className="absolute inset-0 z-[1] bg-[linear-gradient(180deg,rgba(160,253,255,0.14)_0%,rgba(0,52,255,0.4)_100%)]" />
-            <div className="absolute inset-0 z-[3] bg-[linear-gradient(160deg,rgba(0,52,255,0.1)_0%,rgba(0,52,255,0.35)_72%,rgba(0,52,255,0.5)_100%)]" />
-            <div className="absolute inset-0 z-[0] bg-[linear-gradient(180deg,#A0FDFF_0%,#0034FF_100%)]" />
-            <div className="absolute inset-0 z-[0] opacity-[0.22] mix-blend-screen">
+      <div className="relative mx-auto w-full [--dashboard-card-gap:24px] xl:h-[824.224px] xl:max-w-[1120px]">
+        <div className="flex flex-col gap-[var(--dashboard-card-gap)]">
+          <div className="grid grid-cols-1 gap-[var(--dashboard-card-gap)] xl:grid-cols-[1fr_2.122fr_1fr]">
+            <article className="relative h-[210px] overflow-hidden rounded-[20px] border border-white/25 xl:h-[390.422119140625px] xl:w-full xl:rounded-[30px] xl:border-[0.99px] xl:notch-br">
               <Image
-                src={abuseImage}
-                alt="SafeSpeak ambient"
+                src={domesticViolenceImage}
+                alt="Domestic violence"
                 fill
                 className="object-cover"
               />
-            </div>
-          </article>
-
-          <article className="relative h-[210px] overflow-hidden rounded-[18px] border border-white/25">
-            <Image
-              src={abuseImage}
-              alt="Racial abuse"
-              fill
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-br from-[#0d46f3]/80 via-[#124bf9]/65 to-[#042f8e]/85" />
-            <div className="absolute bottom-4 left-4">
-              <h3 className="text-[40px] font-extrabold leading-[0.92] text-white">
-                Racial Abuse
-              </h3>
-              <p className="mt-2 text-xs text-white/85">
-                Boost your prompt processing with rich keywords.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <div className="mt-[3.94px] grid grid-cols-1 gap-3 xl:grid-cols-[546.1966px_1fr] xl:items-start xl:gap-[3.94px]">
-          <article className="group relative z-30 h-[206px] overflow-hidden rounded-[18px] border border-white/20 xl:h-[406.1967px] xl:w-[546.1966px] xl:rounded-[23.66px] xl:border-[0.99px]">
-            <Image
-              src={hackerImage}
-              alt="Cyber scam"
-              fill
-              className="object-cover object-center transition-transform duration-300 ease-out group-hover:scale-[1.03]"
-            />
-            <div className="absolute inset-0 opacity-[0.82] bg-[linear-gradient(145deg,rgba(16,24,40,0.26)_8%,rgba(12,18,34,0.56)_58%,rgba(8,12,24,0.82)_100%)] transition-opacity duration-300 ease-out group-hover:opacity-[0.92]" />
-            <div className="absolute inset-0 bg-[radial-gradient(110%_90%_at_82%_18%,rgba(16,138,210,0.2)_0%,rgba(16,138,210,0)_55%)]" />
-            <div className="absolute bottom-6 left-6 pr-6">
-              <h3 className="text-[26.29px] font-bold leading-[100%] tracking-[0em] text-white">
-                Cyber scam
-              </h3>
-              <p className="mt-2 max-w-[320px] text-[13px] font-normal leading-[1.32] text-white/75">
-                Explore multiple prompt directions with branching.
-              </p>
-            </div>
-          </article>
-
-          <article className="relative h-[206px] overflow-hidden rounded-[18px] border border-white/20 xl:h-[206px]">
-            <Image
-              src={migrateImage}
-              alt="Migrant challenges"
-              fill
-              className="object-cover"
-            />
-            <div className="from-[#0e3153]/78 via-[#234464]/62 absolute inset-0 bg-gradient-to-r to-[#2f4f74]/55" />
-            <div className="absolute bottom-4 left-4">
-              <h3 className="text-[36px] font-extrabold leading-[0.92] text-white">
-                Migrant Challenges
-              </h3>
-              <p className="mt-2 text-xs text-white/80">
-                International students & migrants issue
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <div className="mt-3 grid grid-cols-1 gap-3 xl:grid-cols-[0.82fr_1.1fr_1.05fr]">
-          <div className="grid grid-cols-1 gap-3 xl:grid-rows-2">
-            <article className="relative h-[132px] overflow-hidden rounded-[18px] border border-white/20 bg-[#0b5b86] p-4">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-white/75">
-                Cyber
-              </p>
-              <h4 className="mt-1 text-[34px] font-extrabold leading-[0.9] text-white">
-                Scam
-                <br />
-                Shield
-              </h4>
-              <IconShieldFilled
-                size={74}
-                className="absolute bottom-2 right-2 text-white/10"
-              />
+              <div className="from-[#6D94FF]/88 absolute inset-0 bg-gradient-to-b to-[#0034FF]/95" />
+              <div className="absolute bottom-4 left-4">
+                <h3 className="max-w-[190px] text-[32.86px] font-bold leading-[100%] text-white">
+                  Domestic
+                  <br />
+                  violence
+                </h3>
+                <p className="mt-2 max-w-[165px] text-xs text-white/85">
+                  Abusive behaviour used to control a partner.
+                </p>
+              </div>
             </article>
 
-            <article className="relative h-[132px] overflow-hidden rounded-[18px] border border-white/20 bg-[#f8bd07] p-4">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-[#5f4c00]">
-                Legal
-              </p>
-              <h4 className="mt-1 text-[34px] font-extrabold leading-[0.9] text-[#171717]">
-                Resources
-              </h4>
-              <IconFolderFilled
-                size={62}
-                className="absolute bottom-2 right-2 text-[#d39f04]"
+            <article className="dashboard-safespeak-card relative h-[210px] overflow-hidden rounded-[20px] border border-white/20 xl:h-[390.422119140625px] xl:w-full xl:rounded-[32px] xl:border-[0.99px] xl:notch-bl xl:notch-br">
+              <div className="absolute inset-0 z-[2] bg-[radial-gradient(95%_74%_at_50%_78%,rgba(160,253,255,0.58)_0%,rgba(160,253,255,0.18)_40%,rgba(160,253,255,0)_100%)]" />
+              <div className="absolute inset-0 z-[4] flex h-full flex-col items-center justify-center text-center xl:gap-[3.94px] xl:pb-[110px] xl:pt-[26.29px]">
+                <div className="flex max-w-[340px] flex-col items-center pt-1 xl:h-[140.67633056640625px] xl:w-[340px] xl:gap-[8.56px] xl:pt-[17.12px]">
+                  <p className="text-[11px] font-semibold text-white/90 xl:text-[11px] xl:leading-[100%]">
+                    SafeSpeak
+                  </p>
+                  <h3 className="mt-1 text-[48px] font-extrabold leading-[0.9] text-white xl:mt-0 xl:text-[48px] xl:leading-[100%]">
+                    Let&apos;s talk with
+                    <br />
+                    SafeSpeak
+                  </h3>
+                </div>
+              </div>
+              <div className="absolute inset-0 z-[1] bg-[linear-gradient(180deg,rgba(160,253,255,0.14)_0%,rgba(0,52,255,0.4)_100%)]" />
+              <div className="absolute inset-0 z-[3] bg-[linear-gradient(160deg,rgba(0,52,255,0.1)_0%,rgba(0,52,255,0.35)_72%,rgba(0,52,255,0.5)_100%)]" />
+              <div className="absolute inset-0 z-[0] bg-[linear-gradient(180deg,#A0FDFF_0%,#0034FF_100%)]" />
+              <div className="absolute inset-0 z-[0] opacity-[0.22] mix-blend-screen">
+                <Image
+                  src={abuseImage}
+                  alt="SafeSpeak ambient"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </article>
+
+            <article className="group relative h-[210px] overflow-hidden rounded-[20px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px] xl:notch-bl">
+              <Image
+                src={abuseImage}
+                alt="Racial abuse"
+                fill
+                className="object-cover transition duration-[250ms] ease-out group-hover:brightness-110"
               />
+              <div className="absolute inset-0 z-[1] bg-[linear-gradient(165deg,#6D94FF_0%,#0034FF_100%)] opacity-80 mix-blend-overlay transition-opacity duration-[250ms] ease-out group-hover:opacity-[0.88]" />
+              <div className="absolute inset-x-[24px] top-[56%] z-[2] -translate-y-1/2">
+                <h3 className="max-w-[190px] text-[34px] font-bold leading-[1.05] text-white xl:text-[46px]">
+                  Racial
+                  <br />
+                  Abuse
+                </h3>
+                <p className="text-white/78 mt-[10px] max-w-[188px] text-[13px] font-normal leading-[1.25]">
+                  Boost your prompt processing with rich keywords.
+                </p>
+              </div>
             </article>
           </div>
 
-          <Link
-            href={{ pathname: "/dashboard", query: { view: "microeducation" } }}
-            className="relative block h-[276px] overflow-hidden rounded-[18px] border border-white/20 bg-[#f99603] p-4 transition hover:brightness-105"
-          >
-            <h4 className="text-[42px] font-extrabold leading-[0.9] text-white">
-              Micro-
-              <br />
-              Cards
-            </h4>
-            <div className="absolute bottom-4 left-4 right-4">
-              <p className="text-[11px] font-semibold text-white/90">
-                4 Lessons - 12 mins
-              </p>
-              <div className="mt-2 h-2 rounded-full bg-white/35">
-                <div className="h-2 w-2/3 rounded-full bg-white/95" />
+          <div>
+            <div className="relative xl:h-[406.2px] xl:w-full">
+              <div className="grid h-full grid-cols-1 gap-[var(--dashboard-card-gap)] xl:grid-cols-2">
+                <article className="group relative h-[206px] overflow-hidden rounded-[20px] border border-white/20 xl:h-full xl:rounded-[26px] xl:notch-tr">
+                  <Image
+                    src={hackerImage}
+                    alt="Cyber scam"
+                    fill
+                    className="object-cover object-center transition-transform duration-300 ease-out group-hover:scale-[1.03]"
+                  />
+                  <div className="absolute inset-0 bg-[linear-gradient(145deg,rgba(16,24,40,0.26)_8%,rgba(12,18,34,0.56)_58%,rgba(8,12,24,0.82)_100%)] opacity-[0.82] transition-opacity duration-300 ease-out group-hover:opacity-[0.92]" />
+                  <div className="absolute inset-0 bg-[radial-gradient(110%_90%_at_82%_18%,rgba(16,138,210,0.2)_0%,rgba(16,138,210,0)_55%)]" />
+                  <div className="absolute bottom-6 left-6 pr-6">
+                    <h3 className="text-[26.29px] font-bold leading-[100%] tracking-[0em] text-white">
+                      Cyber scam
+                    </h3>
+                    <p className="mt-2 max-w-[320px] text-[13px] font-normal leading-[1.32] text-white/75">
+                      Explore multiple prompt directions with branching.
+                    </p>
+                  </div>
+                </article>
+
+                <article className="relative h-[206px] overflow-hidden rounded-[20px] border border-white/20 xl:h-full xl:rounded-[26px] xl:notch-tl">
+                  <Image
+                    src={migrateImage}
+                    alt="Migrant challenges"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="from-[#0e3153]/78 via-[#234464]/62 absolute inset-0 bg-gradient-to-r to-[#2f4f74]/55" />
+                  <div className="absolute bottom-4 left-4">
+                    <h3 className="text-[36px] font-extrabold leading-[0.92] text-white">
+                      Migrant Challenges
+                    </h3>
+                    <p className="mt-2 text-xs text-white/80">
+                      International students & migrants issue
+                    </p>
+                  </div>
+                </article>
               </div>
             </div>
-          </Link>
+          </div>
 
-          <article className="h-[276px] rounded-[18px] border border-white/30 bg-white p-3">
-            <div className="mb-2 flex items-center justify-between">
-              <h4 className="text-sm font-bold text-[#334155]">
-                Local Intelligence
+          <div className="grid grid-cols-1 gap-[var(--dashboard-card-gap)] xl:grid-cols-[0.82fr_1.1fr_1.05fr]">
+            <div className="grid grid-cols-1 gap-[var(--dashboard-card-gap)] xl:grid-rows-2">
+              <article className="relative h-[132px] overflow-hidden rounded-[18px] border border-white/20 bg-[#0b5b86] p-4">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-white/75">
+                  Cyber
+                </p>
+                <h4 className="mt-1 text-[34px] font-extrabold leading-[0.9] text-white">
+                  Scam
+                  <br />
+                  Shield
+                </h4>
+                <IconShieldFilled
+                  size={74}
+                  className="absolute bottom-2 right-2 text-white/10"
+                />
+              </article>
+
+              <article className="relative h-[132px] overflow-hidden rounded-[18px] border border-white/20 bg-[#f8bd07] p-4">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-[#5f4c00]">
+                  Legal
+                </p>
+                <h4 className="mt-1 text-[34px] font-extrabold leading-[0.9] text-[#171717]">
+                  Resources
+                </h4>
+                <IconFolderFilled
+                  size={62}
+                  className="absolute bottom-2 right-2 text-[#d39f04]"
+                />
+              </article>
+            </div>
+
+            <Link
+              href={{
+                pathname: "/dashboard",
+                query: { view: "microeducation" },
+              }}
+              className="relative block h-[276px] overflow-hidden rounded-[18px] border border-white/20 bg-[#f99603] p-4 transition hover:brightness-105"
+            >
+              <h4 className="text-[42px] font-extrabold leading-[0.9] text-white">
+                Micro-
+                <br />
+                Cards
               </h4>
-              <span className="text-sm font-bold text-[#94a3b8]">...</span>
-            </div>
-
-            <div className="relative h-[236px] overflow-hidden rounded-[14px] bg-[#d9e6d2]">
-              <div className="absolute inset-0 bg-[linear-gradient(130deg,#cfdebf_0%,#e3edd8_45%,#cedebf_100%)]" />
-              <div className="absolute -left-10 top-[-8%] h-[130%] w-4 rotate-[12deg] bg-[#f2bc7d]/75" />
-              <div className="absolute -top-8 left-[18%] h-[125%] w-3 rotate-[9deg] bg-white/70" />
-              <div className="absolute -top-10 right-[22%] h-[130%] w-3 rotate-[-8deg] bg-white/65" />
-              <div className="absolute inset-x-[-4%] top-[45%] h-2 rotate-[10deg] rounded-full bg-white/70" />
-              <div className="absolute left-[58%] top-[66%] h-4 w-4 rounded-full border-2 border-white bg-[#f2a122]" />
-
-              <div className="absolute bottom-2 left-2 right-2 rounded-xl bg-white/95 px-3 py-2 shadow-sm">
-                <p className="text-[9px] font-bold uppercase tracking-[0.08em] text-[#f2a122]">
-                  Current location
+              <div className="absolute bottom-4 left-4 right-4">
+                <p className="text-[11px] font-semibold text-white/90">
+                  4 Lessons - 12 mins
                 </p>
-                <p className="text-[11px] font-semibold leading-tight text-[#334155]">
-                  3 Active Zones Nearby
-                </p>
+                <div className="mt-2 h-2 rounded-full bg-white/35">
+                  <div className="h-2 w-2/3 rounded-full bg-white/95" />
+                </div>
               </div>
-            </div>
-          </article>
+            </Link>
+
+            <article className="h-[276px] rounded-[18px] border border-white/30 bg-white p-3">
+              <div className="mb-2 flex items-center justify-between">
+                <h4 className="text-sm font-bold text-[#334155]">
+                  Local Intelligence
+                </h4>
+                <span className="text-sm font-bold text-[#94a3b8]">...</span>
+              </div>
+
+              <div className="relative h-[236px] overflow-hidden rounded-[14px] bg-[#d9e6d2]">
+                <div className="absolute inset-0 bg-[linear-gradient(130deg,#cfdebf_0%,#e3edd8_45%,#cedebf_100%)]" />
+                <div className="absolute -left-10 top-[-8%] h-[130%] w-4 rotate-[12deg] bg-[#f2bc7d]/75" />
+                <div className="absolute -top-8 left-[18%] h-[125%] w-3 rotate-[9deg] bg-white/70" />
+                <div className="absolute -top-10 right-[22%] h-[130%] w-3 rotate-[-8deg] bg-white/65" />
+                <div className="absolute inset-x-[-4%] top-[45%] h-2 rotate-[10deg] rounded-full bg-white/70" />
+                <div className="absolute left-[58%] top-[66%] h-4 w-4 rounded-full border-2 border-white bg-[#f2a122]" />
+
+                <div className="absolute bottom-2 left-2 right-2 rounded-xl bg-white/95 px-3 py-2 shadow-sm">
+                  <p className="text-[9px] font-bold uppercase tracking-[0.08em] text-[#f2a122]">
+                    Current location
+                  </p>
+                  <p className="text-[11px] font-semibold leading-tight text-[#334155]">
+                    3 Active Zones Nearby
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
 
-        <div className="pointer-events-none absolute left-1/2 top-[264px] z-20 hidden -translate-x-1/2 xl:block">
-          <div className="rounded-full bg-white/95 p-[9px] shadow-[0_18px_30px_rgba(15,23,42,0.2)]">
-            <div className="relative h-[220px] w-[220px] overflow-hidden rounded-full">
-              <Image
-                src={sphereAdv}
-                alt="SafeSpeak center sphere"
-                fill
-                className="object-contain drop-shadow-[0_16px_26px_rgba(15,23,42,0.35)]"
-              />
-            </div>
+        <div
+          className="pointer-events-none absolute left-1/2 z-20 hidden -translate-x-1/2 xl:block"
+          style={{
+            top: `${SPHERE_TOP}px`,
+            width: `${haloDiameter}px`,
+            height: `${haloDiameter}px`,
+          }}
+        >
+          <div className="absolute inset-0 rounded-full bg-white/60 blur-[32px]" />
+
+          <div
+            className="absolute rounded-full bg-white"
+            style={{
+              left: `${ringOffset}px`,
+              top: `${ringOffset}px`,
+              width: `${ringDiameter}px`,
+              height: `${ringDiameter}px`,
+              boxShadow: "0 18px 30px rgba(15,23,42,0.20)",
+            }}
+          />
+
+          <div
+            className="absolute overflow-hidden rounded-full shadow-[0_16px_26px_rgba(15,23,42,0.35)]"
+            style={{
+              left: `${sphereOffset}px`,
+              top: `${sphereOffset}px`,
+              width: `${SPHERE_SIZE}px`,
+              height: `${SPHERE_SIZE}px`,
+            }}
+          >
+            <Image
+              src={sphereAdv}
+              alt="SafeSpeak center sphere"
+              fill
+              className="object-contain"
+            />
           </div>
         </div>
       </div>
