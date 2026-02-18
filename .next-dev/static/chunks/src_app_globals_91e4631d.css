@@ -3851,6 +3851,10 @@ img, video {
   background-color: rgba(255, 255, 255, .05);
 }
 
+.bg-white\/55 {
+  background-color: rgba(255, 255, 255, .55);
+}
+
 .bg-white\/60 {
   background-color: rgba(255, 255, 255, .6);
 }
@@ -5208,15 +5212,15 @@ img, video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
 }
 
-.shadow-\[0_10px_22px_rgba\(15\,23\,42\,0\.06\)\] {
-  --tw-shadow: 0 10px 22px rgba(15, 23, 42, .06);
-  --tw-shadow-colored: 0 10px 22px var(--tw-shadow-color);
+.shadow-\[0_10px_18px_rgba\(15\,23\,42\,0\.28\)\] {
+  --tw-shadow: 0 10px 18px rgba(15, 23, 42, .28);
+  --tw-shadow-colored: 0 10px 18px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
 }
 
-.shadow-\[0_16px_26px_rgba\(15\,23\,42\,0\.35\)\] {
-  --tw-shadow: 0 16px 26px rgba(15, 23, 42, .35);
-  --tw-shadow-colored: 0 16px 26px var(--tw-shadow-color);
+.shadow-\[0_10px_22px_rgba\(15\,23\,42\,0\.06\)\] {
+  --tw-shadow: 0 10px 22px rgba(15, 23, 42, .06);
+  --tw-shadow-colored: 0 10px 22px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
 }
 
@@ -5449,8 +5453,8 @@ img, video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.blur-\[32px\] {
-  --tw-blur: blur(32px);
+.blur-\[24px\] {
+  --tw-blur: blur(24px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -6051,20 +6055,34 @@ body {
     content: none;
   }
 
+  .notch-br, .notch-bl, .notch-tr, .notch-tl {
+    --notch-radius: var(--sphere-notch-radius, 124px);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+
   .notch-br {
-    border-bottom-right-radius: var(--sphere-notch-radius);
+    -webkit-mask-image: radial-gradient(circle at 100% 100%, transparent var(--notch-radius), #000 calc(var(--notch-radius)  + .75px));
+    -webkit-mask-image: radial-gradient(circle at 100% 100%, transparent var(--notch-radius), #000 calc(var(--notch-radius)  + .75px));
+    mask-image: radial-gradient(circle at 100% 100%, transparent var(--notch-radius), #000 calc(var(--notch-radius)  + .75px));
   }
 
   .notch-bl {
-    border-bottom-left-radius: var(--sphere-notch-radius);
+    -webkit-mask-image: radial-gradient(circle at 0% 100%, transparent var(--notch-radius), #000 calc(var(--notch-radius)  + .75px));
+    -webkit-mask-image: radial-gradient(circle at 0% 100%, transparent var(--notch-radius), #000 calc(var(--notch-radius)  + .75px));
+    mask-image: radial-gradient(circle at 0% 100%, transparent var(--notch-radius), #000 calc(var(--notch-radius)  + .75px));
   }
 
   .notch-tr {
-    border-top-right-radius: var(--sphere-notch-radius);
+    -webkit-mask-image: radial-gradient(circle at 100% 0%, transparent var(--notch-radius), #000 calc(var(--notch-radius)  + .75px));
+    -webkit-mask-image: radial-gradient(circle at 100% 0%, transparent var(--notch-radius), #000 calc(var(--notch-radius)  + .75px));
+    mask-image: radial-gradient(circle at 100% 0%, transparent var(--notch-radius), #000 calc(var(--notch-radius)  + .75px));
   }
 
   .notch-tl {
-    border-top-left-radius: var(--sphere-notch-radius);
+    -webkit-mask-image: radial-gradient(circle at 0% 0%, transparent var(--notch-radius), #000 calc(var(--notch-radius)  + .75px));
+    -webkit-mask-image: radial-gradient(circle at 0% 0%, transparent var(--notch-radius), #000 calc(var(--notch-radius)  + .75px));
+    mask-image: radial-gradient(circle at 0% 0%, transparent var(--notch-radius), #000 calc(var(--notch-radius)  + .75px));
   }
 }
 
@@ -11709,6 +11727,10 @@ body {
     align-items: flex-end;
   }
 
+  .xl\:gap-0 {
+    gap: 0;
+  }
+
   .xl\:gap-10 {
     gap: 2.5rem;
   }
@@ -11747,22 +11769,6 @@ body {
 
   .xl\:rounded-\[32px\] {
     border-radius: 32px;
-  }
-
-  .xl\:rounded-bl-\[64px\] {
-    border-bottom-left-radius: 64px;
-  }
-
-  .xl\:rounded-br-\[64px\] {
-    border-bottom-right-radius: 64px;
-  }
-
-  .xl\:rounded-tl-\[64px\] {
-    border-top-left-radius: 64px;
-  }
-
-  .xl\:rounded-tr-\[64px\] {
-    border-top-right-radius: 64px;
   }
 
   .xl\:border-\[0\.99px\] {

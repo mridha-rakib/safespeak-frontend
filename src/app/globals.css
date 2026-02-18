@@ -72,20 +72,65 @@ body {
     content: none;
   }
 
+  .notch-br,
+  .notch-bl,
+  .notch-tr,
+  .notch-tl {
+    --notch-radius: var(--sphere-notch-radius, 124px);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+
   .notch-br {
-    border-bottom-right-radius: var(--sphere-notch-radius);
+    -webkit-mask-image: radial-gradient(
+      circle at 100% 100%,
+      transparent var(--notch-radius),
+      #000 calc(var(--notch-radius) + 0.75px)
+    );
+    mask-image: radial-gradient(
+      circle at 100% 100%,
+      transparent var(--notch-radius),
+      #000 calc(var(--notch-radius) + 0.75px)
+    );
   }
 
   .notch-bl {
-    border-bottom-left-radius: var(--sphere-notch-radius);
+    -webkit-mask-image: radial-gradient(
+      circle at 0% 100%,
+      transparent var(--notch-radius),
+      #000 calc(var(--notch-radius) + 0.75px)
+    );
+    mask-image: radial-gradient(
+      circle at 0% 100%,
+      transparent var(--notch-radius),
+      #000 calc(var(--notch-radius) + 0.75px)
+    );
   }
 
   .notch-tr {
-    border-top-right-radius: var(--sphere-notch-radius);
+    -webkit-mask-image: radial-gradient(
+      circle at 100% 0%,
+      transparent var(--notch-radius),
+      #000 calc(var(--notch-radius) + 0.75px)
+    );
+    mask-image: radial-gradient(
+      circle at 100% 0%,
+      transparent var(--notch-radius),
+      #000 calc(var(--notch-radius) + 0.75px)
+    );
   }
 
   .notch-tl {
-    border-top-left-radius: var(--sphere-notch-radius);
+    -webkit-mask-image: radial-gradient(
+      circle at 0% 0%,
+      transparent var(--notch-radius),
+      #000 calc(var(--notch-radius) + 0.75px)
+    );
+    mask-image: radial-gradient(
+      circle at 0% 0%,
+      transparent var(--notch-radius),
+      #000 calc(var(--notch-radius) + 0.75px)
+    );
   }
 }
 
