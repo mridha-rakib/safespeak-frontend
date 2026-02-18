@@ -1,0 +1,29 @@
+{
+  "pages": {
+    "/login/page": [
+      "static/chunks/src_app_globals_91e4631d.css",
+      "static/chunks/node_modules_next_dist_8db7fb1f._.js",
+      "static/chunks/src_app_layout_tsx_f8182b1e._.js",
+      "static/chunks/node_modules_ee060e15._.js",
+      "static/chunks/src_app_loading_tsx_8a82af4e._.js",
+      "static/chunks/src_app_loading_tsx_9b245af9._.js",
+      "static/chunks/node_modules_@nextui-org_dom-animation_dist_index_mjs_e9830bd3._.js",
+      "static/chunks/node_modules_4fd5827b._.js",
+      "static/chunks/src_app_not-found_tsx_c19c9edf._.js",
+      "static/chunks/src_app_not-found_tsx_9b245af9._.js",
+      "static/chunks/node_modules_next_dist_client_components_builtin_global-error_9b245af9.js",
+      "static/chunks/node_modules_31f319d1._.js",
+      "static/chunks/src_91af30ae._.js",
+      "static/chunks/src_app_login_page_tsx_9b245af9._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_4e3b0bdd._.js",
+      "static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js",
+      "static/chunks/node_modules_next_dist_compiled_next-devtools_index_a9cb0712.js",
+      "static/chunks/node_modules_next_dist_compiled_5150ccfd._.js",
+      "static/chunks/node_modules_next_dist_client_cf1d9188._.js",
+      "static/chunks/node_modules_next_dist_b0daae9a._.js",
+      "static/chunks/4e2c9_@swc_helpers_cjs_2b52ba32._.js",
+      "static/chunks/_a0ff3932._.js",
+      "static/chunks/turbopack-_3fb52da9._.js"
+    ]
+  }
+}

@@ -531,7 +531,7 @@ function FooterSection() {
 }),
 "[project]/src/assets/android-link.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/android-link.7510ac3e.svg");}),
+__turbopack_context__.v("/_next/static/media/android-link.63c6028b.svg");}),
 "[project]/src/assets/android-link.svg.mjs { IMAGE => \"[project]/src/assets/android-link.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -551,7 +551,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/apple-link.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/apple-link.47c802db.svg");}),
+__turbopack_context__.v("/_next/static/media/apple-link.3d760a8f.svg");}),
 "[project]/src/assets/apple-link.svg.mjs { IMAGE => \"[project]/src/assets/apple-link.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -571,7 +571,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/indicator.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/indicator.d38c964c.svg");}),
+__turbopack_context__.v("/_next/static/media/indicator.191047ac.svg");}),
 "[project]/src/assets/indicator.svg.mjs { IMAGE => \"[project]/src/assets/indicator.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -591,7 +591,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/Rectangle.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/Rectangle.7629b13b.svg");}),
+__turbopack_context__.v("/_next/static/media/Rectangle.745b1829.svg");}),
 "[project]/src/assets/Rectangle.svg.mjs { IMAGE => \"[project]/src/assets/Rectangle.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -611,7 +611,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/Rectangle-2.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/Rectangle-2.e92d3e6e.svg");}),
+__turbopack_context__.v("/_next/static/media/Rectangle-2.bb79a630.svg");}),
 "[project]/src/assets/Rectangle-2.svg.mjs { IMAGE => \"[project]/src/assets/Rectangle-2.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -631,7 +631,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/qrcode.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/qrcode.98c010ee.svg");}),
+__turbopack_context__.v("/_next/static/media/qrcode.001e7d89.svg");}),
 "[project]/src/assets/qrcode.svg.mjs { IMAGE => \"[project]/src/assets/qrcode.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -651,7 +651,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/sphere.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/sphere.1566df4f.svg");}),
+__turbopack_context__.v("/_next/static/media/sphere.45d78638.svg");}),
 "[project]/src/assets/sphere.svg.mjs { IMAGE => \"[project]/src/assets/sphere.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1249,7 +1249,7 @@ function LocalIntelligence() {
 }),
 "[project]/src/assets/Hand and iPhone 16 Pro.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/Hand and iPhone 16 Pro.1c4f4240.svg");}),
+__turbopack_context__.v("/_next/static/media/Hand and iPhone 16 Pro.9429c5f5.svg");}),
 "[project]/src/assets/Hand and iPhone 16 Pro.svg.mjs { IMAGE => \"[project]/src/assets/Hand and iPhone 16 Pro.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 

@@ -1580,6 +1580,10 @@ img, video {
   height: 100vh;
 }
 
+.h-\[390px\] {
+  height: 390px;
+}
+
 .max-h-\[20rem\] {
   max-height: 20rem;
 }
@@ -4077,6 +4081,10 @@ img, video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .\!px-1 {
@@ -11747,22 +11755,6 @@ body {
 
   .xl\:rounded-\[32px\] {
     border-radius: 32px;
-  }
-
-  .xl\:rounded-bl-\[64px\] {
-    border-bottom-left-radius: 64px;
-  }
-
-  .xl\:rounded-br-\[64px\] {
-    border-bottom-right-radius: 64px;
-  }
-
-  .xl\:rounded-tl-\[64px\] {
-    border-top-left-radius: 64px;
-  }
-
-  .xl\:rounded-tr-\[64px\] {
-    border-top-right-radius: 64px;
   }
 
   .xl\:border-\[0\.99px\] {

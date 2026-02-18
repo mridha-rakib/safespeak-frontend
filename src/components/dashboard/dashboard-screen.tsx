@@ -15,11 +15,12 @@ import {
   IconShieldFilled,
 } from "@tabler/icons-react";
 
-import abuseImage from "@/assets/abuse.png";
-import domesticViolenceImage from "@/assets/domestic-violance.jpg";
-import hackerImage from "@/assets/hacker.jpg";
-import migrateImage from "@/assets/migrate.jpg";
+import bottomLeft from "@/assets/bottom-left.svg?url";
+import bottomRight from "@/assets/bottom-right.svg?url";
 import sphereAdv from "@/assets/sphere-adv.svg?url";
+import topLeft from "@/assets/top-left.svg?url";
+import topMask from "@/assets/top-mask.svg?url";
+import topRight from "@/assets/top-right.svg?url";
 import { cn } from "@/lib/utils";
 
 type DashboardTab = "home" | "explorer" | "notifications" | "settings";
@@ -33,7 +34,7 @@ const pageFont = Plus_Jakarta_Sans({
 const SPHERE_SIZE = 220; // diameter in px
 const SPHERE_RING = 14; // thickness of the visible ring
 const SPHERE_HALO = 22; // soft glow outside the ring
-const SPHERE_TOP = 264; // offset from top of the grid area
+const SPHERE_TOP = 275; // offset from top of the grid area
 
 function NavItem({
   href,
@@ -158,14 +159,14 @@ function HomeDashboardPage() {
       <div className="relative mx-auto w-full [--dashboard-card-gap:24px] xl:h-[824.224px] xl:max-w-[1120px]">
         <div className="flex flex-col gap-[var(--dashboard-card-gap)]">
           <div className="grid grid-cols-1 gap-[var(--dashboard-card-gap)] xl:grid-cols-[1fr_2.122fr_1fr]">
-            <article className="relative h-[210px] overflow-hidden rounded-[20px] border border-white/25 xl:h-[390.422119140625px] xl:w-full xl:rounded-[30px] xl:border-[0.99px] xl:notch-br">
+            <article className="xl:notch-br relative h-[210px] overflow-hidden rounded-[20px] border border-white/25 xl:h-[390.422119140625px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]">
               <Image
-                src={domesticViolenceImage}
+                src={topLeft}
                 alt="Domestic violence"
                 fill
                 className="object-cover"
               />
-              <div className="from-[#6D94FF]/88 absolute inset-0 bg-gradient-to-b to-[#0034FF]/95" />
+              {/* <div className="from-[#6D94FF]/88 absolute inset-0 bg-gradient-to-b to-[#0034FF]/95" />
               <div className="absolute bottom-4 left-4">
                 <h3 className="max-w-[190px] text-[32.86px] font-bold leading-[100%] text-white">
                   Domestic
@@ -175,38 +176,46 @@ function HomeDashboardPage() {
                 <p className="mt-2 max-w-[165px] text-xs text-white/85">
                   Abusive behaviour used to control a partner.
                 </p>
-              </div>
+              </div> */}
             </article>
 
-            <article className="dashboard-safespeak-card relative h-[210px] overflow-hidden rounded-[20px] border border-white/20 xl:h-[390.422119140625px] xl:w-full xl:rounded-[32px] xl:border-[0.99px] xl:notch-bl xl:notch-br">
-              <div className="absolute inset-0 z-[2] bg-[radial-gradient(95%_74%_at_50%_78%,rgba(160,253,255,0.58)_0%,rgba(160,253,255,0.18)_40%,rgba(160,253,255,0)_100%)]" />
-              <div className="absolute inset-0 z-[4] flex h-full flex-col items-center justify-center text-center xl:gap-[3.94px] xl:pb-[110px] xl:pt-[26.29px]">
-                <div className="flex max-w-[340px] flex-col items-center pt-1 xl:h-[140.67633056640625px] xl:w-[340px] xl:gap-[8.56px] xl:pt-[17.12px]">
-                  <p className="text-[11px] font-semibold text-white/90 xl:text-[11px] xl:leading-[100%]">
-                    SafeSpeak
-                  </p>
-                  <h3 className="mt-1 text-[48px] font-extrabold leading-[0.9] text-white xl:mt-0 xl:text-[48px] xl:leading-[100%]">
-                    Let&apos;s talk with
-                    <br />
-                    SafeSpeak
-                  </h3>
+            <article className="xl:notch-bl xl:notch-br relative h-[210px] overflow-hidden rounded-[20px] border border-white/20 xl:h-[390.422119140625px] xl:w-full xl:rounded-[32px] xl:border-[0.99px]">
+              <Image alt="dfhksdjf" fill src={topMask} />
+              {/* <div className="absolute inset-0 z-[2] bg-[radial-gradient(95%_74%_at_50%_78%,rgba(160,253,255,0.58)_0%,rgba(160,253,255,0.18)_40%,rgba(160,253,255,0)_100%)]" />
+                <div className="absolute inset-0 z-[4] flex h-full flex-col items-center justify-center text-center xl:gap-[3.94px] xl:pb-[110px] xl:pt-[26.29px]">
+                  <div className="flex max-w-[340px] flex-col items-center pt-1 xl:h-[140.67633056640625px] xl:w-[340px] xl:gap-[8.56px] xl:pt-[17.12px]">
+                    <p className="text-[11px] font-semibold text-white/90 xl:text-[11px] xl:leading-[100%]">
+                      SafeSpeak
+                    </p>
+                    <h3 className="mt-1 text-[48px] font-extrabold leading-[0.9] text-white xl:mt-0 xl:text-[48px] xl:leading-[100%]">
+                      Let&apos;s talk with
+                      <br />
+                      SafeSpeak
+                    </h3>
+                  </div>
                 </div>
-              </div>
-              <div className="absolute inset-0 z-[1] bg-[linear-gradient(180deg,rgba(160,253,255,0.14)_0%,rgba(0,52,255,0.4)_100%)]" />
-              <div className="absolute inset-0 z-[3] bg-[linear-gradient(160deg,rgba(0,52,255,0.1)_0%,rgba(0,52,255,0.35)_72%,rgba(0,52,255,0.5)_100%)]" />
-              <div className="absolute inset-0 z-[0] bg-[linear-gradient(180deg,#A0FDFF_0%,#0034FF_100%)]" />
-              <div className="absolute inset-0 z-[0] opacity-[0.22] mix-blend-screen">
-                <Image
-                  src={abuseImage}
-                  alt="SafeSpeak ambient"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+                <div className="absolute inset-0 z-[1] bg-[linear-gradient(180deg,rgba(160,253,255,0.14)_0%,rgba(0,52,255,0.4)_100%)]" />
+                <div className="absolute inset-0 z-[3] bg-[linear-gradient(160deg,rgba(0,52,255,0.1)_0%,rgba(0,52,255,0.35)_72%,rgba(0,52,255,0.5)_100%)]" />
+                <div className="absolute inset-0 z-[0] bg-[linear-gradient(180deg,#A0FDFF_0%,#0034FF_100%)]" />
+                <div className="absolute inset-0 z-[0] opacity-[0.22] mix-blend-screen">
+                  <Image
+                    src={abuseImage}
+                    alt="SafeSpeak ambient"
+                    fill
+                    className="object-cover"
+                  />
+                </div> */}
             </article>
 
-            <article className="group relative h-[210px] overflow-hidden rounded-[20px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px] xl:notch-bl">
+            <article className="xl:notch-bl group relative h-[210px] overflow-hidden rounded-[20px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]">
               <Image
+                src={topRight}
+                alt="Racial abuse"
+                fill
+                className="object-cover transition duration-[250ms] ease-out group-hover:brightness-110"
+              />
+
+              {/* <Image
                 src={abuseImage}
                 alt="Racial abuse"
                 fill
@@ -222,15 +231,16 @@ function HomeDashboardPage() {
                 <p className="text-white/78 mt-[10px] max-w-[188px] text-[13px] font-normal leading-[1.25]">
                   Boost your prompt processing with rich keywords.
                 </p>
-              </div>
+              </div> */}
             </article>
           </div>
 
           <div>
             <div className="relative xl:h-[406.2px] xl:w-full">
               <div className="grid h-full grid-cols-1 gap-[var(--dashboard-card-gap)] xl:grid-cols-2">
-                <article className="group relative h-[206px] overflow-hidden rounded-[20px] border border-white/20 xl:h-full xl:rounded-[26px] xl:notch-tr">
-                  <Image
+                <article className="xl:notch-tr group relative h-[206px] overflow-hidden rounded-[20px] border border-white/20 xl:h-full xl:rounded-[26px]">
+                  <Image alt="dfhksdjf" fill src={bottomLeft} />
+                  {/* <Image
                     src={hackerImage}
                     alt="Cyber scam"
                     fill
@@ -245,11 +255,12 @@ function HomeDashboardPage() {
                     <p className="mt-2 max-w-[320px] text-[13px] font-normal leading-[1.32] text-white/75">
                       Explore multiple prompt directions with branching.
                     </p>
-                  </div>
+                  </div> */}
                 </article>
 
-                <article className="relative h-[206px] overflow-hidden rounded-[20px] border border-white/20 xl:h-full xl:rounded-[26px] xl:notch-tl">
-                  <Image
+                <article className="xl:notch-tl relative h-[206px] overflow-hidden rounded-[20px] border border-white/20 xl:h-full xl:rounded-[26px]">
+                  <Image alt="dfhksdjf" fill src={bottomRight} />
+                  {/* <Image
                     src={migrateImage}
                     alt="Migrant challenges"
                     fill
@@ -263,7 +274,7 @@ function HomeDashboardPage() {
                     <p className="mt-2 text-xs text-white/80">
                       International students & migrants issue
                     </p>
-                  </div>
+                  </div> */}
                 </article>
               </div>
             </div>
@@ -352,42 +363,19 @@ function HomeDashboardPage() {
         </div>
 
         <div
-          className="pointer-events-none absolute left-1/2 z-20 hidden -translate-x-1/2 xl:block"
+          className="pointer-events-none absolute left-1/2 z-20 hidden -translate-x-1/2 p-10 xl:block"
           style={{
             top: `${SPHERE_TOP}px`,
-            width: `${haloDiameter}px`,
-            height: `${haloDiameter}px`,
+            width: "270px",
+            height: "270px",
           }}
         >
-          <div className="absolute inset-0 rounded-full bg-white/60 blur-[32px]" />
-
-          <div
-            className="absolute rounded-full bg-white"
-            style={{
-              left: `${ringOffset}px`,
-              top: `${ringOffset}px`,
-              width: `${ringDiameter}px`,
-              height: `${ringDiameter}px`,
-              boxShadow: "0 18px 30px rgba(15,23,42,0.20)",
-            }}
+          <Image
+            src={sphereAdv}
+            alt="SafeSpeak center sphere"
+            fill
+            className="object-contain"
           />
-
-          <div
-            className="absolute overflow-hidden rounded-full shadow-[0_16px_26px_rgba(15,23,42,0.35)]"
-            style={{
-              left: `${sphereOffset}px`,
-              top: `${sphereOffset}px`,
-              width: `${SPHERE_SIZE}px`,
-              height: `${SPHERE_SIZE}px`,
-            }}
-          >
-            <Image
-              src={sphereAdv}
-              alt="SafeSpeak center sphere"
-              fill
-              className="object-contain"
-            />
-          </div>
         </div>
       </div>
     </div>
