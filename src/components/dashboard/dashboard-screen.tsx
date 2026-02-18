@@ -214,14 +214,14 @@ function HomeDashboardPage() {
         </div>
 
         <div className="mt-[3.94px] grid grid-cols-1 gap-3 xl:grid-cols-[546.1966px_1fr] xl:items-start xl:gap-[3.94px]">
-          <article className="group relative z-30 h-[206px] overflow-hidden rounded-[18px] border border-white/20 xl:h-[206px] xl:w-[546.1966px]">
+          <article className="group relative z-30 h-[206px] overflow-hidden rounded-[18px] border border-white/20 xl:h-[406.1967px] xl:w-[546.1966px] xl:rounded-[23.66px] xl:border-[0.99px]">
             <Image
               src={hackerImage}
               alt="Cyber scam"
               fill
               className="object-cover object-center transition-transform duration-300 ease-out group-hover:scale-[1.03]"
             />
-            <div className="absolute inset-0 bg-[linear-gradient(145deg,rgba(16,24,40,0.26)_8%,rgba(12,18,34,0.56)_58%,rgba(8,12,24,0.82)_100%)] transition-opacity duration-300 ease-out group-hover:opacity-95" />
+            <div className="absolute inset-0 opacity-[0.82] bg-[linear-gradient(145deg,rgba(16,24,40,0.26)_8%,rgba(12,18,34,0.56)_58%,rgba(8,12,24,0.82)_100%)] transition-opacity duration-300 ease-out group-hover:opacity-[0.92]" />
             <div className="absolute inset-0 bg-[radial-gradient(110%_90%_at_82%_18%,rgba(16,138,210,0.2)_0%,rgba(16,138,210,0)_55%)]" />
             <div className="absolute bottom-6 left-6 pr-6">
               <h3 className="text-[26.29px] font-bold leading-[100%] tracking-[0em] text-white">
