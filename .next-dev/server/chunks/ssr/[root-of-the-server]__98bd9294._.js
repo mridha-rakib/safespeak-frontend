@@ -43,7 +43,7 @@ const __TURBOPACK__default__export__ = fontData;
 }),
 "[project]/src/assets/bottom-left.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/bottom-left.d2133ed3.svg");}),
+__turbopack_context__.v("/_next/static/media/bottom-left.ac24a30d.svg");}),
 "[project]/src/assets/bottom-left.svg.mjs { IMAGE => \"[project]/src/assets/bottom-left.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -63,7 +63,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/bottom-right.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/bottom-right.bfa91858.svg");}),
+__turbopack_context__.v("/_next/static/media/bottom-right.d42aa1eb.svg");}),
 "[project]/src/assets/bottom-right.svg.mjs { IMAGE => \"[project]/src/assets/bottom-right.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -103,7 +103,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/top-left.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/top-left.2a26790c.svg");}),
+__turbopack_context__.v("/_next/static/media/top-left.ac6d61cc.svg");}),
 "[project]/src/assets/top-left.svg.mjs { IMAGE => \"[project]/src/assets/top-left.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -123,7 +123,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/top-mask.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/top-mask.b4213687.svg");}),
+__turbopack_context__.v("/_next/static/media/top-mask.254109a1.svg");}),
 "[project]/src/assets/top-mask.svg.mjs { IMAGE => \"[project]/src/assets/top-mask.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -143,7 +143,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/top-right.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/top-right.85b8a2cc.svg");}),
+__turbopack_context__.v("/_next/static/media/top-right.d507e0f6.svg");}),
 "[project]/src/assets/top-right.svg.mjs { IMAGE => \"[project]/src/assets/top-right.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -199,11 +199,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShieldFilled$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShieldFilled$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconShieldFilled.mjs [app-rsc] (ecmascript) <export default as IconShieldFilled>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$bottom$2d$left$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$bottom$2d$left$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/bottom-left.svg.mjs { IMAGE => "[project]/src/assets/bottom-left.svg (static in ecmascript)" } [app-rsc] (structured image object with data url, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$bottom$2d$right$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$bottom$2d$right$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/bottom-right.svg.mjs { IMAGE => "[project]/src/assets/bottom-right.svg (static in ecmascript)" } [app-rsc] (structured image object with data url, ecmascript)');
+(()=>{
+    const e = new Error("Cannot find module '@/assets/s'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$sphere$2d$adv$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$sphere$2d$adv$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/sphere-adv.svg.mjs { IMAGE => "[project]/src/assets/sphere-adv.svg (static in ecmascript)" } [app-rsc] (structured image object with data url, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$top$2d$left$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$top$2d$left$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/top-left.svg.mjs { IMAGE => "[project]/src/assets/top-left.svg (static in ecmascript)" } [app-rsc] (structured image object with data url, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$top$2d$mask$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$top$2d$mask$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/top-mask.svg.mjs { IMAGE => "[project]/src/assets/top-mask.svg (static in ecmascript)" } [app-rsc] (structured image object with data url, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$top$2d$right$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$top$2d$right$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/top-right.svg.mjs { IMAGE => "[project]/src/assets/top-right.svg (static in ecmascript)" } [app-rsc] (structured image object with data url, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -230,27 +236,27 @@ function NavItem({ href, icon, label, active, showDot = false }) {
                 children: icon
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                lineNumber: 66,
+                lineNumber: 67,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 children: label
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                lineNumber: 69,
+                lineNumber: 70,
                 columnNumber: 7
             }, this),
             showDot && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 className: "absolute right-3 h-1.5 w-1.5 rounded-full bg-[#f05353]"
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                lineNumber: 71,
+                lineNumber: 72,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-        lineNumber: 57,
+        lineNumber: 58,
         columnNumber: 5
     }, this);
 }
@@ -269,24 +275,24 @@ function Sidebar({ activeTab }) {
                             children: "\u2713"
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                            lineNumber: 82,
+                            lineNumber: 83,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                            lineNumber: 83,
+                            lineNumber: 84,
                             columnNumber: 11
                         }, this),
                         "Speak"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                    lineNumber: 81,
+                    lineNumber: 82,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                lineNumber: 80,
+                lineNumber: 81,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -298,14 +304,14 @@ function Sidebar({ activeTab }) {
                             size: 12
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                            lineNumber: 91,
+                            lineNumber: 92,
                             columnNumber: 17
                         }, void 0),
                         label: "Home",
                         active: activeTab === "home"
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                        lineNumber: 89,
+                        lineNumber: 90,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(NavItem, {
@@ -314,14 +320,14 @@ function Sidebar({ activeTab }) {
                             size: 12
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                            lineNumber: 97,
+                            lineNumber: 98,
                             columnNumber: 17
                         }, void 0),
                         label: "Explorer",
                         active: activeTab === "explorer"
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                        lineNumber: 95,
+                        lineNumber: 96,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(NavItem, {
@@ -330,7 +336,7 @@ function Sidebar({ activeTab }) {
                             size: 12
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                            lineNumber: 103,
+                            lineNumber: 104,
                             columnNumber: 17
                         }, void 0),
                         label: "Notifications",
@@ -338,13 +344,13 @@ function Sidebar({ activeTab }) {
                         showDot: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                        lineNumber: 101,
+                        lineNumber: 102,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                lineNumber: 88,
+                lineNumber: 89,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -355,25 +361,25 @@ function Sidebar({ activeTab }) {
                         size: 12
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                        lineNumber: 113,
+                        lineNumber: 114,
                         columnNumber: 17
                     }, void 0),
                     label: "Settings",
                     active: activeTab === "settings"
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                    lineNumber: 111,
+                    lineNumber: 112,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                lineNumber: 110,
+                lineNumber: 111,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-        lineNumber: 79,
+        lineNumber: 80,
         columnNumber: 5
     }, this);
 }
@@ -391,7 +397,7 @@ function EmergencyToolbar() {
                                 size: 13
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                lineNumber: 127,
+                                lineNumber: 128,
                                 columnNumber: 11
                             }, this),
                             "In case of emergency call (000)",
@@ -403,19 +409,19 @@ function EmergencyToolbar() {
                                         size: 10
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                        lineNumber: 131,
+                                        lineNumber: 132,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                lineNumber: 129,
+                                lineNumber: 130,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                        lineNumber: 126,
+                        lineNumber: 127,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -426,19 +432,19 @@ function EmergencyToolbar() {
                                 size: 12
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                lineNumber: 137,
+                                lineNumber: 138,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                        lineNumber: 135,
+                        lineNumber: 136,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                lineNumber: 125,
+                lineNumber: 126,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -449,7 +455,7 @@ function EmergencyToolbar() {
                         children: "Welcome Back"
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                        lineNumber: 142,
+                        lineNumber: 143,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -457,19 +463,19 @@ function EmergencyToolbar() {
                         children: "Alex Rivera"
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                        lineNumber: 145,
+                        lineNumber: 146,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                lineNumber: 141,
+                lineNumber: 142,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-        lineNumber: 124,
+        lineNumber: 125,
         columnNumber: 5
     }, this);
 }
@@ -490,36 +496,36 @@ function HomeDashboardPage() {
                             className: "grid grid-cols-1 gap-[var(--dashboard-card-gap)] xl:grid-cols-[1fr_2.122fr_1fr]",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                    className: "xl:notch-br relative h-[210px] overflow-hidden rounded-[20px] border border-white/25 xl:h-[390.422119140625px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]",
+                                    className: "xl:notch-bl group relative h-[210px] overflow-hidden rounded-[20px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                         src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$top$2d$left$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$top$2d$left$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
                                         alt: "Domestic violence",
                                         fill: true,
-                                        className: "object-cover"
+                                        className: "object-cover transition duration-[250ms] ease-out group-hover:brightness-110"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                        lineNumber: 163,
+                                        lineNumber: 164,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 162,
+                                    lineNumber: 163,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                    className: "xl:notch-bl xl:notch-br relative h-[210px] overflow-hidden rounded-[20px] border border-white/20 xl:h-[390.422119140625px] xl:w-full xl:rounded-[32px] xl:border-[0.99px]",
+                                    className: "xl:notch-bl group relative h-[210px] overflow-hidden rounded-[20px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                         alt: "dfhksdjf",
                                         fill: true,
                                         src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$top$2d$mask$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$top$2d$mask$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                        lineNumber: 183,
+                                        lineNumber: 184,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 182,
+                                    lineNumber: 183,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -531,18 +537,18 @@ function HomeDashboardPage() {
                                         className: "object-cover transition duration-[250ms] ease-out group-hover:brightness-110"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                        lineNumber: 211,
+                                        lineNumber: 212,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 210,
+                                    lineNumber: 211,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                            lineNumber: 161,
+                            lineNumber: 162,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -552,51 +558,51 @@ function HomeDashboardPage() {
                                     className: "grid h-full grid-cols-1 gap-[var(--dashboard-card-gap)] xl:grid-cols-2",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                            className: "xl:notch-tr group relative h-[206px] overflow-hidden rounded-[20px] border border-white/20 xl:h-full xl:rounded-[26px]",
+                                            className: "xl:notch-bl group relative h-[210px] overflow-hidden rounded-[20px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                                 alt: "dfhksdjf",
                                                 fill: true,
                                                 src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$bottom$2d$left$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$bottom$2d$left$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                lineNumber: 242,
+                                                lineNumber: 243,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 241,
+                                            lineNumber: 242,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                            className: "xl:notch-tl relative h-[206px] overflow-hidden rounded-[20px] border border-white/20 xl:h-full xl:rounded-[26px]",
+                                            className: "xl:notch-bl group relative h-[210px] overflow-hidden rounded-[20px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                                 alt: "dfhksdjf",
                                                 fill: true,
                                                 src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$bottom$2d$right$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$bottom$2d$right$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                lineNumber: 262,
+                                                lineNumber: 263,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 261,
+                                            lineNumber: 262,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 240,
+                                    lineNumber: 241,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                lineNumber: 239,
+                                lineNumber: 240,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                            lineNumber: 238,
+                            lineNumber: 239,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -613,37 +619,55 @@ function HomeDashboardPage() {
                                                     children: "Cyber"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 286,
+                                                    lineNumber: 287,
                                                     columnNumber: 17
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                    className: "mt-1 text-[34px] font-extrabold leading-[0.9] text-white",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center justify-between",
                                                     children: [
-                                                        "Scam",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                            className: "mt-1 text-[34px] font-extrabold leading-[0.9] text-white",
+                                                            children: [
+                                                                "Scam",
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                    fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
+                                                                    lineNumber: 293,
+                                                                    columnNumber: 21
+                                                                }, this),
+                                                                "Shield"
+                                                            ]
+                                                        }, void 0, true, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
                                                             lineNumber: 291,
                                                             columnNumber: 19
                                                         }, this),
-                                                        "Shield"
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShieldFilled$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShieldFilled$3e$__["IconShieldFilled"], {
+                                                            size: 74,
+                                                            className: "absolute bottom-2 right-2 text-white/10"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
+                                                            lineNumber: 296,
+                                                            columnNumber: 19
+                                                        }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 289,
+                                                    lineNumber: 290,
                                                     columnNumber: 17
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShieldFilled$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShieldFilled$3e$__["IconShieldFilled"], {
-                                                    size: 74,
-                                                    className: "absolute bottom-2 right-2 text-white/10"
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                    src: scamShield,
+                                                    alt: "Scam Shield",
+                                                    className: "absolute bottom-2 right-2 h-16 w-16"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 294,
+                                                    lineNumber: 301,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 285,
+                                            lineNumber: 286,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -654,7 +678,7 @@ function HomeDashboardPage() {
                                                     children: "Legal"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 301,
+                                                    lineNumber: 309,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -662,7 +686,7 @@ function HomeDashboardPage() {
                                                     children: "Resources"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 304,
+                                                    lineNumber: 312,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconFolderFilled$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__IconFolderFilled$3e$__["IconFolderFilled"], {
@@ -670,19 +694,19 @@ function HomeDashboardPage() {
                                                     className: "absolute bottom-2 right-2 text-[#d39f04]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 307,
+                                                    lineNumber: 315,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 300,
+                                            lineNumber: 308,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 284,
+                                    lineNumber: 285,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -700,14 +724,14 @@ function HomeDashboardPage() {
                                                 "Micro-",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 323,
+                                                    lineNumber: 331,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Cards"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 321,
+                                            lineNumber: 329,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -718,7 +742,7 @@ function HomeDashboardPage() {
                                                     children: "4 Lessons - 12 mins"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 327,
+                                                    lineNumber: 335,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -727,24 +751,24 @@ function HomeDashboardPage() {
                                                         className: "h-2 w-2/3 rounded-full bg-white/95"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                        lineNumber: 331,
+                                                        lineNumber: 339,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 330,
+                                                    lineNumber: 338,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 326,
+                                            lineNumber: 334,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 314,
+                                    lineNumber: 322,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -758,7 +782,7 @@ function HomeDashboardPage() {
                                                     children: "Local Intelligence"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 338,
+                                                    lineNumber: 346,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -766,13 +790,13 @@ function HomeDashboardPage() {
                                                     children: "..."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 341,
+                                                    lineNumber: 349,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 337,
+                                            lineNumber: 345,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -782,42 +806,42 @@ function HomeDashboardPage() {
                                                     className: "absolute inset-0 bg-[linear-gradient(130deg,#cfdebf_0%,#e3edd8_45%,#cedebf_100%)]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 345,
+                                                    lineNumber: 353,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "absolute -left-10 top-[-8%] h-[130%] w-4 rotate-[12deg] bg-[#f2bc7d]/75"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 346,
+                                                    lineNumber: 354,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "absolute -top-8 left-[18%] h-[125%] w-3 rotate-[9deg] bg-white/70"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 347,
+                                                    lineNumber: 355,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "absolute -top-10 right-[22%] h-[130%] w-3 rotate-[-8deg] bg-white/65"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 348,
+                                                    lineNumber: 356,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "absolute inset-x-[-4%] top-[45%] h-2 rotate-[10deg] rounded-full bg-white/70"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 349,
+                                                    lineNumber: 357,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "absolute left-[58%] top-[66%] h-4 w-4 rounded-full border-2 border-white bg-[#f2a122]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 350,
+                                                    lineNumber: 358,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -828,7 +852,7 @@ function HomeDashboardPage() {
                                                             children: "Current location"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                            lineNumber: 353,
+                                                            lineNumber: 361,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -836,37 +860,37 @@ function HomeDashboardPage() {
                                                             children: "3 Active Zones Nearby"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                            lineNumber: 356,
+                                                            lineNumber: 364,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 352,
+                                                    lineNumber: 360,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 344,
+                                            lineNumber: 352,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 336,
+                                    lineNumber: 344,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                            lineNumber: 283,
+                            lineNumber: 284,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                    lineNumber: 160,
+                    lineNumber: 161,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -883,23 +907,23 @@ function HomeDashboardPage() {
                         className: "object-contain"
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                        lineNumber: 373,
+                        lineNumber: 381,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                    lineNumber: 365,
+                    lineNumber: 373,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-            lineNumber: 159,
+            lineNumber: 160,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-        lineNumber: 158,
+        lineNumber: 159,
         columnNumber: 5
     }, this);
 }
@@ -927,14 +951,14 @@ function MicroEducationPage() {
                                     size: 14
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 402,
+                                    lineNumber: 410,
                                     columnNumber: 13
                                 }, this),
                                 "MicroEducation"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                            lineNumber: 398,
+                            lineNumber: 406,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -942,13 +966,13 @@ function MicroEducationPage() {
                             children: "Cancel"
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                            lineNumber: 405,
+                            lineNumber: 413,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                    lineNumber: 397,
+                    lineNumber: 405,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -959,7 +983,7 @@ function MicroEducationPage() {
                             children: "Learn. Protect. Thrive."
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                            lineNumber: 409,
+                            lineNumber: 417,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -968,14 +992,14 @@ function MicroEducationPage() {
                                 "Quick lessons on rights, online safety, mental health, and everyday hazards.",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 415,
+                                    lineNumber: 423,
                                     columnNumber: 13
                                 }, this),
                                 "Empowering you with the knowledge to stay safe and secure."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                            lineNumber: 412,
+                            lineNumber: 420,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -986,7 +1010,7 @@ function MicroEducationPage() {
                                     className: "pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[#98a6b9]"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 420,
+                                    lineNumber: 428,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -995,13 +1019,13 @@ function MicroEducationPage() {
                                     className: "h-10 w-full rounded-full border border-[#dbe5f0] bg-white px-10 text-xs text-[#1f2937] outline-none focus:border-[#3b82f6]"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 424,
+                                    lineNumber: 432,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                            lineNumber: 419,
+                            lineNumber: 427,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1011,12 +1035,12 @@ function MicroEducationPage() {
                                     children: chip
                                 }, chip, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 433,
+                                    lineNumber: 441,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                            lineNumber: 431,
+                            lineNumber: 439,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1030,7 +1054,7 @@ function MicroEducationPage() {
                                             children: "Cyber"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 449,
+                                            lineNumber: 457,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1038,7 +1062,7 @@ function MicroEducationPage() {
                                             children: "Bullying"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 452,
+                                            lineNumber: 460,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShieldFilled$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShieldFilled$3e$__["IconShieldFilled"], {
@@ -1046,13 +1070,13 @@ function MicroEducationPage() {
                                             className: "text-white/12 absolute bottom-3 right-3"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 455,
+                                            lineNumber: 463,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 448,
+                                    lineNumber: 456,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -1064,20 +1088,20 @@ function MicroEducationPage() {
                                                 "Dis-",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 464,
+                                                    lineNumber: 472,
                                                     columnNumber: 17
                                                 }, this),
                                                 "crimina-",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 466,
+                                                    lineNumber: 474,
                                                     columnNumber: 17
                                                 }, this),
                                                 "tion"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 462,
+                                            lineNumber: 470,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1085,13 +1109,13 @@ function MicroEducationPage() {
                                             children: "Discrimination occurs when employees are treated unfairly for personal traits."
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 469,
+                                            lineNumber: 477,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 461,
+                                    lineNumber: 469,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -1102,7 +1126,7 @@ function MicroEducationPage() {
                                             children: "Protection"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 476,
+                                            lineNumber: 484,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1111,14 +1135,14 @@ function MicroEducationPage() {
                                                 "Online",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 481,
+                                                    lineNumber: 489,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Safety"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 479,
+                                            lineNumber: 487,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1126,7 +1150,7 @@ function MicroEducationPage() {
                                             children: "Protect your digital footprint & data from potential online threats."
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 484,
+                                            lineNumber: 492,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1134,7 +1158,7 @@ function MicroEducationPage() {
                                             children: "Get Protected"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 488,
+                                            lineNumber: 496,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1143,18 +1167,18 @@ function MicroEducationPage() {
                                                 size: 24
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                lineNumber: 492,
+                                                lineNumber: 500,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 491,
+                                            lineNumber: 499,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 475,
+                                    lineNumber: 483,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -1165,7 +1189,7 @@ function MicroEducationPage() {
                                             children: "Legal"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 497,
+                                            lineNumber: 505,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1174,14 +1198,14 @@ function MicroEducationPage() {
                                                 "Migrant &",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 502,
+                                                    lineNumber: 510,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Student Rights"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 500,
+                                            lineNumber: 508,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconFolderFilled$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__IconFolderFilled$3e$__["IconFolderFilled"], {
@@ -1189,13 +1213,13 @@ function MicroEducationPage() {
                                             className: "absolute bottom-4 right-4 text-[#cf9f1a]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 505,
+                                            lineNumber: 513,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 496,
+                                    lineNumber: 504,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -1206,7 +1230,7 @@ function MicroEducationPage() {
                                             children: "Mental"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 512,
+                                            lineNumber: 520,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1215,20 +1239,20 @@ function MicroEducationPage() {
                                                 "Mental",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 517,
+                                                    lineNumber: 525,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Health"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 515,
+                                            lineNumber: 523,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 511,
+                                    lineNumber: 519,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -1239,7 +1263,7 @@ function MicroEducationPage() {
                                             children: "Fundamentals"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 523,
+                                            lineNumber: 531,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1248,14 +1272,14 @@ function MicroEducationPage() {
                                                 "Legal Aid",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                                    lineNumber: 528,
+                                                    lineNumber: 536,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Basics"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 526,
+                                            lineNumber: 534,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1263,36 +1287,36 @@ function MicroEducationPage() {
                                             children: "Start Now"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                            lineNumber: 531,
+                                            lineNumber: 539,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                                    lineNumber: 522,
+                                    lineNumber: 530,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                            lineNumber: 447,
+                            lineNumber: 455,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                    lineNumber: 408,
+                    lineNumber: 416,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-            lineNumber: 396,
+            lineNumber: 404,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-        lineNumber: 395,
+        lineNumber: 403,
         columnNumber: 5
     }, this);
 }
@@ -1307,7 +1331,7 @@ function PlaceholderPanel({ title }) {
                     children: title
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                    lineNumber: 546,
+                    lineNumber: 554,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1315,18 +1339,18 @@ function PlaceholderPanel({ title }) {
                     children: "This section is ready for feature content."
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                    lineNumber: 547,
+                    lineNumber: 555,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-            lineNumber: 545,
+            lineNumber: 553,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-        lineNumber: 544,
+        lineNumber: 552,
         columnNumber: 5
     }, this);
 }
@@ -1338,7 +1362,7 @@ function DashboardShell({ activeTab, children }) {
                 activeTab: activeTab
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                lineNumber: 566,
+                lineNumber: 574,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1348,25 +1372,25 @@ function DashboardShell({ activeTab, children }) {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(EmergencyToolbar, {}, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                            lineNumber: 570,
+                            lineNumber: 578,
                             columnNumber: 11
                         }, this),
                         children
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                    lineNumber: 569,
+                    lineNumber: 577,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-                lineNumber: 568,
+                lineNumber: 576,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-        lineNumber: 563,
+        lineNumber: 571,
         columnNumber: 5
     }, this);
 }
@@ -1375,11 +1399,11 @@ function DashboardScreen({ activeTab, homeView = "overview" }) {
     if (activeTab === "home") {
         page = homeView === "microeducation" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(MicroEducationPage, {}, void 0, false, {
             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-            lineNumber: 590,
+            lineNumber: 598,
             columnNumber: 9
         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(HomeDashboardPage, {}, void 0, false, {
             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-            lineNumber: 592,
+            lineNumber: 600,
             columnNumber: 9
         }, this);
     } else if (activeTab === "explorer") {
@@ -1387,7 +1411,7 @@ function DashboardScreen({ activeTab, homeView = "overview" }) {
             title: "Explorer"
         }, void 0, false, {
             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-            lineNumber: 595,
+            lineNumber: 603,
             columnNumber: 12
         }, this);
     } else if (activeTab === "notifications") {
@@ -1395,7 +1419,7 @@ function DashboardScreen({ activeTab, homeView = "overview" }) {
             title: "Notifications"
         }, void 0, false, {
             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-            lineNumber: 597,
+            lineNumber: 605,
             columnNumber: 12
         }, this);
     } else {
@@ -1403,7 +1427,7 @@ function DashboardScreen({ activeTab, homeView = "overview" }) {
             title: "Settings"
         }, void 0, false, {
             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-            lineNumber: 599,
+            lineNumber: 607,
             columnNumber: 12
         }, this);
     }
@@ -1412,7 +1436,7 @@ function DashboardScreen({ activeTab, homeView = "overview" }) {
         children: page
     }, void 0, false, {
         fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
-        lineNumber: 602,
+        lineNumber: 610,
         columnNumber: 10
     }, this);
 }
