@@ -1,9 +1,9 @@
 "use client";
 
+import type { Route } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import type { Route } from "next";
 
 import {
   IconAlertCircleFilled,
@@ -21,6 +21,7 @@ import {
   IconSettingsFilled,
   IconShieldFilled,
 } from "@tabler/icons-react";
+import { useTranslation } from "react-i18next";
 
 import abuseImage from "@/assets/abuse.png";
 import bottomLeft from "@/assets/bottom-left.svg?url";
@@ -45,13 +46,14 @@ import { AssistantInteraction } from "@/components/dashboard/assistant-interacti
 import { SafeSpeakLogo } from "@/components/ui/safe-speak-logo";
 import {
   DEFAULT_LANGUAGE,
-  isSupportedLanguage,
   LANGUAGE_OPTIONS,
   LANGUAGE_STORAGE_KEY,
   type SupportedLanguage,
+  isSupportedLanguage,
 } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
-import { useTranslation } from "react-i18next";
+
+import SMDasboardHome from "./sm-dashboard-home";
 
 type DashboardTab = "home" | "explorer" | "notifications" | "settings";
 type HomeView =
@@ -136,7 +138,11 @@ function Sidebar({ activeTab }: { activeTab: DashboardTab }) {
   return (
     <aside className="sticky top-0 w-[72px] shrink-0 border-r border-[#d7dee8] bg-[#f8fafc] px-2 py-6 sm:w-[88px] sm:px-3 lg:w-56 lg:px-5 lg:py-8 xl:h-[1574px] xl:w-[256px]">
       <div className="px-1 lg:px-2">
-        <SafeSpeakLogo tone="brand" size="md" className="hidden lg:inline-flex" />
+        <SafeSpeakLogo
+          tone="brand"
+          size="md"
+          className="hidden lg:inline-flex"
+        />
         <div className="flex justify-center lg:hidden">
           <SafeSpeakLogo variant="mark" size="lg" />
         </div>
@@ -178,7 +184,8 @@ function Sidebar({ activeTab }: { activeTab: DashboardTab }) {
 
 function EmergencyToolbar() {
   const { t, i18n } = useTranslation();
-  const resolvedLanguage = i18n.resolvedLanguage ?? i18n.language ?? DEFAULT_LANGUAGE;
+  const resolvedLanguage =
+    i18n.resolvedLanguage ?? i18n.language ?? DEFAULT_LANGUAGE;
   const currentLanguage = isSupportedLanguage(resolvedLanguage)
     ? resolvedLanguage
     : DEFAULT_LANGUAGE;
@@ -234,61 +241,62 @@ function HomeDashboardPage() {
   const { t } = useTranslation();
 
   return (
-    <div className="px-2 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-4">
-      <div className="relative mx-auto w-full [--dashboard-card-gap:12px] sm:[--dashboard-card-gap:16px] lg:[--dashboard-card-gap:20px] xl:[--dashboard-card-gap:24px] xl:max-w-[1120px] 2xl:max-w-[1184px]">
-        <div className="flex flex-col gap-[var(--dashboard-card-gap)]">
-          <div className="grid grid-cols-1 gap-[var(--dashboard-card-gap)] md:grid-cols-2 xl:grid-cols-[1fr_2.122fr_1fr]">
-            <article className="xl:notch-bl group relative aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] md:order-1 xl:order-none xl:h-[390.4221px] xl:w-full xl:aspect-auto xl:rounded-[30px] xl:border-[0.99px]">
-              <Image
-                src={topLeft}
-                alt="Domestic violence"
-                fill
-                className="object-cover transition duration-[250ms] ease-out group-hover:brightness-110"
-              />
-            </article>
-
-            <Link
-              href={{
-                pathname: "/dashboard",
-                query: { view: "assistant" },
-              }}
-              className="xl:notch-bl group relative block aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] md:order-3 md:col-span-2 xl:order-none xl:col-span-1 xl:h-[390.4221px] xl:w-full xl:aspect-auto xl:rounded-[30px] xl:border-[0.99px]"
-            >
-              <Image alt="dfhksdjf" fill src={topMask} />
-              <div className="pointer-events-none absolute bottom-0 left-1/2 z-10 h-[96px] w-[96px] -translate-x-1/2 xl:hidden sm:h-[120px] sm:w-[120px] md:h-[140px] md:w-[140px]">
+      <div className="px-2 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-4">
+        <div className="relative mx-auto w-full [--dashboard-card-gap:12px] sm:[--dashboard-card-gap:16px] lg:[--dashboard-card-gap:20px] xl:max-w-[1120px] xl:[--dashboard-card-gap:24px] 2xl:max-w-[1184px]">
+          <div className="hidden flex-col gap-[var(--dashboard-card-gap)] md:flex">
+            <div className="grid grid-cols-1 gap-[var(--dashboard-card-gap)] md:grid-cols-2 xl:grid-cols-[1fr_2.122fr_1fr]">
+              <article className="xl:notch-bl group relative aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] md:order-1 xl:order-none xl:aspect-auto xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]">
                 <Image
-                  src={sphereAdv}
-                  alt="SafeSpeak assistant sphere"
+                  src={topLeft}
+                  alt="Domestic violence"
                   fill
-                  className="object-contain"
+                  className="object-cover transition duration-[250ms] ease-out group-hover:brightness-110"
                 />
-              </div>
-            </Link>
+              </article>
 
-            <article className="xl:notch-bl group relative aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] md:order-2 xl:order-none xl:h-[390.4221px] xl:w-full xl:aspect-auto xl:rounded-[30px] xl:border-[0.99px]">
-              <Image
-                src={topRight}
-                alt="Racial abuse"
-                fill
-                className="object-cover transition duration-[250ms] ease-out group-hover:brightness-110"
-              />
-            </article>
-          </div>
+              <Link
+                href={{
+                  pathname: "/dashboard",
+                  query: { view: "assistant" },
+                }}
+                className="xl:notch-bl group relative block aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] md:order-3 md:col-span-2 xl:order-none xl:col-span-1 xl:aspect-auto xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]"
+              >
+                <Image alt="dfhksdjf" fill src={topMask} />
+                <div className="pointer-events-none absolute bottom-0 left-1/2 z-10 h-[96px] w-[96px] -translate-x-1/2 sm:h-[120px] sm:w-[120px] md:h-[140px] md:w-[140px] xl:hidden">
+                  <Image
+                    src={sphereAdv}
+                    alt="SafeSpeak assistant sphere"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </Link>
 
-          <div>
-            <div className="relative xl:h-[406.2px] xl:w-full">
-              <div className="grid h-full grid-cols-1 gap-[var(--dashboard-card-gap)] md:grid-cols-2">
-                <article className="xl:notch-bl group relative aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] xl:h-[390.4221px] xl:w-full xl:aspect-auto xl:rounded-[30px] xl:border-[0.99px]">
-                  <Image alt="dfhksdjf" fill src={bottomLeft} />
-                </article>
+              <article className="xl:notch-bl group relative aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] md:order-2 xl:order-none xl:aspect-auto xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]">
+                <Image
+                  src={topRight}
+                  alt="Racial abuse"
+                  fill
+                  className="object-cover transition duration-[250ms] ease-out group-hover:brightness-110"
+                />
+              </article>
+            </div>
 
-                <article className="xl:notch-bl group relative aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] xl:h-[390.4221px] xl:w-full xl:aspect-auto xl:rounded-[30px] xl:border-[0.99px]">
-                  <Image alt="dfhksdjf" fill src={bottomRight} />
-                </article>
+            <div>
+              <div className="relative xl:h-[406.2px] xl:w-full">
+                <div className="grid h-full grid-cols-1 gap-[var(--dashboard-card-gap)] md:grid-cols-2">
+                  <article className="xl:notch-bl group relative aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] xl:aspect-auto xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]">
+                    <Image alt="dfhksdjf" fill src={bottomLeft} />
+                  </article>
+
+                  <article className="xl:notch-bl group relative aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] xl:aspect-auto xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]">
+                    <Image alt="dfhksdjf" fill src={bottomRight} />
+                  </article>
+                </div>
               </div>
             </div>
           </div>
-
+          <SMDasboardHome />
           <div className="grid grid-cols-1 gap-[var(--dashboard-card-gap)] md:grid-cols-2 xl:grid-cols-[262px_357.34px_452.66px]">
             <div className="grid grid-cols-1 gap-[var(--dashboard-card-gap)] xl:grid-rows-2">
               <Link
@@ -309,10 +317,7 @@ function HomeDashboardPage() {
                     .slice(0, 1)
                     .join(" ")}
                   <br />
-                  {t("dashboard.home.scamShield")
-                    .split(" ")
-                    .slice(1)
-                    .join(" ")}
+                  {t("dashboard.home.scamShield").split(" ").slice(1).join(" ")}
                 </h4>
                 <IconShieldFilled
                   size={118}
@@ -408,25 +413,24 @@ function HomeDashboardPage() {
               </div>
             </article>
           </div>
-        </div>
 
-        <div
-          className="pointer-events-none absolute left-1/2 z-20 hidden -translate-x-1/2 p-10 xl:block"
-          style={{
-            top: `${SPHERE_TOP}px`,
-            width: "270px",
-            height: "270px",
-          }}
-        >
-          <Image
-            src={sphereAdv}
-            alt="SafeSpeak center sphere"
-            fill
-            className="object-contain"
-          />
+          <div
+            className="pointer-events-none absolute left-1/2 z-20 hidden -translate-x-1/2 p-10 xl:block"
+            style={{
+              top: `${SPHERE_TOP}px`,
+              width: "270px",
+              height: "270px",
+            }}
+          >
+            <Image
+              src={sphereAdv}
+              alt="SafeSpeak center sphere"
+              fill
+              className="object-contain"
+            />
+          </div>
         </div>
       </div>
-    </div>
   );
 }
 
@@ -443,7 +447,9 @@ function MicroCardLesson({
   iconSrc: string;
   tone: MicroCardTone;
   className?: string;
-  readMoreHref?: "/dashboard?view=microcarddetail" | "/dashboard?view=microcards";
+  readMoreHref?:
+    | "/dashboard?view=microcarddetail"
+    | "/dashboard?view=microcards";
 }) {
   const { t } = useTranslation();
   const toneStyles: Record<
@@ -549,13 +555,18 @@ function MicroCardsPage() {
             <IconChevronLeft size={14} />
             {t("dashboard.microcards.cyberBullying")}
           </Link>
-          <Link href="/dashboard" className="text-xs font-medium text-[#7b8798]">
+          <Link
+            href="/dashboard"
+            className="text-xs font-medium text-[#7b8798]"
+          >
             {t("common.cancel")}
           </Link>
         </div>
 
         <div className="pt-4">
-          <h1 className={`${interFont.className} text-4xl font-black leading-[0.9] text-[#0f4f96] sm:text-5xl xl:text-[56px]`}>
+          <h1
+            className={`${interFont.className} text-4xl font-black leading-[0.9] text-[#0f4f96] sm:text-5xl xl:text-[56px]`}
+          >
             {t("dashboard.microcards.title")}
           </h1>
           <p className="mt-1 text-sm text-[#5f6f86]">
@@ -671,7 +682,7 @@ function MicroCardDetailPage() {
         </div>
 
         <div className="mt-4 rounded-[12px] border border-[#dce4ef] bg-white p-3">
-          <div className="relative aspect-[16/10] overflow-hidden rounded-[10px] sm:h-[330px] sm:aspect-auto">
+          <div className="relative aspect-[16/10] overflow-hidden rounded-[10px] sm:aspect-auto sm:h-[330px]">
             <Image
               src={hackerImage}
               alt={t("dashboard.microcardDetail.internetHoaxAwareness")}
@@ -700,7 +711,9 @@ function MicroCardDetailPage() {
           </div>
 
           <div className="px-3 pb-3 pt-5 sm:px-4 sm:pb-4">
-            <h3 className={`${interFont.className} text-[20px] font-extrabold text-[#0f1f35]`}>
+            <h3
+              className={`${interFont.className} text-[20px] font-extrabold text-[#0f1f35]`}
+            >
               {t("dashboard.microcardDetail.digitalHarassmentOverview")}
             </h3>
             <p className="mt-2 text-[13px] leading-[1.6] text-[#4e5f76]">
@@ -772,7 +785,10 @@ function SafeSpeakAssistantPage({
             <IconChevronLeft size={14} />
             {t("dashboard.assistant.timelineBuilder")}
           </Link>
-          <Link href="/dashboard" className="text-xs font-medium text-[#7b8798]">
+          <Link
+            href="/dashboard"
+            className="text-xs font-medium text-[#7b8798]"
+          >
             {t("common.cancel")}
           </Link>
         </div>
@@ -804,7 +820,10 @@ function SafeSpeakAssistantConversationPage({
             <IconChevronLeft size={14} />
             {t("dashboard.assistant.timelineBuilder")}
           </Link>
-          <Link href="/dashboard" className="text-xs font-medium text-[#7b8798]">
+          <Link
+            href="/dashboard"
+            className="text-xs font-medium text-[#7b8798]"
+          >
             {t("common.cancel")}
           </Link>
         </div>
@@ -900,7 +919,9 @@ function SafeSpeakAssistantConversationPage({
                   {t("dashboard.assistant.conversation.where")}
                 </p>
                 <p className="mt-1 text-[11px] text-[#8fa0b6]">
-                  {t("dashboard.assistant.conversation.processingFromTranscript")}
+                  {t(
+                    "dashboard.assistant.conversation.processingFromTranscript"
+                  )}
                 </p>
               </div>
 
@@ -988,7 +1009,10 @@ function findIncidentReport(reportId?: string): IncidentReport {
     return incidentReports[0];
   }
 
-  return incidentReports.find((report) => report.id === reportId) ?? incidentReports[0];
+  return (
+    incidentReports.find((report) => report.id === reportId) ??
+    incidentReports[0]
+  );
 }
 
 function ReportSubmissionFrame({
@@ -1020,7 +1044,10 @@ function ReportSubmissionFrame({
             <IconChevronLeft size={14} />
             {t("dashboard.reportSubmission.reportSubmission")}
           </Link>
-          <Link href="/dashboard" className="text-xs font-medium text-[#7b8798]">
+          <Link
+            href="/dashboard"
+            className="text-xs font-medium text-[#7b8798]"
+          >
             {t("common.cancel")}
           </Link>
         </div>
@@ -1503,8 +1530,7 @@ function ReportSubmissionSuccessPage() {
         </h3>
         <p className="mt-1 text-sm text-[#60728a]">
           {t("dashboard.reportSubmission.referenceKeyPrefix")}{" "}
-          <span className="font-bold text-[#0f5d9f]">SS-2026-0421</span>.
-          {" "}
+          <span className="font-bold text-[#0f5d9f]">SS-2026-0421</span>.{" "}
           {t("dashboard.reportSubmission.referenceKeySuffix")}
         </p>
       </div>
@@ -1547,10 +1573,22 @@ function ReportSubmissionSuccessPage() {
 }
 
 const scamShieldSteps = [
-  { key: "intake", number: "15", labelKey: "dashboard.scamShield.journeyReport" },
-  { key: "risk", number: "16", labelKey: "dashboard.scamShield.scamRiskResults" },
+  {
+    key: "intake",
+    number: "15",
+    labelKey: "dashboard.scamShield.journeyReport",
+  },
+  {
+    key: "risk",
+    number: "16",
+    labelKey: "dashboard.scamShield.scamRiskResults",
+  },
   { key: "assets", number: "17", labelKey: "dashboard.scamShield.nextSteps" },
-  { key: "agency", number: "18", labelKey: "dashboard.scamShield.agencyReport" },
+  {
+    key: "agency",
+    number: "18",
+    labelKey: "dashboard.scamShield.agencyReport",
+  },
 ] as const;
 
 type ScamShieldStep = (typeof scamShieldSteps)[number]["key"];
@@ -1569,7 +1607,9 @@ function ScamShieldFrame({
   children: React.ReactNode;
 }) {
   const { t } = useTranslation();
-  const activeStepIndex = scamShieldSteps.findIndex((item) => item.key === step);
+  const activeStepIndex = scamShieldSteps.findIndex(
+    (item) => item.key === step
+  );
 
   return (
     <div className="px-2 pb-3 pt-2 sm:px-4 sm:pb-5 sm:pt-4">
@@ -1582,7 +1622,10 @@ function ScamShieldFrame({
             <IconChevronLeft size={14} />
             {t("dashboard.scamShield.brand")}
           </Link>
-          <Link href="/dashboard" className="text-xs font-medium text-[#7b8798]">
+          <Link
+            href="/dashboard"
+            className="text-xs font-medium text-[#7b8798]"
+          >
             {t("common.cancel")}
           </Link>
         </div>
@@ -1611,7 +1654,9 @@ function ScamShieldFrame({
                   <p
                     className={cn(
                       "text-[11px] font-extrabold",
-                      index <= activeStepIndex ? "text-[#0f5d9f]" : "text-[#8fa0b6]"
+                      index <= activeStepIndex
+                        ? "text-[#0f5d9f]"
+                        : "text-[#8fa0b6]"
                     )}
                   >
                     {item.number}
@@ -1740,7 +1785,9 @@ function ScamShieldRiskPage() {
       backHref="/dashboard?view=scamshieldintake"
     >
       <article className="mt-4 rounded-[14px] border border-[#e3ebf4] bg-[#f9fbfe] p-4 text-center">
-        <p className="text-[44px] font-black leading-none text-[#de3838]">85%</p>
+        <p className="text-[44px] font-black leading-none text-[#de3838]">
+          85%
+        </p>
         <p className="mt-1 text-sm font-bold text-[#de3838]">
           {t("dashboard.scamShield.highFraudRisk")}
         </p>
@@ -2027,7 +2074,9 @@ function ReportStatusChip({ status }: { status: IncidentReportStatus }) {
         styles.className
       )}
     >
-      <span className={cn("h-1.5 w-1.5 rounded-full", styles.iconWrapClassName)} />
+      <span
+        className={cn("h-1.5 w-1.5 rounded-full", styles.iconWrapClassName)}
+      />
       {styles.label}
     </span>
   );
@@ -2047,7 +2096,10 @@ function ReportsHistoryPage() {
             <IconChevronLeft size={14} />
             {t("dashboard.reports.yourReports")}
           </Link>
-          <Link href="/dashboard" className="text-xs font-medium text-[#7b8798]">
+          <Link
+            href="/dashboard"
+            className="text-xs font-medium text-[#7b8798]"
+          >
             {t("common.cancel")}
           </Link>
         </div>
@@ -2157,7 +2209,10 @@ function ReportOverviewPage({ reportId }: { reportId?: string }) {
             <IconChevronLeft size={14} />
             {t("dashboard.reports.reportOverview")}
           </Link>
-          <Link href="/dashboard" className="text-xs font-medium text-[#7b8798]">
+          <Link
+            href="/dashboard"
+            className="text-xs font-medium text-[#7b8798]"
+          >
             {t("common.cancel")}
           </Link>
         </div>
@@ -2195,7 +2250,9 @@ function ReportOverviewPage({ reportId }: { reportId?: string }) {
                 <p className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#7c8da3]">
                   {t("dashboard.reports.reportId")}
                 </p>
-                <p className="mt-1 text-xs font-extrabold text-[#1f2a3a]">{report.id}</p>
+                <p className="mt-1 text-xs font-extrabold text-[#1f2a3a]">
+                  {report.id}
+                </p>
               </article>
               <article className="rounded-xl border border-[#e2eaf4] bg-[#f8fbff] p-3">
                 <p className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#7c8da3]">
@@ -2226,7 +2283,9 @@ function ReportOverviewPage({ reportId }: { reportId?: string }) {
                 <p className="text-[9px] font-bold uppercase tracking-[0.08em] text-[#8ca0b6]">
                   {t("dashboard.reports.lastUpdate")}
                 </p>
-                <p className="mt-1 text-[11px] font-semibold text-[#1f2a3a]">22 Feb</p>
+                <p className="mt-1 text-[11px] font-semibold text-[#1f2a3a]">
+                  22 Feb
+                </p>
               </div>
               <div className="rounded-lg bg-[#f8fbff] p-2">
                 <p className="text-[9px] font-bold uppercase tracking-[0.08em] text-[#8ca0b6]">
@@ -2363,7 +2422,7 @@ function MicroEducationPage() {
                 </h3>
                 <IconShieldFilled
                   size={70}
-                  className="absolute bottom-8 right-8 text-white/12"
+                  className="text-white/12 absolute bottom-8 right-8"
                 />
               </article>
 
@@ -2499,12 +2558,14 @@ function ExplorerSupportCard({
 
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,23,42,0.06)_5%,rgba(15,23,42,0.62)_72%,rgba(15,23,42,0.8)_100%)]" />
 
-      <span className="absolute left-3 top-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-white/28 text-white backdrop-blur-sm">
+      <span className="bg-white/28 absolute left-3 top-3 inline-flex h-5 w-5 items-center justify-center rounded-full text-white backdrop-blur-sm">
         {icon}
       </span>
 
       <div className="absolute inset-x-3 bottom-3">
-        <h3 className="text-[22px] font-bold leading-tight text-white">{title}</h3>
+        <h3 className="text-[22px] font-bold leading-tight text-white">
+          {title}
+        </h3>
         <p className="mt-1 text-[11px] text-white/80">{subtitle}</p>
       </div>
     </article>
@@ -2631,31 +2692,41 @@ function NotificationsPage({ view }: { view: NotificationView }) {
     {
       id: "n1",
       title: t("dashboard.notifications.unreadMessagesTitle"),
-      subtitle: t("dashboard.notifications.unreadMessagesSubtitle", { count: 8 }),
+      subtitle: t("dashboard.notifications.unreadMessagesSubtitle", {
+        count: 8,
+      }),
       highlighted: true,
     },
     {
       id: "n2",
       title: t("dashboard.notifications.unreadMessagesTitle"),
-      subtitle: t("dashboard.notifications.unreadMessagesSubtitle", { count: 8 }),
+      subtitle: t("dashboard.notifications.unreadMessagesSubtitle", {
+        count: 8,
+      }),
       time: "10:30 AM",
     },
     {
       id: "n3",
       title: t("dashboard.notifications.unreadMessagesTitle"),
-      subtitle: t("dashboard.notifications.unreadMessagesSubtitle", { count: 8 }),
+      subtitle: t("dashboard.notifications.unreadMessagesSubtitle", {
+        count: 8,
+      }),
       time: "9:15 AM",
     },
     {
       id: "n4",
       title: t("dashboard.notifications.unreadMessagesTitle"),
-      subtitle: t("dashboard.notifications.unreadMessagesSubtitle", { count: 8 }),
+      subtitle: t("dashboard.notifications.unreadMessagesSubtitle", {
+        count: 8,
+      }),
       time: t("dashboard.notifications.yesterday"),
     },
     {
       id: "n5",
       title: t("dashboard.notifications.unreadMessagesTitle"),
-      subtitle: t("dashboard.notifications.unreadMessagesSubtitle", { count: 8 }),
+      subtitle: t("dashboard.notifications.unreadMessagesSubtitle", {
+        count: 8,
+      }),
       time: t("dashboard.notifications.yesterday"),
     },
   ];
@@ -2663,7 +2734,9 @@ function NotificationsPage({ view }: { view: NotificationView }) {
     {
       id: "p1",
       title: t("dashboard.notifications.unreadMessagesTitle"),
-      subtitle: t("dashboard.notifications.unreadMessagesSubtitle", { count: 4 }),
+      subtitle: t("dashboard.notifications.unreadMessagesSubtitle", {
+        count: 4,
+      }),
       time: "Feb 18",
     },
     {
@@ -2675,7 +2748,9 @@ function NotificationsPage({ view }: { view: NotificationView }) {
     {
       id: "p3",
       title: t("dashboard.notifications.unreadMessagesTitle"),
-      subtitle: t("dashboard.notifications.unreadMessagesSubtitle", { count: 2 }),
+      subtitle: t("dashboard.notifications.unreadMessagesSubtitle", {
+        count: 2,
+      }),
       time: "Feb 16",
     },
     {
@@ -2687,7 +2762,9 @@ function NotificationsPage({ view }: { view: NotificationView }) {
     {
       id: "p5",
       title: t("dashboard.notifications.unreadMessagesTitle"),
-      subtitle: t("dashboard.notifications.unreadMessagesSubtitle", { count: 1 }),
+      subtitle: t("dashboard.notifications.unreadMessagesSubtitle", {
+        count: 1,
+      }),
       time: "Feb 14",
     },
   ];
@@ -3154,7 +3231,10 @@ function DashboardShell({
       <Sidebar activeTab={activeTab} />
 
       <section
-        className={cn("flex-1 p-2 sm:p-3 md:p-4 xl:flex-none", sectionSizeClass)}
+        className={cn(
+          "flex-1 p-2 sm:p-3 md:p-4 xl:flex-none",
+          sectionSizeClass
+        )}
       >
         <div className="overflow-hidden rounded-[16px] bg-[#edf2f8] sm:rounded-[20px] xl:h-full">
           <EmergencyToolbar />
@@ -3227,11 +3307,13 @@ export default function DashboardScreen({
     page = <NotificationsPage view={notificationsView} />;
   } else {
     page =
-      settingsView === "support"
-        ? <SettingsSupportPage />
-        : settingsView === "privacy"
-          ? <SettingsPrivacyPolicyPage />
-          : <SettingsPage />;
+      settingsView === "support" ? (
+        <SettingsSupportPage />
+      ) : settingsView === "privacy" ? (
+        <SettingsPrivacyPolicyPage />
+      ) : (
+        <SettingsPage />
+      );
   }
 
   return (
@@ -3240,4 +3322,3 @@ export default function DashboardScreen({
     </DashboardShell>
   );
 }
-
