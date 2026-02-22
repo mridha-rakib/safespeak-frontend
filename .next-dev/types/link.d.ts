@@ -36,11 +36,15 @@ declare namespace __next_route_internal_types__ {
     | `/dashboard`
     | `/dashboard/explorer`
     | `/dashboard/notifications`
+    | `/dashboard/reports`
     | `/dashboard/settings`
+    | `/dashboard/settings/privacy-policy`
     | `/guestbook`
     | `/login`
     | `/profile`
-  type DynamicRoutes<T extends string = string> = never
+    | `/register`
+  type DynamicRoutes<T extends string = string> = 
+    | `/dashboard/reports/${SafeSlug<T>}`
 
   type RouteImpl<T> = 
     | StaticRoutes

@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslation } from "react-i18next";
+
 type Testimonial = {
   name: string;
   role: string;
@@ -5,37 +9,38 @@ type Testimonial = {
   featured?: boolean;
 };
 
-const testimonials: Testimonial[] = [
-  {
-    name: "Alex Rivera",
-    role: "Sanctuary Member",
-    quote: "The Scam Shield helped me identify a threat before it was too late. I feel truly protected here.",
-  },
-  {
-    name: "Jordan Keys",
-    role: "Legal Advocate",
-    quote:
-      "SafeSpeak isn't just an app, it's a lifeline. The integration of local intelligence and immediate reporting is game-changing.",
-    featured: true,
-  },
-  {
-    name: "Maria S.",
-    role: "Community Leader",
-    quote: "The micro-lessons on safety are so accessible. I've shared them with my entire neighborhood group.",
-  },
-];
-
 function Stars() {
   return <p className="text-sm tracking-[0.28em] text-[#ff8f00]">*****</p>;
 }
 
 export default function CommunityImpact() {
+  const { t } = useTranslation();
+
+  const testimonials: Testimonial[] = [
+    {
+      name: "Alex Rivera",
+      role: t("landing.communityImpact.testimonials.0.role"),
+      quote: t("landing.communityImpact.testimonials.0.quote"),
+    },
+    {
+      name: "Jordan Keys",
+      role: t("landing.communityImpact.testimonials.1.role"),
+      quote: t("landing.communityImpact.testimonials.1.quote"),
+      featured: true,
+    },
+    {
+      name: "Maria S.",
+      role: t("landing.communityImpact.testimonials.2.role"),
+      quote: t("landing.communityImpact.testimonials.2.quote"),
+    },
+  ];
+
   return (
     <section className="bg-[#d9e8f3]">
       <div className="landing-shell">
         <div className="landing-content landing-section">
           <h3 className="text-center text-3xl font-extrabold text-[#0f172a] sm:text-4xl lg:text-5xl 2xl:text-6xl">
-            Community Impact
+            {t("landing.communityImpact.title")}
           </h3>
 
           <div className="mt-8 grid w-full grid-cols-1 gap-4 sm:mt-10 sm:grid-cols-2 sm:gap-5 xl:grid-cols-3 xl:gap-6">

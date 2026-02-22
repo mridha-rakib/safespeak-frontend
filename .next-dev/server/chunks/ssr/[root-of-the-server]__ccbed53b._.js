@@ -110,7 +110,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/digital_foot_print.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/digital_foot_print.c600c67c.svg");}),
+__turbopack_context__.v("/_next/static/media/digital_foot_print.d2e98299.svg");}),
 "[project]/src/assets/digital_foot_print.svg.mjs { IMAGE => \"[project]/src/assets/digital_foot_print.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -130,7 +130,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/documentig_ev.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/documentig_ev.6a9e2b3c.svg");}),
+__turbopack_context__.v("/_next/static/media/documentig_ev.8a6fbb9f.svg");}),
 "[project]/src/assets/documentig_ev.svg.mjs { IMAGE => \"[project]/src/assets/documentig_ev.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -171,7 +171,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/identifyBulling.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/identifyBulling.d44c301f.svg");}),
+__turbopack_context__.v("/_next/static/media/identifyBulling.4f5a33ee.svg");}),
 "[project]/src/assets/identifyBulling.svg.mjs { IMAGE => \"[project]/src/assets/identifyBulling.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -191,7 +191,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/mental_health.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/mental_health.4a924e55.svg");}),
+__turbopack_context__.v("/_next/static/media/mental_health.f898fd27.svg");}),
 "[project]/src/assets/mental_health.svg.mjs { IMAGE => \"[project]/src/assets/mental_health.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -211,7 +211,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/mental_health_2.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/mental_health_2.4a924e55.svg");}),
+__turbopack_context__.v("/_next/static/media/mental_health_2.f898fd27.svg");}),
 "[project]/src/assets/mental_health_2.svg.mjs { IMAGE => \"[project]/src/assets/mental_health_2.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -231,7 +231,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/mental_health_love.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/mental_health_love.6fb1d71f.svg");}),
+__turbopack_context__.v("/_next/static/media/mental_health_love.8ca00b6a.svg");}),
 "[project]/src/assets/mental_health_love.svg.mjs { IMAGE => \"[project]/src/assets/mental_health_love.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -251,7 +251,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/scam shield icon.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/scam shield icon.cc39c205.svg");}),
+__turbopack_context__.v("/_next/static/media/scam shield icon.0e7538b7.svg");}),
 "[project]/src/assets/scam shield icon.svg.mjs { IMAGE => \"[project]/src/assets/scam shield icon.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -271,7 +271,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/safe_reporting.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/safe_reporting.bd6f9142.svg");}),
+__turbopack_context__.v("/_next/static/media/safe_reporting.5f7f665e.svg");}),
 "[project]/src/assets/safe_reporting.svg.mjs { IMAGE => \"[project]/src/assets/safe_reporting.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -311,7 +311,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/tickSign.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/tickSign.1eee699c.svg");}),
+__turbopack_context__.v("/_next/static/media/tickSign.0d669ada.svg");}),
 "[project]/src/assets/tickSign.svg.mjs { IMAGE => \"[project]/src/assets/tickSign.svg (static in ecmascript)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1865,7 +1865,7 @@ function SafeSpeakAssistantPage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "px-2 pb-3 pt-2 sm:px-4 sm:pb-5 sm:pt-4",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "mx-auto flex w-full flex-col xl:max-w-[1120px] 2xl:max-w-[1184px]",
+            className: "mx-auto flex w-full max-w-[1184px] flex-col",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex items-center justify-between border-b border-[#d9e2ee] px-1 py-2",
@@ -1907,7 +1907,7 @@ function SafeSpeakAssistantPage() {
                     className: "flex flex-1 flex-col items-center px-2 pb-2 pt-6 sm:px-4 sm:pb-4 sm:pt-7",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "relative h-[128px] w-[128px] sm:h-[148px] sm:w-[148px]",
+                            className: "relative h-[220px] w-[220px] sm:h-[260px] sm:w-[260px] xl:h-[311.31px] xl:w-[311.31px]",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                 src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$sphere$2d$adv$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$sphere$2d$adv$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
                                 alt: "SafeSpeak assistant sphere",
@@ -1924,7 +1924,7 @@ function SafeSpeakAssistantPage() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "mt-4 max-w-[380px] text-center text-base font-semibold leading-tight text-[#24364f]",
+                            className: "mt-[40px] max-w-[380px] text-center text-base font-semibold leading-tight text-[#24364f]",
                             children: "Hi Raihan, can you remind me, how can I help you today?"
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-screen.tsx",
@@ -2634,7 +2634,7 @@ function PlaceholderPanel({ title }) {
     }, this);
 }
 function DashboardShell({ activeTab, homeView, children }) {
-    const sectionSizeClass = activeTab === "home" && homeView === "assistant" ? "xl:min-h-[952.68px] xl:w-[1184px]" : "xl:min-h-[1498px] xl:w-[1184px]";
+    const sectionSizeClass = activeTab === "home" && homeView === "assistant" ? "xl:h-[868.68px] xl:w-[1184px]" : "xl:min-h-[1498px] xl:w-[1184px]";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$plus_jakarta_sans_52ab24ab$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].className} mx-auto flex min-h-screen w-full overflow-x-hidden bg-[#eef3f8] xl:max-w-[1440px] 2xl:max-w-[1536px]`,
         children: [

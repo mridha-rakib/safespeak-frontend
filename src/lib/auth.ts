@@ -61,6 +61,7 @@ export interface AuthSession {
 const AUTH_SESSION_KEY = "safespeak_auth_session";
 
 function getApiBaseUrl(explicit?: string): string {
+  // eslint-disable-next-line n/no-process-env
   const value = explicit ?? process.env.NEXT_PUBLIC_API_BASE_URL ?? "";
   const trimmed = value.trim();
 

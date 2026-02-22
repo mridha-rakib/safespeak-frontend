@@ -246,7 +246,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 const AUTH_SESSION_KEY = "safespeak_auth_session";
 function getApiBaseUrl(explicit) {
     var _ref;
-    const value = (_ref = explicit !== null && explicit !== void 0 ? explicit : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_API_BASE_URL) !== null && _ref !== void 0 ? _ref : "";
+    const value = (_ref = explicit !== null && explicit !== void 0 ? explicit : ("TURBOPACK compile-time value", "http://localhost:5000")) !== null && _ref !== void 0 ? _ref : "";
     const trimmed = value.trim();
     if (!trimmed) {
         throw new Error("Missing API base URL. Set NEXT_PUBLIC_API_BASE_URL or enter Base URL.");
@@ -347,7 +347,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 var _process_env_NEXT_PUBLIC_API_BASE_URL;
-const defaultApiBaseUrl = (_process_env_NEXT_PUBLIC_API_BASE_URL = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_API_BASE_URL) !== null && _process_env_NEXT_PUBLIC_API_BASE_URL !== void 0 ? _process_env_NEXT_PUBLIC_API_BASE_URL : "";
+const defaultApiBaseUrl = (_process_env_NEXT_PUBLIC_API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000")) !== null && _process_env_NEXT_PUBLIC_API_BASE_URL !== void 0 ? _process_env_NEXT_PUBLIC_API_BASE_URL : "";
 function LoginPage() {
     _s();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();

@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslation } from "react-i18next";
+
 type Card = {
   title: string;
   subtitle: string;
@@ -10,40 +14,42 @@ type Card = {
   mutedBg?: string;
 };
 
-const cards: Card[] = [
-  {
-    title: "Domestic Violence",
-    subtitle: "",
-    description: "Abusive behavior used to control a partner. Find immediate safe shelter and legal protection.",
-    badge: "SHIELD PROTECTION",
-    accent: "from-[#2a68ff] to-[#2f8bff]",
-    textColor: "text-white",
-    mutedBg: "bg-white/10",
-  },
-  {
-    title: "Cyber Protection",
-    subtitle: "Scam Shield",
-    description: "Explore multiple prompt directions with branching to stay ahead of digital threats.",
-    badge: "",
-    footerLeft: "Resources",
-    footerRight: "Guidance",
-    accent: "from-[#0d121c] to-[#0d121c]",
-    textColor: "text-white",
-    mutedBg: "bg-white/5",
-  },
-  {
-    title: "Empowerment Lessons",
-    subtitle: "",
-    description: "Micro-Cards\n4 Lessons - 21 mins",
-    badge: "",
-    footerLeft: "Start Learning",
-    accent: "from-[#f8991d] to-[#f47a00]",
-    textColor: "text-white",
-    mutedBg: "bg-white/15",
-  },
-];
-
 export default function ResourcesSection() {
+  const { t } = useTranslation();
+
+  const cards: Card[] = [
+    {
+      title: t("landing.resources.cards.domesticViolence.title"),
+      subtitle: "",
+      description: t("landing.resources.cards.domesticViolence.description"),
+      badge: t("landing.resources.cards.domesticViolence.badge"),
+      accent: "from-[#2a68ff] to-[#2f8bff]",
+      textColor: "text-white",
+      mutedBg: "bg-white/10",
+    },
+    {
+      title: t("landing.resources.cards.cyberProtection.title"),
+      subtitle: t("landing.resources.cards.cyberProtection.subtitle"),
+      description: t("landing.resources.cards.cyberProtection.description"),
+      badge: "",
+      footerLeft: t("landing.resources.cards.cyberProtection.footerLeft"),
+      footerRight: t("landing.resources.cards.cyberProtection.footerRight"),
+      accent: "from-[#0d121c] to-[#0d121c]",
+      textColor: "text-white",
+      mutedBg: "bg-white/5",
+    },
+    {
+      title: t("landing.resources.cards.empowermentLessons.title"),
+      subtitle: "",
+      description: t("landing.resources.cards.empowermentLessons.description"),
+      badge: "",
+      footerLeft: t("landing.resources.cards.empowermentLessons.footerLeft"),
+      accent: "from-[#f8991d] to-[#f47a00]",
+      textColor: "text-white",
+      mutedBg: "bg-white/15",
+    },
+  ];
+
   return (
     <section className="bg-[#dff1ff]">
       <div className="landing-shell">

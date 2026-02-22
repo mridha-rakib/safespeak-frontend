@@ -1,24 +1,72 @@
-import Link from "next/link";
+"use client";
 
-const links = [
-  { label: "What is SafeSpeak", href: "#" },
-  { label: "What You Can Do with SafeSpeak", href: "#" },
-  { label: "Contact Us", href: "#" },
-];
+import Link from "next/link";
+import { useEffect, useMemo, useRef, useState } from "react";
+
+import { IconChevronDown } from "@tabler/icons-react";
+import { useTranslation } from "react-i18next";
+
+import {
+  DEFAULT_LANGUAGE,
+  isSupportedLanguage,
+  LANGUAGE_OPTIONS,
+  LANGUAGE_STORAGE_KEY,
+  type SupportedLanguage,
+} from "@/lib/i18n";
+import { SafeSpeakLogo } from "@/components/ui/safe-speak-logo";
 
 export default function LandingNavbar() {
+  const { t, i18n } = useTranslation();
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
+  const languageMenuRef = useRef<HTMLDivElement | null>(null);
+
+  const currentLanguage = useMemo<SupportedLanguage>(() => {
+    const resolvedLanguage = i18n.resolvedLanguage ?? i18n.language ?? DEFAULT_LANGUAGE;
+    return isSupportedLanguage(resolvedLanguage) ? resolvedLanguage : DEFAULT_LANGUAGE;
+  }, [i18n.language, i18n.resolvedLanguage]);
+
+  const activeLanguage = useMemo(() => {
+    return LANGUAGE_OPTIONS.find((option) => option.code === currentLanguage) ?? LANGUAGE_OPTIONS[0];
+  }, [currentLanguage]);
+
+  const links = useMemo(
+    () => [
+      { label: t("navbar.links.whatIsSafeSpeak"), href: "#" },
+      { label: t("navbar.links.whatYouCanDoWithSafeSpeak"), href: "#" },
+      { label: t("navbar.links.contactUs"), href: "#" },
+    ],
+    [t]
+  );
+
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (languageMenuRef.current && !languageMenuRef.current.contains(event.target as Node)) {
+        setIsLanguageMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.lang = currentLanguage;
+  }, [currentLanguage]);
+
+  const handleLanguageChange = async (language: SupportedLanguage) => {
+    await i18n.changeLanguage(language);
+    window.localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
+    setIsLanguageMenuOpen(false);
+  };
+
   return (
     <header className="bg-[#01579B]">
-      <div className="firstfold-container">
-        <div className="flex h-16 items-center justify-between gap-3 sm:h-20 lg:h-24 xl:h-[112px] xl:gap-8">
-          <Link href="/" className="inline-flex items-center gap-2 text-white">
-            <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#ff8f00] text-xs font-black text-[#0b3152]">
-              S
-            </span>
-            <span className="flex flex-col text-sm font-semibold leading-tight sm:text-base">
-              <span>Safe</span>
-              <span>Speak</span>
-            </span>
+      <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 md:px-8 lg:px-10 xl:px-0">
+        <div className="flex h-[72px] items-center justify-between gap-3 sm:h-[84px] lg:h-[96px] xl:h-[112.34px] xl:gap-8">
+          <Link href="/" className="inline-flex items-center">
+            <SafeSpeakLogo tone="light" size="sm" />
           </Link>
 
           <nav className="hidden md:flex md:items-center md:gap-4 lg:gap-6 xl:gap-10">
@@ -29,13 +77,52 @@ export default function LandingNavbar() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2 sm:gap-3 xl:gap-4">
-            <a href="/login" className="cta-pill px-4 py-2 text-xs sm:text-sm xl:px-7 xl:py-2.5">
-              Login
+          <div className="flex items-center gap-2 sm:gap-3 lg:h-[48px] lg:w-[245px] lg:justify-between lg:gap-2">
+            <a
+              href="/login"
+              className="inline-flex h-9 items-center justify-center rounded-full bg-[#ff8f00] px-5 text-xs font-bold text-[#0b3152] shadow-[0_10px_24px_rgba(255,143,0,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(255,143,0,0.42)] lg:h-[38px] lg:w-[96px] lg:px-0"
+            >
+              {t("navbar.login")}
             </a>
-            <button className="hidden items-center gap-1 rounded-full border border-white/25 px-3 py-1 text-xs text-white/90 lg:inline-flex xl:px-4 xl:py-1.5">
-              English
-            </button>
+
+            <div className="relative hidden lg:block" ref={languageMenuRef}>
+              <button
+                type="button"
+                onClick={() => setIsLanguageMenuOpen((value) => !value)}
+                className="inline-flex h-[38px] w-[141px] items-center justify-center gap-1 rounded-full border border-white/25 px-0 text-xs font-semibold text-white/90 transition hover:border-white/40"
+                aria-expanded={isLanguageMenuOpen}
+                aria-label={t("navbar.language.chooseLanguage")}
+              >
+                <span className="text-[10px] font-bold uppercase">{activeLanguage.shortCode}</span>
+                <span>{t(activeLanguage.labelKey)}</span>
+                <IconChevronDown
+                  size={12}
+                  className={`transition-transform duration-150 ${isLanguageMenuOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+
+              {isLanguageMenuOpen ? (
+                <div className="absolute right-0 top-[calc(100%+8px)] z-20 w-[172px] rounded-2xl border border-white/20 bg-[#01579B] p-1.5 shadow-[0_16px_30px_rgba(0,0,0,0.3)]">
+                  {LANGUAGE_OPTIONS.map((option) => {
+                    const isActive = option.code === currentLanguage;
+
+                    return (
+                      <button
+                        key={option.code}
+                        type="button"
+                        onClick={() => void handleLanguageChange(option.code)}
+                        className={`flex w-full items-center justify-between rounded-xl px-3 py-2 text-left text-xs font-semibold transition ${
+                          isActive ? "bg-white/15 text-white" : "text-white/85 hover:bg-white/10 hover:text-white"
+                        }`}
+                      >
+                        <span className="text-[10px] font-bold uppercase">{option.shortCode}</span>
+                        <span>{t(option.labelKey)}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              ) : null}
+            </div>
           </div>
         </div>
       </div>

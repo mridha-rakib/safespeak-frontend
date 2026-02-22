@@ -1,21 +1,21 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { FormEvent, useMemo, useState } from "react";
+import { useTranslation } from "react-i18next";
 
+import { AuthShell } from "@/components/auth/auth-shell";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { loginAgent } from "@/lib/auth";
 
-const defaultApiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL ?? "";
-
 export default function LoginPage() {
+  const { t } = useTranslation();
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [baseUrl, setBaseUrl] = useState(defaultApiBaseUrl);
+  const [rememberSession, setRememberSession] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
@@ -37,15 +37,15 @@ export default function LoginPage() {
           password,
         },
         {
-          baseUrl,
-          persistSession: true,
+          persistSession: rememberSession,
         },
       );
 
-      setSuccess(response.message || "Login successful.");
+      setSuccess(response.message || t("auth.login.success"));
       router.push("/profile");
     } catch (submitError) {
-      const message = submitError instanceof Error ? submitError.message : "Login failed.";
+      const message =
+        submitError instanceof Error ? submitError.message : t("auth.login.error");
       setError(message);
     } finally {
       setIsSubmitting(false);
@@ -53,90 +53,86 @@ export default function LoginPage() {
   }
 
   return (
-    <section className="min-h-screen bg-[#f4f8fc] px-4 py-10 sm:px-6">
-      <Card className="mx-auto w-full max-w-[520px]">
-        <CardHeader>
-          <CardTitle className="text-2xl font-extrabold text-[#0b5fa6]">Agent Login</CardTitle>
-          <CardDescription>
-            Sign in with <code>{`{{baseUrl}}/auth/login`}</code> and load your full agent profile.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="space-y-2">
-              <label htmlFor="baseUrl" className="text-sm font-semibold text-[#334155]">
-                API Base URL
-              </label>
-              <Input
-                id="baseUrl"
-                type="text"
-                value={baseUrl}
-                onChange={(event) => setBaseUrl(event.target.value)}
-                placeholder="http://localhost:5000"
-                autoComplete="off"
-              />
-            </div>
+    <AuthShell
+      badge={t("auth.shell.userAccess")}
+      title={t("auth.login.title")}
+      description={t("auth.login.description")}
+      footerPrefix={t("auth.login.footerPrefix")}
+      footerLinkLabel={t("auth.login.footerLinkLabel")}
+      footerLinkHref="/register"
+    >
+      <form onSubmit={handleSubmit} className="space-y-5">
+        <div className="space-y-1.5">
+          <label htmlFor="email" className="text-sm font-medium text-white">
+            {t("auth.login.email")}
+          </label>
+          <Input
+            id="email"
+            type="email"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+            placeholder="you@example.com"
+            autoComplete="email"
+            className="h-11 rounded-md border border-white/20 bg-white text-[#0f172a] placeholder:text-slate-400 focus-visible:ring-[#4ba3d9]"
+            required
+          />
+        </div>
 
-            <div className="space-y-2">
-              <label htmlFor="email" className="text-sm font-semibold text-[#334155]">
-                Email
-              </label>
-              <Input
-                id="email"
-                type="email"
-                value={email}
-                onChange={(event) => setEmail(event.target.value)}
-                placeholder="agent@example.com"
-                autoComplete="email"
-                required
-              />
-            </div>
+        <div className="space-y-1.5">
+          <label htmlFor="password" className="text-sm font-medium text-white">
+            {t("auth.login.password")}
+          </label>
+          <Input
+            id="password"
+            type="password"
+            value={password}
+            onChange={(event) => setPassword(event.target.value)}
+            placeholder={t("auth.login.passwordPlaceholder")}
+            autoComplete="current-password"
+            className="h-11 rounded-md border border-white/20 bg-white text-[#0f172a] placeholder:text-slate-400 focus-visible:ring-[#4ba3d9]"
+            required
+          />
+        </div>
 
-            <div className="space-y-2">
-              <label htmlFor="password" className="text-sm font-semibold text-[#334155]">
-                Password
-              </label>
-              <Input
-                id="password"
-                type="password"
-                value={password}
-                onChange={(event) => setPassword(event.target.value)}
-                placeholder="Enter your password"
-                autoComplete="current-password"
-                required
-              />
-            </div>
+        <div className="flex items-center justify-between text-xs text-white/85">
+          <label className="inline-flex items-center gap-2">
+            <input
+              type="checkbox"
+              checked={rememberSession}
+              onChange={(event) => setRememberSession(event.target.checked)}
+              className="h-4 w-4 rounded border-white/30 bg-transparent accent-[#ff8f00]"
+            />
+            {t("auth.login.rememberMe")}
+          </label>
+          <Link href="/register" className="font-semibold text-[#ffb54a] transition hover:text-[#ffc56f]">
+            {t("auth.login.forgotPassword")}
+          </Link>
+        </div>
 
-            {error && (
-              <p className="rounded-lg border border-[#fecaca] bg-[#fef2f2] px-3 py-2 text-sm text-[#991b1b]">
-                {error}
-              </p>
-            )}
+        {error ? (
+          <p className="rounded-md border border-[#fecaca]/70 bg-[#fef2f2] px-3 py-2 text-sm text-[#991b1b]">{error}</p>
+        ) : null}
 
-            {success && (
-              <p className="rounded-lg border border-[#bbf7d0] bg-[#f0fdf4] px-3 py-2 text-sm text-[#166534]">
-                {success}
-              </p>
-            )}
+        {success ? (
+          <p className="rounded-md border border-[#bbf7d0]/70 bg-[#f0fdf4] px-3 py-2 text-sm text-[#166534]">{success}</p>
+        ) : null}
 
-            <Button
-              type="submit"
-              size="lg"
-              disabled={isDisabled}
-              className="w-full bg-[#0b5fa6] text-white hover:bg-[#0a548f]"
-            >
-              {isSubmitting ? "Logging in..." : "Login"}
-            </Button>
+        <Button
+          type="submit"
+          size="lg"
+          disabled={isDisabled}
+          className="h-11 w-full rounded-md bg-[#ff8f00] text-[#0b3152] hover:bg-[#f57c00]"
+        >
+          {isSubmitting ? t("auth.login.submitting") : t("auth.login.submit")}
+        </Button>
 
-            <p className="text-center text-sm text-[#64748b]">
-              Go back to{" "}
-              <Link href="/" className="font-semibold text-[#0b5fa6] hover:underline">
-                Landing page
-              </Link>
-            </p>
-          </form>
-        </CardContent>
-      </Card>
-    </section>
+        <p className="text-center text-sm text-white/80">
+          {t("auth.shell.backToHome")}{" "}
+          <Link href="/" className="font-semibold text-[#ffb54a] underline-offset-4 hover:underline">
+            {t("dashboard.nav.home")}
+          </Link>
+        </p>
+      </form>
+    </AuthShell>
   );
 }

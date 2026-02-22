@@ -1,4 +1,7 @@
+"use client";
+
 import { IconBook2, IconClipboardList, IconHeadphones, IconPointer } from "@tabler/icons-react";
+import { useTranslation } from "react-i18next";
 
 function ActionLink({ children }: { children: string }) {
   return (
@@ -26,17 +29,21 @@ function CardShell({
 }
 
 export default function SupportYourWay() {
+  const { t } = useTranslation();
+
   return (
     <section className="bg-white">
       <div className="landing-shell">
         <div className="landing-content landing-section">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#1f8ce6]">Resources</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#1f8ce6]">
+              {t("landing.supportYourWay.label")}
+            </p>
             <h3 className="mt-2 text-3xl font-extrabold text-[#111827] sm:text-4xl lg:text-5xl 2xl:text-6xl">
-              Support Your Way
+              {t("landing.supportYourWay.title")}
             </h3>
             <p className="mx-auto mt-4 max-w-[560px] text-base leading-relaxed text-[#6b7280] sm:text-lg lg:text-xl">
-              Choose the path that feels right for you. From reporting to reading, we have tools to help.
+              {t("landing.supportYourWay.subtitle")}
             </p>
           </div>
 
@@ -44,7 +51,7 @@ export default function SupportYourWay() {
             <CardShell>
               <div className="relative h-[170px] border-b border-[#edf1f6] bg-gradient-to-r from-[#f7f8fa] to-[#e6ecf4] sm:h-[190px]">
                 <p className="pt-2 text-center text-base font-medium tracking-[0.08em] text-[#d4b68a] sm:text-[18px]">
-                  NATURAL
+                  {t("landing.supportYourWay.natural")}
                 </p>
                 <div className="mx-auto mt-7 flex w-[78%] items-end justify-between sm:mt-8">
                   <span className="h-12 w-12 rounded-full bg-[#1f2937] sm:h-16 sm:w-16" />
@@ -56,37 +63,41 @@ export default function SupportYourWay() {
               <div className="p-5 sm:p-6">
                 <div className="flex items-center gap-2 text-[#111827]">
                   <IconPointer size={18} className="text-[#f29a1f]" />
-                  <h4 className="text-xl font-bold leading-none sm:text-[22px]">Report an Incident</h4>
+                  <h4 className="text-xl font-bold leading-none sm:text-[22px]">
+                    {t("landing.supportYourWay.cards.reportIncident.title")}
+                  </h4>
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-[#6b7280] sm:text-base">
-                  Safely submit details about what happened. You can choose to remain anonymous or provide contact
-                  details for follow-up.
+                  {t("landing.supportYourWay.cards.reportIncident.description")}
                 </p>
-                <ActionLink>Start Report</ActionLink>
+                <ActionLink>{t("landing.supportYourWay.cards.reportIncident.action")}</ActionLink>
               </div>
             </CardShell>
 
             <CardShell className="p-5 sm:p-6">
               <div className="flex items-center gap-2 text-[#111827]">
                 <IconClipboardList size={18} className="text-[#f29a1f]" />
-                <h4 className="text-xl font-bold leading-none sm:text-[22px]">Track Your Case</h4>
+                <h4 className="text-xl font-bold leading-none sm:text-[22px]">
+                  {t("landing.supportYourWay.cards.trackCase.title")}
+                </h4>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-[#6b7280] sm:text-base">
-                Already submitted a report? Use your unique access key to check your status or communicate with
-                investigators.
+                {t("landing.supportYourWay.cards.trackCase.description")}
               </p>
-              <ActionLink>Check Status</ActionLink>
+              <ActionLink>{t("landing.supportYourWay.cards.trackCase.action")}</ActionLink>
             </CardShell>
 
             <CardShell className="p-5 sm:p-6">
               <div className="flex items-center gap-2 text-[#111827]">
                 <IconBook2 size={18} className="text-[#f29a1f]" />
-                <h4 className="text-xl font-bold leading-none sm:text-[22px]">Access Resources</h4>
+                <h4 className="text-xl font-bold leading-none sm:text-[22px]">
+                  {t("landing.supportYourWay.cards.accessResources.title")}
+                </h4>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-[#6b7280] sm:text-base">
-                Browse our library of articles, legal guides, and mental health resources designed to empower you.
+                {t("landing.supportYourWay.cards.accessResources.description")}
               </p>
-              <ActionLink>Browse Library</ActionLink>
+              <ActionLink>{t("landing.supportYourWay.cards.accessResources.action")}</ActionLink>
             </CardShell>
 
             <CardShell>
@@ -97,13 +108,14 @@ export default function SupportYourWay() {
               <div className="p-5 sm:p-6">
                 <div className="flex items-center gap-2 text-[#111827]">
                   <IconHeadphones size={18} className="text-[#f29a1f]" />
-                  <h4 className="text-xl font-bold leading-none sm:text-[22px]">Chat with a Counselor</h4>
+                  <h4 className="text-xl font-bold leading-none sm:text-[22px]">
+                    {t("landing.supportYourWay.cards.chatCounselor.title")}
+                  </h4>
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-[#6b7280] sm:text-base">
-                  Connect instantly with a trained professional who can offer guidance and emotional support in
-                  real-time.
+                  {t("landing.supportYourWay.cards.chatCounselor.description")}
                 </p>
-                <ActionLink>Start Chat</ActionLink>
+                <ActionLink>{t("landing.supportYourWay.cards.chatCounselor.action")}</ActionLink>
               </div>
             </CardShell>
           </div>

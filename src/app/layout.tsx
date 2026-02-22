@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 
+import { I18nProvider } from "@/components/providers/i18n-provider";
+
 import "./globals.css";
+import "leaflet/dist/leaflet.css";
 
 export const metadata: Metadata = {
   title: "Next.js Starter App",
@@ -22,9 +25,11 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen w-screen bg-white text-black">
-        <main>
-          <Suspense>{children}</Suspense>
-        </main>
+        <I18nProvider>
+          <main>
+            <Suspense>{children}</Suspense>
+          </main>
+        </I18nProvider>
       </body>
     </html>
   );
