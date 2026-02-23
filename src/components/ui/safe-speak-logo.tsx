@@ -51,7 +51,7 @@ export function SafeSpeakLogo({
         alt="SafeSpeak tick"
         width={tick}
         height={tick}
-        className={cn("h-auto w-auto", className)}
+        className={cn("shrink-0", className)}
       />
     );
   }
@@ -73,7 +73,7 @@ export function SafeSpeakLogo({
           alt="SafeSpeak tick"
           width={tick}
           height={tick}
-          className="h-auto w-auto"
+          className="shrink-0"
         />
       </div>
       <span>Speak</span>

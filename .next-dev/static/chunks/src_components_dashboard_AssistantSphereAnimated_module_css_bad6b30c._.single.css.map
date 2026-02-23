@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/dashboard/AssistantSphereAnimated.module.css"],"sourcesContent":[".wrapper {\n  position: relative;\n  border-radius: 50%;\n  overflow: hidden;\n}\n\n.particlesLayer {\n  position: absolute;\n  inset: 0;\n  z-index: 1;\n  border-radius: 50%;\n  overflow: hidden;\n  pointer-events: none;\n}\n\n.canvas {\n  position: absolute !important;\n  inset: 0;\n  width: 100% !important;\n  height: 100% !important;\n  background: transparent;\n}\n\n.sphereImage {\n  position: absolute;\n  inset: 0;\n  z-index: 2;\n  width: 100%;\n  height: 100%;\n  object-fit: contain;\n  pointer-events: none;\n  user-select: none;\n}\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;;;;;;;;;AASA;;;;;;;;;;;AAQA"}}]
+}

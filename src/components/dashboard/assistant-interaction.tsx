@@ -4,13 +4,11 @@ import { ChangeEvent, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 
 import { IconMapPin, IconMicrophone } from "@tabler/icons-react";
-import { animate, AnimationPlaybackControls, motion, useMotionValue } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 import sendIcon from "@/assets/sendIcon.svg?url";
-import sphereAdv from "@/assets/sphere-adv.svg?url";
+import AssistantSphereAnimated from "@/components/dashboard/AssistantSphereAnimated";
 
-const ROTATION_DURATION_SECONDS = 6;
 const TYPING_IDLE_TIMEOUT_MS = 450;
 
 type SpeechRecognitionAlternativeLike = {
@@ -105,41 +103,18 @@ export function AssistantInteraction({
   const [interimTranscript, setInterimTranscript] = useState("");
 
   const typingTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const rotation = useMotionValue(0);
-  const rotationAnimationRef = useRef<AnimationPlaybackControls | null>(null);
   const recognitionRef = useRef<SpeechRecognitionLike | null>(null);
   const shouldResumeRecordingRef = useRef(false);
 
-  const shouldRotate = useMemo(() => isRecordingActive || isTyping, [isRecordingActive, isTyping]);
   const transcriptText = useMemo(() => {
     return [finalTranscript, interimTranscript].filter(Boolean).join(" ").trim();
   }, [finalTranscript, interimTranscript]);
-  const showTranscriptPanel = isRecordingActive || Boolean(transcriptText) || Boolean(speechError);
+  const showTranscriptPanel = isRecordingActive || Boolean(speechError);
   const speechRecognitionLang = useMemo(() => {
     return i18n.resolvedLanguage === "es" || i18n.language === "es"
       ? "es-ES"
       : "en-US";
   }, [i18n.language, i18n.resolvedLanguage]);
-
-  useEffect(() => {
-    rotationAnimationRef.current?.stop();
-
-    if (!shouldRotate) {
-      return;
-    }
-
-    const currentRotation = rotation.get();
-    rotationAnimationRef.current = animate(rotation, currentRotation + 360, {
-      duration: ROTATION_DURATION_SECONDS,
-      ease: "linear",
-      repeat: Infinity,
-      repeatType: "loop",
-    });
-
-    return () => {
-      rotationAnimationRef.current?.stop();
-    };
-  }, [rotation, shouldRotate]);
 
   useEffect(() => {
     const recognitionCtor =
@@ -236,7 +211,6 @@ export function AssistantInteraction({
       if (typingTimeoutRef.current) {
         clearTimeout(typingTimeoutRef.current);
       }
-      rotationAnimationRef.current?.stop();
     };
   }, []);
 
@@ -249,6 +223,8 @@ export function AssistantInteraction({
     }
 
     setSpeechError(null);
+    setFinalTranscript("");
+    setInterimTranscript("");
     shouldResumeRecordingRef.current = true;
 
     try {
@@ -318,17 +294,7 @@ export function AssistantInteraction({
 
   return (
     <div className="flex flex-1 flex-col items-center px-2 pb-2 pt-6 sm:px-4 sm:pb-4 sm:pt-7">
-      <motion.div
-        style={{ rotate: rotation }}
-        className="relative h-[220px] w-[220px] sm:h-[260px] sm:w-[260px] xl:h-[311.31px] xl:w-[311.31px]"
-      >
-        <Image
-          src={sphereAdv}
-          alt={t("dashboard.assistant.sphereAlt")}
-          fill
-          className="object-contain"
-        />
-      </motion.div>
+      <AssistantSphereAnimated alt={t("dashboard.assistant.sphereAlt")} />
 
       <p className={headlineClassName}>
         {t("dashboard.assistant.greetingPrefix")}{" "}

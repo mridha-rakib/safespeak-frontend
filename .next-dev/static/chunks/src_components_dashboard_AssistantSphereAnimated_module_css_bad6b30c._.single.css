@@ -1,0 +1,47 @@
+/* [project]/src/components/dashboard/AssistantSphereAnimated.module.css [app-client] (css) */
+.AssistantSphereAnimated-module__AET-Qq__wrapper {
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.AssistantSphereAnimated-module__AET-Qq__particlesLayer {
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.AssistantSphereAnimated-module__AET-Qq__canvas {
+  background: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+}
+
+.AssistantSphereAnimated-module__AET-Qq__sphereImage {
+  z-index: 2;
+  object-fit: contain;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=src_components_dashboard_AssistantSphereAnimated_module_css_bad6b30c._.single.css.map*/
