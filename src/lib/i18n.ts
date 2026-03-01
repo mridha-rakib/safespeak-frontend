@@ -213,6 +213,21 @@ const resources = {
         },
         faq: {
           title: "FAQ",
+          heading: "Help & FAQ",
+          emergencyNotice: "Emergency & Legal Notice",
+          immediateDanger: "In immediate danger call",
+          emergencyNumber: "000",
+          supportLabel: "Domestic violence support",
+          supportNumber: "1800 RESPECT",
+          disclaimer:
+            "Disclaimer: The information provided on this website does not constitute legal advice and is for general informational purposes only. If you require legal assistance, please contact a qualified solicitor or legal aid service in your state or territory. If you are using a shared device.",
+          ctaTag: "Secure & Anonymous",
+          ctaTitle: "Get Started Today",
+          ctaDescription:
+            "Your voice matters. Together, we can advocate for a safer community with the privacy you deserve.",
+          appStore: "App Store",
+          android: "Android",
+          webVersion: "Access Web Version",
           items: {
             0: {
               question: "How does SafeSpeak protect my identity?",
@@ -899,6 +914,21 @@ const resources = {
         },
         faq: {
           title: "Preguntas frecuentes",
+          heading: "Ayuda y FAQ",
+          emergencyNotice: "Aviso de emergencia y legal",
+          immediateDanger: "En peligro inmediato llama",
+          emergencyNumber: "000",
+          supportLabel: "Soporte por violencia domestica",
+          supportNumber: "1800 RESPECT",
+          disclaimer:
+            "Aviso: La informacion en este sitio web no constituye asesoramiento legal y se ofrece solo con fines informativos generales. Si necesitas asistencia legal, contacta a un abogado calificado o a un servicio de ayuda legal en tu estado o territorio. Si usas un dispositivo compartido.",
+          ctaTag: "Seguro y anonimo",
+          ctaTitle: "Comienza hoy",
+          ctaDescription:
+            "Tu voz importa. Juntos podemos impulsar una comunidad mas segura con la privacidad que mereces.",
+          appStore: "App Store",
+          android: "Android",
+          webVersion: "Acceder version web",
           items: {
             0: {
               question: "Como protege SafeSpeak mi identidad?",

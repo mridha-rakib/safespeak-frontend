@@ -15,7 +15,7 @@ export default function ProblemSection() {
   ];
 
   return (
-    <section className="bg-[#f6f8fb]">
+    <section className="mx-auto w-full max-w-screen bg-[#E1F5FE] lg:min-h-[1200px]">
       <div className="landing-shell">
         <div className="landing-content landing-section">
           <div className="w-full">

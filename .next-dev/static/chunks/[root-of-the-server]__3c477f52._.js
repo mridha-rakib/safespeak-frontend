@@ -332,7 +332,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 "[project]/src/assets/tickSign.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/tickSign.0d669ada.svg");}),
+__turbopack_context__.v("/_next/static/media/tickSign.1eee699c.svg");}),
 "[project]/src/assets/tickSign.svg.mjs { IMAGE => \"[project]/src/assets/tickSign.svg (static in ecmascript)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -831,7 +831,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 "[project]/src/assets/android-link.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/android-link.63c6028b.svg");}),
+__turbopack_context__.v("/_next/static/media/android-link.7510ac3e.svg");}),
 "[project]/src/assets/android-link.svg.mjs { IMAGE => \"[project]/src/assets/android-link.svg (static in ecmascript)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -854,7 +854,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 "[project]/src/assets/apple-link.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/apple-link.3d760a8f.svg");}),
+__turbopack_context__.v("/_next/static/media/apple-link.47c802db.svg");}),
 "[project]/src/assets/apple-link.svg.mjs { IMAGE => \"[project]/src/assets/apple-link.svg (static in ecmascript)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -877,7 +877,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 "[project]/src/assets/indicator.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/indicator.191047ac.svg");}),
+__turbopack_context__.v("/_next/static/media/indicator.d38c964c.svg");}),
 "[project]/src/assets/indicator.svg.mjs { IMAGE => \"[project]/src/assets/indicator.svg (static in ecmascript)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -900,7 +900,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 "[project]/src/assets/Rectangle.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/Rectangle.745b1829.svg");}),
+__turbopack_context__.v("/_next/static/media/Rectangle.7629b13b.svg");}),
 "[project]/src/assets/Rectangle.svg.mjs { IMAGE => \"[project]/src/assets/Rectangle.svg (static in ecmascript)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -923,7 +923,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 "[project]/src/assets/Rectangle-2.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/Rectangle-2.bb79a630.svg");}),
+__turbopack_context__.v("/_next/static/media/Rectangle-2.e92d3e6e.svg");}),
 "[project]/src/assets/Rectangle-2.svg.mjs { IMAGE => \"[project]/src/assets/Rectangle-2.svg (static in ecmascript)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -946,7 +946,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 "[project]/src/assets/qrcode.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/qrcode.001e7d89.svg");}),
+__turbopack_context__.v("/_next/static/media/qrcode.98c010ee.svg");}),
 "[project]/src/assets/qrcode.svg.mjs { IMAGE => \"[project]/src/assets/qrcode.svg (static in ecmascript)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -969,7 +969,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 "[project]/src/assets/sphere.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/sphere.45d78638.svg");}),
+__turbopack_context__.v("/_next/static/media/sphere.1566df4f.svg");}),
 "[project]/src/assets/sphere.svg.mjs { IMAGE => \"[project]/src/assets/sphere.svg (static in ecmascript)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1689,7 +1689,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 "[project]/src/assets/Hand and iPhone 16 Pro.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/Hand and iPhone 16 Pro.9429c5f5.svg");}),
+__turbopack_context__.v("/_next/static/media/Hand and iPhone 16 Pro.1c4f4240.svg");}),
 "[project]/src/assets/Hand and iPhone 16 Pro.svg.mjs { IMAGE => \"[project]/src/assets/Hand and iPhone 16 Pro.svg (static in ecmascript)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1738,7 +1738,7 @@ function ProblemSection() {
         t("landing.problem.bullets.3")
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "bg-[#f6f8fb]",
+        className: "mx-auto w-full max-w-screen bg-[#E1F5FE] lg:min-h-[1200px]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "landing-shell",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {

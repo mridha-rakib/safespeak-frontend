@@ -2,6 +2,8 @@
   "pages": {},
   "app": {
     "[project]/src/app/page": [
+      "static/media/dd6ffff77ca3306f-s.p.8fcf53a7.woff2",
+      "static/media/de342b92bd57e19b-s.p.61c3e9bf.woff2",
       "static/media/58b85a63c67a61b5-s.p.183c748d.woff2",
       "static/media/8413b838ed089cb4-s.p.5033488b.woff2"
     ]
