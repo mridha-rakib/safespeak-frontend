@@ -15,8 +15,8 @@ export default function Home() {
       <main>
         <LandingNavbar />
         <Hero />
-        <ProblemSection />
         <ResourcesSection />
+        <ProblemSection />
         <HowItWorks />
         <LocalIntelligence />
         <CommunityImpact />

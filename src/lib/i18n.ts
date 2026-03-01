@@ -132,24 +132,27 @@ const resources = {
         },
         resources: {
           cards: {
-            domesticViolence: {
-              title: "Domestic Violence",
+            multiLingual: {
+              title: "Multilingual",
               description:
-                "Abusive behavior used to control a partner. Find immediate safe shelter and legal protection.",
-              badge: "SHIELD PROTECTION",
+                "Native support for 12+ languages. We speak your language, so you are heard clearly.",
+              languageTag: "EN",
             },
-            cyberProtection: {
-              title: "Cyber Protection",
-              subtitle: "Scam Shield",
+            quickExit: {
+              title: "Quick Exit",
               description:
-                "Explore multiple prompt directions with branching to stay ahead of digital threats.",
-              footerLeft: "Resources",
-              footerRight: "Guidance",
+                "Instant disguise mode with a single tap. Protect your privacy immediately when needed.",
+              action: "Convert mode ready",
             },
-            empowermentLessons: {
-              title: "Empowerment Lessons",
-              description: "Micro-Cards\n4 Lessons - 21 mins",
-              footerLeft: "Start Learning",
+            multiInput: {
+              title: "Multi-Input",
+              description:
+                "Document incidents securely in your way using voice, text, or image recording.",
+            },
+            guidedTriage: {
+              title: "Guided Triage",
+              description:
+                "Smart path to professional support tailored to your specific situation and needs.",
             },
           },
         },
@@ -815,24 +818,27 @@ const resources = {
         },
         resources: {
           cards: {
-            domesticViolence: {
-              title: "Violencia domestica",
+            multiLingual: {
+              title: "Multi-idioma",
               description:
-                "Conducta abusiva para controlar a la pareja. Encuentra refugio seguro y proteccion legal inmediata.",
-              badge: "PROTECCION ESCUDO",
+                "Soporte nativo para mas de 12 idiomas. Hablamos tu idioma para que te escuchen con claridad.",
+              languageTag: "ES",
             },
-            cyberProtection: {
-              title: "Proteccion cibernetica",
-              subtitle: "Escudo Antiestafa",
+            quickExit: {
+              title: "Salida rapida",
               description:
-                "Explora diferentes rutas de ayuda para adelantarte a amenazas digitales.",
-              footerLeft: "Recursos",
-              footerRight: "Guia",
+                "Modo encubierto instantaneo con un solo toque. Protege tu privacidad de inmediato cuando lo necesites.",
+              action: "Modo encubierto listo",
             },
-            empowermentLessons: {
-              title: "Lecciones de empoderamiento",
-              description: "Micro-Tarjetas\n4 lecciones - 21 min",
-              footerLeft: "Comenzar",
+            multiInput: {
+              title: "Entrada multiple",
+              description:
+                "Documenta incidentes de forma segura a tu manera con voz, texto o imagen.",
+            },
+            guidedTriage: {
+              title: "Triaje guiado",
+              description:
+                "Ruta inteligente hacia apoyo profesional adaptado a tu situacion y necesidades.",
             },
           },
         },
