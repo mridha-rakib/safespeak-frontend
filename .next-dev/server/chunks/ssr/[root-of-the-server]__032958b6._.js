@@ -76,7 +76,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/bottom-left.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/bottom-left.ac24a30d.svg");}),
+__turbopack_context__.v("/_next/static/media/bottom-left.d2133ed3.svg");}),
 "[project]/src/assets/bottom-left.svg.mjs { IMAGE => \"[project]/src/assets/bottom-left.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -96,7 +96,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/bottom-right.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/bottom-right.d42aa1eb.svg");}),
+__turbopack_context__.v("/_next/static/media/bottom-right.bfa91858.svg");}),
 "[project]/src/assets/bottom-right.svg.mjs { IMAGE => \"[project]/src/assets/bottom-right.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -116,7 +116,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/digital_foot_print.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/digital_foot_print.d2e98299.svg");}),
+__turbopack_context__.v("/_next/static/media/digital_foot_print.c600c67c.svg");}),
 "[project]/src/assets/digital_foot_print.svg.mjs { IMAGE => \"[project]/src/assets/digital_foot_print.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -136,7 +136,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/documentig_ev.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/documentig_ev.8a6fbb9f.svg");}),
+__turbopack_context__.v("/_next/static/media/documentig_ev.6a9e2b3c.svg");}),
 "[project]/src/assets/documentig_ev.svg.mjs { IMAGE => \"[project]/src/assets/documentig_ev.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -198,7 +198,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/identifyBulling.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/identifyBulling.4f5a33ee.svg");}),
+__turbopack_context__.v("/_next/static/media/identifyBulling.d44c301f.svg");}),
 "[project]/src/assets/identifyBulling.svg.mjs { IMAGE => \"[project]/src/assets/identifyBulling.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -218,7 +218,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/mental_health.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/mental_health.f898fd27.svg");}),
+__turbopack_context__.v("/_next/static/media/mental_health.4a924e55.svg");}),
 "[project]/src/assets/mental_health.svg.mjs { IMAGE => \"[project]/src/assets/mental_health.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -238,7 +238,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/mental_health_2.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/mental_health_2.f898fd27.svg");}),
+__turbopack_context__.v("/_next/static/media/mental_health_2.4a924e55.svg");}),
 "[project]/src/assets/mental_health_2.svg.mjs { IMAGE => \"[project]/src/assets/mental_health_2.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -258,7 +258,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/mental_health_love.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/mental_health_love.8ca00b6a.svg");}),
+__turbopack_context__.v("/_next/static/media/mental_health_love.6fb1d71f.svg");}),
 "[project]/src/assets/mental_health_love.svg.mjs { IMAGE => \"[project]/src/assets/mental_health_love.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -299,7 +299,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/safe_reporting.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/safe_reporting.5f7f665e.svg");}),
+__turbopack_context__.v("/_next/static/media/safe_reporting.bd6f9142.svg");}),
 "[project]/src/assets/safe_reporting.svg.mjs { IMAGE => \"[project]/src/assets/safe_reporting.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -319,7 +319,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/scam shield icon.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/scam shield icon.0e7538b7.svg");}),
+__turbopack_context__.v("/_next/static/media/scam shield icon.cc39c205.svg");}),
 "[project]/src/assets/scam shield icon.svg.mjs { IMAGE => \"[project]/src/assets/scam shield icon.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -339,7 +339,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/sendIcon.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/sendIcon.00cf2848.svg");}),
+__turbopack_context__.v("/_next/static/media/sendIcon.3d2b9b1a.svg");}),
 "[project]/src/assets/sendIcon.svg.mjs { IMAGE => \"[project]/src/assets/sendIcon.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -359,7 +359,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/sphere-adv.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/sphere-adv.e04cc660.svg");}),
+__turbopack_context__.v("/_next/static/media/sphere-adv.c7cc4f04.svg");}),
 "[project]/src/assets/sphere-adv.svg.mjs { IMAGE => \"[project]/src/assets/sphere-adv.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -379,7 +379,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/top-left.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/top-left.ac6d61cc.svg");}),
+__turbopack_context__.v("/_next/static/media/top-left.2a26790c.svg");}),
 "[project]/src/assets/top-left.svg.mjs { IMAGE => \"[project]/src/assets/top-left.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -399,7 +399,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/top-mask.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/top-mask.254109a1.svg");}),
+__turbopack_context__.v("/_next/static/media/top-mask.b4213687.svg");}),
 "[project]/src/assets/top-mask.svg.mjs { IMAGE => \"[project]/src/assets/top-mask.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -419,7 +419,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/top-right.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/top-right.d507e0f6.svg");}),
+__turbopack_context__.v("/_next/static/media/top-right.85b8a2cc.svg");}),
 "[project]/src/assets/top-right.svg.mjs { IMAGE => \"[project]/src/assets/top-right.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1173,7 +1173,7 @@ function AssistantInteraction({ isRecording = false, headlineClassName }) {
 }),
 "[project]/src/assets/tickSign.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/tickSign.0d669ada.svg");}),
+__turbopack_context__.v("/_next/static/media/tickSign.1eee699c.svg");}),
 "[project]/src/assets/tickSign.svg.mjs { IMAGE => \"[project]/src/assets/tickSign.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1198,12 +1198,12 @@ __turbopack_context__.s([
     "cn",
     ()=>cn
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$m$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.m.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/tailwind-merge/dist/bundle-mjs.mjs [app-ssr] (ecmascript)");
 ;
 ;
 function cn(...inputs) {
-    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["twMerge"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$m$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(inputs));
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["twMerge"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(inputs));
 }
 }),
 "[project]/src/components/ui/safe-speak-logo.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
@@ -1223,15 +1223,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$
 ;
 const logoSizeMap = {
     sm: {
-        text: "text-[24px]",
+        text: "text-[1.5rem]",
         tick: 20
     },
     md: {
-        text: "text-[28px]",
+        text: "text-[1.75rem]",
         tick: 23
     },
     lg: {
-        text: "text-[32px]",
+        text: "text-[2rem]",
         tick: 26
     }
 };
@@ -1244,7 +1244,7 @@ function SafeSpeakLogo({ variant = "full", tone = "brand", size = "md", classNam
             alt: "SafeSpeak tick",
             width: tick,
             height: tick,
-            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("h-auto w-auto", className)
+            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("shrink-0", className)
         }, void 0, false, {
             fileName: "[project]/src/components/ui/safe-speak-logo.tsx",
             lineNumber: 49,
@@ -1252,10 +1252,10 @@ function SafeSpeakLogo({ variant = "full", tone = "brand", size = "md", classNam
         }, this);
     }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("inline-flex flex-col font-extrabold leading-[0.9] tracking-[0%]", text, toneClass, className, textClassName),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("inline-flex flex-col font-extrabold leading-none tracking-normal", text, toneClass, className, textClassName),
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-start gap-0.5",
+                className: "flex items-start gap-0.5 leading-none",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         children: "Safe"
@@ -1269,7 +1269,7 @@ function SafeSpeakLogo({ variant = "full", tone = "brand", size = "md", classNam
                         alt: "SafeSpeak tick",
                         width: tick,
                         height: tick,
-                        className: "h-auto w-auto"
+                        className: "shrink-0"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/safe-speak-logo.tsx",
                         lineNumber: 71,
@@ -1282,6 +1282,7 @@ function SafeSpeakLogo({ variant = "full", tone = "brand", size = "md", classNam
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "leading-none",
                 children: "Speak"
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/safe-speak-logo.tsx",
@@ -1298,7 +1299,7 @@ function SafeSpeakLogo({ variant = "full", tone = "brand", size = "md", classNam
 }),
 "[project]/src/assets/bottomLeftSM.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/bottomLeftSM.048a6983.svg");}),
+__turbopack_context__.v("/_next/static/media/bottomLeftSM.871306e3.svg");}),
 "[project]/src/assets/bottomLeftSM.svg.mjs { IMAGE => \"[project]/src/assets/bottomLeftSM.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1318,7 +1319,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/bottomRightSM.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/bottomRightSM.6a8fcc52.svg");}),
+__turbopack_context__.v("/_next/static/media/bottomRightSM.8d6dc6d0.svg");}),
 "[project]/src/assets/bottomRightSM.svg.mjs { IMAGE => \"[project]/src/assets/bottomRightSM.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1338,7 +1339,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/topLeftSM.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/topLeftSM.c323d7d6.svg");}),
+__turbopack_context__.v("/_next/static/media/topLeftSM.6a005e59.svg");}),
 "[project]/src/assets/topLeftSM.svg.mjs { IMAGE => \"[project]/src/assets/topLeftSM.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1358,7 +1359,7 @@ const __TURBOPACK__default__export__ = {
 }),
 "[project]/src/assets/topRightSM.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/topRightSM.242ed687.svg");}),
+__turbopack_context__.v("/_next/static/media/topRightSM.c94f456e.svg");}),
 "[project]/src/assets/topRightSM.svg.mjs { IMAGE => \"[project]/src/assets/topRightSM.svg (static in ecmascript)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 

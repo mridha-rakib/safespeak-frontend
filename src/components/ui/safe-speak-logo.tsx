@@ -15,15 +15,15 @@ const logoSizeMap: Record<
   }
 > = {
   sm: {
-    text: "text-[24px]",
+    text: "text-[1.5rem]",
     tick: 20,
   },
   md: {
-    text: "text-[28px]",
+    text: "text-[1.75rem]",
     tick: 23,
   },
   lg: {
-    text: "text-[32px]",
+    text: "text-[2rem]",
     tick: 26,
   },
 };
@@ -59,14 +59,14 @@ export function SafeSpeakLogo({
   return (
     <div
       className={cn(
-        "inline-flex flex-col font-extrabold leading-[0.9] tracking-[0%]",
+        "inline-flex flex-col font-extrabold leading-none tracking-normal",
         text,
         toneClass,
         className,
         textClassName
       )}
     >
-      <div className="flex items-start gap-0.5">
+      <div className="flex items-start gap-0.5 leading-none">
         <span>Safe</span>
         <Image
           src={tickSign}
@@ -76,8 +76,7 @@ export function SafeSpeakLogo({
           className="shrink-0"
         />
       </div>
-      <span>Speak</span>
+      <span className="leading-none">Speak</span>
     </div>
   );
 }
-
