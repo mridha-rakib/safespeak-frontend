@@ -367,6 +367,48 @@ const resources = {
                         where: "Where",
                         processingFromTranscript: "Processing from transcript...",
                         moreFields: "More fields will appear as you chat"
+                    },
+                    triage: {
+                        title: "Triage Explanation",
+                        subtitle: "Understanding your current status and next steps.",
+                        specialtyTag: "cardiology",
+                        incidentClassification: "Incident Classification",
+                        supportType: "Mental Health Support",
+                        assessmentBody: "Based on your inputs, we have identified a need for emotional support and resources.",
+                        assessmentNote: "This is an AI assessment and not a clinical diagnosis.",
+                        legalInfo: "This is information only and not legal advice. Please consult with a professional for legal representation.",
+                        recommendedSteps: "Recommended Steps",
+                        saveToHistory: "Save to history",
+                        primaryStepTitle: "I'm feeling stressed",
+                        primaryStepBody: "Mindfulness & grounding techniques",
+                        worriedOthersTitle: "Worried for others?",
+                        worriedOthersBody: "How to ask & help",
+                        selfHelpTitle: "Self-Help Library",
+                        selfHelpBody: "Tools & guides",
+                        unsafeTitle: "I don't feel safe",
+                        unsafeBody: "If you are in immediate danger, connect now.",
+                        callEmergency: "CALL 000",
+                        tapForFullScreen: "Tap for full screen",
+                        additionalResources: "Additional Safety Resources",
+                        resourceEsafetyTitle: "eSafety",
+                        resourceEsafetyBody: "Online abuse removal",
+                        resourceCounsellingTitle: "Counselling",
+                        resourceCounsellingBody: "24/7 Crisis Support",
+                        footerNote: "This tool provides information and support options but is not a substitute for professional medical, legal, or treatment advice.",
+                        recommendations: {
+                            title: "Recommendations",
+                            subtitle: "Based on your answers, here are the recommended next steps to ensure your safety. We prioritize these actions based on urgency.",
+                            immediateDangerTitle: "Immediate Danger",
+                            immediateDangerBody: "If you or someone else is in immediate danger, please contact the police immediately. Do not hesitate.",
+                            contactPolice: "Contact Police (000)",
+                            esafetyTitle: "eSafety Commissioner",
+                            esafetyBody: "File a formal report regarding online abuse or cyberbullying to get content removed quickly.",
+                            reportToEsafety: "Report to eSafety",
+                            counsellingTitle: "Counselling Support",
+                            counsellingBody: "Speak confidentially with a crisis counselor available 24/7 for mental health support and guidance.",
+                            callLifeline: "Call Lifeline",
+                            readMore: "Read More Detailed Explanations"
+                        }
                     }
                 },
                 reportSubmission: {
@@ -625,6 +667,20 @@ const resources = {
                     userAccess: "User Access",
                     newAccount: "New Account",
                     backToHome: "Back to Home"
+                },
+                social: {
+                    divider: "Or continue with",
+                    continueWithGoogle: "Continue with Google",
+                    continueWithFacebook: "Continue with Facebook",
+                    continueWithApple: "Sign in with Apple",
+                    pending: "Connecting...",
+                    placeholderSuccess: "{{provider}} sign-in will be available soon.",
+                    placeholderError: "Unable to start {{provider}} sign-in right now.",
+                    providers: {
+                        google: "Google",
+                        facebook: "Facebook",
+                        apple: "Apple"
+                    }
                 },
                 login: {
                     title: "Welcome Back",
@@ -991,6 +1047,48 @@ const resources = {
                         where: "Donde",
                         processingFromTranscript: "Procesando desde la transcripcion...",
                         moreFields: "Apareceran mas campos mientras conversas"
+                    },
+                    triage: {
+                        title: "Explicacion de triaje",
+                        subtitle: "Comprende tu estado actual y los siguientes pasos.",
+                        specialtyTag: "cardiologia",
+                        incidentClassification: "Clasificacion del incidente",
+                        supportType: "Apoyo de salud mental",
+                        assessmentBody: "Segun tus respuestas, identificamos una necesidad de apoyo emocional y recursos.",
+                        assessmentNote: "Esta es una evaluacion de IA y no un diagnostico clinico.",
+                        legalInfo: "Esta informacion es orientativa y no constituye asesoria legal. Consulta a un profesional para representacion legal.",
+                        recommendedSteps: "Pasos recomendados",
+                        saveToHistory: "Guardar en historial",
+                        primaryStepTitle: "Me siento estresado",
+                        primaryStepBody: "Mindfulness y tecnicas de regulacion",
+                        worriedOthersTitle: "Preocupado por otros?",
+                        worriedOthersBody: "Como preguntar y ayudar",
+                        selfHelpTitle: "Biblioteca de autoayuda",
+                        selfHelpBody: "Herramientas y guias",
+                        unsafeTitle: "No me siento seguro",
+                        unsafeBody: "Si estas en peligro inmediato, conecta ahora.",
+                        callEmergency: "LLAMAR 000",
+                        tapForFullScreen: "Toca para pantalla completa",
+                        additionalResources: "Recursos adicionales de seguridad",
+                        resourceEsafetyTitle: "eSafety",
+                        resourceEsafetyBody: "Eliminacion de abuso en linea",
+                        resourceCounsellingTitle: "Consejeria",
+                        resourceCounsellingBody: "Apoyo de crisis 24/7",
+                        footerNote: "Esta herramienta brinda informacion y opciones de apoyo, pero no reemplaza consejo medico, legal o terapeutico profesional.",
+                        recommendations: {
+                            title: "Recomendaciones",
+                            subtitle: "Segun tus respuestas, aqui tienes los siguientes pasos recomendados para tu seguridad. Priorizamos estas acciones segun urgencia.",
+                            immediateDangerTitle: "Peligro inmediato",
+                            immediateDangerBody: "Si tu u otra persona esta en peligro inmediato, contacta a la policia de inmediato. No lo dudes.",
+                            contactPolice: "Contactar policia (000)",
+                            esafetyTitle: "Comision eSafety",
+                            esafetyBody: "Presenta un reporte formal por abuso en linea o ciberacoso para retirar contenido rapidamente.",
+                            reportToEsafety: "Reportar a eSafety",
+                            counsellingTitle: "Apoyo de consejeria",
+                            counsellingBody: "Habla de forma confidencial con un consejero de crisis disponible 24/7 para apoyo y orientacion en salud mental.",
+                            callLifeline: "Llamar Lifeline",
+                            readMore: "Leer explicaciones detalladas"
+                        }
                     }
                 },
                 reportSubmission: {
@@ -1249,6 +1347,20 @@ const resources = {
                     userAccess: "Acceso de usuario",
                     newAccount: "Nueva cuenta",
                     backToHome: "Volver al inicio"
+                },
+                social: {
+                    divider: "O continua con",
+                    continueWithGoogle: "Continuar con Google",
+                    continueWithFacebook: "Continuar con Facebook",
+                    continueWithApple: "Iniciar con Apple",
+                    pending: "Conectando...",
+                    placeholderSuccess: "El acceso con {{provider}} estara disponible pronto.",
+                    placeholderError: "No se pudo iniciar el acceso con {{provider}} en este momento.",
+                    providers: {
+                        google: "Google",
+                        facebook: "Facebook",
+                        apple: "Apple"
+                    }
                 },
                 login: {
                     title: "Bienvenido de nuevo",

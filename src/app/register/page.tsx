@@ -1,11 +1,14 @@
 "use client";
 
 import { FormEvent, useMemo, useState } from "react";
+
 import { useTranslation } from "react-i18next";
 
 import { AuthShell } from "@/components/auth/auth-shell";
+import { AuthSocialButtons } from "@/components/auth/auth-social-buttons";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { type SocialAuthProvider, startSocialAuth } from "@/lib/auth";
 
 export default function RegisterPage() {
   const { t } = useTranslation();
@@ -15,17 +18,19 @@ export default function RegisterPage() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [acceptedTerms, setAcceptedTerms] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [activeSocialProvider, setActiveSocialProvider] =
+    useState<SocialAuthProvider | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
 
   const isDisabled = useMemo(() => {
     return (
-      isSubmitting
-      || !fullName.trim()
-      || !email.trim()
-      || !password
-      || !confirmPassword
-      || !acceptedTerms
+      isSubmitting ||
+      !fullName.trim() ||
+      !email.trim() ||
+      !password ||
+      !confirmPassword ||
+      !acceptedTerms
     );
   }, [acceptedTerms, confirmPassword, email, fullName, isSubmitting, password]);
 
@@ -64,10 +69,31 @@ export default function RegisterPage() {
       setAcceptedTerms(false);
     } catch (submitError) {
       const message =
-        submitError instanceof Error ? submitError.message : t("auth.register.error");
+        submitError instanceof Error
+          ? submitError.message
+          : t("auth.register.error");
       setError(message);
     } finally {
       setIsSubmitting(false);
+    }
+  }
+
+  async function handleSocialAuth(provider: SocialAuthProvider) {
+    setError(null);
+    setSuccess(null);
+    setActiveSocialProvider(provider);
+
+    const providerLabel = t(`auth.social.providers.${provider}`);
+
+    try {
+      await startSocialAuth(provider);
+      setSuccess(
+        t("auth.social.placeholderSuccess", { provider: providerLabel })
+      );
+    } catch {
+      setError(t("auth.social.placeholderError", { provider: providerLabel }));
+    } finally {
+      setActiveSocialProvider(null);
     }
   }
 
@@ -130,7 +156,10 @@ export default function RegisterPage() {
         </div>
 
         <div className="space-y-1.5">
-          <label htmlFor="confirmPassword" className="text-sm font-medium text-white">
+          <label
+            htmlFor="confirmPassword"
+            className="text-sm font-medium text-white"
+          >
             {t("auth.register.confirmPassword")}
           </label>
           <Input
@@ -156,11 +185,15 @@ export default function RegisterPage() {
         </label>
 
         {error ? (
-          <p className="rounded-md border border-[#fecaca]/70 bg-[#fef2f2] px-3 py-2 text-sm text-[#991b1b]">{error}</p>
+          <p className="rounded-md border border-[#fecaca]/70 bg-[#fef2f2] px-3 py-2 text-sm text-[#991b1b]">
+            {error}
+          </p>
         ) : null}
 
         {success ? (
-          <p className="rounded-md border border-[#bbf7d0]/70 bg-[#f0fdf4] px-3 py-2 text-sm text-[#166534]">{success}</p>
+          <p className="rounded-md border border-[#bbf7d0]/70 bg-[#f0fdf4] px-3 py-2 text-sm text-[#166534]">
+            {success}
+          </p>
         ) : null}
 
         <Button
@@ -169,8 +202,16 @@ export default function RegisterPage() {
           disabled={isDisabled}
           className="h-11 w-full rounded-md bg-[#ff8f00] text-[#0b3152] hover:bg-[#f57c00]"
         >
-          {isSubmitting ? t("auth.register.submitting") : t("auth.register.submit")}
+          {isSubmitting
+            ? t("auth.register.submitting")
+            : t("auth.register.submit")}
         </Button>
+
+        <AuthSocialButtons
+          onProviderClick={handleSocialAuth}
+          activeProvider={activeSocialProvider}
+          disabled={isSubmitting}
+        />
       </form>
     </AuthShell>
   );

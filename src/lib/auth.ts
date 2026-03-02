@@ -50,6 +50,8 @@ export interface AgentLoginOptions {
   persistSession?: boolean;
 }
 
+export type SocialAuthProvider = "google" | "facebook" | "apple";
+
 export interface AuthSession {
   user: AgentUser;
   profile: AgentProfile;
@@ -66,7 +68,9 @@ function getApiBaseUrl(explicit?: string): string {
   const trimmed = value.trim();
 
   if (!trimmed) {
-    throw new Error("Missing API base URL. Set NEXT_PUBLIC_API_BASE_URL or enter Base URL.");
+    throw new Error(
+      "Missing API base URL. Set NEXT_PUBLIC_API_BASE_URL or enter Base URL."
+    );
   }
 
   return trimmed.replace(/\/+$/, "");
@@ -103,9 +107,20 @@ export function clearAuthSession(): void {
   window.localStorage.removeItem(AUTH_SESSION_KEY);
 }
 
+export async function startSocialAuth(
+  provider: SocialAuthProvider
+): Promise<void> {
+  // Placeholder flow so UI wiring is ready before OAuth providers are connected.
+  await new Promise<void>((resolve) => {
+    setTimeout(resolve, 400);
+  });
+
+  void provider;
+}
+
 export async function loginAgent(
   input: AgentLoginInput,
-  options: AgentLoginOptions = {},
+  options: AgentLoginOptions = {}
 ): Promise<AgentLoginResponse> {
   const baseUrl = getApiBaseUrl(options.baseUrl);
   const persistSession = options.persistSession ?? true;
@@ -118,10 +133,17 @@ export async function loginAgent(
     body: JSON.stringify(input),
   });
 
-  const payload = (await parseJsonSafe(response)) as Partial<AgentLoginResponse> | null;
+  const payload = (await parseJsonSafe(
+    response
+  )) as Partial<AgentLoginResponse> | null;
   const message = payload?.message ?? "Login failed";
 
-  if (!response.ok || !payload?.success || !payload?.data?.user || !payload?.data?.profile) {
+  if (
+    !response.ok ||
+    !payload?.success ||
+    !payload?.data?.user ||
+    !payload?.data?.profile
+  ) {
     throw new Error(message);
   }
 

@@ -371,9 +371,11 @@ const resources = {
               "Microphone access was denied. Please allow microphone permission and try again.",
             noMicrophone:
               "No microphone was found. Please connect a microphone and try again.",
-            noSpeech: "No speech detected. Try speaking closer to your microphone.",
+            noSpeech:
+              "No speech detected. Try speaking closer to your microphone.",
             network: "A network issue occurred while processing speech.",
-            startFailed: "Voice recording could not be started. Please try again.",
+            startFailed:
+              "Voice recording could not be started. Please try again.",
             unsupported: "Speech recognition is not supported in this browser.",
           },
           conversation: {
@@ -392,6 +394,56 @@ const resources = {
             where: "Where",
             processingFromTranscript: "Processing from transcript...",
             moreFields: "More fields will appear as you chat",
+          },
+          triage: {
+            title: "Triage Explanation",
+            subtitle: "Understanding your current status and next steps.",
+            specialtyTag: "cardiology",
+            incidentClassification: "Incident Classification",
+            supportType: "Mental Health Support",
+            assessmentBody:
+              "Based on your inputs, we have identified a need for emotional support and resources.",
+            assessmentNote:
+              "This is an AI assessment and not a clinical diagnosis.",
+            legalInfo:
+              "This is information only and not legal advice. Please consult with a professional for legal representation.",
+            recommendedSteps: "Recommended Steps",
+            saveToHistory: "Save to history",
+            primaryStepTitle: "I'm feeling stressed",
+            primaryStepBody: "Mindfulness & grounding techniques",
+            worriedOthersTitle: "Worried for others?",
+            worriedOthersBody: "How to ask & help",
+            selfHelpTitle: "Self-Help Library",
+            selfHelpBody: "Tools & guides",
+            unsafeTitle: "I don't feel safe",
+            unsafeBody: "If you are in immediate danger, connect now.",
+            callEmergency: "CALL 000",
+            tapForFullScreen: "Tap for full screen",
+            additionalResources: "Additional Safety Resources",
+            resourceEsafetyTitle: "eSafety",
+            resourceEsafetyBody: "Online abuse removal",
+            resourceCounsellingTitle: "Counselling",
+            resourceCounsellingBody: "24/7 Crisis Support",
+            footerNote:
+              "This tool provides information and support options but is not a substitute for professional medical, legal, or treatment advice.",
+            recommendations: {
+              title: "Recommendations",
+              subtitle:
+                "Based on your answers, here are the recommended next steps to ensure your safety. We prioritize these actions based on urgency.",
+              immediateDangerTitle: "Immediate Danger",
+              immediateDangerBody:
+                "If you or someone else is in immediate danger, please contact the police immediately. Do not hesitate.",
+              contactPolice: "Contact Police (000)",
+              esafetyTitle: "eSafety Commissioner",
+              esafetyBody:
+                "File a formal report regarding online abuse or cyberbullying to get content removed quickly.",
+              reportToEsafety: "Report to eSafety",
+              counsellingTitle: "Counselling Support",
+              counsellingBody:
+                "Speak confidentially with a crisis counselor available 24/7 for mental health support and guidance.",
+              callLifeline: "Call Lifeline",
+              readMore: "Read More Detailed Explanations",
+            },
           },
         },
         reportSubmission: {
@@ -471,7 +523,8 @@ const resources = {
           referenceKeySuffix:
             "Use this key to track status and continue communication.",
           trackSubmission: "Track Submission",
-          trackSubmissionBody: "Continue in assistant mode to view timeline updates.",
+          trackSubmissionBody:
+            "Continue in assistant mode to view timeline updates.",
           needSupport: "Need Support?",
           needSupportBody:
             "Open Help & Support from settings for live assistance.",
@@ -488,8 +541,7 @@ const resources = {
           nextStepsSubtitle:
             "Secure your assets and report this incident with guided actions.",
           agencyReport: "Agency Report",
-          agencyReportSubtitle:
-            "Review and submit a prefilled report package.",
+          agencyReportSubtitle: "Review and submit a prefilled report package.",
           analyzeRisk: "Analyze Risk",
           reportThisIncident: "Report This Incident",
           nextAgencyReport: "Next: Agency Report",
@@ -502,7 +554,8 @@ const resources = {
           addScreenshot: "Add Screenshot",
           add: "+ Add",
           safetyReminder: "Safety Reminder",
-          safetyReminderBody: "Never share PINs, OTPs, or passwords while reporting.",
+          safetyReminderBody:
+            "Never share PINs, OTPs, or passwords while reporting.",
           highFraudRisk: "High Fraud Risk",
           highFraudRiskBody:
             "This conversation pattern strongly matches known account-takeover scams.",
@@ -525,7 +578,8 @@ const resources = {
           contactYourBankBody: "Freeze transactions and request a fraud hold.",
           markAsCompleted: "Mark as Completed",
           reportToAccc: "Report to ACCC Scamwatch",
-          reportToAcccBody: "Register this event in the national scam database.",
+          reportToAcccBody:
+            "Register this event in the national scam database.",
           reportToEmergencyCyberTeam: "Report to Emergency Cyber Team",
           reportToEmergencyCyberTeamBody:
             "Request urgent cyber assistance if account compromise is active.",
@@ -685,6 +739,20 @@ const resources = {
           userAccess: "User Access",
           newAccount: "New Account",
           backToHome: "Back to Home",
+        },
+        social: {
+          divider: "Or continue with",
+          continueWithGoogle: "Continue with Google",
+          continueWithFacebook: "Continue with Facebook",
+          continueWithApple: "Sign in with Apple",
+          pending: "Connecting...",
+          placeholderSuccess: "{{provider}} sign-in will be available soon.",
+          placeholderError: "Unable to start {{provider}} sign-in right now.",
+          providers: {
+            google: "Google",
+            facebook: "Facebook",
+            apple: "Apple",
+          },
         },
         login: {
           title: "Welcome Back",
@@ -1075,7 +1143,8 @@ const resources = {
             noSpeech: "No se detecto voz. Habla mas cerca del microfono.",
             network: "Ocurrio un problema de red al procesar la voz.",
             startFailed: "No se pudo iniciar la grabacion. Intentalo de nuevo.",
-            unsupported: "El reconocimiento de voz no es compatible en este navegador.",
+            unsupported:
+              "El reconocimiento de voz no es compatible en este navegador.",
           },
           conversation: {
             botPromptWho:
@@ -1093,6 +1162,56 @@ const resources = {
             where: "Donde",
             processingFromTranscript: "Procesando desde la transcripcion...",
             moreFields: "Apareceran mas campos mientras conversas",
+          },
+          triage: {
+            title: "Explicacion de triaje",
+            subtitle: "Comprende tu estado actual y los siguientes pasos.",
+            specialtyTag: "cardiologia",
+            incidentClassification: "Clasificacion del incidente",
+            supportType: "Apoyo de salud mental",
+            assessmentBody:
+              "Segun tus respuestas, identificamos una necesidad de apoyo emocional y recursos.",
+            assessmentNote:
+              "Esta es una evaluacion de IA y no un diagnostico clinico.",
+            legalInfo:
+              "Esta informacion es orientativa y no constituye asesoria legal. Consulta a un profesional para representacion legal.",
+            recommendedSteps: "Pasos recomendados",
+            saveToHistory: "Guardar en historial",
+            primaryStepTitle: "Me siento estresado",
+            primaryStepBody: "Mindfulness y tecnicas de regulacion",
+            worriedOthersTitle: "Preocupado por otros?",
+            worriedOthersBody: "Como preguntar y ayudar",
+            selfHelpTitle: "Biblioteca de autoayuda",
+            selfHelpBody: "Herramientas y guias",
+            unsafeTitle: "No me siento seguro",
+            unsafeBody: "Si estas en peligro inmediato, conecta ahora.",
+            callEmergency: "LLAMAR 000",
+            tapForFullScreen: "Toca para pantalla completa",
+            additionalResources: "Recursos adicionales de seguridad",
+            resourceEsafetyTitle: "eSafety",
+            resourceEsafetyBody: "Eliminacion de abuso en linea",
+            resourceCounsellingTitle: "Consejeria",
+            resourceCounsellingBody: "Apoyo de crisis 24/7",
+            footerNote:
+              "Esta herramienta brinda informacion y opciones de apoyo, pero no reemplaza consejo medico, legal o terapeutico profesional.",
+            recommendations: {
+              title: "Recomendaciones",
+              subtitle:
+                "Segun tus respuestas, aqui tienes los siguientes pasos recomendados para tu seguridad. Priorizamos estas acciones segun urgencia.",
+              immediateDangerTitle: "Peligro inmediato",
+              immediateDangerBody:
+                "Si tu u otra persona esta en peligro inmediato, contacta a la policia de inmediato. No lo dudes.",
+              contactPolice: "Contactar policia (000)",
+              esafetyTitle: "Comision eSafety",
+              esafetyBody:
+                "Presenta un reporte formal por abuso en linea o ciberacoso para retirar contenido rapidamente.",
+              reportToEsafety: "Reportar a eSafety",
+              counsellingTitle: "Apoyo de consejeria",
+              counsellingBody:
+                "Habla de forma confidencial con un consejero de crisis disponible 24/7 para apoyo y orientacion en salud mental.",
+              callLifeline: "Llamar Lifeline",
+              readMore: "Leer explicaciones detalladas",
+            },
           },
         },
         reportSubmission: {
@@ -1128,7 +1247,8 @@ const resources = {
           recoveryToolsBody:
             "Accede al instante a ejercicios de respiracion y recursos de regulacion.",
           urgentHelp: "Ayuda urgente",
-          needImmediateSafetyAssistance: "Necesitas asistencia de seguridad inmediata?",
+          needImmediateSafetyAssistance:
+            "Necesitas asistencia de seguridad inmediata?",
           urgentHelpBody:
             "Si sientes peligro ahora, llama primero a emergencias y continua el envio cuando estes a salvo.",
           safetyPlan: "Plan de seguridad",
@@ -1136,7 +1256,8 @@ const resources = {
           saveDraft: "Guardar borrador",
           saveDraftBody: "Pausa ahora y vuelve con tu clave segura.",
           crisisContacts: "Contactos de crisis",
-          crisisContactsBody: "Ver lineas de ayuda locales y nacionales confiables.",
+          crisisContactsBody:
+            "Ver lineas de ayuda locales y nacionales confiables.",
           incidentTitle: "Titulo del incidente",
           incidentTitleValue: "Acoso cerca del pasillo principal",
           date: "Fecha",
@@ -1149,7 +1270,8 @@ const resources = {
           completed72: "72% completado",
           incidentTypeIdentified: "Tipo de incidente identificado",
           whoWhatWhereCaptured: "Quien/Que/Donde capturado",
-          addEvidenceToStrengthenCase: "Agregar evidencia para fortalecer el caso",
+          addEvidenceToStrengthenCase:
+            "Agregar evidencia para fortalecer el caso",
           dragFiles: "Arrastra archivos aqui o sube manualmente",
           uploadLimits: "PNG, JPG, MP4, PDF hasta 20MB cada uno",
           uploadEvidence: "Subir evidencia",
@@ -1164,7 +1286,8 @@ const resources = {
           finalChecks: "Revisiones finales",
           personalDataRemoved: "Datos personales identificables eliminados",
           timelineFieldsCompleted: "Campos de linea de tiempo completos",
-          emergencyEscalationNotRequired: "Escalamiento de emergencia no requerido",
+          emergencyEscalationNotRequired:
+            "Escalamiento de emergencia no requerido",
           confirmAccuracy:
             "Confirmo que este reporte es preciso segun mi mejor conocimiento.",
           reportReceivedSuccessfully: "Reporte recibido correctamente",
@@ -1204,7 +1327,8 @@ const resources = {
           addScreenshot: "Agregar captura",
           add: "+ Agregar",
           safetyReminder: "Recordatorio de seguridad",
-          safetyReminderBody: "Nunca compartas PIN, OTP o contrasenas al reportar.",
+          safetyReminderBody:
+            "Nunca compartas PIN, OTP o contrasenas al reportar.",
           highFraudRisk: "Alto riesgo de fraude",
           highFraudRiskBody:
             "Este patron de conversacion coincide fuertemente con estafas de toma de cuenta.",
@@ -1220,14 +1344,17 @@ const resources = {
           immediateActions: "Acciones inmediatas",
           immediateAction1: "1. Congela tarjetas y restablece la contrasena.",
           immediateAction2: "2. Activa MFA y cierra sesiones desconocidas.",
-          immediateAction3: "3. Notifica al equipo antifraude del banco con este ID.",
+          immediateAction3:
+            "3. Notifica al equipo antifraude del banco con este ID.",
           secureAssetsTitle: "Asegura tus activos y reporta el incidente",
           secureAssetsSubtitle: "Completa estos pasos antes del envio final.",
           contactYourBank: "Contacta a tu banco",
-          contactYourBankBody: "Congela transacciones y solicita bloqueo por fraude.",
+          contactYourBankBody:
+            "Congela transacciones y solicita bloqueo por fraude.",
           markAsCompleted: "Marcar como completado",
           reportToAccc: "Reportar a ACCC Scamwatch",
-          reportToAcccBody: "Registra este evento en la base nacional de estafas.",
+          reportToAcccBody:
+            "Registra este evento en la base nacional de estafas.",
           reportToEmergencyCyberTeam: "Reportar al equipo ciber de emergencia",
           reportToEmergencyCyberTeamBody:
             "Solicita ayuda ciber urgente si hay compromiso activo de cuenta.",
@@ -1241,11 +1368,13 @@ const resources = {
           impactedAssetsBody:
             "Cuenta bancaria principal, tarjeta terminada en 1042 y credenciales de banca en linea.",
           bankSecurityStep: "Paso de seguridad bancaria",
-          bankSecurityStepBody: "Banco notificado y retencion temporal activada.",
+          bankSecurityStepBody:
+            "Banco notificado y retencion temporal activada.",
           submissionChecklist: "Lista de verificacion de envio",
           identitySafeModeEnabled: "Modo seguro de identidad activado",
           evidencePackageAttached: "Paquete de evidencia adjunto",
-          timelineAndMetadataVerified: "Linea de tiempo y metadatos verificados",
+          timelineAndMetadataVerified:
+            "Linea de tiempo y metadatos verificados",
           privacyTier: "Nivel de privacidad",
           anonymousReporting: "Reporte anonimo",
         },
@@ -1387,6 +1516,22 @@ const resources = {
           userAccess: "Acceso de usuario",
           newAccount: "Nueva cuenta",
           backToHome: "Volver al inicio",
+        },
+        social: {
+          divider: "O continua con",
+          continueWithGoogle: "Continuar con Google",
+          continueWithFacebook: "Continuar con Facebook",
+          continueWithApple: "Iniciar con Apple",
+          pending: "Conectando...",
+          placeholderSuccess:
+            "El acceso con {{provider}} estara disponible pronto.",
+          placeholderError:
+            "No se pudo iniciar el acceso con {{provider}} en este momento.",
+          providers: {
+            google: "Google",
+            facebook: "Facebook",
+            apple: "Apple",
+          },
         },
         login: {
           title: "Bienvenido de nuevo",

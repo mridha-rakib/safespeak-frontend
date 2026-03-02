@@ -6,7 +6,7 @@ __turbopack_context__.s([
     "cn",
     ()=>cn
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$m$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.m.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/tailwind-merge/dist/bundle-mjs.mjs [app-client] (ecmascript)");
 ;
 ;
@@ -14,7 +14,7 @@ function cn() {
     for(var _len = arguments.length, inputs = new Array(_len), _key = 0; _key < _len; _key++){
         inputs[_key] = arguments[_key];
     }
-    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["twMerge"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$m$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["clsx"])(inputs));
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["twMerge"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["clsx"])(inputs));
 }
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
@@ -147,7 +147,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 "[project]/src/assets/tickSign.svg (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/tickSign.0d669ada.svg");}),
+__turbopack_context__.v("/_next/static/media/tickSign.1eee699c.svg");}),
 "[project]/src/assets/tickSign.svg.mjs { IMAGE => \"[project]/src/assets/tickSign.svg (static in ecmascript)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -185,15 +185,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$
 ;
 const logoSizeMap = {
     sm: {
-        text: "text-[24px]",
+        text: "text-[1.5rem]",
         tick: 20
     },
     md: {
-        text: "text-[28px]",
+        text: "text-[1.75rem]",
         tick: 23
     },
     lg: {
-        text: "text-[32px]",
+        text: "text-[2rem]",
         tick: 26
     }
 };
@@ -207,7 +207,7 @@ function SafeSpeakLogo(param) {
             alt: "SafeSpeak tick",
             width: tick,
             height: tick,
-            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("h-auto w-auto", className)
+            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("shrink-0", className)
         }, void 0, false, {
             fileName: "[project]/src/components/ui/safe-speak-logo.tsx",
             lineNumber: 49,
@@ -215,10 +215,10 @@ function SafeSpeakLogo(param) {
         }, this);
     }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("inline-flex flex-col font-extrabold leading-[0.9] tracking-[0%]", text, toneClass, className, textClassName),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("inline-flex flex-col font-extrabold leading-none tracking-normal", text, toneClass, className, textClassName),
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-start gap-0.5",
+                className: "flex items-start gap-0.5 leading-none",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         children: "Safe"
@@ -232,7 +232,7 @@ function SafeSpeakLogo(param) {
                         alt: "SafeSpeak tick",
                         width: tick,
                         height: tick,
-                        className: "h-auto w-auto"
+                        className: "shrink-0"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/safe-speak-logo.tsx",
                         lineNumber: 71,
@@ -245,6 +245,7 @@ function SafeSpeakLogo(param) {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "leading-none",
                 children: "Speak"
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/safe-speak-logo.tsx",
@@ -497,7 +498,9 @@ __turbopack_context__.s([
     "loginAgent",
     ()=>loginAgent,
     "saveAuthSession",
-    ()=>saveAuthSession
+    ()=>saveAuthSession,
+    "startSocialAuth",
+    ()=>startSocialAuth
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 const AUTH_SESSION_KEY = "safespeak_auth_session";
@@ -539,6 +542,13 @@ function clearAuthSession() {
     if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
     ;
     window.localStorage.removeItem(AUTH_SESSION_KEY);
+}
+async function startSocialAuth(provider) {
+    // Placeholder flow so UI wiring is ready before OAuth providers are connected.
+    await new Promise((resolve)=>{
+        setTimeout(resolve, 400);
+    });
+    void provider;
 }
 async function loginAgent(input) {
     let options = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
