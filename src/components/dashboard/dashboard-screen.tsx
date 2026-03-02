@@ -239,26 +239,30 @@ function EmergencyToolbar() {
 
 function HomeDashboardPage() {
   const { t } = useTranslation();
+  const assistantViewHref = {
+    pathname: "/dashboard",
+    query: { view: "assistant" },
+  } as const;
 
   return (
       <div className="px-2 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-4">
         <div className="relative mx-auto w-full [--dashboard-card-gap:12px] sm:[--dashboard-card-gap:16px] lg:[--dashboard-card-gap:20px] xl:max-w-[1120px] xl:[--dashboard-card-gap:24px] 2xl:max-w-[1184px]">
           <div className="hidden flex-col gap-[var(--dashboard-card-gap)] md:flex">
             <div className="grid grid-cols-1 gap-[var(--dashboard-card-gap)] md:grid-cols-2 xl:grid-cols-[1fr_2.122fr_1fr]">
-              <article className="xl:notch-bl group relative aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] md:order-1 xl:order-none xl:aspect-auto xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]">
+              <Link
+                href={assistantViewHref}
+                className="xl:notch-bl group relative block aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] md:order-1 xl:order-none xl:aspect-auto xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]"
+              >
                 <Image
                   src={topLeft}
                   alt="Domestic violence"
                   fill
                   className="object-cover transition duration-[250ms] ease-out group-hover:brightness-110"
                 />
-              </article>
+              </Link>
 
               <Link
-                href={{
-                  pathname: "/dashboard",
-                  query: { view: "assistant" },
-                }}
+                href={assistantViewHref}
                 className="xl:notch-bl group relative block aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] md:order-3 md:col-span-2 xl:order-none xl:col-span-1 xl:aspect-auto xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]"
               >
                 <Image alt="dfhksdjf" fill src={topMask} />
@@ -272,26 +276,35 @@ function HomeDashboardPage() {
                 </div>
               </Link>
 
-              <article className="xl:notch-bl group relative aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] md:order-2 xl:order-none xl:aspect-auto xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]">
+              <Link
+                href={assistantViewHref}
+                className="xl:notch-bl group relative block aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] md:order-2 xl:order-none xl:aspect-auto xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]"
+              >
                 <Image
                   src={topRight}
                   alt="Racial abuse"
                   fill
                   className="object-cover transition duration-[250ms] ease-out group-hover:brightness-110"
                 />
-              </article>
+              </Link>
             </div>
 
             <div>
               <div className="relative xl:h-[406.2px] xl:w-full">
                 <div className="grid h-full grid-cols-1 gap-[var(--dashboard-card-gap)] md:grid-cols-2">
-                  <article className="xl:notch-bl group relative aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] xl:aspect-auto xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]">
+                  <Link
+                    href={assistantViewHref}
+                    className="xl:notch-bl group relative block aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] xl:aspect-auto xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]"
+                  >
                     <Image alt="dfhksdjf" fill src={bottomLeft} />
-                  </article>
+                  </Link>
 
-                  <article className="xl:notch-bl group relative aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] xl:aspect-auto xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]">
+                  <Link
+                    href={assistantViewHref}
+                    className="xl:notch-bl group relative block aspect-[16/10] overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform duration-[250ms] ease-out hover:scale-[1.02] sm:aspect-[5/4] xl:aspect-auto xl:h-[390.4221px] xl:w-full xl:rounded-[30px] xl:border-[0.99px]"
+                  >
                     <Image alt="dfhksdjf" fill src={bottomRight} />
-                  </article>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -414,8 +427,9 @@ function HomeDashboardPage() {
             </article>
           </div>
 
-          <div
-            className="pointer-events-none absolute left-1/2 z-20 hidden -translate-x-1/2 p-10 xl:block"
+          <Link
+            href={assistantViewHref}
+            className="absolute left-1/2 z-20 hidden -translate-x-1/2 p-10 xl:block"
             style={{
               top: `${SPHERE_TOP}px`,
               width: "270px",
@@ -428,7 +442,7 @@ function HomeDashboardPage() {
               fill
               className="object-contain"
             />
-          </div>
+          </Link>
         </div>
       </div>
   );

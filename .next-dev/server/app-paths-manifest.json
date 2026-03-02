@@ -1,4 +1,7 @@
 {
+  "/dashboard/explorer/page": "app/dashboard/explorer/page.js",
+  "/dashboard/notifications/page": "app/dashboard/notifications/page.js",
   "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/settings/page": "app/dashboard/settings/page.js",
   "/page": "app/page.js"
 }
