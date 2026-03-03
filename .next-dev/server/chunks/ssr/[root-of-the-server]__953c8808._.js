@@ -3201,12 +3201,20 @@ __turbopack_context__.s([
     ()=>MicroEducationPage
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$LayoutGroup$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/LayoutGroup/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$reduced$2d$motion$2f$use$2d$reduced$2d$motion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/utils/reduced-motion/use-reduced-motion.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconBook$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconBook$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconBook.mjs [app-ssr] (ecmascript) <export default as IconBook>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronLeft$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronLeft$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconChevronLeft.mjs [app-ssr] (ecmascript) <export default as IconChevronLeft>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconMoodSmile$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconMoodSmile$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconMoodSmile.mjs [app-ssr] (ecmascript) <export default as IconMoodSmile>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconFolderFilled$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconFolderFilled$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconFolderFilled.mjs [app-ssr] (ecmascript) <export default as IconFolderFilled>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconSearch$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconSearch$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconSearch.mjs [app-ssr] (ecmascript) <export default as IconSearch>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShieldFilled$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShieldFilled$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconShieldFilled.mjs [app-ssr] (ecmascript) <export default as IconShieldFilled>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconX$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconX$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconX.mjs [app-ssr] (ecmascript) <export default as IconX>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/react-i18next/dist/es/index.js [app-ssr] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-i18next/dist/es/useTranslation.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$mental_health$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$mental_health$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/mental_health.svg.mjs { IMAGE => "[project]/src/assets/mental_health.svg (static in ecmascript)" } [app-ssr] (structured image object with data url, ecmascript)');
@@ -3226,8 +3234,187 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$i
 ;
 ;
 ;
+;
+;
+function topicToneStyles(tone) {
+    const styles = {
+        blue: {
+            card: "bg-[#006699]",
+            title: "text-white",
+            tag: "text-white/80"
+        },
+        orange: {
+            card: "bg-[#F48C06]",
+            title: "text-white",
+            tag: "text-white/85"
+        },
+        green: {
+            card: "bg-[#10B981]",
+            title: "text-white",
+            tag: "text-white/80"
+        },
+        amber: {
+            card: "bg-[#f7bd23]",
+            title: "text-[#111827]",
+            tag: "text-[#6f5300]"
+        },
+        violet: {
+            card: "bg-[#8157e8]",
+            title: "text-white",
+            tag: "text-white/80"
+        },
+        teal: {
+            card: "bg-[#1c9d8f]",
+            title: "text-white",
+            tag: "text-white/80"
+        }
+    };
+    return styles[tone];
+}
+function topicIcon(topicId) {
+    if (topicId === "onlineSafety" || topicId === "bullying") {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShieldFilled$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShieldFilled$3e$__["IconShieldFilled"], {
+            size: 30
+        }, void 0, false, {
+            fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+            lineNumber: 90,
+            columnNumber: 12
+        }, this);
+    }
+    if (topicId === "rights") {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconFolderFilled$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconFolderFilled$3e$__["IconFolderFilled"], {
+            size: 30
+        }, void 0, false, {
+            fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+            lineNumber: 93,
+            columnNumber: 12
+        }, this);
+    }
+    if (topicId === "mentalHealth") {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconMoodSmile$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconMoodSmile$3e$__["IconMoodSmile"], {
+            size: 30
+        }, void 0, false, {
+            fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+            lineNumber: 96,
+            columnNumber: 12
+        }, this);
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconBook$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconBook$3e$__["IconBook"], {
+        size: 30
+    }, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+        lineNumber: 98,
+        columnNumber: 10
+    }, this);
+}
+function topicNarrative(topic) {
+    return [
+        `This topic focuses on practical awareness and low-friction safety habits. ${topic.summary}`,
+        "Start by identifying early signs, document what matters, and choose one immediate protective step you can take today.",
+        "Support options work best when used consistently. Build a small routine, keep records, and ask for trusted professional help when needed."
+    ];
+}
 function MicroEducationPage() {
     const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTranslation"])();
+    const prefersReducedMotion = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$reduced$2d$motion$2f$use$2d$reduced$2d$motion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useReducedMotion"])();
+    const [activeTopicId, setActiveTopicId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const pushedHistoryRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(false);
+    const topics = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>[
+            {
+                id: "bullying",
+                tone: "blue",
+                tag: t("dashboard.home.cyber"),
+                title: t("dashboard.microeducation.bullying"),
+                summary: t("dashboard.microeducation.onlineSafetyBody"),
+                cta: t("dashboard.microeducation.getProtected")
+            },
+            {
+                id: "discrimination",
+                tone: "orange",
+                tag: t("dashboard.microeducation.harassment"),
+                title: t("dashboard.microeducation.discrimination"),
+                summary: t("dashboard.microeducation.discriminationBody"),
+                cta: t("dashboard.microeducation.startNow")
+            },
+            {
+                id: "onlineSafety",
+                tone: "green",
+                tag: t("dashboard.microeducation.protection"),
+                title: t("dashboard.explorer.onlineSafety"),
+                summary: t("dashboard.microeducation.onlineSafetyBody"),
+                cta: t("dashboard.microeducation.getProtected")
+            },
+            {
+                id: "rights",
+                tone: "amber",
+                tag: t("dashboard.home.legal"),
+                title: t("dashboard.microeducation.migrantStudentRights"),
+                summary: t("dashboard.microeducation.discriminationBody"),
+                cta: t("dashboard.microeducation.startNow")
+            },
+            {
+                id: "mentalHealth",
+                tone: "violet",
+                tag: t("dashboard.microeducation.mental"),
+                title: t("dashboard.microeducation.mentalHealthTitle"),
+                summary: t("dashboard.microeducation.onlineSafetyBody"),
+                cta: t("dashboard.microeducation.startNow")
+            },
+            {
+                id: "legalAid",
+                tone: "teal",
+                tag: t("dashboard.microeducation.fundamentals"),
+                title: t("dashboard.microeducation.legalAidBasics"),
+                summary: t("dashboard.microeducation.discriminationBody"),
+                cta: t("dashboard.microeducation.startNow")
+            }
+        ], [
+        t
+    ]);
+    const activeTopic = topics.find((topic)=>topic.id === activeTopicId) ?? null;
+    const closeActiveTopic = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(()=>{
+        if (!activeTopicId) {
+            return;
+        }
+        setActiveTopicId(null);
+        if (pushedHistoryRef.current) {
+            pushedHistoryRef.current = false;
+            window.history.back();
+        }
+    }, [
+        activeTopicId
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (!activeTopicId) {
+            return;
+        }
+        pushedHistoryRef.current = true;
+        window.history.pushState({
+            microeducationTopic: activeTopicId
+        }, "");
+        const handleKeyDown = (event)=>{
+            if (event.key === "Escape") {
+                closeActiveTopic();
+            }
+        };
+        const handlePopState = ()=>{
+            if (pushedHistoryRef.current) {
+                pushedHistoryRef.current = false;
+            }
+            setActiveTopicId(null);
+        };
+        document.body.style.overflow = "hidden";
+        window.addEventListener("keydown", handleKeyDown);
+        window.addEventListener("popstate", handlePopState);
+        return ()=>{
+            document.body.style.overflow = "";
+            window.removeEventListener("keydown", handleKeyDown);
+            window.removeEventListener("popstate", handlePopState);
+        };
+    }, [
+        activeTopicId,
+        closeActiveTopic
+    ]);
     const chips = [
         t("dashboard.microeducation.allLessons"),
         t("dashboard.microeducation.harassment"),
@@ -3235,411 +3422,480 @@ function MicroEducationPage() {
         t("dashboard.microeducation.safety"),
         t("dashboard.microeducation.mentalHealth")
     ];
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "px-2 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-4",
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "mx-auto w-full xl:max-w-[1120px] 2xl:max-w-[1184px]",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex items-center justify-between border-b border-[#d9e2ee] px-1 py-2",
+    const sharedTransition = prefersReducedMotion ? {
+        duration: 0
+    } : {
+        type: "spring",
+        stiffness: 230,
+        damping: 32,
+        mass: 0.9
+    };
+    const fadeTransition = prefersReducedMotion ? {
+        duration: 0
+    } : {
+        duration: 0.28,
+        ease: "easeOut"
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$LayoutGroup$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LayoutGroup"], {
+        id: "microeducation-morph",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "px-2 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-4",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mx-auto w-full xl:max-w-[1120px] 2xl:max-w-[1184px]",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                            href: "/dashboard",
-                            className: "inline-flex items-center gap-2 text-xs font-semibold text-[#1f2937]",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronLeft$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronLeft$3e$__["IconChevronLeft"], {
-                                    size: 14
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                    lineNumber: 39,
-                                    columnNumber: 13
-                                }, this),
-                                t("dashboard.microeducation.title")
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                            lineNumber: 35,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "text-xs font-medium text-[#7b8798]",
-                            children: t("common.cancel")
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                            lineNumber: 42,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                    lineNumber: 34,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "pt-4",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-4xl font-extrabold leading-[0.9] text-[#0f4f96] sm:text-5xl xl:text-[56px]",
-                            children: t("dashboard.microeducation.headline")
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                            lineNumber: 48,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "mt-2 max-w-[700px] text-sm leading-[1.45] text-[#5f6f86]",
-                            children: [
-                                t("dashboard.microeducation.subtitleLine1"),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                    lineNumber: 53,
-                                    columnNumber: 13
-                                }, this),
-                                t("dashboard.microeducation.subtitleLine2")
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                            lineNumber: 51,
-                            columnNumber: 11
-                        }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "relative mt-4 max-w-[540px]",
+                            className: "flex items-center justify-between border-b border-[#d9e2ee] px-1 py-2",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconSearch$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconSearch$3e$__["IconSearch"], {
-                                    size: 14,
-                                    className: "pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[#98a6b9]"
-                                }, void 0, false, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "/dashboard",
+                                    className: "inline-flex items-center gap-2 text-xs font-semibold text-[#1f2937]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronLeft$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronLeft$3e$__["IconChevronLeft"], {
+                                            size: 14
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                            lineNumber: 239,
+                                            columnNumber: 15
+                                        }, this),
+                                        t("dashboard.microeducation.title")
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 235,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                    type: "text",
-                                    placeholder: t("dashboard.microcards.searchPlaceholder"),
-                                    className: "h-10 w-full rounded-full border border-[#dbe5f0] bg-white px-10 text-xs text-[#1f2937] outline-none focus:border-[#3b82f6]"
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: "text-xs font-medium text-[#7b8798]",
+                                    children: t("common.cancel")
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                    lineNumber: 62,
+                                    lineNumber: 242,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                            lineNumber: 57,
+                            lineNumber: 234,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "mt-4 flex flex-wrap gap-2",
-                            children: chips.map((chip, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("inline-flex rounded-full px-3.5 py-1.5 text-[11px] font-semibold", index === 0 ? "bg-[#3b82f6] text-white" : "bg-white text-[#5f6f86]"),
-                                    children: chip
-                                }, chip, false, {
-                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                    lineNumber: 71,
-                                    columnNumber: 15
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                            lineNumber: 69,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "mt-4 flex flex-col gap-2",
+                            className: "pt-4",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-1 gap-2 lg:grid-cols-2 xl:grid-cols-[400px_712px]",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                    className: "text-4xl font-extrabold leading-[0.9] text-[#0f4f96] sm:text-5xl xl:text-[56px]",
+                                    children: t("dashboard.microeducation.headline")
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                    lineNumber: 248,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "mt-2 max-w-[700px] text-sm leading-[1.45] text-[#5f6f86]",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                            className: "relative min-h-[220px] w-full overflow-hidden rounded-[24px] bg-[#006699] p-5 sm:min-h-[260px] sm:p-6 xl:h-[320px] xl:rounded-[32px] xl:p-8",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-[10px] font-semibold uppercase tracking-[0.12em] text-white/80",
-                                                    children: t("dashboard.home.cyber")
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 88,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "mt-1 text-[40px] font-extrabold leading-[0.9] text-white",
-                                                    children: t("dashboard.microeducation.bullying")
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 91,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShieldFilled$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShieldFilled$3e$__["IconShieldFilled"], {
-                                                    size: 70,
-                                                    className: "text-white/12 absolute bottom-8 right-8"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 94,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                        t("dashboard.microeducation.subtitleLine1"),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                            lineNumber: 87,
+                                            lineNumber: 253,
                                             columnNumber: 15
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                            className: "relative min-h-[220px] w-full overflow-hidden rounded-[24px] bg-[#F48C06] p-5 sm:min-h-[260px] sm:p-6 xl:h-[320px] xl:rounded-[32px] xl:p-8",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$inter_8e004fb0$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__interFont$3e$__["interFont"].className} w-full max-w-[448px] text-[30px] font-black uppercase leading-[1] tracking-[0] text-white sm:text-[36px] sm:leading-[36px]`,
-                                                    children: t("dashboard.microeducation.discrimination")
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 101,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute bottom-5 left-5 max-w-[448px] rounded-xl bg-white/20 px-4 py-3 text-[11px] leading-[1.25] text-white/95 sm:bottom-6 sm:left-6 xl:bottom-8 xl:left-8",
-                                                    children: t("dashboard.microeducation.discriminationBody")
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 106,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                        t("dashboard.microeducation.subtitleLine2")
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                    lineNumber: 251,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative mt-4 max-w-[540px]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconSearch$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconSearch$3e$__["IconSearch"], {
+                                            size: 14,
+                                            className: "pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[#98a6b9]"
+                                        }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                            lineNumber: 100,
+                                            lineNumber: 258,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                            type: "text",
+                                            placeholder: t("dashboard.microcards.searchPlaceholder"),
+                                            className: "h-10 w-full rounded-full border border-[#dbe5f0] bg-white px-10 text-xs text-[#1f2937] outline-none focus:border-[#3b82f6]"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                            lineNumber: 262,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                    lineNumber: 86,
+                                    lineNumber: 257,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-1 gap-2 lg:grid-cols-2 xl:grid-cols-[712px_400px]",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                            className: "relative min-h-[220px] w-full overflow-hidden rounded-[24px] bg-[#10B981] p-5 sm:min-h-[260px] sm:p-6 xl:h-[320px] xl:rounded-[32px] xl:p-8",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-[10px] font-semibold uppercase tracking-[0.12em] text-white/80",
-                                                    children: t("dashboard.microeducation.protection")
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 114,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "mt-1 text-[34px] font-extrabold uppercase leading-[0.9] text-white",
-                                                    children: t("dashboard.explorer.onlineSafety")
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 117,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "mt-2 max-w-[300px] text-xs text-white/90",
-                                                    children: t("dashboard.microeducation.onlineSafetyBody")
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 120,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                    className: "mt-3 inline-flex rounded-full bg-white px-4 py-1.5 text-[11px] font-bold text-[#159968]",
-                                                    children: t("dashboard.microeducation.getProtected")
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 123,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "bg-white/22 absolute right-8 top-1/2 inline-flex h-20 w-20 -translate-y-1/2 items-center justify-center rounded-2xl text-white",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShieldFilled$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShieldFilled$3e$__["IconShieldFilled"], {
-                                                        size: 34
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                        lineNumber: 127,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 126,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                    className: "mt-4 flex flex-wrap gap-2",
+                                    children: chips.map((chip, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("inline-flex rounded-full px-3.5 py-1.5 text-[11px] font-semibold", index === 0 ? "bg-[#3b82f6] text-white" : "bg-white text-[#5f6f86]"),
+                                            children: chip
+                                        }, chip, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                            lineNumber: 113,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                            className: "relative min-h-[220px] w-full overflow-hidden rounded-[24px] bg-[#f7bd23] p-5 sm:min-h-[260px] sm:p-6 xl:h-[320px] xl:rounded-[32px] xl:p-8",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-[10px] font-semibold uppercase tracking-[0.12em] text-[#6f5300]",
-                                                    children: t("dashboard.home.legal")
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 132,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "mt-1 w-full max-w-[336px] text-[36px] font-extrabold leading-[0.9] text-[#111827]",
-                                                    children: t("dashboard.microeducation.migrantStudentRights")
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 135,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconFolderFilled$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconFolderFilled$3e$__["IconFolderFilled"], {
-                                                    size: 36,
-                                                    className: "absolute bottom-8 right-8 text-[#cf9f1a]"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 138,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                            lineNumber: 131,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                            lineNumber: 271,
+                                            columnNumber: 17
+                                        }, this))
+                                }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                    lineNumber: 112,
+                                    lineNumber: 269,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-1 gap-2 lg:grid-cols-2 xl:grid-cols-[656px_456px]",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                            className: "relative min-h-[220px] w-full overflow-hidden rounded-[24px] bg-[#8157e8] p-5 sm:min-h-[260px] sm:p-6 xl:h-[320px] xl:rounded-[32px] xl:p-8",
+                                    className: "mt-4 grid grid-cols-1 gap-2 lg:grid-cols-2",
+                                    children: topics.map((topic)=>{
+                                        const tone = topicToneStyles(topic.tone);
+                                        const isActive = activeTopicId === topic.id;
+                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
+                                            type: "button",
+                                            layout: true,
+                                            layoutId: `microeducation-topic-${topic.id}`,
+                                            transition: sharedTransition,
+                                            onClick: ()=>{
+                                                pushedHistoryRef.current = false;
+                                                setActiveTopicId(topic.id);
+                                            },
+                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("relative min-h-[220px] w-full overflow-hidden rounded-[24px] p-5 text-left will-change-transform sm:min-h-[250px] sm:p-6 xl:h-[304px] xl:rounded-[32px] xl:p-8", tone.card, isActive && "pointer-events-none opacity-0"),
+                                            "aria-label": topic.title,
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-[10px] font-semibold uppercase tracking-[0.12em] text-white/80",
-                                                    children: t("dashboard.microeducation.mental")
+                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("text-[10px] font-semibold uppercase tracking-[0.12em]", tone.tag),
+                                                    children: topic.tag
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 147,
-                                                    columnNumber: 17
+                                                    lineNumber: 306,
+                                                    columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "mt-1 text-[34px] font-extrabold leading-[0.9] text-white",
-                                                    children: t("dashboard.microeducation.mentalHealthTitle")
+                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])(`${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$inter_8e004fb0$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__interFont$3e$__["interFont"].className} mt-2 max-w-[480px] text-[30px] font-black leading-[0.95] sm:text-[36px]`, tone.title),
+                                                    children: topic.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 150,
-                                                    columnNumber: 17
+                                                    lineNumber: 307,
+                                                    columnNumber: 21
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "pointer-events-none absolute bottom-8 left-8",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("mt-2 max-w-[420px] text-xs", tone.tag),
+                                                    children: topic.summary
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                    lineNumber: 315,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("mt-4 inline-flex rounded-full bg-white px-4 py-1.5 text-[11px] font-bold", topic.tone === "amber" ? "text-[#6f5300]" : "text-[#1f2937]"),
+                                                    children: topic.cta
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                    lineNumber: 316,
+                                                    columnNumber: 21
+                                                }, this),
+                                                topic.id === "mentalHealth" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                                                     children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                            src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$mental_health$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$mental_health$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-                                                            alt: "Mental health circle",
-                                                            width: 48,
-                                                            height: 48,
-                                                            className: "h-12 w-12 opacity-45"
-                                                        }, void 0, false, {
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "pointer-events-none absolute bottom-8 left-8",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                                    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$mental_health$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$mental_health$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
+                                                                    alt: "Mental health circle",
+                                                                    width: 48,
+                                                                    height: 48,
+                                                                    className: "h-12 w-12 opacity-45"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                                    lineNumber: 328,
+                                                                    columnNumber: 27
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                                    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$mental_health_2$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$mental_health_2$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
+                                                                    alt: "Mental health circle overlap",
+                                                                    width: 48,
+                                                                    height: 48,
+                                                                    className: "absolute left-8 top-0 h-12 w-12 opacity-45"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                                    lineNumber: 335,
+                                                                    columnNumber: 27
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                            lineNumber: 154,
-                                                            columnNumber: 19
+                                                            lineNumber: 327,
+                                                            columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                            src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$mental_health_2$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$mental_health_2$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-                                                            alt: "Mental health circle overlap",
-                                                            width: 48,
-                                                            height: 48,
-                                                            className: "absolute left-8 top-0 h-12 w-12 opacity-45"
+                                                            src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$mental_health_love$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$mental_health_love$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
+                                                            alt: "Mental health love icon",
+                                                            width: 28,
+                                                            height: 28,
+                                                            className: "absolute bottom-8 right-8 h-7 w-7"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                            lineNumber: 161,
-                                                            columnNumber: 19
+                                                            lineNumber: 343,
+                                                            columnNumber: 25
                                                         }, this)
                                                     ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 153,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$mental_health_love$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$mental_health_love$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-                                                    alt: "Mental health love icon",
-                                                    width: 28,
-                                                    height: 28,
-                                                    className: "absolute bottom-8 right-8 h-7 w-7"
+                                                }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("absolute bottom-7 right-7 inline-flex h-14 w-14 items-center justify-center rounded-2xl", topic.tone === "amber" ? "bg-black/10 text-[#6f5300]" : "bg-white/20 text-white/90"),
+                                                    children: topicIcon(topic.id)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 169,
-                                                    columnNumber: 17
+                                                    lineNumber: 352,
+                                                    columnNumber: 23
                                                 }, this)
                                             ]
-                                        }, void 0, true, {
+                                        }, topic.id, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                            lineNumber: 146,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                            className: "relative min-h-[220px] w-full overflow-hidden rounded-[24px] bg-[#1c9d8f] p-5 sm:min-h-[260px] sm:p-6 xl:h-[320px] xl:rounded-[32px] xl:p-8",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-[10px] font-semibold uppercase tracking-[0.12em] text-white/80",
-                                                    children: t("dashboard.microeducation.fundamentals")
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 179,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "mt-1 text-[34px] font-extrabold leading-[0.9] text-white",
-                                                    children: t("dashboard.microeducation.legalAidBasics")
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 182,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                    className: "absolute bottom-8 right-8 rounded-full bg-[#0b7f73] px-5 py-1.5 text-[10px] font-bold uppercase tracking-[0.08em] text-white",
-                                                    children: t("dashboard.microeducation.startNow")
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                                    lineNumber: 185,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                            lineNumber: 178,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                            lineNumber: 289,
+                                            columnNumber: 19
+                                        }, this);
+                                    })
+                                }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                                    lineNumber: 145,
+                                    lineNumber: 283,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                            lineNumber: 85,
+                            lineNumber: 247,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-                    lineNumber: 47,
+                    lineNumber: 233,
                     columnNumber: 9
                 }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-            lineNumber: 33,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                lineNumber: 232,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                children: activeTopic && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                    className: "fixed inset-0 z-50",
+                    initial: {
+                        opacity: 0
+                    },
+                    animate: {
+                        opacity: 1
+                    },
+                    exit: {
+                        opacity: 0
+                    },
+                    transition: fadeTransition,
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
+                            type: "button",
+                            className: "absolute inset-0 bg-[#0b1728]/35 backdrop-blur-[1px]",
+                            onClick: closeActiveTopic,
+                            "aria-label": t("common.cancel")
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                            lineNumber: 378,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative h-full w-full p-3 sm:p-4 lg:p-6",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].article, {
+                                layoutId: `microeducation-topic-${activeTopic.id}`,
+                                transition: sharedTransition,
+                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("mx-auto flex h-full w-full max-w-[1184px] flex-col overflow-hidden rounded-[26px] bg-white shadow-[0_24px_70px_rgba(15,33,59,0.25)] sm:rounded-[32px]"),
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+                                        className: "flex items-center justify-between border-b border-[#e3eaf4] px-4 py-3 sm:px-6",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                type: "button",
+                                                onClick: closeActiveTopic,
+                                                className: "inline-flex items-center gap-2 text-xs font-semibold text-[#1f2937]",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronLeft$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronLeft$3e$__["IconChevronLeft"], {
+                                                        size: 14
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                        lineNumber: 399,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    t("dashboard.microeducation.title")
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                lineNumber: 394,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                type: "button",
+                                                onClick: closeActiveTopic,
+                                                className: "inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#d9e2ee] text-[#50627a]",
+                                                "aria-label": t("common.cancel"),
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconX$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconX$3e$__["IconX"], {
+                                                    size: 14
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                    lineNumber: 408,
+                                                    columnNumber: 21
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                lineNumber: 402,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                        lineNumber: 393,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "min-h-0 flex-1 overflow-y-auto px-4 py-5 sm:px-6 sm:py-6 lg:px-8",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "grid grid-cols-1 gap-4 lg:grid-cols-[1.12fr_0.88fr]",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                                                        className: "rounded-2xl bg-[#f6f9fd] p-4 sm:p-5",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "text-[11px] font-semibold uppercase tracking-[0.1em] text-[#4f647f]",
+                                                                children: activeTopic.tag
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                                lineNumber: 415,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                                className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$inter_8e004fb0$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__interFont$3e$__["interFont"].className} mt-2 text-[34px] font-black leading-[0.95] text-[#12243c] sm:text-[44px]`,
+                                                                children: activeTopic.title
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                                lineNumber: 416,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "mt-3 text-sm leading-[1.6] text-[#4f647f]",
+                                                                children: activeTopic.summary
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                                lineNumber: 421,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                        lineNumber: 414,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                                                        className: "rounded-2xl border border-[#e1eaf4] p-4 sm:p-5",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "text-[11px] font-semibold uppercase tracking-[0.1em] text-[#5b6f88]",
+                                                                children: t("dashboard.microcardDetail.keyTakeaway")
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                                lineNumber: 425,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "mt-2 text-sm leading-[1.6] text-[#3c4e66]",
+                                                                children: t("dashboard.microcardDetail.keyTakeawayBody")
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                                lineNumber: 428,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                className: "mt-4 inline-flex rounded-full bg-[#0f5fa7] px-4 py-2 text-xs font-semibold text-white",
+                                                                children: activeTopic.cta
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                                lineNumber: 431,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                        lineNumber: 424,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                lineNumber: 413,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                                                className: "mt-4 rounded-2xl border border-[#e1eaf4] bg-white p-4 sm:p-6",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                        className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$inter_8e004fb0$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__interFont$3e$__["interFont"].className} text-xl font-extrabold text-[#12243c]`,
+                                                        children: t("dashboard.microcardDetail.digitalHarassmentOverview")
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                        lineNumber: 438,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "mt-3 space-y-3",
+                                                        children: topicNarrative(activeTopic).map((paragraph)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "text-sm leading-[1.7] text-[#4f6178]",
+                                                                children: paragraph
+                                                            }, paragraph, false, {
+                                                                fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                                lineNumber: 443,
+                                                                columnNumber: 25
+                                                            }, this))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                        lineNumber: 441,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                                lineNumber: 437,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                        lineNumber: 412,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                                lineNumber: 386,
+                                columnNumber: 15
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                            lineNumber: 385,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                    lineNumber: 371,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
+                lineNumber: 369,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/src/components/dashboard/dashboard-microeducation-page.tsx",
-        lineNumber: 32,
+        lineNumber: 231,
         columnNumber: 5
     }, this);
 }
@@ -6381,7 +6637,7 @@ function ReportSubmissionRecommendationsPage() {
                                                             children: t("dashboard.assistant.triage.recommendations.esafetyBody")
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                            lineNumber: 361,
+                                                            lineNumber: 363,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
@@ -6404,13 +6660,13 @@ function ReportSubmissionRecommendationsPage() {
                                                     size: 12
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 368,
+                                                    lineNumber: 374,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                            lineNumber: 366,
+                                            lineNumber: 370,
                                             columnNumber: 15
                                         }, this)
                                     ]
@@ -6431,12 +6687,12 @@ function ReportSubmissionRecommendationsPage() {
                                                         size: 12
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                        lineNumber: 375,
+                                                        lineNumber: 381,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 374,
+                                                    lineNumber: 380,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6447,7 +6703,7 @@ function ReportSubmissionRecommendationsPage() {
                                                             children: t("dashboard.assistant.triage.recommendations.counsellingTitle")
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                            lineNumber: 378,
+                                                            lineNumber: 384,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6455,19 +6711,19 @@ function ReportSubmissionRecommendationsPage() {
                                                             children: t("dashboard.assistant.triage.recommendations.counsellingBody")
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                            lineNumber: 383,
+                                                            lineNumber: 389,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 377,
+                                                    lineNumber: 383,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                            lineNumber: 373,
+                                            lineNumber: 379,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6478,19 +6734,19 @@ function ReportSubmissionRecommendationsPage() {
                                                     size: 12
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 390,
+                                                    lineNumber: 398,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                            lineNumber: 388,
+                                            lineNumber: 396,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                    lineNumber: 372,
+                                    lineNumber: 378,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -6505,7 +6761,7 @@ function ReportSubmissionRecommendationsPage() {
                             children: t("dashboard.assistant.triage.recommendations.readMore")
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                            lineNumber: 395,
+                            lineNumber: 403,
                             columnNumber: 11
                         }, this)
                     ]
@@ -6543,14 +6799,14 @@ function ReportSubmissionDetailedExplanationsPage() {
                                     size: 14
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                    lineNumber: 416,
+                                    lineNumber: 424,
                                     columnNumber: 13
                                 }, this),
                                 "Detailed Explanations"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                            lineNumber: 412,
+                            lineNumber: 420,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6559,18 +6815,18 @@ function ReportSubmissionDetailedExplanationsPage() {
                                 size: 12
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 420,
+                                lineNumber: 428,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                            lineNumber: 419,
+                            lineNumber: 427,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                    lineNumber: 411,
+                    lineNumber: 419,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -6581,7 +6837,7 @@ function ReportSubmissionDetailedExplanationsPage() {
                             children: "Please review the following information carefully. These guidelines are tailored to your current situation and location to ensure you understand your rights and the process ahead."
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                            lineNumber: 425,
+                            lineNumber: 433,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6599,12 +6855,12 @@ function ReportSubmissionDetailedExplanationsPage() {
                                                         size: 13
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                        lineNumber: 435,
+                                                        lineNumber: 443,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 434,
+                                                    lineNumber: 442,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -6612,13 +6868,13 @@ function ReportSubmissionDetailedExplanationsPage() {
                                                     children: "Legal Rights"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 437,
+                                                    lineNumber: 445,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                            lineNumber: 433,
+                                            lineNumber: 441,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6631,7 +6887,7 @@ function ReportSubmissionDetailedExplanationsPage() {
                                                             children: "Right to Silence"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                            lineNumber: 444,
+                                                            lineNumber: 452,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6639,13 +6895,13 @@ function ReportSubmissionDetailedExplanationsPage() {
                                                             children: "You have the right to remain silent. Anything you say can be used in legal proceedings. It is crucial to understand that silence cannot be used as an admission of guilt."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                            lineNumber: 445,
+                                                            lineNumber: 453,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 443,
+                                                    lineNumber: 451,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6655,7 +6911,7 @@ function ReportSubmissionDetailedExplanationsPage() {
                                                             children: "Legal Counsel"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                            lineNumber: 453,
+                                                            lineNumber: 461,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6663,19 +6919,19 @@ function ReportSubmissionDetailedExplanationsPage() {
                                                             children: "You have the right to legal counsel immediately. If you cannot afford private representation, a duty lawyer can be appointed before questioning begins."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                            lineNumber: 454,
+                                                            lineNumber: 462,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 452,
+                                                    lineNumber: 460,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                            lineNumber: 442,
+                                            lineNumber: 450,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6686,7 +6942,7 @@ function ReportSubmissionDetailedExplanationsPage() {
                                                     children: "Interpreter Access"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 463,
+                                                    lineNumber: 471,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6694,19 +6950,19 @@ function ReportSubmissionDetailedExplanationsPage() {
                                                     children: "You can request a state-provided interpreter for official interviews if you are not fluent in the primary language."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 466,
+                                                    lineNumber: 474,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                            lineNumber: 462,
+                                            lineNumber: 470,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                    lineNumber: 432,
+                                    lineNumber: 440,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6716,17 +6972,17 @@ function ReportSubmissionDetailedExplanationsPage() {
                                             className: "rounded-[20px] bg-[#0f5d9f] p-4 text-white shadow-[0_12px_22px_rgba(15,93,159,0.28)]",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/16",
+                                                    className: "bg-white/16 inline-flex h-7 w-7 items-center justify-center rounded-full",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShieldFilled$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShieldFilled$3e$__["IconShieldFilled"], {
                                                         size: 13
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                        lineNumber: 476,
+                                                        lineNumber: 484,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 475,
+                                                    lineNumber: 483,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -6734,7 +6990,7 @@ function ReportSubmissionDetailedExplanationsPage() {
                                                     children: "Cultural Rights"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 478,
+                                                    lineNumber: 486,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6742,30 +6998,30 @@ function ReportSubmissionDetailedExplanationsPage() {
                                                     children: "Universal protections for your identity and heritage. Understand how your background is protected by law."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 479,
+                                                    lineNumber: 489,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                            lineNumber: 474,
+                                            lineNumber: 482,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
                                             className: "rounded-[20px] bg-[#0b4e87] p-4 text-white shadow-[0_12px_22px_rgba(11,78,135,0.28)]",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/16",
+                                                    className: "bg-white/16 inline-flex h-7 w-7 items-center justify-center rounded-full",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconUsersGroup$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconUsersGroup$3e$__["IconUsersGroup"], {
                                                         size: 13
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                        lineNumber: 487,
+                                                        lineNumber: 497,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 486,
+                                                    lineNumber: 496,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -6773,7 +7029,7 @@ function ReportSubmissionDetailedExplanationsPage() {
                                                     children: "What to Expect"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 489,
+                                                    lineNumber: 499,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6781,25 +7037,25 @@ function ReportSubmissionDetailedExplanationsPage() {
                                                     children: "Step-by-step walk-through of the legal process. Know what comes next and prepare accordingly."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 490,
+                                                    lineNumber: 502,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                            lineNumber: 485,
+                                            lineNumber: 495,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                    lineNumber: 473,
+                                    lineNumber: 481,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                            lineNumber: 431,
+                            lineNumber: 439,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6814,14 +7070,14 @@ function ReportSubmissionDetailedExplanationsPage() {
                                                 size: 14
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 501,
+                                                lineNumber: 513,
                                                 columnNumber: 17
                                             }, this),
                                             "Save to History"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 500,
+                                        lineNumber: 512,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6831,25 +7087,25 @@ function ReportSubmissionDetailedExplanationsPage() {
                                                 size: 14
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 505,
+                                                lineNumber: 517,
                                                 columnNumber: 17
                                             }, this),
                                             "Share Report"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 504,
+                                        lineNumber: 516,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 499,
+                                lineNumber: 511,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                            lineNumber: 498,
+                            lineNumber: 510,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6857,24 +7113,24 @@ function ReportSubmissionDetailedExplanationsPage() {
                             children: "Info saved securely to local storage."
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                            lineNumber: 511,
+                            lineNumber: 523,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                    lineNumber: 424,
+                    lineNumber: 432,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-            lineNumber: 410,
+            lineNumber: 418,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-        lineNumber: 409,
+        lineNumber: 417,
         columnNumber: 5
     }, this);
 }
@@ -6900,7 +7156,7 @@ function ReportSubmissionDetailsPage() {
                                         children: t("dashboard.reportSubmission.incidentTitle")
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 533,
+                                        lineNumber: 545,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -6909,13 +7165,13 @@ function ReportSubmissionDetailsPage() {
                                         className: "mt-1 h-10 w-full rounded-xl border border-[#d7e1ee] bg-white px-3 text-xs font-semibold text-[#1f2a3a] outline-none"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 539,
+                                        lineNumber: 551,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 532,
+                                lineNumber: 544,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6929,7 +7185,7 @@ function ReportSubmissionDetailsPage() {
                                                 children: t("dashboard.reportSubmission.date")
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 548,
+                                                lineNumber: 560,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -6938,13 +7194,13 @@ function ReportSubmissionDetailsPage() {
                                                 className: "mt-1 h-10 w-full rounded-xl border border-[#d7e1ee] bg-white px-3 text-xs font-semibold text-[#1f2a3a] outline-none"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 554,
+                                                lineNumber: 566,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 547,
+                                        lineNumber: 559,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6955,7 +7211,7 @@ function ReportSubmissionDetailsPage() {
                                                 children: t("dashboard.reportSubmission.location")
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 561,
+                                                lineNumber: 573,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -6964,19 +7220,19 @@ function ReportSubmissionDetailsPage() {
                                                 className: "mt-1 h-10 w-full rounded-xl border border-[#d7e1ee] bg-white px-3 text-xs font-semibold text-[#1f2a3a] outline-none"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 567,
+                                                lineNumber: 579,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 560,
+                                        lineNumber: 572,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 546,
+                                lineNumber: 558,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6987,7 +7243,7 @@ function ReportSubmissionDetailsPage() {
                                         children: t("dashboard.reportSubmission.summary")
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 576,
+                                        lineNumber: 588,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -6997,19 +7253,19 @@ function ReportSubmissionDetailsPage() {
                                         className: "mt-1 w-full resize-none rounded-xl border border-[#d7e1ee] bg-white px-3 py-2 text-xs leading-[1.55] text-[#1f2a3a] outline-none"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 582,
+                                        lineNumber: 594,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 575,
+                                lineNumber: 587,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 531,
+                        lineNumber: 543,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
@@ -7020,7 +7276,7 @@ function ReportSubmissionDetailsPage() {
                                 children: t("dashboard.reportSubmission.completeness")
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 592,
+                                lineNumber: 604,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7029,12 +7285,12 @@ function ReportSubmissionDetailsPage() {
                                     className: "h-2 w-[72%] rounded-full bg-[#0f5d9f]"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                    lineNumber: 596,
+                                    lineNumber: 608,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 595,
+                                lineNumber: 607,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7042,7 +7298,7 @@ function ReportSubmissionDetailsPage() {
                                 children: t("dashboard.reportSubmission.completed72")
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 598,
+                                lineNumber: 610,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -7056,14 +7312,14 @@ function ReportSubmissionDetailsPage() {
                                                 className: "text-[#0f5d9f]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 604,
+                                                lineNumber: 616,
                                                 columnNumber: 15
                                             }, this),
                                             t("dashboard.reportSubmission.incidentTypeIdentified")
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 603,
+                                        lineNumber: 615,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -7074,14 +7330,14 @@ function ReportSubmissionDetailsPage() {
                                                 className: "text-[#0f5d9f]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 608,
+                                                lineNumber: 620,
                                                 columnNumber: 15
                                             }, this),
                                             t("dashboard.reportSubmission.whoWhatWhereCaptured")
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 607,
+                                        lineNumber: 619,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -7092,32 +7348,32 @@ function ReportSubmissionDetailsPage() {
                                                 className: "text-[#0f5d9f]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 612,
+                                                lineNumber: 624,
                                                 columnNumber: 15
                                             }, this),
                                             t("dashboard.reportSubmission.addEvidenceToStrengthenCase")
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 611,
+                                        lineNumber: 623,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 602,
+                                lineNumber: 614,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 591,
+                        lineNumber: 603,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                lineNumber: 530,
+                lineNumber: 542,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7129,7 +7385,7 @@ function ReportSubmissionDetailsPage() {
                         children: t("common.back")
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 620,
+                        lineNumber: 632,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -7142,25 +7398,25 @@ function ReportSubmissionDetailsPage() {
                                 className: "ml-1"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 631,
+                                lineNumber: 643,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 626,
+                        lineNumber: 638,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                lineNumber: 619,
+                lineNumber: 631,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-        lineNumber: 524,
+        lineNumber: 536,
         columnNumber: 5
     }, this);
 }
@@ -7186,7 +7442,7 @@ function ReportSubmissionEvidencePage() {
                                         children: t("dashboard.reportSubmission.dragFiles")
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 651,
+                                        lineNumber: 663,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7194,7 +7450,7 @@ function ReportSubmissionEvidencePage() {
                                         children: t("dashboard.reportSubmission.uploadLimits")
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 654,
+                                        lineNumber: 666,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -7202,13 +7458,13 @@ function ReportSubmissionEvidencePage() {
                                         children: t("dashboard.reportSubmission.uploadEvidence")
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 657,
+                                        lineNumber: 669,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 650,
+                                lineNumber: 662,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7226,12 +7482,12 @@ function ReportSubmissionEvidencePage() {
                                                     className: "object-cover"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 665,
+                                                    lineNumber: 677,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 664,
+                                                lineNumber: 676,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7242,7 +7498,7 @@ function ReportSubmissionEvidencePage() {
                                                         children: "Hallway-photo.jpg"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                        lineNumber: 673,
+                                                        lineNumber: 685,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7250,19 +7506,19 @@ function ReportSubmissionEvidencePage() {
                                                         children: "1.4 MB"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                        lineNumber: 676,
+                                                        lineNumber: 688,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 672,
+                                                lineNumber: 684,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 663,
+                                        lineNumber: 675,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -7278,7 +7534,7 @@ function ReportSubmissionEvidencePage() {
                                                         className: "object-cover"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                        lineNumber: 682,
+                                                        lineNumber: 694,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7287,18 +7543,18 @@ function ReportSubmissionEvidencePage() {
                                                             size: 12
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                            lineNumber: 689,
+                                                            lineNumber: 701,
                                                             columnNumber: 19
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                        lineNumber: 688,
+                                                        lineNumber: 700,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 681,
+                                                lineNumber: 693,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7309,7 +7565,7 @@ function ReportSubmissionEvidencePage() {
                                                         children: "CCTV-clip.mp4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                        lineNumber: 693,
+                                                        lineNumber: 705,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7317,31 +7573,31 @@ function ReportSubmissionEvidencePage() {
                                                         children: "6.8 MB"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                        lineNumber: 696,
+                                                        lineNumber: 708,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 692,
+                                                lineNumber: 704,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 680,
+                                        lineNumber: 692,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 662,
+                                lineNumber: 674,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 649,
+                        lineNumber: 661,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
@@ -7352,7 +7608,7 @@ function ReportSubmissionEvidencePage() {
                                 children: t("dashboard.reportSubmission.evidenceStatus")
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 703,
+                                lineNumber: 715,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7365,20 +7621,20 @@ function ReportSubmissionEvidencePage() {
                                                 children: t("dashboard.reportSubmission.photos")
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 708,
+                                                lineNumber: 720,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: t("dashboard.reportSubmission.oneAttached")
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 709,
+                                                lineNumber: 721,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 707,
+                                        lineNumber: 719,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7388,20 +7644,20 @@ function ReportSubmissionEvidencePage() {
                                                 children: t("dashboard.reportSubmission.videos")
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 712,
+                                                lineNumber: 724,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: t("dashboard.reportSubmission.oneAttached")
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 713,
+                                                lineNumber: 725,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 711,
+                                        lineNumber: 723,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7411,38 +7667,38 @@ function ReportSubmissionEvidencePage() {
                                                 children: t("dashboard.reportSubmission.documents")
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 716,
+                                                lineNumber: 728,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: t("dashboard.reportSubmission.zeroAttached")
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 717,
+                                                lineNumber: 729,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 715,
+                                        lineNumber: 727,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 706,
+                                lineNumber: 718,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 702,
+                        lineNumber: 714,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                lineNumber: 648,
+                lineNumber: 660,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7454,7 +7710,7 @@ function ReportSubmissionEvidencePage() {
                         children: t("common.back")
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 724,
+                        lineNumber: 736,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -7467,25 +7723,25 @@ function ReportSubmissionEvidencePage() {
                                 className: "ml-1"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 735,
+                                lineNumber: 747,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 730,
+                        lineNumber: 742,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                lineNumber: 723,
+                lineNumber: 735,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-        lineNumber: 642,
+        lineNumber: 654,
         columnNumber: 5
     }, this);
 }
@@ -7513,7 +7769,7 @@ function ReportSubmissionReviewPage() {
                                             children: t("dashboard.reportSubmission.incidentSummary")
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                            lineNumber: 756,
+                                            lineNumber: 768,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7521,7 +7777,7 @@ function ReportSubmissionReviewPage() {
                                             children: t("dashboard.reportSubmission.incidentTitleValue")
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                            lineNumber: 759,
+                                            lineNumber: 771,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7529,13 +7785,13 @@ function ReportSubmissionReviewPage() {
                                             children: t("dashboard.reportSubmission.summaryValue")
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                            lineNumber: 762,
+                                            lineNumber: 774,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                    lineNumber: 755,
+                                    lineNumber: 767,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7546,7 +7802,7 @@ function ReportSubmissionReviewPage() {
                                             children: t("dashboard.reportSubmission.attachedEvidence")
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                            lineNumber: 768,
+                                            lineNumber: 780,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -7560,14 +7816,14 @@ function ReportSubmissionReviewPage() {
                                                             className: "text-[#0f5d9f]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                            lineNumber: 773,
+                                                            lineNumber: 785,
                                                             columnNumber: 19
                                                         }, this),
                                                         "Hallway-photo.jpg"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 772,
+                                                    lineNumber: 784,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -7578,37 +7834,37 @@ function ReportSubmissionReviewPage() {
                                                             className: "text-[#0f5d9f]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                            lineNumber: 777,
+                                                            lineNumber: 789,
                                                             columnNumber: 19
                                                         }, this),
                                                         "CCTV-clip.mp4"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                    lineNumber: 776,
+                                                    lineNumber: 788,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                            lineNumber: 771,
+                                            lineNumber: 783,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                    lineNumber: 767,
+                                    lineNumber: 779,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                            lineNumber: 754,
+                            lineNumber: 766,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 753,
+                        lineNumber: 765,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
@@ -7619,7 +7875,7 @@ function ReportSubmissionReviewPage() {
                                 children: t("dashboard.reportSubmission.finalChecks")
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 786,
+                                lineNumber: 798,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -7633,14 +7889,14 @@ function ReportSubmissionReviewPage() {
                                                 className: "text-[#0f5d9f]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 791,
+                                                lineNumber: 803,
                                                 columnNumber: 15
                                             }, this),
                                             t("dashboard.reportSubmission.personalDataRemoved")
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 790,
+                                        lineNumber: 802,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -7651,14 +7907,14 @@ function ReportSubmissionReviewPage() {
                                                 className: "text-[#0f5d9f]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 795,
+                                                lineNumber: 807,
                                                 columnNumber: 15
                                             }, this),
                                             t("dashboard.reportSubmission.timelineFieldsCompleted")
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 794,
+                                        lineNumber: 806,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -7669,32 +7925,32 @@ function ReportSubmissionReviewPage() {
                                                 className: "text-[#0f5d9f]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                                lineNumber: 799,
+                                                lineNumber: 811,
                                                 columnNumber: 15
                                             }, this),
                                             t("dashboard.reportSubmission.emergencyEscalationNotRequired")
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                        lineNumber: 798,
+                                        lineNumber: 810,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 789,
+                                lineNumber: 801,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 785,
+                        lineNumber: 797,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                lineNumber: 752,
+                lineNumber: 764,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -7706,14 +7962,14 @@ function ReportSubmissionReviewPage() {
                         className: "mt-0.5 h-3.5 w-3.5 rounded border-[#c8d5e6]"
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 807,
+                        lineNumber: 819,
                         columnNumber: 9
                     }, this),
                     t("dashboard.reportSubmission.confirmAccuracy")
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                lineNumber: 806,
+                lineNumber: 818,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7725,7 +7981,7 @@ function ReportSubmissionReviewPage() {
                         children: t("common.back")
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 816,
+                        lineNumber: 828,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -7738,25 +7994,25 @@ function ReportSubmissionReviewPage() {
                                 className: "ml-1"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 827,
+                                lineNumber: 839,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 822,
+                        lineNumber: 834,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                lineNumber: 815,
+                lineNumber: 827,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-        lineNumber: 746,
+        lineNumber: 758,
         columnNumber: 5
     }, this);
 }
@@ -7777,12 +8033,12 @@ function ReportSubmissionSuccessPage() {
                             size: 24
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                            lineNumber: 846,
+                            lineNumber: 858,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 845,
+                        lineNumber: 857,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -7790,7 +8046,7 @@ function ReportSubmissionSuccessPage() {
                         children: t("dashboard.reportSubmission.reportReceivedSuccessfully")
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 848,
+                        lineNumber: 860,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7803,7 +8059,7 @@ function ReportSubmissionSuccessPage() {
                                 children: "SS-2026-0421"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 853,
+                                lineNumber: 865,
                                 columnNumber: 11
                             }, this),
                             ".",
@@ -7812,13 +8068,13 @@ function ReportSubmissionSuccessPage() {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 851,
+                        lineNumber: 863,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                lineNumber: 844,
+                lineNumber: 856,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7832,7 +8088,7 @@ function ReportSubmissionSuccessPage() {
                                 children: t("dashboard.reportSubmission.trackSubmission")
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 860,
+                                lineNumber: 872,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7840,13 +8096,13 @@ function ReportSubmissionSuccessPage() {
                                 children: t("dashboard.reportSubmission.trackSubmissionBody")
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 863,
+                                lineNumber: 875,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 859,
+                        lineNumber: 871,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -7857,7 +8113,7 @@ function ReportSubmissionSuccessPage() {
                                 children: t("dashboard.reportSubmission.needSupport")
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 868,
+                                lineNumber: 880,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7865,19 +8121,19 @@ function ReportSubmissionSuccessPage() {
                                 children: t("dashboard.reportSubmission.needSupportBody")
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                                lineNumber: 871,
+                                lineNumber: 883,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 867,
+                        lineNumber: 879,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                lineNumber: 858,
+                lineNumber: 870,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7889,7 +8145,7 @@ function ReportSubmissionSuccessPage() {
                         children: t("dashboard.reportSubmission.openReports")
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 878,
+                        lineNumber: 890,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -7898,19 +8154,19 @@ function ReportSubmissionSuccessPage() {
                         children: t("dashboard.reportSubmission.backToDashboard")
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                        lineNumber: 884,
+                        lineNumber: 896,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-                lineNumber: 877,
+                lineNumber: 889,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/dashboard-report-submission-pages.tsx",
-        lineNumber: 838,
+        lineNumber: 850,
         columnNumber: 5
     }, this);
 }

@@ -8,7 +8,9 @@
   "static/chunks/node_modules_three_build_three_module_0c59ee63.js",
   "static/chunks/node_modules_three_build_three_module_f7d46d9b.js",
   "static/chunks/node_modules_@react-three_fiber_dist_d2d2cc79._.js",
-  "static/chunks/node_modules_546ff972._.js",
+  "static/chunks/node_modules_framer-motion_dist_es_db47bafe._.js",
+  "static/chunks/node_modules_motion-dom_dist_es_47fcd403._.js",
+  "static/chunks/node_modules_e8b6c567._.js",
   "static/chunks/[root-of-the-server]__471826fd._.css"
 ],
     source: "dynamic"

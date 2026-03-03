@@ -2,6 +2,7 @@
 
 import { Outfit, Space_Grotesk } from "next/font/google";
 import Image from "next/image";
+import { motion, useReducedMotion } from "framer-motion";
 
 import {
   IconBolt,
@@ -55,6 +56,15 @@ function LanguageSwitcher() {
 
 export default function ResourcesSection() {
   const { t } = useTranslation();
+  const shouldReduceMotion = useReducedMotion();
+
+  const cardMotionProps = shouldReduceMotion
+    ? {}
+    : {
+        whileHover: { y: -10, scale: 1.02 },
+        whileTap: { scale: 0.995 },
+        transition: { type: "spring", stiffness: 280, damping: 24 },
+      };
 
   return (
     <section className="relative z-20 -mt-12">
@@ -63,7 +73,10 @@ export default function ResourcesSection() {
         className="w-full rounded-t-[32px] bg-[#f4f1e8] px-4 py-12 sm:px-8 sm:py-16 lg:px-8 lg:py-20 min-[1440px]:h-[524.25px] min-[1440px]:rounded-t-[64px] min-[1440px]:px-8 min-[1440px]:py-24"
       >
         <div className="mx-auto grid h-full w-full max-w-[1376px] grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4 xl:gap-6 min-[1440px]:h-[332.25px] min-[1440px]:w-[1376px] min-[1440px]:gap-8">
-          <article className="relative flex min-h-[260px] flex-col overflow-hidden rounded-[22px] bg-[#f8f9f9] p-6 shadow-[0_18px_40px_rgba(15,23,42,0.10)] xl:h-full min-[1440px]:h-[332.25px] min-[1440px]:rounded-none min-[1440px]:rounded-br-[48px] min-[1440px]:rounded-tl-[48px] min-[1440px]:px-[34px] min-[1440px]:pt-[34px]">
+          <motion.article
+            {...cardMotionProps}
+            className="relative flex min-h-[260px] flex-col overflow-hidden rounded-[22px] bg-[#f8f9f9] p-6 shadow-[0_18px_40px_rgba(15,23,42,0.10)] xl:h-full min-[1440px]:h-[332.25px] min-[1440px]:rounded-none min-[1440px]:rounded-br-[48px] min-[1440px]:rounded-tl-[48px] min-[1440px]:px-[34px] min-[1440px]:pt-[34px]"
+          >
             <span className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full bg-[#e5eceb]" />
             <div className="relative z-10 inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#ddf2e7] text-[#076f63]">
               <IconWorld size={20} stroke={2} />
@@ -81,9 +94,12 @@ export default function ResourcesSection() {
             <div className="relative z-10 mt-auto pt-6 min-[1440px]:static min-[1440px]:m-0 min-[1440px]:p-0">
               <LanguageSwitcher />
             </div>
-          </article>
+          </motion.article>
 
-          <article className="relative min-h-[260px] xl:h-full min-[1440px]:h-[332.25px] min-[1440px]:pt-12">
+          <motion.article
+            {...cardMotionProps}
+            className="relative min-h-[260px] xl:h-full min-[1440px]:h-[332.25px] min-[1440px]:pt-12"
+          >
             <div className="relative flex h-full flex-col overflow-hidden rounded-[22px] bg-[#01579b] p-6 text-white shadow-[0_22px_45px_rgba(1,87,155,0.35)] min-[1440px]:rounded-none min-[1440px]:rounded-bl-[48px] min-[1440px]:rounded-tr-[48px]">
               <span className="pointer-events-none absolute left-[-2.5rem] top-[12.265625rem] h-32 w-32 rounded-full bg-[linear-gradient(90deg,#01579B_0%,#001E35_100%)]" />
               <div className="relative z-10 inline-flex h-6 w-6 items-center justify-center text-[#FFA300]">
@@ -99,9 +115,12 @@ export default function ResourcesSection() {
                 {t("landing.resources.cards.quickExit.action")}
               </button>
             </div>
-          </article>
+          </motion.article>
 
-          <article className="relative flex min-h-[260px] flex-col overflow-hidden rounded-[22px] bg-[#efe37b] p-6 shadow-[0_18px_40px_rgba(15,23,42,0.10)] xl:h-full min-[1440px]:h-[332.25px] min-[1440px]:rounded-none min-[1440px]:rounded-br-[48px] min-[1440px]:rounded-tl-[48px] min-[1440px]:px-[34px] min-[1440px]:pt-[39px]">
+          <motion.article
+            {...cardMotionProps}
+            className="relative flex min-h-[260px] flex-col overflow-hidden rounded-[22px] bg-[#efe37b] p-6 shadow-[0_18px_40px_rgba(15,23,42,0.10)] xl:h-full min-[1440px]:h-[332.25px] min-[1440px]:rounded-none min-[1440px]:rounded-br-[48px] min-[1440px]:rounded-tl-[48px] min-[1440px]:px-[34px] min-[1440px]:pt-[39px]"
+          >
             <span className="pointer-events-none absolute bottom-0 right-0 h-20 w-20 rounded-tl-[48px] bg-[#FBBF24]" />
             <div className="relative z-10 inline-flex min-[1440px]:ml-[6px]">
               <Image
@@ -127,9 +146,12 @@ export default function ResourcesSection() {
               <IconFileText size={18} stroke={2} />
               <IconPhoto size={18} stroke={2} />
             </div>
-          </article>
+          </motion.article>
 
-          <article className="relative min-h-[260px] xl:h-full min-[1440px]:h-[332.25px] min-[1440px]:w-[320px] min-[1440px]:pt-12">
+          <motion.article
+            {...cardMotionProps}
+            className="relative min-h-[260px] xl:h-full min-[1440px]:h-[332.25px] min-[1440px]:w-[320px] min-[1440px]:pt-12"
+          >
             <div className="flex h-full flex-col overflow-hidden rounded-[22px] bg-[#FF8F00] p-6 text-white shadow-[0_18px_40px_rgba(255,149,0,0.30)] min-[1440px]:h-[284.25px] min-[1440px]:w-[320px] min-[1440px]:rounded-none min-[1440px]:rounded-br-[48px] min-[1440px]:rounded-tl-[48px] min-[1440px]:px-[35px] min-[1440px]:pt-[37px]">
               <div className="inline-flex h-[30px] w-[30px] items-center justify-center">
                 <Image
@@ -152,7 +174,7 @@ export default function ResourcesSection() {
                 </div>
               </div>
             </div>
-          </article>
+          </motion.article>
         </div>
       </div>
     </section>

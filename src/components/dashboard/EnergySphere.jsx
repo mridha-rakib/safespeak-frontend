@@ -104,15 +104,15 @@ const PARTICLE_VERTEX_SHADER = `
   void main() {
     vec3 p = position;
 
-    float t = uTime * (0.45 + aSeed * 0.9);
+    float t = uTime * (0.26 + aSeed * 0.38);
     float angle = t + aSeed * 6.28318530718;
     mat2 spin = mat2(cos(angle), -sin(angle), sin(angle), cos(angle));
 
     p.xz = spin * p.xz;
-    p.xy = mat2(cos(t * 0.33), -sin(t * 0.33), sin(t * 0.33), cos(t * 0.33)) * p.xy;
-    p.y += sin(t * 2.7 + aSeed * 14.0) * 0.04;
+    p.xy = mat2(cos(t * 0.28), -sin(t * 0.28), sin(t * 0.28), cos(t * 0.28)) * p.xy;
+    p.y += sin(t * 1.8 + aSeed * 14.0) * 0.035;
 
-    float pulse = 0.68 + 0.32 * sin(t * 3.4 + aSeed * 19.0);
+    float pulse = 0.7 + 0.3 * sin(t * 2.2 + aSeed * 19.0);
     vPulse = pulse;
     vSeed = aSeed;
 
@@ -219,7 +219,7 @@ function CoreSphere() {
   );
 }
 
-function EnergyParticles({ count = 1500, radius = 0.84 }) {
+function EnergyParticles({ count = 1500, radius = 0.84, speed = 1 }) {
   const materialRef = useRef(null);
 
   const { positions, seeds, scales } = useMemo(() => {
@@ -250,7 +250,7 @@ function EnergyParticles({ count = 1500, radius = 0.84 }) {
 
   useFrame((state) => {
     if (materialRef.current) {
-      materialRef.current.uTime = state.clock.elapsedTime;
+      materialRef.current.uTime = state.clock.elapsedTime * speed;
     }
   });
 
@@ -289,14 +289,30 @@ function OuterGlow() {
   );
 }
 
-function EnergySphereScene({ particleCount = 1500 }) {
+function EnergySphereScene({
+  particleCount = 1500,
+  particleSpeed = 1,
+  rotationSpeed = 0.16,
+}) {
+  const groupRef = useRef(null);
+
+  useFrame((state, delta) => {
+    if (!groupRef.current) {
+      return;
+    }
+
+    groupRef.current.rotation.y += delta * rotationSpeed;
+    groupRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.28) * 0.06;
+    groupRef.current.rotation.z = Math.cos(state.clock.elapsedTime * 0.21) * 0.03;
+  });
+
   return (
-    <group>
+    <group ref={groupRef}>
       <ambientLight intensity={0.24} />
       <pointLight intensity={1.0} color="#80b7ff" position={[2.2, 1.2, 2.8]} />
       <pointLight intensity={0.7} color="#ff7dcf" position={[-2.4, -1.3, 2.2]} />
       <CoreSphere />
-      <EnergyParticles count={particleCount} />
+      <EnergyParticles count={particleCount} speed={particleSpeed} />
       <OuterGlow />
     </group>
   );
@@ -305,6 +321,8 @@ function EnergySphereScene({ particleCount = 1500 }) {
 export default function EnergySphere({
   className = "",
   particleCount = 1500,
+  particleSpeed = 1,
+  rotationSpeed = 0.16,
   size = "clamp(220px, 44vw, 360px)",
 }) {
   return (
@@ -321,7 +339,11 @@ export default function EnergySphere({
         onCreated={({ gl }) => gl.setClearColor(0x000000, 0)}
         style={{ background: "transparent" }}
       >
-        <EnergySphereScene particleCount={particleCount} />
+        <EnergySphereScene
+          particleCount={particleCount}
+          particleSpeed={particleSpeed}
+          rotationSpeed={rotationSpeed}
+        />
       </Canvas>
     </div>
   );

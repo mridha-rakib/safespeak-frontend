@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Inter } from "next/font/google";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 import { IconChevronDown } from "@tabler/icons-react";
@@ -14,6 +15,16 @@ import {
   type SupportedLanguage,
 } from "@/lib/i18n";
 import { SafeSpeakLogo } from "@/components/ui/safe-speak-logo";
+
+const LANGUAGE_FLAGS: Record<SupportedLanguage, string> = {
+  en: "🇺🇸",
+  es: "🇪🇸",
+};
+
+const interExtraBold = Inter({
+  subsets: ["latin"],
+  weight: ["800"],
+});
 
 export default function LandingNavbar() {
   const { t, i18n } = useTranslation();
@@ -77,7 +88,7 @@ export default function LandingNavbar() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2 sm:gap-3 lg:h-[48px] lg:w-[245px] lg:justify-between lg:gap-2">
+          <div className="flex items-center gap-2 sm:gap-3 lg:h-[48px] lg:justify-end lg:gap-3">
             <a
               href="/login"
               className="inline-flex h-9 items-center justify-center rounded-full bg-[#ff8f00] px-5 text-xs font-bold text-[#0b3152] shadow-[0_10px_24px_rgba(255,143,0,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(255,143,0,0.42)] lg:h-[38px] lg:w-[96px] lg:px-0"
@@ -89,14 +100,22 @@ export default function LandingNavbar() {
               <button
                 type="button"
                 onClick={() => setIsLanguageMenuOpen((value) => !value)}
-                className="inline-flex h-[38px] w-[141px] items-center justify-center gap-1 rounded-full border border-white/25 px-0 text-xs font-semibold text-white/90 transition hover:border-white/40"
+                className="inline-flex items-center justify-center gap-2 rounded-full px-2 py-1 text-white transition hover:text-white/85"
                 aria-expanded={isLanguageMenuOpen}
                 aria-label={t("navbar.language.chooseLanguage")}
               >
-                <span className="text-[10px] font-bold uppercase">{activeLanguage.shortCode}</span>
-                <span>{t(activeLanguage.labelKey)}</span>
+                <span aria-hidden className="text-base leading-none">
+                  {LANGUAGE_FLAGS[activeLanguage.code]}
+                </span>
+                <span
+                  className={`${interExtraBold.className} inline-flex h-[28px] ${
+                    activeLanguage.code === "en" ? "w-[51px]" : "w-auto"
+                  } items-center text-[13.6px] font-extrabold leading-[28px] tracking-[0.15px] align-middle`}
+                >
+                  {t(activeLanguage.labelKey)}
+                </span>
                 <IconChevronDown
-                  size={12}
+                  size={18}
                   className={`transition-transform duration-150 ${isLanguageMenuOpen ? "rotate-180" : ""}`}
                 />
               </button>
@@ -111,11 +130,13 @@ export default function LandingNavbar() {
                         key={option.code}
                         type="button"
                         onClick={() => void handleLanguageChange(option.code)}
-                        className={`flex w-full items-center justify-between rounded-xl px-3 py-2 text-left text-xs font-semibold transition ${
+                        className={`flex w-full items-center gap-2 rounded-xl px-3 py-2 text-left text-sm font-semibold transition ${
                           isActive ? "bg-white/15 text-white" : "text-white/85 hover:bg-white/10 hover:text-white"
                         }`}
                       >
-                        <span className="text-[10px] font-bold uppercase">{option.shortCode}</span>
+                        <span aria-hidden className="text-base leading-none">
+                          {LANGUAGE_FLAGS[option.code]}
+                        </span>
                         <span>{t(option.labelKey)}</span>
                       </button>
                     );
