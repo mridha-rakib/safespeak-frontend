@@ -13,7 +13,7 @@ export default function PillarsVariant() {
       <div className="mx-auto flex h-full w-full max-w-[1376px] flex-col">
         <div className="grid gap-4 lg:grid-cols-[1fr_1fr]">
           <div className="grid gap-4">
-            <article className="relative h-[288px] w-full max-w-[628px] overflow-hidden rounded-[24px] bg-[#005691] p-8 shadow-[0_16px_30px_rgba(0,86,145,0.24)]">
+            <article className="relative h-[288px] w-full overflow-hidden rounded-[24px] bg-[#005691] p-8 shadow-[0_16px_30px_rgba(0,86,145,0.24)]">
               <Image
                 src={landingScam}
                 alt=""
@@ -22,9 +22,15 @@ export default function PillarsVariant() {
               />
               <div className="relative z-10 flex h-full flex-col justify-between text-white">
                 <div>
-                  <p className="text-[8px] font-semibold uppercase tracking-[0.2em] text-white/90">Cyber</p>
-                  <h3 className="mt-1 text-[48px] font-black uppercase leading-[48px] tracking-[-1.92px]">Scam</h3>
-                  <h3 className="text-[48px] font-black uppercase leading-[48px] tracking-[-1.92px]">Shield</h3>
+                  <p className="text-[8px] font-semibold uppercase tracking-[0.2em] text-white/90">
+                    Cyber
+                  </p>
+                  <h3 className="mt-1 text-[48px] font-black uppercase leading-[48px] tracking-[-1.92px]">
+                    Scam
+                  </h3>
+                  <h3 className="text-[48px] font-black uppercase leading-[48px] tracking-[-1.92px]">
+                    Shield
+                  </h3>
                 </div>
 
                 <div className="flex items-end justify-between">
@@ -38,7 +44,7 @@ export default function PillarsVariant() {
               </div>
             </article>
 
-            <article className="relative h-[288px] w-full max-w-[628px] overflow-hidden rounded-[24px] bg-[#FDB927] p-8 shadow-[0_14px_30px_rgba(124,92,15,0.22)]">
+            <article className="relative h-[288px] w-full overflow-hidden rounded-[24px] bg-[#FDB927] p-8 shadow-[0_14px_30px_rgba(124,92,15,0.22)]">
               <Image
                 src={legalText}
                 alt=""
@@ -47,21 +53,27 @@ export default function PillarsVariant() {
               />
               <div className="relative z-10 flex h-full flex-col justify-between text-[#111827]">
                 <div>
-                  <p className="text-[8px] font-semibold uppercase tracking-[0.2em] text-[#6B4E00]">Legal</p>
-                  <h3 className="mt-1 text-[48px] font-black uppercase leading-[0.9] tracking-[-1px] text-[#001A33]">Resources</h3>
+                  <p className="text-[8px] font-semibold uppercase tracking-[0.2em] text-[#6B4E00]">
+                    Legal
+                  </p>
+                  <h3 className="mt-1 text-[48px] font-black uppercase leading-[0.9] tracking-[-1px] text-[#001A33]">
+                    Resources
+                  </h3>
                 </div>
 
                 <div className="flex items-end justify-between">
                   <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#F1AA17] text-[#1E293B]">
                     <IconBook2 size={14} stroke={2} />
                   </span>
-                  <span className="text-[14px] font-bold uppercase tracking-[0.01em] text-[#111827]">View Library</span>
+                  <span className="text-[14px] font-bold uppercase tracking-[0.01em] text-[#111827]">
+                    View Library
+                  </span>
                 </div>
               </div>
             </article>
           </div>
 
-          <article className="relative h-[600px] w-full max-w-[628px] overflow-hidden rounded-[24px] bg-[#F39200] p-12 shadow-[0_16px_35px_rgba(156,92,0,0.28)]">
+          <article className="relative h-[600px] w-full overflow-hidden rounded-[24px] bg-[#F39200] p-12 shadow-[0_16px_35px_rgba(156,92,0,0.28)]">
             <div className="pointer-events-none absolute right-12 top-[128px] flex flex-col gap-7 opacity-45">
               <span className="h-px w-28 bg-white/70" />
               <span className="h-px w-20 bg-white/70" />
@@ -78,7 +90,8 @@ export default function PillarsVariant() {
               </h3>
 
               <p className="mt-8 max-w-[360px] text-sm leading-5 text-white/95">
-                Educational empowerment lessons in bite-sized formats. Learn about your rights and safety in minutes.
+                Educational empowerment lessons in bite-sized formats. Learn
+                about your rights and safety in minutes.
               </p>
 
               <button

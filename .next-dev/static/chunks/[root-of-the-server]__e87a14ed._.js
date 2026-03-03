@@ -2305,7 +2305,7 @@ function PillarsVariant() {
                             className: "grid gap-4",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                    className: "relative h-[288px] w-full max-w-[628px] overflow-hidden rounded-[24px] bg-[#005691] p-8 shadow-[0_16px_30px_rgba(0,86,145,0.24)]",
+                                    className: "relative h-[288px] w-full overflow-hidden rounded-[24px] bg-[#005691] p-8 shadow-[0_16px_30px_rgba(0,86,145,0.24)]",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$landing_scam$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$landing_scam$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
@@ -2335,7 +2335,7 @@ function PillarsVariant() {
                                                             children: "Scam"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                                            lineNumber: 26,
+                                                            lineNumber: 28,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2343,7 +2343,7 @@ function PillarsVariant() {
                                                             children: "Shield"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                                            lineNumber: 27,
+                                                            lineNumber: 31,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
@@ -2362,12 +2362,12 @@ function PillarsVariant() {
                                                                 stroke: 2
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                                                lineNumber: 32,
+                                                                lineNumber: 38,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                                            lineNumber: 31,
+                                                            lineNumber: 37,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2375,13 +2375,13 @@ function PillarsVariant() {
                                                             children: "Access Tool"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                                            lineNumber: 34,
+                                                            lineNumber: 40,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                                    lineNumber: 30,
+                                                    lineNumber: 36,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
@@ -2397,7 +2397,7 @@ function PillarsVariant() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                    className: "relative h-[288px] w-full max-w-[628px] overflow-hidden rounded-[24px] bg-[#FDB927] p-8 shadow-[0_14px_30px_rgba(124,92,15,0.22)]",
+                                    className: "relative h-[288px] w-full overflow-hidden rounded-[24px] bg-[#FDB927] p-8 shadow-[0_14px_30px_rgba(124,92,15,0.22)]",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$Text$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$Text$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
@@ -2406,7 +2406,7 @@ function PillarsVariant() {
                                             className: "pointer-events-none absolute left-0 top-[56px] h-[200px] w-[650.78px] opacity-5"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                            lineNumber: 42,
+                                            lineNumber: 48,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2419,7 +2419,7 @@ function PillarsVariant() {
                                                             children: "Legal"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                                            lineNumber: 50,
+                                                            lineNumber: 56,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2427,13 +2427,13 @@ function PillarsVariant() {
                                                             children: "Resources"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                                            lineNumber: 51,
+                                                            lineNumber: 59,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                                    lineNumber: 49,
+                                                    lineNumber: 55,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2446,12 +2446,12 @@ function PillarsVariant() {
                                                                 stroke: 2
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                                                lineNumber: 56,
+                                                                lineNumber: 66,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                                            lineNumber: 55,
+                                                            lineNumber: 65,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2459,25 +2459,25 @@ function PillarsVariant() {
                                                             children: "View Library"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                                            lineNumber: 58,
+                                                            lineNumber: 68,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                                    lineNumber: 54,
+                                                    lineNumber: 64,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                            lineNumber: 48,
+                                            lineNumber: 54,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                    lineNumber: 41,
+                                    lineNumber: 47,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -2487,7 +2487,7 @@ function PillarsVariant() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                            className: "relative h-[600px] w-full max-w-[628px] overflow-hidden rounded-[24px] bg-[#F39200] p-12 shadow-[0_16px_35px_rgba(156,92,0,0.28)]",
+                            className: "relative h-[600px] w-full overflow-hidden rounded-[24px] bg-[#F39200] p-12 shadow-[0_16px_35px_rgba(156,92,0,0.28)]",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "pointer-events-none absolute right-12 top-[128px] flex flex-col gap-7 opacity-45",
@@ -2496,20 +2496,20 @@ function PillarsVariant() {
                                             className: "h-px w-28 bg-white/70"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                            lineNumber: 66,
+                                            lineNumber: 78,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "h-px w-20 bg-white/70"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                            lineNumber: 67,
+                                            lineNumber: 79,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                    lineNumber: 65,
+                                    lineNumber: 77,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2522,12 +2522,12 @@ function PillarsVariant() {
                                                 stroke: 2
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                                lineNumber: 71,
+                                                lineNumber: 83,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                            lineNumber: 70,
+                                            lineNumber: 82,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2536,14 +2536,14 @@ function PillarsVariant() {
                                                 "Micro-",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                     fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                                    lineNumber: 76,
+                                                    lineNumber: 88,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Cards"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 86,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2551,7 +2551,7 @@ function PillarsVariant() {
                                             children: "Educational empowerment lessons in bite-sized formats. Learn about your rights and safety in minutes."
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 92,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2560,19 +2560,19 @@ function PillarsVariant() {
                                             children: "Explore lessons"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                            lineNumber: 84,
+                                            lineNumber: 97,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                    lineNumber: 69,
+                                    lineNumber: 81,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                            lineNumber: 64,
+                            lineNumber: 76,
                             columnNumber: 11
                         }, this)
                     ]
@@ -2590,14 +2590,14 @@ function PillarsVariant() {
                                 "Variant of",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                    lineNumber: 97,
+                                    lineNumber: 110,
                                     columnNumber: 13
                                 }, this),
                                 "more of our pillars"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                            lineNumber: 95,
+                            lineNumber: 108,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2607,33 +2607,33 @@ function PillarsVariant() {
                                     className: "h-1.5 w-1.5 rounded-full bg-[#0B5FA6]"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                    lineNumber: 101,
+                                    lineNumber: 114,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "h-1.5 w-1.5 rounded-full bg-[#F59E0B]"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                    lineNumber: 102,
+                                    lineNumber: 115,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "h-1.5 w-1.5 rounded-full bg-[#F7BE1A]"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                                    lineNumber: 103,
+                                    lineNumber: 116,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                            lineNumber: 100,
+                            lineNumber: 113,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/landing/pillars-variant.tsx",
-                    lineNumber: 94,
+                    lineNumber: 107,
                     columnNumber: 9
                 }, this)
             ]
