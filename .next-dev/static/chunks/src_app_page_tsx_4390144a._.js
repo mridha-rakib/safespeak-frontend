@@ -1,10 +1,15 @@
 (globalThis.TURBOPACK_CHUNK_LISTS || (globalThis.TURBOPACK_CHUNK_LISTS = [])).push({
     script: typeof document === "object" ? document.currentScript : undefined,
     chunks: [
-  "static/chunks/src_components_landing_local-intelligence-map_tsx_5fc0332d._.js",
-  "static/chunks/[root-of-the-server]__3c477f52._.js",
-  "static/chunks/node_modules_e68af7ef._.js",
-  "static/chunks/[next]_internal_font_google_86598769._.css"
+  "static/chunks/[next]_internal_font_google_958b0716._.css",
+  "static/chunks/src_components_landing_local-intelligence-map_tsx_bd8112b3._.js",
+  "static/chunks/[root-of-the-server]__5240ea54._.js",
+  "static/chunks/node_modules_next_6f205192._.js",
+  "static/chunks/node_modules_@tabler_icons-react_dist_cjs_tabler-icons-react_cjs_3e620feb._.js",
+  "static/chunks/node_modules_tailwind-merge_dist_bundle-mjs_mjs_56b6fd65._.js",
+  "static/chunks/node_modules_motion-dom_dist_es_c11fcee3._.js",
+  "static/chunks/node_modules_framer-motion_dist_es_5781ec33._.js",
+  "static/chunks/node_modules_5c562180._.js"
 ],
     source: "dynamic"
 });

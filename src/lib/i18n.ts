@@ -531,9 +531,37 @@ const resources = {
         },
         scamShield: {
           brand: "ScamShield",
+          analyzeMessage: "Analyze Message",
+          messageContent: "Message Content",
+          messageContentPlaceholder: "Paste SMS, Email, or Web link text here...",
           journeyReport: "Journey Report",
           journeyReportSubtitle:
             "Tell us what happened and include any screenshots or files.",
+          uploadScreenshotTitle: "Upload Screenshot",
+          uploadScreenshotDescription:
+            "Drag & drop your screenshots here or click to browse files.",
+          selectFiles: "Select Files",
+          attachedEvidence: "Attached Evidence",
+          addMore: "Add More",
+          readyForAnalysis: "2 items ready for analysis",
+          analyzeNow: "Analyze Now",
+          highRiskLabel: "High Risk",
+          highRiskDetected: "High Risk Detected",
+          highRiskDetectedBody:
+            "This communication matches known scam patterns. We strongly advise against clicking any links or providing personal information.",
+          detectedRedFlags: "Detected Red Flags",
+          twoFound: "2 Found",
+          urgentLanguage: "Urgent Language",
+          urgentLanguageBody:
+            "The message uses high-pressure tactics to force immediate action.",
+          suspiciousSender: "Suspicious Sender",
+          suspiciousSenderBody:
+            "The sender's domain (noreply-security.net) does not match the official source.",
+          howToStaySafe: "How to stay safe",
+          stayProtected: "Stay Protected",
+          stayProtectedBody:
+            "Always verify communications through official channels. When in doubt, contact the organization directly using their official contact information found on their website.",
+          infoDisclaimer: "This is informational, not legal advice.",
           scamRiskResults: "Scam Risk Results",
           scamRiskResultsSubtitle:
             "Automated analysis highlights immediate protective actions.",
@@ -574,9 +602,24 @@ const resources = {
           immediateAction3: "3. Notify bank fraud team with this report ID.",
           secureAssetsTitle: "Secure your assets & report the incident",
           secureAssetsSubtitle: "Complete these steps before final submission.",
+          assetActionIntro:
+            "Follow these critical actions based on your incident report. We've prepared the necessary information for each step.",
           contactYourBank: "Contact Your Bank",
           contactYourBankBody: "Freeze transactions and request a fraud hold.",
+          contactYourBankDetailed:
+            "If you have lost money, shared your card details, or think someone can access your account, contact your bank immediately to freeze your accounts.",
+          callFraudDepartment: "Call Fraud Department",
           markAsCompleted: "Mark as Completed",
+          reportToAcccScamwatch: "Report to ACCC Scamwatch",
+          communityPrevention: "Community Prevention",
+          reportToAcccDetailed:
+            "Choose this if you have not lost money, but want the government to be aware of a scam.",
+          communityPreventionBody:
+            "Crucial for preventing scams in the community.",
+          launchReportTool: "Launch Report Tool",
+          reportToReportCyber: "Report to ReportCyber",
+          reportToReportCyberBody:
+            "Report here if you clicked a link, shared personal details, lost money, or believe your identity or accounts are at risk.",
           reportToAccc: "Report to ACCC Scamwatch",
           reportToAcccBody:
             "Register this event in the national scam database.",
@@ -1303,9 +1346,38 @@ const resources = {
         },
         scamShield: {
           brand: "ScamShield",
+          analyzeMessage: "Analizar mensaje",
+          messageContent: "Contenido del mensaje",
+          messageContentPlaceholder:
+            "Pega aqui texto de SMS, correo o enlace web...",
           journeyReport: "Reporte del recorrido",
           journeyReportSubtitle:
             "Cuéntanos que paso e incluye capturas o archivos.",
+          uploadScreenshotTitle: "Subir captura",
+          uploadScreenshotDescription:
+            "Arrastra y suelta tus capturas aqui o haz clic para buscarlas.",
+          selectFiles: "Seleccionar archivos",
+          attachedEvidence: "Evidencia adjunta",
+          addMore: "Agregar mas",
+          readyForAnalysis: "2 elementos listos para analizar",
+          analyzeNow: "Analizar ahora",
+          highRiskLabel: "Alto riesgo",
+          highRiskDetected: "Alto riesgo detectado",
+          highRiskDetectedBody:
+            "Esta comunicacion coincide con patrones conocidos de estafa. Recomendamos no hacer clic en enlaces ni compartir informacion personal.",
+          detectedRedFlags: "Senales de riesgo detectadas",
+          twoFound: "2 encontradas",
+          urgentLanguage: "Lenguaje urgente",
+          urgentLanguageBody:
+            "El mensaje usa tacticas de alta presion para forzar accion inmediata.",
+          suspiciousSender: "Remitente sospechoso",
+          suspiciousSenderBody:
+            "El dominio del remitente (noreply-security.net) no coincide con la fuente oficial.",
+          howToStaySafe: "Como mantenerte seguro",
+          stayProtected: "Mantente protegido",
+          stayProtectedBody:
+            "Verifica siempre las comunicaciones por canales oficiales. Si tienes dudas, contacta directamente a la organizacion usando la informacion de contacto oficial en su sitio web.",
+          infoDisclaimer: "Esto es informativo, no asesoramiento legal.",
           scamRiskResults: "Resultados de riesgo de estafa",
           scamRiskResultsSubtitle:
             "El analisis automatico destaca acciones de proteccion inmediatas.",
@@ -1348,10 +1420,25 @@ const resources = {
             "3. Notifica al equipo antifraude del banco con este ID.",
           secureAssetsTitle: "Asegura tus activos y reporta el incidente",
           secureAssetsSubtitle: "Completa estos pasos antes del envio final.",
+          assetActionIntro:
+            "Sigue estas acciones criticas segun tu reporte. Preparamos la informacion necesaria para cada paso.",
           contactYourBank: "Contacta a tu banco",
           contactYourBankBody:
             "Congela transacciones y solicita bloqueo por fraude.",
+          contactYourBankDetailed:
+            "Si perdiste dinero, compartiste datos de tu tarjeta o crees que alguien puede acceder a tu cuenta, contacta de inmediato a tu banco para congelar tus cuentas.",
+          callFraudDepartment: "Llamar al departamento de fraude",
           markAsCompleted: "Marcar como completado",
+          reportToAcccScamwatch: "Reportar a ACCC Scamwatch",
+          communityPrevention: "Prevencion comunitaria",
+          reportToAcccDetailed:
+            "Elige esto si no perdiste dinero, pero quieres que el gobierno conozca la estafa.",
+          communityPreventionBody:
+            "Clave para prevenir estafas en la comunidad.",
+          launchReportTool: "Abrir herramienta de reporte",
+          reportToReportCyber: "Reportar a ReportCyber",
+          reportToReportCyberBody:
+            "Reporta aqui si hiciste clic en un enlace, compartiste datos personales, perdiste dinero o crees que tu identidad o cuentas estan en riesgo.",
           reportToAccc: "Reportar a ACCC Scamwatch",
           reportToAcccBody:
             "Registra este evento en la base nacional de estafas.",

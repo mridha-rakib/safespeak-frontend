@@ -1,21 +1,26 @@
 "use client";
 
 import type { Route } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 import {
-  IconAlertCircleFilled,
+  IconAlertTriangle,
+  IconAt,
+  IconArrowRight,
+  IconBuildingBank,
   IconChevronLeft,
   IconChevronRight,
   IconClock,
+  IconExternalLink,
   IconFolderFilled,
+  IconGavel,
+  IconPhoto,
+  IconPlus,
   IconShieldFilled,
+  IconX,
 } from "@tabler/icons-react";
 import { useTranslation } from "react-i18next";
 
-import domesticViolanceImage from "@/assets/domestic-violance.jpg";
-import hackerImage from "@/assets/hacker.jpg";
 import { cn } from "@/lib/utils";
 
 const scamShieldSteps = [
@@ -126,97 +131,132 @@ function ScamShieldIntakePage() {
   const { t } = useTranslation();
 
   return (
-    <ScamShieldFrame
-      title={t("dashboard.scamShield.journeyReport")}
-      subtitle={t("dashboard.scamShield.journeyReportSubtitle")}
-      step="intake"
-      backHref="/dashboard?view=reportsubmissiondetails"
-    >
-      <div className="mt-4 grid grid-cols-1 gap-3 xl:grid-cols-[1.62fr_1fr]">
-        <article className="rounded-[14px] border border-[#e3ebf4] bg-[#f9fbfe] p-4">
-          <label
-            htmlFor="scam-journey-report"
-            className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#7c8da3]"
+    <div className="px-2 pb-3 pt-2 sm:px-4 sm:pb-5 sm:pt-4">
+      <div className="mx-auto w-full max-w-[1184px]">
+        <div className="flex items-center justify-between border-b border-[#d9e2ee] px-1 py-2">
+          <Link
+            href="/dashboard?view=reportsubmissiondetails"
+            className="inline-flex items-center gap-2 text-xs font-semibold text-[#1f2937]"
           >
-            {t("dashboard.reports.incidentNarrative")}
-          </label>
-          <textarea
-            id="scam-journey-report"
-            rows={12}
-            defaultValue={t("dashboard.scamShield.journeyNarrativeSample")}
-            className="mt-2 w-full resize-none rounded-xl border border-[#d7e1ee] bg-white px-3 py-2 text-xs leading-[1.6] text-[#1f2a3a] outline-none"
-          />
+            <IconChevronLeft size={14} />
+            {t("dashboard.scamShield.analyzeMessage")}
+          </Link>
+          <Link
+            href="/dashboard"
+            className="text-xs font-medium text-[#7b8798]"
+          >
+            {t("common.cancel")}
+          </Link>
+        </div>
 
-          <div className="mt-3 rounded-xl bg-[#eaf2ff] px-3 py-2">
-            <p className="text-[10px] font-semibold text-[#3c5574]">
-              {t("dashboard.scamShield.autoDetectHint")}
+        <article className="mt-3 overflow-hidden rounded-[16px] border border-[#dce5f1] bg-[#f4f7fc] shadow-[0_10px_24px_rgba(15,23,42,0.04)]">
+          <div className="grid grid-cols-1 gap-3 p-3 sm:p-4 lg:grid-cols-[1fr_1fr]">
+            <article className="rounded-[14px] border border-[#e2eaf4] bg-white p-3 sm:p-4">
+              <label
+                htmlFor="scam-message-content"
+                className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#6f88a8]"
+              >
+                {t("dashboard.scamShield.messageContent")}
+              </label>
+              <div className="relative mt-2">
+                <textarea
+                  id="scam-message-content"
+                  rows={15}
+                  placeholder={t(
+                    "dashboard.scamShield.messageContentPlaceholder"
+                  )}
+                  className="min-h-[340px] w-full resize-none rounded-[11px] border border-[#dbe4ef] bg-[#f8fbff] px-3 py-3 text-xs leading-[1.6] text-[#1f2a3a] outline-none placeholder:text-[#9aabc0]"
+                />
+                <div className="absolute bottom-2 right-2 flex items-center gap-1 text-[#9db0c8]">
+                  <span className="inline-flex h-5 w-5 items-center justify-center rounded-[4px] border border-[#d8e2ee] bg-white">
+                    <IconFolderFilled size={10} />
+                  </span>
+                  <span className="inline-flex h-5 w-5 items-center justify-center rounded-[4px] border border-[#d8e2ee] bg-white">
+                    <IconClock size={10} />
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <aside className="space-y-3">
+              <article className="rounded-[14px] border border-[#e2eaf4] bg-white p-4 text-center">
+                <span className="mx-auto inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#ecf4ff] text-[#0f5d9f]">
+                  <IconPhoto size={20} />
+                </span>
+                <h3 className="mt-3 text-xl font-bold leading-[1.1] text-[#1f2a3a]">
+                  {t("dashboard.scamShield.uploadScreenshotTitle")}
+                </h3>
+                <p className="mx-auto mt-1 max-w-[250px] text-xs leading-[1.5] text-[#7f90a6]">
+                  {t("dashboard.scamShield.uploadScreenshotDescription")}
+                </p>
+                <button className="mt-3 inline-flex h-9 items-center gap-1.5 rounded-full bg-[#0f5d9f] px-4 text-[11px] font-bold text-white">
+                  <IconFolderFilled size={12} />
+                  {t("dashboard.scamShield.selectFiles")}
+                </button>
+              </article>
+
+              <article className="rounded-[14px] border border-[#e2eaf4] bg-white p-3 sm:p-4">
+                <p className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#7f90a6]">
+                  {t("dashboard.scamShield.attachedEvidence")}
+                </p>
+                <div className="mt-3 grid grid-cols-3 gap-2">
+                  <article className="relative rounded-[10px] border border-[#e2eaf4] bg-[#f2f5f9] p-2">
+                    <button className="absolute -right-1.5 -top-1.5 inline-flex h-4 w-4 items-center justify-center rounded-full bg-[#f05151] text-white">
+                      <IconX size={9} />
+                    </button>
+                    <div className="mx-auto w-[44px] rounded-[7px] border border-[#cad6e6] bg-white p-1 shadow-[0_4px_8px_rgba(100,116,139,0.18)]">
+                      <div className="h-[64px] w-full rounded-[5px] bg-[linear-gradient(180deg,#f8fbff_0%,#edf3fb_100%)] p-1">
+                        <span className="mt-0.5 block h-1 w-full rounded bg-[#d1dbe8]" />
+                        <span className="mt-1 block h-1 w-[70%] rounded bg-[#dce4ef]" />
+                        <span className="mt-1 block h-1 w-[82%] rounded bg-[#dce4ef]" />
+                        <span className="mt-1 block h-1 w-[64%] rounded bg-[#dce4ef]" />
+                      </div>
+                    </div>
+                  </article>
+
+                  <article className="relative rounded-[10px] border border-[#e2d5cb] bg-[#dcc0ad] p-2">
+                    <button className="absolute -right-1.5 -top-1.5 inline-flex h-4 w-4 items-center justify-center rounded-full bg-[#f05151] text-white">
+                      <IconX size={9} />
+                    </button>
+                    <div className="mx-auto w-[52px] rounded-[7px] border border-[#c6b0a0] bg-white p-2 shadow-[0_4px_8px_rgba(100,116,139,0.16)]">
+                      <span className="block h-1 w-full rounded bg-[#d8d4cf]" />
+                      <span className="mt-1 block h-1 w-[78%] rounded bg-[#e2ddd7]" />
+                      <span className="mt-1 block h-1 w-[84%] rounded bg-[#e2ddd7]" />
+                      <span className="mt-1 block h-1 w-[66%] rounded bg-[#e2ddd7]" />
+                      <span className="mt-1 block h-1 w-[74%] rounded bg-[#e2ddd7]" />
+                    </div>
+                  </article>
+
+                  <article className="grid min-h-[100px] place-items-center rounded-[10px] border border-dashed border-[#c4d2e6] bg-[#f8fbff] text-center">
+                    <div>
+                      <span className="mx-auto inline-flex h-5 w-5 items-center justify-center text-[#8ea2bf]">
+                        <IconPlus size={14} />
+                      </span>
+                      <p className="mt-1 text-[9px] font-semibold text-[#8ea2bf]">
+                        {t("dashboard.scamShield.addMore")}
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </article>
+            </aside>
+          </div>
+
+          <div className="flex flex-col gap-2 border-t border-[#e2eaf5] bg-white px-3 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-4">
+            <p className="text-[10px] font-medium text-[#6c7f96]">
+              {t("dashboard.scamShield.readyForAnalysis")}
             </p>
+            <Link
+              href="/dashboard?view=scamshieldrisk"
+              className="inline-flex h-10 items-center justify-center gap-1.5 rounded-full bg-[#ff9900] px-7 text-[11px] font-bold uppercase tracking-[0.02em] text-white shadow-[0_8px_18px_rgba(255,153,0,0.33)]"
+            >
+              <IconShieldFilled size={12} />
+              {t("dashboard.scamShield.analyzeNow")}
+            </Link>
           </div>
         </article>
-
-        <aside className="rounded-[14px] border border-[#e3ebf4] bg-white p-4">
-          <div className="rounded-xl border border-[#dbe5f2] bg-[#f7faff] p-3 text-center">
-            <p className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#7c8da3]">
-              {t("dashboard.scamShield.uploadScreenshots")}
-            </p>
-            <button className="mt-2 inline-flex h-9 items-center rounded-full bg-[#0f5d9f] px-4 text-[11px] font-bold text-white">
-              {t("dashboard.scamShield.addScreenshot")}
-            </button>
-          </div>
-
-          <div className="mt-3 grid grid-cols-3 gap-2">
-            <article className="overflow-hidden rounded-lg border border-[#dde7f2] bg-[#f8fbff]">
-              <div className="relative h-[84px] w-full">
-                <Image
-                  src={hackerImage}
-                  alt="Screenshot evidence"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </article>
-            <article className="overflow-hidden rounded-lg border border-[#dde7f2] bg-[#f8fbff]">
-              <div className="relative h-[84px] w-full">
-                <Image
-                  src={domesticViolanceImage}
-                  alt="Screenshot evidence"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </article>
-            <article className="grid h-[84px] place-items-center rounded-lg border border-dashed border-[#bfd0e7] bg-[#f7faff] text-[10px] font-semibold text-[#6f83a0]">
-              {t("dashboard.scamShield.add")}
-            </article>
-          </div>
-
-          <div className="mt-3 rounded-xl bg-[#fff7ea] p-3">
-            <p className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#d47d00]">
-              {t("dashboard.scamShield.safetyReminder")}
-            </p>
-            <p className="mt-1 text-[10px] leading-[1.45] text-[#7b5a23]">
-              {t("dashboard.scamShield.safetyReminderBody")}
-            </p>
-          </div>
-        </aside>
       </div>
-
-      <div className="mt-5 flex flex-wrap items-center justify-between gap-2">
-        <Link
-          href="/dashboard?view=reportsubmissiondetails"
-          className="inline-flex h-10 items-center rounded-full border border-[#d7e0ec] px-5 text-xs font-semibold text-[#334155]"
-        >
-          {t("common.back")}
-        </Link>
-        <Link
-          href="/dashboard?view=scamshieldrisk"
-          className="inline-flex h-10 items-center rounded-full bg-[#f59e0b] px-5 text-xs font-bold text-white shadow-[0_8px_18px_rgba(245,158,11,0.3)]"
-        >
-          {t("dashboard.scamShield.analyzeRisk")}
-          <IconChevronRight size={14} className="ml-1" />
-        </Link>
-      </div>
-    </ScamShieldFrame>
+    </div>
   );
 }
 
@@ -224,81 +264,115 @@ function ScamShieldRiskPage() {
   const { t } = useTranslation();
 
   return (
-    <ScamShieldFrame
-      title={t("dashboard.scamShield.scamRiskResults")}
-      subtitle={t("dashboard.scamShield.scamRiskResultsSubtitle")}
-      step="risk"
-      backHref="/dashboard?view=scamshieldintake"
-    >
-      <article className="mt-4 rounded-[14px] border border-[#e3ebf4] bg-[#f9fbfe] p-4 text-center">
-        <p className="text-[44px] font-black leading-none text-[#de3838]">
-          85%
-        </p>
-        <p className="mt-1 text-sm font-bold text-[#de3838]">
-          {t("dashboard.scamShield.highFraudRisk")}
-        </p>
-        <p className="mt-1 text-xs text-[#60728a]">
-          {t("dashboard.scamShield.highFraudRiskBody")}
-        </p>
-      </article>
-
-      <div className="mt-3 grid grid-cols-1 gap-2 xl:grid-cols-[1.65fr_1fr]">
-        <div className="space-y-2">
-          <article className="rounded-xl border border-[#e2eaf4] bg-white p-3">
-            <p className="text-xs font-bold text-[#1f2a3a]">
-              {t("dashboard.scamShield.urgentLanguageUsage")}
-            </p>
-            <p className="mt-1 text-[11px] text-[#60728a]">
-              {t("dashboard.scamShield.urgentLanguageUsageBody")}
-            </p>
-          </article>
-          <article className="rounded-xl border border-[#e2eaf4] bg-white p-3">
-            <p className="text-xs font-bold text-[#1f2a3a]">
-              {t("dashboard.scamShield.repeatedContactBehavior")}
-            </p>
-            <p className="mt-1 text-[11px] text-[#60728a]">
-              {t("dashboard.scamShield.repeatedContactBehaviorBody")}
-            </p>
-          </article>
-          <article className="rounded-xl border border-[#e2eaf4] bg-white p-3">
-            <p className="text-xs font-bold text-[#1f2a3a]">
-              {t("dashboard.scamShield.credentialHarvestIndicators")}
-            </p>
-            <p className="mt-1 text-[11px] text-[#60728a]">
-              {t("dashboard.scamShield.credentialHarvestIndicatorsBody")}
-            </p>
-          </article>
+    <div className="px-2 pb-3 pt-2 sm:px-4 sm:pb-5 sm:pt-4">
+      <div className="mx-auto w-full max-w-[1184px]">
+        <div className="flex items-center justify-between border-b border-[#d9e2ee] px-1 py-2">
+          <Link
+            href="/dashboard?view=scamshieldintake"
+            className="inline-flex items-center gap-2 text-xs font-semibold text-[#1f2937]"
+          >
+            <IconChevronLeft size={14} />
+            {t("dashboard.scamShield.scamRiskResults")}
+          </Link>
+          <Link
+            href="/dashboard"
+            className="text-xs font-medium text-[#7b8798]"
+          >
+            {t("common.cancel")}
+          </Link>
         </div>
 
-        <aside className="rounded-xl border border-[#f6d6d6] bg-[#fff6f6] p-3">
-          <p className="inline-flex items-center gap-1 rounded-full bg-[#ffe4e4] px-2 py-1 text-[10px] font-bold uppercase tracking-[0.08em] text-[#cf3131]">
-            <IconAlertCircleFilled size={12} />
-            {t("dashboard.scamShield.immediateActions")}
-          </p>
-          <ul className="mt-2 space-y-2 text-[11px] text-[#6b4a4a]">
-            <li>{t("dashboard.scamShield.immediateAction1")}</li>
-            <li>{t("dashboard.scamShield.immediateAction2")}</li>
-            <li>{t("dashboard.scamShield.immediateAction3")}</li>
-          </ul>
-        </aside>
-      </div>
+        <article className="mt-3 rounded-[16px] border border-[#dce5f1] bg-[#f4f7fc] p-3 shadow-[0_10px_24px_rgba(15,23,42,0.04)] sm:p-4">
+          <article className="rounded-[14px] border border-[#e3eaf5] bg-white px-4 py-5 text-center sm:px-6 sm:py-6">
+            <p className="text-[58px] font-black leading-none text-[#cf2f34]">
+              85%
+            </p>
+            <p className="mt-1 text-[8px] font-bold uppercase tracking-[0.18em] text-[#ba9ea3]">
+              {t("dashboard.scamShield.highRiskLabel")}
+            </p>
+            <p className="mt-2 text-[26px] font-extrabold leading-none text-[#cf2f34]">
+              {t("dashboard.scamShield.highRiskDetected")}
+            </p>
+            <p className="mx-auto mt-2 max-w-[540px] text-xs leading-[1.5] text-[#61748f]">
+              {t("dashboard.scamShield.highRiskDetectedBody")}
+            </p>
+          </article>
 
-      <div className="mt-5 flex flex-wrap items-center justify-between gap-2">
-        <Link
-          href="/dashboard?view=scamshieldintake"
-          className="inline-flex h-10 items-center rounded-full border border-[#d7e0ec] px-5 text-xs font-semibold text-[#334155]"
-        >
-          {t("common.back")}
-        </Link>
-        <Link
-          href="/dashboard?view=scamshieldassets"
-          className="inline-flex h-10 items-center rounded-full bg-[#de3838] px-6 text-xs font-bold text-white shadow-[0_8px_18px_rgba(222,56,56,0.3)]"
-        >
-          {t("dashboard.scamShield.reportThisIncident")}
-          <IconChevronRight size={14} className="ml-1" />
-        </Link>
+          <div className="mt-4 flex items-center justify-between">
+            <h3 className="text-sm font-bold text-[#1f2a3a]">
+              {t("dashboard.scamShield.detectedRedFlags")}
+            </h3>
+            <span className="inline-flex h-5 items-center rounded-full bg-[#ffe9e9] px-2 text-[9px] font-bold uppercase tracking-[0.07em] text-[#df4a4a]">
+              {t("dashboard.scamShield.twoFound")}
+            </span>
+          </div>
+
+          <div className="mt-2 space-y-2">
+            <article className="flex items-start gap-3 rounded-xl border border-[#e2eaf4] bg-white px-3 py-3 sm:px-4">
+              <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-[#fff6e5] text-[#f59e0b]">
+                <IconAlertTriangle size={13} />
+              </span>
+              <div className="min-w-0">
+                <p className="text-xs font-bold text-[#1f2a3a]">
+                  {t("dashboard.scamShield.urgentLanguage")}
+                </p>
+                <p className="mt-1 text-[11px] leading-[1.45] text-[#64748b]">
+                  {t("dashboard.scamShield.urgentLanguageBody")}
+                </p>
+                <span className="mt-2 inline-flex items-center gap-1 text-[9px] font-semibold text-[#2c66b0]">
+                  {t("dashboard.scamShield.howToStaySafe")}
+                  <IconArrowRight size={10} />
+                </span>
+              </div>
+            </article>
+
+            <article className="flex items-start gap-3 rounded-xl border border-[#e2eaf4] bg-white px-3 py-3 sm:px-4">
+              <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-[#fff6e5] text-[#f59e0b]">
+                <IconAt size={13} />
+              </span>
+              <div className="min-w-0">
+                <p className="text-xs font-bold text-[#1f2a3a]">
+                  {t("dashboard.scamShield.suspiciousSender")}
+                </p>
+                <p className="mt-1 text-[11px] leading-[1.45] text-[#64748b]">
+                  {t("dashboard.scamShield.suspiciousSenderBody")}
+                </p>
+                <span className="mt-2 inline-flex items-center gap-1 text-[9px] font-semibold text-[#2c66b0]">
+                  {t("dashboard.scamShield.howToStaySafe")}
+                  <IconArrowRight size={10} />
+                </span>
+              </div>
+            </article>
+          </div>
+
+          <div className="mt-4 flex justify-center">
+            <Link
+              href="/dashboard?view=scamshieldassets"
+              className="inline-flex h-10 items-center gap-1.5 rounded-lg bg-[#df3c3c] px-8 text-[11px] font-semibold text-white shadow-[0_8px_18px_rgba(223,60,60,0.26)]"
+            >
+              <IconAlertTriangle size={12} />
+              {t("dashboard.scamShield.reportThisIncident")}
+            </Link>
+          </div>
+
+          <article className="mt-4 rounded-xl border border-[#dfe8f4] bg-[#edf4ff] p-3 sm:p-4">
+            <p className="inline-flex items-center gap-1.5 text-sm font-bold text-[#1f4f93]">
+              <IconShieldFilled size={13} />
+              {t("dashboard.scamShield.stayProtected")}
+            </p>
+            <p className="mt-1 text-[10px] leading-[1.5] text-[#4b607d]">
+              {t("dashboard.scamShield.stayProtectedBody")}
+            </p>
+            <div className="mt-3 rounded-[4px] border border-[#f0dc9f] bg-[#fff5dd] px-2 py-1.5">
+              <p className="inline-flex items-center gap-1 text-[9px] text-[#8c6d1f]">
+                <IconAlertTriangle size={10} />
+                {t("dashboard.scamShield.infoDisclaimer")}
+              </p>
+            </div>
+          </article>
+        </article>
       </div>
-    </ScamShieldFrame>
+    </div>
   );
 }
 
@@ -306,87 +380,118 @@ function ScamShieldAssetsPage() {
   const { t } = useTranslation();
 
   return (
-    <ScamShieldFrame
-      title={t("dashboard.scamShield.nextSteps")}
-      subtitle={t("dashboard.scamShield.nextStepsSubtitle")}
-      step="assets"
-      backHref="/dashboard?view=scamshieldrisk"
-    >
-      <div className="mt-4 space-y-3">
-        <article className="rounded-[14px] border border-[#e3ebf4] bg-[#f9fbfe] p-4">
-          <h3 className="text-base font-extrabold text-[#1f2a3a]">
-            {t("dashboard.scamShield.secureAssetsTitle")}
-          </h3>
-          <p className="mt-1 text-xs text-[#60728a]">
-            {t("dashboard.scamShield.secureAssetsSubtitle")}
-          </p>
-        </article>
+    <div className="px-2 pb-3 pt-2 sm:px-4 sm:pb-5 sm:pt-4">
+      <div className="mx-auto w-full max-w-[1184px]">
+        <div className="flex items-center justify-between border-b border-[#d9e2ee] px-1 py-2">
+          <Link
+            href="/dashboard?view=scamshieldrisk"
+            className="inline-flex items-center gap-2 text-xs font-semibold text-[#1f2937]"
+          >
+            <IconChevronLeft size={14} />
+            {t("dashboard.scamShield.nextSteps")}
+          </Link>
+          <Link
+            href="/dashboard"
+            className="text-xs font-medium text-[#7b8798]"
+          >
+            {t("common.cancel")}
+          </Link>
+        </div>
 
-        <article className="rounded-xl border border-[#e2eaf4] bg-white p-3">
-          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <p className="text-xs font-bold text-[#1f2a3a]">
-                {t("dashboard.scamShield.contactYourBank")}
-              </p>
-              <p className="mt-1 text-[11px] text-[#60728a]">
-                {t("dashboard.scamShield.contactYourBankBody")}
-              </p>
-            </div>
-            <button className="inline-flex h-8 items-center rounded-full bg-[#ff8f00] px-4 text-[10px] font-bold text-white">
-              {t("dashboard.scamShield.markAsCompleted")}
-            </button>
-          </div>
-        </article>
+        <article className="mt-3 rounded-[16px] border border-[#dce5f1] bg-[#f4f7fc] p-3 shadow-[0_10px_24px_rgba(15,23,42,0.04)] sm:p-4">
+          <article className="rounded-[14px] border border-[#e3eaf5] bg-white px-4 py-6 text-center sm:px-6 sm:py-7">
+            <h2 className="text-[32px] font-black leading-[1.08] text-[#1f2a3a] sm:text-[42px]">
+              {t("dashboard.scamShield.secureAssetsTitle")}
+            </h2>
+            <p className="mx-auto mt-2 max-w-[560px] text-xs leading-[1.55] text-[#6a7e96] sm:text-sm">
+              {t("dashboard.scamShield.assetActionIntro")}
+            </p>
+          </article>
 
-        <article className="rounded-xl border border-[#e2eaf4] bg-white p-3">
-          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <p className="text-xs font-bold text-[#1f2a3a]">
-                {t("dashboard.scamShield.reportToAccc")}
-              </p>
-              <p className="mt-1 text-[11px] text-[#60728a]">
-                {t("dashboard.scamShield.reportToAcccBody")}
-              </p>
-            </div>
-            <button className="inline-flex h-8 items-center rounded-full bg-[#ff8f00] px-4 text-[10px] font-bold text-white">
-              {t("dashboard.scamShield.markAsCompleted")}
-            </button>
-          </div>
-        </article>
+          <div className="mt-3 space-y-3">
+            <article className="rounded-[12px] border border-[#e2eaf4] bg-white px-3 py-3 sm:px-4 sm:py-4">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex items-start gap-3">
+                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#fff3df] text-[#ef7d00]">
+                    <IconBuildingBank size={17} />
+                  </span>
+                  <div className="min-w-0">
+                    <p className="text-[25px] font-extrabold leading-none text-[#1f2a3a]">
+                      {t("dashboard.scamShield.contactYourBank")}
+                    </p>
+                    <p className="mt-1 text-[11px] leading-[1.5] text-[#6a7e96]">
+                      {t("dashboard.scamShield.contactYourBankDetailed")}
+                    </p>
+                  </div>
+                </div>
 
-        <article className="rounded-xl border border-[#e2eaf4] bg-white p-3">
-          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <p className="text-xs font-bold text-[#1f2a3a]">
-                {t("dashboard.scamShield.reportToEmergencyCyberTeam")}
-              </p>
-              <p className="mt-1 text-[11px] text-[#60728a]">
-                {t("dashboard.scamShield.reportToEmergencyCyberTeamBody")}
-              </p>
-            </div>
-            <button className="inline-flex h-8 items-center rounded-full bg-[#ff8f00] px-4 text-[10px] font-bold text-white">
-              {t("dashboard.scamShield.markAsCompleted")}
-            </button>
+                <button className="inline-flex h-10 items-center gap-1.5 rounded-[8px] bg-[#ff9800] px-5 text-[11px] font-semibold text-white shadow-[0_8px_16px_rgba(255,152,0,0.26)]">
+                  {t("dashboard.scamShield.callFraudDepartment")}
+                  <IconExternalLink size={12} />
+                </button>
+              </div>
+            </article>
+
+            <article className="rounded-[12px] border border-[#e2eaf4] bg-white px-3 py-3 sm:px-4 sm:py-4">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex items-start gap-3">
+                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#fff3df] text-[#ef7d00]">
+                    <IconGavel size={17} />
+                  </span>
+                  <div className="min-w-0">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <p className="text-[25px] font-extrabold leading-none text-[#1f2a3a]">
+                        {t("dashboard.scamShield.reportToAcccScamwatch")}
+                      </p>
+                      <span className="inline-flex h-5 items-center rounded-full bg-[#ecf3ff] px-2 text-[8px] font-bold uppercase tracking-[0.08em] text-[#2c66b0]">
+                        {t("dashboard.scamShield.communityPrevention")}
+                      </span>
+                    </div>
+                    <p className="mt-1 text-[11px] leading-[1.5] text-[#6a7e96]">
+                      {t("dashboard.scamShield.reportToAcccDetailed")}
+                    </p>
+                    <p className="mt-1 text-[10px] font-semibold text-[#374b64]">
+                      {t("dashboard.scamShield.communityPreventionBody")}
+                    </p>
+                  </div>
+                </div>
+
+                <button className="inline-flex h-10 items-center gap-1.5 rounded-[8px] bg-[#ff9800] px-5 text-[11px] font-semibold text-white shadow-[0_8px_16px_rgba(255,152,0,0.26)]">
+                  {t("dashboard.scamShield.launchReportTool")}
+                  <IconExternalLink size={12} />
+                </button>
+              </div>
+            </article>
+
+            <article className="rounded-[12px] border border-[#e2eaf4] bg-white px-3 py-3 sm:px-4 sm:py-4">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex items-start gap-3">
+                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#fff3df] text-[#ef7d00]">
+                    <IconShieldFilled size={14} />
+                  </span>
+                  <div className="min-w-0">
+                    <p className="text-[25px] font-extrabold leading-none text-[#1f2a3a]">
+                      {t("dashboard.scamShield.reportToReportCyber")}
+                    </p>
+                    <p className="mt-1 text-[11px] leading-[1.5] text-[#6a7e96]">
+                      {t("dashboard.scamShield.reportToReportCyberBody")}
+                    </p>
+                  </div>
+                </div>
+
+                <Link
+                  href="/dashboard?view=scamshieldagency"
+                  className="inline-flex h-10 items-center gap-1.5 rounded-[8px] bg-[#ff9800] px-5 text-[11px] font-semibold text-white shadow-[0_8px_16px_rgba(255,152,0,0.26)]"
+                >
+                  {t("dashboard.scamShield.launchReportTool")}
+                  <IconExternalLink size={12} />
+                </Link>
+              </div>
+            </article>
           </div>
         </article>
       </div>
-
-      <div className="mt-5 flex flex-wrap items-center justify-between gap-2">
-        <Link
-          href="/dashboard?view=scamshieldrisk"
-          className="inline-flex h-10 items-center rounded-full border border-[#d7e0ec] px-5 text-xs font-semibold text-[#334155]"
-        >
-          {t("common.back")}
-        </Link>
-        <Link
-          href="/dashboard?view=scamshieldagency"
-          className="inline-flex h-10 items-center rounded-full bg-[#0f5d9f] px-6 text-xs font-bold text-white shadow-[0_8px_18px_rgba(15,93,159,0.3)]"
-        >
-          {t("dashboard.scamShield.nextAgencyReport")}
-          <IconChevronRight size={14} className="ml-1" />
-        </Link>
-      </div>
-    </ScamShieldFrame>
+    </div>
   );
 }
 

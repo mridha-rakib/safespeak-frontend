@@ -1,14 +1,18 @@
 (globalThis.TURBOPACK_CHUNK_LISTS || (globalThis.TURBOPACK_CHUNK_LISTS = [])).push({
     script: typeof document === "object" ? document.currentScript : undefined,
     chunks: [
-  "static/chunks/[root-of-the-server]__a2d497ab._.css",
-  "static/chunks/[root-of-the-server]__73155ee1._.js",
-  "static/chunks/node_modules_next_0be5a258._.js",
+  "static/chunks/[root-of-the-server]__5b46796d._.js",
+  "static/chunks/node_modules_next_f501f63f._.js",
+  "static/chunks/node_modules_@tabler_icons-react_dist_cjs_tabler-icons-react_cjs_3e620feb._.js",
+  "static/chunks/node_modules_tailwind-merge_dist_bundle-mjs_mjs_56b6fd65._.js",
   "static/chunks/node_modules_three_build_three_core_996ef05a.js",
   "static/chunks/node_modules_three_build_three_module_0c59ee63.js",
   "static/chunks/node_modules_three_build_three_module_f7d46d9b.js",
   "static/chunks/node_modules_@react-three_fiber_dist_d2d2cc79._.js",
-  "static/chunks/node_modules_29bd33af._.js"
+  "static/chunks/node_modules_framer-motion_dist_es_b7ec5069._.js",
+  "static/chunks/node_modules_motion-dom_dist_es_9496ade9._.js",
+  "static/chunks/node_modules_5dcdbfd0._.js",
+  "static/chunks/[root-of-the-server]__471826fd._.css"
 ],
     source: "dynamic"
 });
