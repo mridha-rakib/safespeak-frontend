@@ -1,11 +1,14 @@
 "use client";
 
 import dynamic from "next/dynamic";
+
 import { useTranslation } from "react-i18next";
 
 const LocalIntelligenceMap = dynamic(() => import("./local-intelligence-map"), {
   ssr: false,
-  loading: () => <div className="h-full w-full animate-pulse bg-[linear-gradient(145deg,#d7e1dc,#c6d5cf)]" />,
+  loading: () => (
+    <div className="h-full w-full animate-pulse bg-[linear-gradient(145deg,#d7e1dc,#c6d5cf)]" />
+  ),
 });
 
 export default function LocalIntelligence() {

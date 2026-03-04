@@ -1,6 +1,6 @@
+import type { Route } from "next";
 import Link from "next/link";
 import * as React from "react";
-import type { Route } from "next";
 
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { SafeSpeakLogo } from "@/components/ui/safe-speak-logo";
@@ -36,16 +36,19 @@ export function AuthShell({
           </span>
           <SafeSpeakLogo tone="light" size="lg" />
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold leading-tight sm:text-[2.1rem]">{title}</h1>
-            <p className="mx-auto max-w-[34ch] text-sm text-white/85">{description}</p>
+            <h1 className="text-3xl font-bold leading-tight sm:text-[2.1rem]">
+              {title}
+            </h1>
+            <p className="mx-auto max-w-[34ch] text-sm text-white/85">
+              {description}
+            </p>
           </div>
         </CardHeader>
 
         <CardContent className="px-6 pb-8 pt-4 sm:px-10 sm:pb-10">
           {children}
           <p className="mt-6 text-center text-sm text-white/85">
-            {footerPrefix}
-            {" "}
+            {footerPrefix}{" "}
             <Link
               href={footerLinkHref}
               className="font-semibold text-[#ffb54a] underline-offset-4 transition hover:underline"

@@ -9,7 +9,7 @@ import landingScam from "@/assets/landing_scam.svg";
 
 export default function PillarsVariant() {
   return (
-    <section className="mx-auto w-full max-w-[1440px] bg-[#E1F5FE] px-4 py-16 sm:px-8 sm:py-20 lg:h-[926px] lg:px-8 lg:py-[120px]">
+    <section className="w-full max-w-none bg-[#E1F5FE] px-4 py-16 sm:px-8 sm:py-20 lg:h-[926px] lg:px-[32px] lg:pb-[120px] lg:pt-[120px]">
       <div className="mx-auto flex h-full w-full max-w-[1376px] flex-col">
         <div className="grid gap-4 lg:grid-cols-[1fr_1fr]">
           <div className="grid gap-4">

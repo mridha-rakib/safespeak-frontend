@@ -49,7 +49,7 @@ const impactCards = [
 ];
 function CommunityImpact() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "mx-auto w-full max-w-[1440px] bg-[#E1F5FE] px-4 py-14 sm:px-8 sm:py-16 lg:h-[576px] lg:px-20 lg:py-24",
+        className: "w-full max-w-none bg-[#E1F5FE] px-4 py-14 sm:px-8 sm:py-16 lg:h-[576px] lg:px-20 lg:py-24",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "mx-auto flex h-full w-full max-w-[1280px] flex-col",
             children: [
@@ -58,7 +58,7 @@ function CommunityImpact() {
                     children: "Community Impact"
                 }, void 0, false, {
                     fileName: "[project]/src/components/landing/community-impact.tsx",
-                    lineNumber: 39,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -74,7 +74,7 @@ function CommunityImpact() {
                                             children: card.initials
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/community-impact.tsx",
-                                            lineNumber: 52,
+                                            lineNumber: 57,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -84,7 +84,7 @@ function CommunityImpact() {
                                                     children: card.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/landing/community-impact.tsx",
-                                                    lineNumber: 58,
+                                                    lineNumber: 63,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -92,19 +92,19 @@ function CommunityImpact() {
                                                     children: card.role
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/landing/community-impact.tsx",
-                                                    lineNumber: 61,
+                                                    lineNumber: 68,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/landing/community-impact.tsx",
-                                            lineNumber: 57,
+                                            lineNumber: 62,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/landing/community-impact.tsx",
-                                    lineNumber: 51,
+                                    lineNumber: 56,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -116,7 +116,7 @@ function CommunityImpact() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/landing/community-impact.tsx",
-                                    lineNumber: 71,
+                                    lineNumber: 78,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -126,34 +126,34 @@ function CommunityImpact() {
                                         children: "*****"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/landing/community-impact.tsx",
-                                        lineNumber: 74,
+                                        lineNumber: 85,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/community-impact.tsx",
-                                    lineNumber: 73,
+                                    lineNumber: 84,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, card.name, true, {
                             fileName: "[project]/src/components/landing/community-impact.tsx",
-                            lineNumber: 43,
+                            lineNumber: 48,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/landing/community-impact.tsx",
-                    lineNumber: 41,
+                    lineNumber: 46,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/landing/community-impact.tsx",
-            lineNumber: 38,
+            lineNumber: 41,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/landing/community-impact.tsx",
-        lineNumber: 37,
+        lineNumber: 40,
         columnNumber: 5
     }, this);
 }
@@ -194,13 +194,13 @@ __turbopack_context__.s([
     ()=>DigitalSanctuary
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$plus_jakarta_sans_33b33163$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[next]/internal/font/google/plus_jakarta_sans_33b33163.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconAlertTriangle$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__IconAlertTriangle$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconAlertTriangle.mjs [app-rsc] (ecmascript) <export default as IconAlertTriangle>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconBook2$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__IconBook2$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconBook2.mjs [app-rsc] (ecmascript) <export default as IconBook2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconCircleCheck$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__IconCircleCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconCircleCheck.mjs [app-rsc] (ecmascript) <export default as IconCircleCheck>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconCircleX$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__IconCircleX$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconCircleX.mjs [app-rsc] (ecmascript) <export default as IconCircleX>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconLock$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__IconLock$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconLock.mjs [app-rsc] (ecmascript) <export default as IconLock>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconUsersGroup$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__IconUsersGroup$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconUsersGroup.mjs [app-rsc] (ecmascript) <export default as IconUsersGroup>");
-var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$plus_jakarta_sans_33b33163$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[next]/internal/font/google/plus_jakarta_sans_33b33163.js [app-rsc] (ecmascript)");
 ;
 ;
 ;
@@ -222,7 +222,7 @@ function SanctuaryMeta({ icon, title, description, danger = false }) {
                         children: icon
                     }, void 0, false, {
                         fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                        lineNumber: 35,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -233,13 +233,13 @@ function SanctuaryMeta({ icon, title, description, danger = false }) {
                         children: title
                     }, void 0, false, {
                         fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                        lineNumber: 43,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                lineNumber: 34,
+                lineNumber: 35,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -250,13 +250,13 @@ function SanctuaryMeta({ icon, title, description, danger = false }) {
                 children: description
             }, void 0, false, {
                 fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                lineNumber: 45,
+                lineNumber: 55,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 5
     }, this);
 }
@@ -274,7 +274,7 @@ function DigitalSanctuary() {
                             children: "Transparency First"
                         }, void 0, false, {
                             fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                            lineNumber: 55,
+                            lineNumber: 72,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -287,13 +287,13 @@ function DigitalSanctuary() {
                                     children: "Sanctuary"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 79,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                            lineNumber: 56,
+                            lineNumber: 75,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -301,13 +301,13 @@ function DigitalSanctuary() {
                             children: "We believe in absolute clarity about what we do and what we do not do. Your safety relies on understanding these boundaries."
                         }, void 0, false, {
                             fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                            lineNumber: 64,
+                            lineNumber: 83,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                    lineNumber: 54,
+                    lineNumber: 71,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -321,7 +321,7 @@ function DigitalSanctuary() {
                                     className: "pointer-events-none absolute left-6 right-6 top-0 h-1 rounded-b-full bg-[#0D9488]"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                    lineNumber: 72,
+                                    lineNumber: 91,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -334,12 +334,12 @@ function DigitalSanctuary() {
                                                 stroke: 2
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                                lineNumber: 75,
+                                                lineNumber: 97,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 96,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -347,13 +347,13 @@ function DigitalSanctuary() {
                                             children: "We Are"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                            lineNumber: 77,
+                                            lineNumber: 99,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                    lineNumber: 73,
+                                    lineNumber: 95,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -361,7 +361,7 @@ function DigitalSanctuary() {
                                     children: "Your dedicated digital ally, providing a secure bridge between uncertainty and professional help."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                    lineNumber: 80,
+                                    lineNumber: 104,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -379,25 +379,25 @@ function DigitalSanctuary() {
                                                     stroke: 2
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 116,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: item
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                                    lineNumber: 88,
+                                                    lineNumber: 121,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, item, true, {
                                             fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                            lineNumber: 86,
+                                            lineNumber: 115,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                    lineNumber: 84,
+                                    lineNumber: 109,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -405,13 +405,13 @@ function DigitalSanctuary() {
                                     children: "Trusted by 10,000+ users"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                    lineNumber: 93,
+                                    lineNumber: 126,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                            lineNumber: 71,
+                            lineNumber: 90,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -423,14 +423,14 @@ function DigitalSanctuary() {
                                         stroke: 2
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                        lineNumber: 100,
+                                        lineNumber: 133,
                                         columnNumber: 21
                                     }, void 0),
                                     title: "Secure Tool",
                                     description: "Encrypted documentation with time-stamped evidence."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                    lineNumber: 99,
+                                    lineNumber: 132,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(SanctuaryMeta, {
@@ -439,14 +439,14 @@ function DigitalSanctuary() {
                                         stroke: 2
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                        lineNumber: 105,
+                                        lineNumber: 138,
                                         columnNumber: 21
                                     }, void 0),
                                     title: "Education Hub",
                                     description: "Curated resources on rights and mental health."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                    lineNumber: 104,
+                                    lineNumber: 137,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(SanctuaryMeta, {
@@ -455,14 +455,14 @@ function DigitalSanctuary() {
                                         stroke: 2
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                        lineNumber: 110,
+                                        lineNumber: 143,
                                         columnNumber: 21
                                     }, void 0),
                                     title: "Professional Bridge",
                                     description: "Direct connections to NGOs and legal aid."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                    lineNumber: 109,
+                                    lineNumber: 142,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(SanctuaryMeta, {
@@ -471,7 +471,7 @@ function DigitalSanctuary() {
                                         stroke: 2
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                        lineNumber: 115,
+                                        lineNumber: 148,
                                         columnNumber: 21
                                     }, void 0),
                                     title: "Not Emergency",
@@ -479,19 +479,19 @@ function DigitalSanctuary() {
                                     danger: true
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                    lineNumber: 114,
+                                    lineNumber: 147,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                            lineNumber: 98,
+                            lineNumber: 131,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                    lineNumber: 70,
+                    lineNumber: 89,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -506,12 +506,12 @@ function DigitalSanctuary() {
                                     stroke: 2
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                    lineNumber: 126,
+                                    lineNumber: 159,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                lineNumber: 125,
+                                lineNumber: 158,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -521,7 +521,7 @@ function DigitalSanctuary() {
                                         children: "We Are NOT"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                        lineNumber: 130,
+                                        lineNumber: 163,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -529,7 +529,7 @@ function DigitalSanctuary() {
                                         children: "We provide information, not legal representation. We document user reports but do not investigate crimes independently."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                        lineNumber: 131,
+                                        lineNumber: 166,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -540,7 +540,7 @@ function DigitalSanctuary() {
                                                 children: "Not a Law Firm"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                                lineNumber: 137,
+                                                lineNumber: 172,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -548,41 +548,41 @@ function DigitalSanctuary() {
                                                 children: "Not Investigators"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                                lineNumber: 140,
+                                                lineNumber: 175,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                        lineNumber: 136,
+                                        lineNumber: 171,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                                lineNumber: 129,
+                                lineNumber: 162,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                        lineNumber: 124,
+                        lineNumber: 157,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-                    lineNumber: 123,
+                    lineNumber: 156,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-            lineNumber: 53,
+            lineNumber: 70,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
-        lineNumber: 52,
+        lineNumber: 69,
         columnNumber: 5
     }, this);
 }
@@ -911,8 +911,8 @@ __turbopack_context__.s([
     ()=>RealStoriesSupport
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconQuote$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__IconQuote$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconQuote.mjs [app-rsc] (ecmascript) <export default as IconQuote>");
 var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$plus_jakarta_sans_67c838c3$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[next]/internal/font/google/plus_jakarta_sans_67c838c3.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconQuote$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__IconQuote$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconQuote.mjs [app-rsc] (ecmascript) <export default as IconQuote>");
 ;
 ;
 ;
@@ -953,7 +953,7 @@ function RealStoriesSupport() {
                             children: "Real stories, real support"
                         }, void 0, false, {
                             fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                            lineNumber: 46,
+                            lineNumber: 50,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -961,13 +961,13 @@ function RealStoriesSupport() {
                             children: "See how others found their voice and safety through our community."
                         }, void 0, false, {
                             fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                            lineNumber: 51,
+                            lineNumber: 55,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                    lineNumber: 45,
+                    lineNumber: 49,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -984,12 +984,12 @@ function RealStoriesSupport() {
                                                 stroke: 2.2
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                                lineNumber: 66,
+                                                lineNumber: 72,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                            lineNumber: 65,
+                                            lineNumber: 71,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1001,13 +1001,13 @@ function RealStoriesSupport() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 74,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                    lineNumber: 64,
+                                    lineNumber: 70,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1018,7 +1018,7 @@ function RealStoriesSupport() {
                                             children: story.initials
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 80,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1028,7 +1028,7 @@ function RealStoriesSupport() {
                                                     children: story.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                                    lineNumber: 78,
+                                                    lineNumber: 86,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1036,41 +1036,41 @@ function RealStoriesSupport() {
                                                     children: story.role
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                                    lineNumber: 79,
+                                                    lineNumber: 89,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                            lineNumber: 77,
+                                            lineNumber: 85,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                    lineNumber: 71,
+                                    lineNumber: 79,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, story.name, true, {
                             fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                            lineNumber: 58,
+                            lineNumber: 62,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                    lineNumber: 56,
+                    lineNumber: 60,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/landing/real-stories-support.tsx",
-            lineNumber: 44,
+            lineNumber: 48,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/landing/real-stories-support.tsx",
-        lineNumber: 43,
+        lineNumber: 47,
         columnNumber: 5
     }, this);
 }

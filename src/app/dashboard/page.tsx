@@ -11,7 +11,9 @@ type DashboardPageProps = {
   searchParams?: Promise<DashboardPageSearchParams>;
 };
 
-export default async function DashboardPage({ searchParams }: DashboardPageProps) {
+export default async function DashboardPage({
+  searchParams,
+}: DashboardPageProps) {
   const resolved = (await searchParams) ?? {};
   const rawView = resolved.view;
   const rawRecording = resolved.recording;

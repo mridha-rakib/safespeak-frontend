@@ -4,11 +4,11 @@ import Image from "next/image";
 
 import { useTranslation } from "react-i18next";
 
+import phoneRight from "@/assets/Rectangle-2.svg?url";
+import phoneLeft from "@/assets/Rectangle.svg?url";
 import androidLink from "@/assets/android-link.svg";
 import appleLink from "@/assets/apple-link.svg";
 import indicator from "@/assets/indicator.svg";
-import phoneLeft from "@/assets/Rectangle.svg?url";
-import phoneRight from "@/assets/Rectangle-2.svg?url";
 import qrCode from "@/assets/qrcode.svg";
 import sphere from "@/assets/sphere.svg?url";
 
@@ -18,7 +18,14 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#01579B]">
       <div className="pointer-events-none absolute inset-x-[-30%] bottom-[-46%] h-[95%] sm:inset-x-[-20%] sm:bottom-[-42%] lg:inset-x-[-12%] lg:bottom-[-35%] xl:hidden">
-        <Image src={sphere} alt={t("hero.alt.sphere")} fill priority sizes="100vw" className="object-contain object-bottom" />
+        <Image
+          src={sphere}
+          alt={t("hero.alt.sphere")}
+          fill
+          priority
+          sizes="100vw"
+          className="object-contain object-bottom"
+        />
       </div>
 
       <div
@@ -45,11 +52,16 @@ export default function Hero() {
           <div className="space-y-4">
             <h1 className="max-w-[860px] text-[34px] font-extrabold uppercase leading-[1.25] tracking-[-0.5px] text-white sm:text-[40px] sm:leading-[1.35] xl:text-[48.6px] xl:leading-[84px]">
               <span className="block xl:whitespace-nowrap">
-                <span className="text-[var(--safe-orange)]">{t("hero.titleAccent")}</span> <span>{t("hero.titleMain")}</span>
+                <span className="text-[var(--safe-orange)]">
+                  {t("hero.titleAccent")}
+                </span>{" "}
+                <span>{t("hero.titleMain")}</span>
               </span>
               <span className="block">{t("hero.titleSecondLine")}</span>
             </h1>
-            <p className="text-sm font-semibold text-white/85 sm:text-base xl:whitespace-nowrap">{t("hero.subtitle")}</p>
+            <p className="text-sm font-semibold text-white/85 sm:text-base xl:whitespace-nowrap">
+              {t("hero.subtitle")}
+            </p>
 
             <div className="flex flex-col gap-3 pt-2 sm:gap-4 sm:pt-3">
               <div className="flex w-[188px] flex-col items-start gap-2.5">
@@ -58,9 +70,21 @@ export default function Hero() {
                   alt={t("hero.alt.indicator")}
                   className="h-9 w-auto self-center sm:h-11 xl:translate-x-1"
                 />
-                <Image src={appleLink} alt={t("hero.alt.appStore")} className="h-11 w-[188px] sm:h-[50px]" />
-                <Image src={androidLink} alt={t("hero.alt.googlePlay")} className="h-11 w-[188px] sm:h-[50px]" />
-                <Image src={qrCode} alt={t("hero.alt.qr")} className="h-[60px] w-[60px]" />
+                <Image
+                  src={appleLink}
+                  alt={t("hero.alt.appStore")}
+                  className="h-11 w-[188px] sm:h-[50px]"
+                />
+                <Image
+                  src={androidLink}
+                  alt={t("hero.alt.googlePlay")}
+                  className="h-11 w-[188px] sm:h-[50px]"
+                />
+                <Image
+                  src={qrCode}
+                  alt={t("hero.alt.qr")}
+                  className="h-[60px] w-[60px]"
+                />
               </div>
             </div>
           </div>

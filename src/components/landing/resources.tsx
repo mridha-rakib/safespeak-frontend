@@ -2,7 +2,6 @@
 
 import { Outfit, Space_Grotesk } from "next/font/google";
 import Image from "next/image";
-import { motion, useReducedMotion } from "framer-motion";
 
 import {
   IconBolt,
@@ -11,6 +10,7 @@ import {
   IconPhoto,
   IconWorld,
 } from "@tabler/icons-react";
+import { motion, useReducedMotion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 import guidedTriageIcon from "@/assets/guidedTriage.svg";

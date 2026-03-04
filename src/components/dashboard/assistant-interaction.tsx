@@ -1,7 +1,7 @@
 "use client";
 
-import { ChangeEvent, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
+import { ChangeEvent, useEffect, useMemo, useRef, useState } from "react";
 
 import { IconMapPin, IconMicrophone } from "@tabler/icons-react";
 import { useTranslation } from "react-i18next";
@@ -107,7 +107,10 @@ export function AssistantInteraction({
   const shouldResumeRecordingRef = useRef(false);
 
   const transcriptText = useMemo(() => {
-    return [finalTranscript, interimTranscript].filter(Boolean).join(" ").trim();
+    return [finalTranscript, interimTranscript]
+      .filter(Boolean)
+      .join(" ")
+      .trim();
   }, [finalTranscript, interimTranscript]);
   const showTranscriptPanel = isRecordingActive || Boolean(speechError);
   const speechRecognitionLang = useMemo(() => {
@@ -137,7 +140,11 @@ export function AssistantInteraction({
       let finalChunk = "";
       let interimChunk = "";
 
-      for (let index = event.resultIndex; index < event.results.length; index += 1) {
+      for (
+        let index = event.resultIndex;
+        index < event.results.length;
+        index += 1
+      ) {
         const result = event.results[index];
         const transcript = result[0]?.transcript?.trim();
 
@@ -298,7 +305,9 @@ export function AssistantInteraction({
 
       <p className={headlineClassName}>
         {t("dashboard.assistant.greetingPrefix")}{" "}
-        <span className="text-[#3f7de0]">{t("dashboard.assistant.userName")}</span>
+        <span className="text-[#3f7de0]">
+          {t("dashboard.assistant.userName")}
+        </span>
         {t("dashboard.assistant.greetingSuffix")}
       </p>
 
@@ -308,7 +317,9 @@ export function AssistantInteraction({
             {t("dashboard.assistant.realTimeTranscript")}
           </p>
           {speechError ? (
-            <p className="mt-1 text-[11px] leading-[1.45] text-[#c24141]">{speechError}</p>
+            <p className="mt-1 text-[11px] leading-[1.45] text-[#c24141]">
+              {speechError}
+            </p>
           ) : (
             <p className="mt-1 text-[11px] leading-[1.45] text-[#60728a]">
               {transcriptText || t("dashboard.assistant.listening")}

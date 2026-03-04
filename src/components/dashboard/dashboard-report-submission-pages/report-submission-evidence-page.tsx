@@ -69,7 +69,9 @@ function ReportSubmissionEvidencePage() {
 
           <div className="mt-5 flex items-start justify-between gap-3">
             <div>
-              <h3 className="text-lg font-bold text-[#1f2a3a]">Attached Files</h3>
+              <h3 className="text-lg font-bold text-[#1f2a3a]">
+                Attached Files
+              </h3>
               <p className="mt-0.5 text-[10px] text-[#8ea0b8]">
                 Upload evidence to support your report.
               </p>
@@ -156,7 +158,9 @@ function ReportSubmissionEvidencePage() {
                   <div className="mt-3 h-1.5 rounded-full bg-[#ffe6cc]">
                     <div className="h-1.5 w-1/2 rounded-full bg-[#ff8f00]" />
                   </div>
-                  <p className="mt-1 text-right text-[9px] text-[#95a6bc]">50%</p>
+                  <p className="mt-1 text-right text-[9px] text-[#95a6bc]">
+                    50%
+                  </p>
                 </div>
               </div>
             </article>

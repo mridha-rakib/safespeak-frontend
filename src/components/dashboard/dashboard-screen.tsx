@@ -1,13 +1,18 @@
 "use client";
 
-import { DashboardShell } from "./dashboard-layout";
-import { SafeSpeakAssistantConversationPage, SafeSpeakAssistantPage } from "./dashboard-assistant-pages";
+import {
+  SafeSpeakAssistantConversationPage,
+  SafeSpeakAssistantPage,
+} from "./dashboard-assistant-pages";
 import { ExplorerPage } from "./dashboard-explorer-page";
 import { HomeDashboardPage } from "./dashboard-home-overview-page";
+import { DashboardShell } from "./dashboard-layout";
+import {
+  MicroCardDetailPage,
+  MicroCardsPage,
+} from "./dashboard-microcards-pages";
 import { MicroEducationPage } from "./dashboard-microeducation-page";
-import { MicroCardDetailPage, MicroCardsPage } from "./dashboard-microcards-pages";
 import { NotificationsPage } from "./dashboard-notifications-page";
-import { ReportOverviewPage, ReportsHistoryPage } from "./dashboard-reports-pages";
 import {
   ReportSubmissionDetailedExplanationsPage,
   ReportSubmissionDetailsPage,
@@ -18,7 +23,16 @@ import {
   ReportSubmissionSuccessPage,
   ReportSubmissionSupportPage,
 } from "./dashboard-report-submission-pages";
-import { ScamShieldAgencyPage, ScamShieldAssetsPage, ScamShieldIntakePage, ScamShieldRiskPage } from "./dashboard-scam-shield-pages";
+import {
+  ReportOverviewPage,
+  ReportsHistoryPage,
+} from "./dashboard-reports-pages";
+import {
+  ScamShieldAgencyPage,
+  ScamShieldAssetsPage,
+  ScamShieldIntakePage,
+  ScamShieldRiskPage,
+} from "./dashboard-scam-shield-pages";
 import {
   SettingsPage,
   SettingsPrivacyPolicyPage,

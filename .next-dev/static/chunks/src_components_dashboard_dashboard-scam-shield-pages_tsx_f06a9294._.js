@@ -14,9 +14,10 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconAlertTriangle$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconAlertTriangle$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconAlertTriangle.mjs [app-client] (ecmascript) <export default as IconAlertTriangle>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconAt$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconAt$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconAt.mjs [app-client] (ecmascript) <export default as IconAt>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconArrowRight$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconArrowRight.mjs [app-client] (ecmascript) <export default as IconArrowRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconAt$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconAt$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconAt.mjs [app-client] (ecmascript) <export default as IconAt>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconBuildingBank$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconBuildingBank$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconBuildingBank.mjs [app-client] (ecmascript) <export default as IconBuildingBank>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronLeft$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronLeft$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconChevronLeft.mjs [app-client] (ecmascript) <export default as IconChevronLeft>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronRight$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronRight$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconChevronRight.mjs [app-client] (ecmascript) <export default as IconChevronRight>");
@@ -30,185 +31,18 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconX$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconX$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconX.mjs [app-client] (ecmascript) <export default as IconX>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/react-i18next/dist/es/index.js [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-i18next/dist/es/useTranslation.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$dashboard$2f$dashboard$2d$shared$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/src/components/dashboard/dashboard-shared.ts [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$inter_93cd5328$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__interFont$3e$__ = __turbopack_context__.i("[next]/internal/font/google/inter_93cd5328.js [app-client] (ecmascript) <export default as interFont>");
 ;
-var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature(), _s3 = __turbopack_context__.k.signature(), _s4 = __turbopack_context__.k.signature();
+var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature(), _s3 = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 ;
 ;
-const scamShieldSteps = [
-    {
-        key: "intake",
-        number: "15",
-        labelKey: "dashboard.scamShield.journeyReport"
-    },
-    {
-        key: "risk",
-        number: "16",
-        labelKey: "dashboard.scamShield.scamRiskResults"
-    },
-    {
-        key: "assets",
-        number: "17",
-        labelKey: "dashboard.scamShield.nextSteps"
-    },
-    {
-        key: "agency",
-        number: "18",
-        labelKey: "dashboard.scamShield.agencyReport"
-    }
-];
-function ScamShieldFrame(param) {
-    let { title, subtitle, step, backHref, children } = param;
-    _s();
-    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"])();
-    const activeStepIndex = scamShieldSteps.findIndex((item)=>item.key === step);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "px-2 pb-3 pt-2 sm:px-4 sm:pb-5 sm:pt-4",
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "mx-auto w-full max-w-[1184px]",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex items-center justify-between border-b border-[#d9e2ee] px-1 py-2",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            href: backHref,
-                            className: "inline-flex items-center gap-2 text-xs font-semibold text-[#1f2937]",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronLeft$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronLeft$3e$__["IconChevronLeft"], {
-                                    size: 14
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 73,
-                                    columnNumber: 13
-                                }, this),
-                                t("dashboard.scamShield.brand")
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 69,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            href: "/dashboard",
-                            className: "text-xs font-medium text-[#7b8798]",
-                            children: t("common.cancel")
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 76,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                    lineNumber: 68,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                    className: "mt-3 rounded-[16px] border border-[#dce4ef] bg-white p-4 shadow-[0_10px_24px_rgba(15,23,42,0.04)] sm:p-5",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-[10px] font-bold uppercase tracking-[0.12em] text-[#0f5d9f]",
-                                            children: t("dashboard.scamShield.brand")
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                            lineNumber: 87,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                            className: "mt-1 text-[28px] font-extrabold leading-[1.02] text-[#1f2a3a] sm:text-[34px]",
-                                            children: title
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                            lineNumber: 90,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "mt-1 text-xs text-[#6a7d94]",
-                                            children: subtitle
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                            lineNumber: 93,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 86,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-2 gap-2 sm:grid-cols-4",
-                                    children: scamShieldSteps.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("rounded-xl px-3 py-2 text-center", index <= activeStepIndex ? "bg-[#eaf2ff]" : "bg-[#f3f6fb]"),
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("text-[11px] font-extrabold", index <= activeStepIndex ? "text-[#0f5d9f]" : "text-[#8fa0b6]"),
-                                                    children: item.number
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                    lineNumber: 105,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "mt-0.5 text-[9px] font-semibold text-[#60728a]",
-                                                    children: t(item.labelKey)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                    lineNumber: 115,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, item.key, true, {
-                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                            lineNumber: 98,
-                                            columnNumber: 17
-                                        }, this))
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 96,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 85,
-                            columnNumber: 11
-                        }, this),
-                        children
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                    lineNumber: 84,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-            lineNumber: 67,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-        lineNumber: 66,
-        columnNumber: 5
-    }, this);
-}
-_s(ScamShieldFrame, "zlIdU9EjM2llFt74AbE2KsUJXyM=", false, function() {
-    return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"]
-    ];
-});
-_c = ScamShieldFrame;
+;
 function ScamShieldIntakePage() {
-    _s1();
+    _s();
     const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "px-2 pb-3 pt-2 sm:px-4 sm:pb-5 sm:pt-4",
@@ -226,14 +60,14 @@ function ScamShieldIntakePage() {
                                     size: 14
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 141,
+                                    lineNumber: 37,
                                     columnNumber: 13
                                 }, this),
                                 t("dashboard.scamShield.analyzeMessage")
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 137,
+                            lineNumber: 33,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -242,13 +76,13 @@ function ScamShieldIntakePage() {
                             children: t("common.cancel")
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 144,
+                            lineNumber: 40,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                    lineNumber: 136,
+                    lineNumber: 32,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -266,7 +100,7 @@ function ScamShieldIntakePage() {
                                             children: t("dashboard.scamShield.messageContent")
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                            lineNumber: 155,
+                                            lineNumber: 51,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -279,7 +113,7 @@ function ScamShieldIntakePage() {
                                                     className: "min-h-[340px] w-full resize-none rounded-[11px] border border-[#dbe4ef] bg-[#f8fbff] px-3 py-3 text-xs leading-[1.6] text-[#1f2a3a] outline-none placeholder:text-[#9aabc0]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                    lineNumber: 162,
+                                                    lineNumber: 58,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -291,12 +125,12 @@ function ScamShieldIntakePage() {
                                                                 size: 10
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                lineNumber: 172,
+                                                                lineNumber: 68,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                            lineNumber: 171,
+                                                            lineNumber: 67,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -305,30 +139,30 @@ function ScamShieldIntakePage() {
                                                                 size: 10
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                lineNumber: 175,
+                                                                lineNumber: 71,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                            lineNumber: 174,
+                                                            lineNumber: 70,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                    lineNumber: 170,
+                                                    lineNumber: 66,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                            lineNumber: 161,
+                                            lineNumber: 57,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 154,
+                                    lineNumber: 50,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
@@ -343,12 +177,12 @@ function ScamShieldIntakePage() {
                                                         size: 20
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                        lineNumber: 184,
+                                                        lineNumber: 80,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                    lineNumber: 183,
+                                                    lineNumber: 79,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -356,7 +190,7 @@ function ScamShieldIntakePage() {
                                                     children: t("dashboard.scamShield.uploadScreenshotTitle")
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                    lineNumber: 186,
+                                                    lineNumber: 82,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -364,7 +198,7 @@ function ScamShieldIntakePage() {
                                                     children: t("dashboard.scamShield.uploadScreenshotDescription")
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                    lineNumber: 189,
+                                                    lineNumber: 85,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -374,20 +208,20 @@ function ScamShieldIntakePage() {
                                                             size: 12
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                            lineNumber: 193,
+                                                            lineNumber: 89,
                                                             columnNumber: 19
                                                         }, this),
                                                         t("dashboard.scamShield.selectFiles")
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                    lineNumber: 192,
+                                                    lineNumber: 88,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                            lineNumber: 182,
+                                            lineNumber: 78,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -398,7 +232,7 @@ function ScamShieldIntakePage() {
                                                     children: t("dashboard.scamShield.attachedEvidence")
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                    lineNumber: 199,
+                                                    lineNumber: 95,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -413,12 +247,12 @@ function ScamShieldIntakePage() {
                                                                         size: 9
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                        lineNumber: 205,
+                                                                        lineNumber: 101,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                    lineNumber: 204,
+                                                                    lineNumber: 100,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -430,45 +264,45 @@ function ScamShieldIntakePage() {
                                                                                 className: "mt-0.5 block h-1 w-full rounded bg-[#d1dbe8]"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                                lineNumber: 209,
+                                                                                lineNumber: 105,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                 className: "mt-1 block h-1 w-[70%] rounded bg-[#dce4ef]"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                                lineNumber: 210,
+                                                                                lineNumber: 106,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                 className: "mt-1 block h-1 w-[82%] rounded bg-[#dce4ef]"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                                lineNumber: 211,
+                                                                                lineNumber: 107,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                 className: "mt-1 block h-1 w-[64%] rounded bg-[#dce4ef]"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                                lineNumber: 212,
+                                                                                lineNumber: 108,
                                                                                 columnNumber: 25
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                        lineNumber: 208,
+                                                                        lineNumber: 104,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                    lineNumber: 207,
+                                                                    lineNumber: 103,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                            lineNumber: 203,
+                                                            lineNumber: 99,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -480,12 +314,12 @@ function ScamShieldIntakePage() {
                                                                         size: 9
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                        lineNumber: 219,
+                                                                        lineNumber: 115,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                    lineNumber: 218,
+                                                                    lineNumber: 114,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -495,47 +329,47 @@ function ScamShieldIntakePage() {
                                                                             className: "block h-1 w-full rounded bg-[#d8d4cf]"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                            lineNumber: 222,
+                                                                            lineNumber: 118,
                                                                             columnNumber: 23
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "mt-1 block h-1 w-[78%] rounded bg-[#e2ddd7]"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                            lineNumber: 223,
+                                                                            lineNumber: 119,
                                                                             columnNumber: 23
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "mt-1 block h-1 w-[84%] rounded bg-[#e2ddd7]"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                            lineNumber: 224,
+                                                                            lineNumber: 120,
                                                                             columnNumber: 23
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "mt-1 block h-1 w-[66%] rounded bg-[#e2ddd7]"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                            lineNumber: 225,
+                                                                            lineNumber: 121,
                                                                             columnNumber: 23
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "mt-1 block h-1 w-[74%] rounded bg-[#e2ddd7]"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                            lineNumber: 226,
+                                                                            lineNumber: 122,
                                                                             columnNumber: 23
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                    lineNumber: 221,
+                                                                    lineNumber: 117,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                            lineNumber: 217,
+                                                            lineNumber: 113,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -548,12 +382,12 @@ function ScamShieldIntakePage() {
                                                                             size: 14
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                            lineNumber: 233,
+                                                                            lineNumber: 129,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                        lineNumber: 232,
+                                                                        lineNumber: 128,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -561,42 +395,42 @@ function ScamShieldIntakePage() {
                                                                         children: t("dashboard.scamShield.addMore")
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                        lineNumber: 235,
+                                                                        lineNumber: 131,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                lineNumber: 231,
+                                                                lineNumber: 127,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                            lineNumber: 230,
+                                                            lineNumber: 126,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                    lineNumber: 202,
+                                                    lineNumber: 98,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                            lineNumber: 198,
+                                            lineNumber: 94,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 181,
+                                    lineNumber: 77,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 153,
+                            lineNumber: 49,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -607,7 +441,7 @@ function ScamShieldIntakePage() {
                                     children: t("dashboard.scamShield.readyForAnalysis")
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 246,
+                                    lineNumber: 142,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -618,48 +452,48 @@ function ScamShieldIntakePage() {
                                             size: 12
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                            lineNumber: 253,
+                                            lineNumber: 149,
                                             columnNumber: 15
                                         }, this),
                                         t("dashboard.scamShield.analyzeNow")
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 249,
+                                    lineNumber: 145,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 245,
+                            lineNumber: 141,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                    lineNumber: 152,
+                    lineNumber: 48,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-            lineNumber: 135,
+            lineNumber: 31,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-        lineNumber: 134,
+        lineNumber: 30,
         columnNumber: 5
     }, this);
 }
-_s1(ScamShieldIntakePage, "zlIdU9EjM2llFt74AbE2KsUJXyM=", false, function() {
+_s(ScamShieldIntakePage, "zlIdU9EjM2llFt74AbE2KsUJXyM=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"]
     ];
 });
-_c1 = ScamShieldIntakePage;
+_c = ScamShieldIntakePage;
 function ScamShieldRiskPage() {
-    _s2();
+    _s1();
     const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "px-2 pb-3 pt-2 sm:px-4 sm:pb-5 sm:pt-4",
@@ -677,14 +511,14 @@ function ScamShieldRiskPage() {
                                     size: 14
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 274,
+                                    lineNumber: 170,
                                     columnNumber: 13
                                 }, this),
                                 t("dashboard.scamShield.scamRiskResults")
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 270,
+                            lineNumber: 166,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -693,13 +527,13 @@ function ScamShieldRiskPage() {
                             children: t("common.cancel")
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 277,
+                            lineNumber: 173,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                    lineNumber: 269,
+                    lineNumber: 165,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -713,7 +547,7 @@ function ScamShieldRiskPage() {
                                     children: "85%"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 287,
+                                    lineNumber: 183,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -721,7 +555,7 @@ function ScamShieldRiskPage() {
                                     children: t("dashboard.scamShield.highRiskLabel")
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 290,
+                                    lineNumber: 186,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -729,7 +563,7 @@ function ScamShieldRiskPage() {
                                     children: t("dashboard.scamShield.highRiskDetected")
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 293,
+                                    lineNumber: 189,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -737,13 +571,13 @@ function ScamShieldRiskPage() {
                                     children: t("dashboard.scamShield.highRiskDetectedBody")
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 296,
+                                    lineNumber: 192,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 286,
+                            lineNumber: 182,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -754,7 +588,7 @@ function ScamShieldRiskPage() {
                                     children: t("dashboard.scamShield.detectedRedFlags")
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 302,
+                                    lineNumber: 198,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -762,13 +596,13 @@ function ScamShieldRiskPage() {
                                     children: t("dashboard.scamShield.twoFound")
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 305,
+                                    lineNumber: 201,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 301,
+                            lineNumber: 197,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -783,12 +617,12 @@ function ScamShieldRiskPage() {
                                                 size: 13
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 313,
+                                                lineNumber: 209,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                            lineNumber: 312,
+                                            lineNumber: 208,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -799,7 +633,7 @@ function ScamShieldRiskPage() {
                                                     children: t("dashboard.scamShield.urgentLanguage")
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                    lineNumber: 316,
+                                                    lineNumber: 212,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -807,7 +641,7 @@ function ScamShieldRiskPage() {
                                                     children: t("dashboard.scamShield.urgentLanguageBody")
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                    lineNumber: 319,
+                                                    lineNumber: 215,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -818,25 +652,25 @@ function ScamShieldRiskPage() {
                                                             size: 10
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                            lineNumber: 324,
+                                                            lineNumber: 220,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                    lineNumber: 322,
+                                                    lineNumber: 218,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                            lineNumber: 315,
+                                            lineNumber: 211,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 311,
+                                    lineNumber: 207,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -848,12 +682,12 @@ function ScamShieldRiskPage() {
                                                 size: 13
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 331,
+                                                lineNumber: 227,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                            lineNumber: 330,
+                                            lineNumber: 226,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -864,7 +698,7 @@ function ScamShieldRiskPage() {
                                                     children: t("dashboard.scamShield.suspiciousSender")
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                    lineNumber: 334,
+                                                    lineNumber: 230,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -872,7 +706,7 @@ function ScamShieldRiskPage() {
                                                     children: t("dashboard.scamShield.suspiciousSenderBody")
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                    lineNumber: 337,
+                                                    lineNumber: 233,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -883,31 +717,31 @@ function ScamShieldRiskPage() {
                                                             size: 10
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                            lineNumber: 342,
+                                                            lineNumber: 238,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                    lineNumber: 340,
+                                                    lineNumber: 236,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                            lineNumber: 333,
+                                            lineNumber: 229,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 329,
+                                    lineNumber: 225,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 310,
+                            lineNumber: 206,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -920,19 +754,19 @@ function ScamShieldRiskPage() {
                                         size: 12
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                        lineNumber: 353,
+                                        lineNumber: 249,
                                         columnNumber: 15
                                     }, this),
                                     t("dashboard.scamShield.reportThisIncident")
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                lineNumber: 349,
+                                lineNumber: 245,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 348,
+                            lineNumber: 244,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -945,14 +779,14 @@ function ScamShieldRiskPage() {
                                             size: 13
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                            lineNumber: 360,
+                                            lineNumber: 256,
                                             columnNumber: 15
                                         }, this),
                                         t("dashboard.scamShield.stayProtected")
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 359,
+                                    lineNumber: 255,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -960,7 +794,7 @@ function ScamShieldRiskPage() {
                                     children: t("dashboard.scamShield.stayProtectedBody")
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 363,
+                                    lineNumber: 259,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -972,53 +806,53 @@ function ScamShieldRiskPage() {
                                                 size: 10
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 368,
+                                                lineNumber: 264,
                                                 columnNumber: 17
                                             }, this),
                                             t("dashboard.scamShield.infoDisclaimer")
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                        lineNumber: 367,
+                                        lineNumber: 263,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 366,
+                                    lineNumber: 262,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 358,
+                            lineNumber: 254,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                    lineNumber: 285,
+                    lineNumber: 181,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-            lineNumber: 268,
+            lineNumber: 164,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-        lineNumber: 267,
+        lineNumber: 163,
         columnNumber: 5
     }, this);
 }
-_s2(ScamShieldRiskPage, "zlIdU9EjM2llFt74AbE2KsUJXyM=", false, function() {
+_s1(ScamShieldRiskPage, "zlIdU9EjM2llFt74AbE2KsUJXyM=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"]
     ];
 });
-_c2 = ScamShieldRiskPage;
+_c1 = ScamShieldRiskPage;
 function ScamShieldAssetsPage() {
-    _s3();
+    _s2();
     const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "px-2 pb-3 pt-2 sm:px-4 sm:pb-5 sm:pt-4",
@@ -1036,14 +870,14 @@ function ScamShieldAssetsPage() {
                                     size: 14
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 390,
+                                    lineNumber: 286,
                                     columnNumber: 13
                                 }, this),
                                 t("dashboard.scamShield.nextSteps")
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 386,
+                            lineNumber: 282,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1052,13 +886,13 @@ function ScamShieldAssetsPage() {
                             children: t("common.cancel")
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 393,
+                            lineNumber: 289,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                    lineNumber: 385,
+                    lineNumber: 281,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -1072,7 +906,7 @@ function ScamShieldAssetsPage() {
                                     children: t("dashboard.scamShield.secureAssetsTitle")
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 403,
+                                    lineNumber: 299,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1080,13 +914,13 @@ function ScamShieldAssetsPage() {
                                     children: t("dashboard.scamShield.assetActionIntro")
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 406,
+                                    lineNumber: 302,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 402,
+                            lineNumber: 298,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1106,12 +940,12 @@ function ScamShieldAssetsPage() {
                                                             size: 17
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                            lineNumber: 416,
+                                                            lineNumber: 312,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                        lineNumber: 415,
+                                                        lineNumber: 311,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1122,7 +956,7 @@ function ScamShieldAssetsPage() {
                                                                 children: t("dashboard.scamShield.contactYourBank")
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                lineNumber: 419,
+                                                                lineNumber: 315,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1130,19 +964,19 @@ function ScamShieldAssetsPage() {
                                                                 children: t("dashboard.scamShield.contactYourBankDetailed")
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                lineNumber: 422,
+                                                                lineNumber: 318,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                        lineNumber: 418,
+                                                        lineNumber: 314,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 414,
+                                                lineNumber: 310,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1153,24 +987,24 @@ function ScamShieldAssetsPage() {
                                                         size: 12
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                        lineNumber: 430,
+                                                        lineNumber: 326,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 428,
+                                                lineNumber: 324,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                        lineNumber: 413,
+                                        lineNumber: 309,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 412,
+                                    lineNumber: 308,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -1187,12 +1021,12 @@ function ScamShieldAssetsPage() {
                                                             size: 17
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                            lineNumber: 439,
+                                                            lineNumber: 335,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                        lineNumber: 438,
+                                                        lineNumber: 334,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1206,7 +1040,7 @@ function ScamShieldAssetsPage() {
                                                                         children: t("dashboard.scamShield.reportToAcccScamwatch")
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                        lineNumber: 443,
+                                                                        lineNumber: 339,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1214,13 +1048,13 @@ function ScamShieldAssetsPage() {
                                                                         children: t("dashboard.scamShield.communityPrevention")
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                        lineNumber: 446,
+                                                                        lineNumber: 342,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                lineNumber: 442,
+                                                                lineNumber: 338,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1228,7 +1062,7 @@ function ScamShieldAssetsPage() {
                                                                 children: t("dashboard.scamShield.reportToAcccDetailed")
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                lineNumber: 450,
+                                                                lineNumber: 346,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1236,22 +1070,23 @@ function ScamShieldAssetsPage() {
                                                                 children: t("dashboard.scamShield.communityPreventionBody")
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                lineNumber: 453,
+                                                                lineNumber: 349,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                        lineNumber: 441,
+                                                        lineNumber: 337,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 437,
+                                                lineNumber: 333,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                href: "/dashboard?view=scamshieldagency",
                                                 className: "inline-flex h-10 items-center gap-1.5 rounded-[8px] bg-[#ff9800] px-5 text-[11px] font-semibold text-white shadow-[0_8px_16px_rgba(255,152,0,0.26)]",
                                                 children: [
                                                     t("dashboard.scamShield.launchReportTool"),
@@ -1259,24 +1094,24 @@ function ScamShieldAssetsPage() {
                                                         size: 12
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                        lineNumber: 461,
+                                                        lineNumber: 360,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 459,
+                                                lineNumber: 355,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                        lineNumber: 436,
+                                        lineNumber: 332,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 435,
+                                    lineNumber: 331,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -1293,12 +1128,12 @@ function ScamShieldAssetsPage() {
                                                             size: 14
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                            lineNumber: 470,
+                                                            lineNumber: 369,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                        lineNumber: 469,
+                                                        lineNumber: 368,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1309,7 +1144,7 @@ function ScamShieldAssetsPage() {
                                                                 children: t("dashboard.scamShield.reportToReportCyber")
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                lineNumber: 473,
+                                                                lineNumber: 372,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1317,19 +1152,19 @@ function ScamShieldAssetsPage() {
                                                                 children: t("dashboard.scamShield.reportToReportCyberBody")
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                                lineNumber: 476,
+                                                                lineNumber: 375,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                        lineNumber: 472,
+                                                        lineNumber: 371,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 468,
+                                                lineNumber: 367,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1341,345 +1176,606 @@ function ScamShieldAssetsPage() {
                                                         size: 12
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                        lineNumber: 487,
+                                                        lineNumber: 386,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 482,
+                                                lineNumber: 381,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                        lineNumber: 467,
+                                        lineNumber: 366,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                    lineNumber: 466,
+                                    lineNumber: 365,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                            lineNumber: 411,
+                            lineNumber: 307,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                    lineNumber: 401,
+                    lineNumber: 297,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-            lineNumber: 384,
+            lineNumber: 280,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-        lineNumber: 383,
+        lineNumber: 279,
         columnNumber: 5
     }, this);
 }
-_s3(ScamShieldAssetsPage, "zlIdU9EjM2llFt74AbE2KsUJXyM=", false, function() {
+_s2(ScamShieldAssetsPage, "zlIdU9EjM2llFt74AbE2KsUJXyM=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"]
     ];
 });
-_c3 = ScamShieldAssetsPage;
+_c2 = ScamShieldAssetsPage;
 function ScamShieldAgencyPage() {
-    _s4();
+    _s3();
     const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"])();
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ScamShieldFrame, {
-        title: t("dashboard.scamShield.agencyReport"),
-        subtitle: t("dashboard.scamShield.agencyReportSubtitle"),
-        step: "agency",
-        backHref: "/dashboard?view=scamshieldassets",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-4 grid grid-cols-1 gap-3 xl:grid-cols-[1.7fr_1fr]",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                        className: "rounded-[14px] border border-[#e3ebf4] bg-[#f9fbfe] p-4",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "text-lg font-extrabold text-[#1f2a3a]",
-                                children: t("dashboard.scamShield.prefilledAgencyReports")
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                lineNumber: 510,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "mt-1 text-xs text-[#60728a]",
-                                children: t("dashboard.scamShield.prefilledAgencyReportsBody")
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                lineNumber: 513,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mt-3 space-y-2",
+    const [expandedSection, setExpandedSection] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("accc");
+    const [privacyConsentEnabled, setPrivacyConsentEnabled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "px-2 pt-2 sm:px-4 sm:pt-4",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mx-auto flex min-h-[1196px] w-full max-w-[1184px] flex-col pb-8",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mx-auto flex h-[61px] w-full max-w-[1184px] items-center justify-between border-b border-[#E2E8F0] bg-[#FFFFFFCC] px-4 sm:px-8 lg:px-[80px]",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/dashboard?view=scamshieldassets",
+                            className: "inline-flex items-center gap-2 text-xs font-semibold text-[#1f2937]",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronLeft$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronLeft$3e$__["IconChevronLeft"], {
+                                    size: 14
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                    lineNumber: 412,
+                                    columnNumber: 13
+                                }, this),
+                                t("dashboard.scamShield.safeSpeakAnalyzer")
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                            lineNumber: 408,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/dashboard",
+                            className: "text-xs font-medium text-[#7b8798]",
+                            children: t("common.cancel")
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                            lineNumber: 415,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                    lineNumber: 407,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+                    className: "mt-3 rounded-[16px] border border-[#dce5f1] bg-[#f4f7fc] p-3 shadow-[0_10px_24px_rgba(15,23,42,0.04)] sm:p-4",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+                            className: "mx-auto w-full max-w-[1136px] rounded-[14px] border border-[#e3eaf5] bg-white px-4 py-5 text-center sm:px-6 sm:py-6",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "".concat(__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$inter_93cd5328$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__interFont$3e$__["interFont"].className, " mx-auto h-[36px] w-full max-w-[369px] text-[30px] font-extrabold leading-[36px] tracking-[0] text-[#1f2a3a]"),
+                                    children: t("dashboard.scamShield.prefilledAgencyReports")
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                    lineNumber: 425,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "".concat(__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$inter_93cd5328$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__interFont$3e$__["interFont"].className, " mx-auto mt-3 w-full max-w-[780px] text-center text-[18px] font-normal leading-[29.25px] tracking-[0] text-[#6b7280]"),
+                                    children: t("dashboard.scamShield.prefilledAgencyReportsAnalyzerBody")
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                    lineNumber: 430,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                            lineNumber: 424,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "mt-3 space-y-3",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+                                    className: "overflow-hidden rounded-[12px] border border-[#e2eaf4] bg-white",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            type: "button",
+                                            onClick: ()=>setExpandedSection((currentSection)=>currentSection === "accc" ? null : "accc"),
+                                            className: "flex w-full items-center justify-between gap-3 px-3 py-3 text-left sm:px-4 sm:py-3.5",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex min-w-0 items-center gap-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#ecf3ff] text-[#2d66b0]",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconGavel$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconGavel$3e$__["IconGavel"], {
+                                                                size: 14
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                                lineNumber: 450,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                            lineNumber: 449,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "truncate text-[14px] font-bold text-[#1f2a3a] sm:text-[15px]",
+                                                            children: t("dashboard.scamShield.reportToAcccScamwatch")
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                            lineNumber: 452,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                    lineNumber: 448,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronRight$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronRight$3e$__["IconChevronRight"], {
+                                                    size: 14,
+                                                    className: "text-[#8fa0b6] transition-transform ".concat(expandedSection === "accc" ? "rotate-90" : "rotate-0")
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                    lineNumber: 456,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                            lineNumber: 439,
+                                            columnNumber: 15
+                                        }, this),
+                                        expandedSection === "accc" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "border-t border-[#e8eff8] px-3 pb-3 pt-2.5 sm:px-4 sm:pb-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-[9px] font-bold uppercase tracking-[0.08em] text-[#8ca0b8]",
+                                                    children: t("dashboard.scamShield.prefilledDetails")
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                    lineNumber: 466,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "mt-2.5",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                            className: "text-[10px] font-semibold text-[#60728a]",
+                                                            children: t("dashboard.scamShield.senderName")
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                            lineNumber: 471,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "relative mt-1",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                    readOnly: true,
+                                                                    value: t("dashboard.scamShield.prefilledSenderName"),
+                                                                    className: "h-10 w-full rounded-[8px] border border-[#dce5f1] bg-[#f8fbff] px-3 pr-10 text-[12px] text-[#253447] outline-none"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                                    lineNumber: 475,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[#16a56a]",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShieldFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShieldFilled$3e$__["IconShieldFilled"], {
+                                                                        size: 13
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                                        lineNumber: 481,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                                    lineNumber: 480,
+                                                                    columnNumber: 23
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                            lineNumber: 474,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                    lineNumber: 470,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "mt-2.5 grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                                    className: "text-[10px] font-semibold text-[#60728a]",
+                                                                    children: t("dashboard.scamShield.scamCategory")
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                                    lineNumber: 488,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "relative mt-1",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                            readOnly: true,
+                                                                            value: t("dashboard.scamShield.prefilledScamCategory"),
+                                                                            className: "h-10 w-full rounded-[8px] border border-[#dce5f1] bg-[#f8fbff] px-3 pr-9 text-[12px] text-[#253447] outline-none"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                                            lineNumber: 492,
+                                                                            columnNumber: 25
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronRight$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronRight$3e$__["IconChevronRight"], {
+                                                                            size: 12,
+                                                                            className: "pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 rotate-90 text-[#8fa0b6]"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                                            lineNumber: 499,
+                                                                            columnNumber: 25
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                                    lineNumber: 491,
+                                                                    columnNumber: 23
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                            lineNumber: 487,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                                    className: "text-[10px] font-semibold text-[#60728a]",
+                                                                    children: t("dashboard.scamShield.platform")
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                                    lineNumber: 507,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "relative mt-1",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                            readOnly: true,
+                                                                            value: t("dashboard.scamShield.prefilledPlatform"),
+                                                                            className: "h-10 w-full rounded-[8px] border border-[#dce5f1] bg-[#f8fbff] px-3 pr-9 text-[12px] text-[#253447] outline-none"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                                            lineNumber: 511,
+                                                                            columnNumber: 25
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronRight$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronRight$3e$__["IconChevronRight"], {
+                                                                            size: 12,
+                                                                            className: "pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 rotate-90 text-[#8fa0b6]"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                                            lineNumber: 516,
+                                                                            columnNumber: 25
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                                    lineNumber: 510,
+                                                                    columnNumber: 23
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                            lineNumber: 506,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                    lineNumber: 486,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                            lineNumber: 465,
+                                            columnNumber: 17
+                                        }, this) : null
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                    lineNumber: 438,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+                                    className: "overflow-hidden rounded-[12px] border border-[#e2eaf4] bg-white",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            type: "button",
+                                            onClick: ()=>setExpandedSection((currentSection)=>currentSection === "reportCyber" ? null : "reportCyber"),
+                                            className: "flex w-full items-center justify-between gap-3 px-3 py-3 text-left sm:px-4 sm:py-3.5",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex min-w-0 items-center gap-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#edf1ff] text-[#5f6be0]",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShieldFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShieldFilled$3e$__["IconShieldFilled"], {
+                                                                size: 13
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                                lineNumber: 539,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                            lineNumber: 538,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "truncate text-[14px] font-bold text-[#1f2a3a] sm:text-[15px]",
+                                                            children: t("dashboard.scamShield.reportCyberAcsc")
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                            lineNumber: 541,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                    lineNumber: 537,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronRight$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronRight$3e$__["IconChevronRight"], {
+                                                    size: 14,
+                                                    className: "text-[#8fa0b6] transition-transform ".concat(expandedSection === "reportCyber" ? "rotate-90" : "rotate-0")
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                    lineNumber: 545,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                            lineNumber: 528,
+                                            columnNumber: 15
+                                        }, this),
+                                        expandedSection === "reportCyber" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "border-t border-[#e8eff8] px-3 py-3 text-[12px] leading-[1.55] text-[#60728a] sm:px-4",
+                                            children: t("dashboard.scamShield.reportCyberPanelBody")
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                            lineNumber: 554,
+                                            columnNumber: 17
+                                        }, this) : null
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                    lineNumber: 527,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+                                    className: "overflow-hidden rounded-[12px] border border-[#e2eaf4] bg-white",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            type: "button",
+                                            onClick: ()=>setExpandedSection((currentSection)=>currentSection === "bank" ? null : "bank"),
+                                            className: "flex w-full items-center justify-between gap-3 px-3 py-3 text-left sm:px-4 sm:py-3.5",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex min-w-0 items-center gap-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e7fbf6] text-[#0f9c7c]",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconBuildingBank$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconBuildingBank$3e$__["IconBuildingBank"], {
+                                                                size: 14
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                                lineNumber: 572,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                            lineNumber: 571,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "truncate text-[14px] font-bold text-[#1f2a3a] sm:text-[15px]",
+                                                            children: t("dashboard.scamShield.bankSecurityDept")
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                            lineNumber: 574,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                    lineNumber: 570,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronRight$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronRight$3e$__["IconChevronRight"], {
+                                                    size: 14,
+                                                    className: "text-[#8fa0b6] transition-transform ".concat(expandedSection === "bank" ? "rotate-90" : "rotate-0")
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                                    lineNumber: 578,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                            lineNumber: 561,
+                                            columnNumber: 15
+                                        }, this),
+                                        expandedSection === "bank" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "border-t border-[#e8eff8] px-3 py-3 text-[12px] leading-[1.55] text-[#60728a] sm:px-4",
+                                            children: t("dashboard.scamShield.bankSecurityPanelBody")
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                            lineNumber: 587,
+                                            columnNumber: 17
+                                        }, this) : null
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                    lineNumber: 560,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                            lineNumber: 437,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+                            className: "mt-3 rounded-[12px] border border-[#e2eaf4] bg-white px-3 py-3 sm:px-4 sm:py-3.5",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-center justify-between gap-3",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "rounded-xl border border-[#dbe5f2] bg-white p-3",
+                                        className: "min-w-0",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-[10px] font-bold uppercase tracking-[0.08em] text-[#7c8da3]",
-                                                children: t("dashboard.scamShield.scamNarrative")
+                                                className: "text-[14px] font-bold text-[#1f2a3a]",
+                                                children: t("dashboard.scamShield.privacyConsent")
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 519,
-                                                columnNumber: 15
+                                                lineNumber: 597,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "mt-1 text-[11px] text-[#42546b]",
-                                                children: t("dashboard.scamShield.scamNarrativeBody")
+                                                className: "mt-1 text-[10px] leading-[1.45] text-[#6a7e96] sm:text-[11px]",
+                                                children: t("dashboard.scamShield.privacyConsentBody")
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 522,
-                                                columnNumber: 15
+                                                lineNumber: 600,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                        lineNumber: 518,
-                                        columnNumber: 13
+                                        lineNumber: 596,
+                                        columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "rounded-xl border border-[#dbe5f2] bg-white p-3",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-[10px] font-bold uppercase tracking-[0.08em] text-[#7c8da3]",
-                                                children: t("dashboard.scamShield.impactedAssets")
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 528,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "mt-1 text-[11px] text-[#42546b]",
-                                                children: t("dashboard.scamShield.impactedAssetsBody")
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 531,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                        lineNumber: 527,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "rounded-xl border border-[#dbe5f2] bg-white p-3",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-[10px] font-bold uppercase tracking-[0.08em] text-[#7c8da3]",
-                                                children: t("dashboard.scamShield.bankSecurityStep")
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 537,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "mt-1 text-[11px] text-[#42546b]",
-                                                children: t("dashboard.scamShield.bankSecurityStepBody")
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 540,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                        lineNumber: 536,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                lineNumber: 517,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                        lineNumber: 509,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
-                        className: "rounded-[14px] border border-[#e3ebf4] bg-white p-4",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-[10px] font-bold uppercase tracking-[0.08em] text-[#7c8da3]",
-                                children: t("dashboard.scamShield.submissionChecklist")
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                lineNumber: 548,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                className: "mt-2 space-y-2 text-[11px] text-[#60728a]",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        className: "inline-flex items-center gap-1.5",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShieldFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShieldFilled$3e$__["IconShieldFilled"], {
-                                                size: 12,
-                                                className: "text-[#0f5d9f]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 553,
-                                                columnNumber: 15
-                                            }, this),
-                                            t("dashboard.scamShield.identitySafeModeEnabled")
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                        lineNumber: 552,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        className: "inline-flex items-center gap-1.5",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconFolderFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconFolderFilled$3e$__["IconFolderFilled"], {
-                                                size: 12,
-                                                className: "text-[#0f5d9f]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 557,
-                                                columnNumber: 15
-                                            }, this),
-                                            t("dashboard.scamShield.evidencePackageAttached")
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                        lineNumber: 556,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        className: "inline-flex items-center gap-1.5",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconClock$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconClock$3e$__["IconClock"], {
-                                                size: 12,
-                                                className: "text-[#0f5d9f]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                                lineNumber: 561,
-                                                columnNumber: 15
-                                            }, this),
-                                            t("dashboard.scamShield.timelineAndMetadataVerified")
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                        lineNumber: 560,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                lineNumber: 551,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mt-3 rounded-xl bg-[#f8fbff] p-3",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-[10px] font-bold uppercase tracking-[0.08em] text-[#7c8da3]",
-                                        children: t("dashboard.scamShield.privacyTier")
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        type: "button",
+                                        role: "switch",
+                                        "aria-checked": privacyConsentEnabled,
+                                        onClick: ()=>setPrivacyConsentEnabled((isEnabled)=>!isEnabled),
+                                        className: "relative inline-flex h-6 w-11 shrink-0 items-center rounded-full transition-colors ".concat(privacyConsentEnabled ? "bg-[#ff9800]" : "bg-[#d5dde8]"),
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "h-5 w-5 rounded-full bg-white shadow-[0_1px_2px_rgba(15,23,42,0.35)] transition-transform ".concat(privacyConsentEnabled ? "translate-x-5" : "translate-x-0.5")
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                            lineNumber: 616,
+                                            columnNumber: 17
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                        lineNumber: 567,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "mt-1 inline-flex h-6 items-center rounded-full bg-[#d7e5fa] px-2 text-[10px] font-bold text-[#20539d]",
-                                        children: t("dashboard.scamShield.anonymousReporting")
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                        lineNumber: 570,
-                                        columnNumber: 13
+                                        lineNumber: 605,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                lineNumber: 566,
-                                columnNumber: 11
+                                lineNumber: 595,
+                                columnNumber: 13
                             }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                        lineNumber: 547,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                lineNumber: 508,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-5 flex flex-wrap items-center justify-between gap-2",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        href: "/dashboard?view=scamshieldassets",
-                        className: "inline-flex h-10 items-center rounded-full border border-[#d7e0ec] px-5 text-xs font-semibold text-[#334155]",
-                        children: t("common.back")
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                        lineNumber: 578,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        href: "/dashboard?view=reportsubmissionreview",
-                        className: "inline-flex h-10 items-center rounded-full bg-[#ff8f00] px-6 text-xs font-bold text-white shadow-[0_8px_18px_rgba(255,143,0,0.32)]",
-                        children: [
-                            t("dashboard.scamShield.submitPackage"),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronRight$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronRight$3e$__["IconChevronRight"], {
-                                size: 14,
-                                className: "ml-1"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                                lineNumber: 589,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                        lineNumber: 584,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-                lineNumber: 577,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                            lineNumber: 594,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/dashboard?view=reportsubmissionreview",
+                            className: "mt-3 inline-flex h-11 w-full items-center justify-center gap-1.5 rounded-full bg-[#ff9800] px-6 text-[12px] font-bold text-white shadow-[0_8px_18px_rgba(255,152,0,0.34)]",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconArrowRight$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconArrowRight$3e$__["IconArrowRight"], {
+                                    size: 13
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                                    lineNumber: 629,
+                                    columnNumber: 13
+                                }, this),
+                                t("dashboard.scamShield.submitAllReports")
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                            lineNumber: 625,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "mt-2 text-center text-[8px] font-semibold uppercase tracking-[0.08em] text-[#9aabc0]",
+                            children: t("dashboard.scamShield.encryptedSubmissionNotice")
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                            lineNumber: 632,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+                    lineNumber: 423,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
+            lineNumber: 406,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
         fileName: "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx",
-        lineNumber: 502,
+        lineNumber: 405,
         columnNumber: 5
     }, this);
 }
-_s4(ScamShieldAgencyPage, "zlIdU9EjM2llFt74AbE2KsUJXyM=", false, function() {
+_s3(ScamShieldAgencyPage, "4hggZlORgJVTrMYNYw/0IU7gxbc=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"]
     ];
 });
-_c4 = ScamShieldAgencyPage;
+_c3 = ScamShieldAgencyPage;
 ;
-var _c, _c1, _c2, _c3, _c4;
-__turbopack_context__.k.register(_c, "ScamShieldFrame");
-__turbopack_context__.k.register(_c1, "ScamShieldIntakePage");
-__turbopack_context__.k.register(_c2, "ScamShieldRiskPage");
-__turbopack_context__.k.register(_c3, "ScamShieldAssetsPage");
-__turbopack_context__.k.register(_c4, "ScamShieldAgencyPage");
+var _c, _c1, _c2, _c3;
+__turbopack_context__.k.register(_c, "ScamShieldIntakePage");
+__turbopack_context__.k.register(_c1, "ScamShieldRiskPage");
+__turbopack_context__.k.register(_c2, "ScamShieldAssetsPage");
+__turbopack_context__.k.register(_c3, "ScamShieldAgencyPage");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }

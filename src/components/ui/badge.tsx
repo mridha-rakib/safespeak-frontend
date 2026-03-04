@@ -9,7 +9,7 @@ function Badge({ className, ...props }: BadgeProps) {
     <span
       className={cn(
         "inline-flex items-center rounded-full border border-[#dbe5f0] bg-white px-3 py-1 text-[11px] font-semibold text-[#4b5563]",
-        className,
+        className
       )}
       {...props}
     />
@@ -17,4 +17,3 @@ function Badge({ className, ...props }: BadgeProps) {
 }
 
 export { Badge };
-

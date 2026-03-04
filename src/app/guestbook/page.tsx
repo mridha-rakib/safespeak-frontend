@@ -110,7 +110,7 @@ export default function GuestBook() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
-          <div className="sm:col-span-2 flex justify-end">
+          <div className="flex justify-end sm:col-span-2">
             <Button type="submit" color="primary">
               Add entry
             </Button>

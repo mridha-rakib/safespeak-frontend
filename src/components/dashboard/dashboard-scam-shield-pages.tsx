@@ -1,12 +1,12 @@
 "use client";
 
-import type { Route } from "next";
 import Link from "next/link";
+import { useState } from "react";
 
 import {
   IconAlertTriangle,
-  IconAt,
   IconArrowRight,
+  IconAt,
   IconBuildingBank,
   IconChevronLeft,
   IconChevronRight,
@@ -21,111 +21,7 @@ import {
 } from "@tabler/icons-react";
 import { useTranslation } from "react-i18next";
 
-import { cn } from "@/lib/utils";
-
-const scamShieldSteps = [
-  {
-    key: "intake",
-    number: "15",
-    labelKey: "dashboard.scamShield.journeyReport",
-  },
-  {
-    key: "risk",
-    number: "16",
-    labelKey: "dashboard.scamShield.scamRiskResults",
-  },
-  { key: "assets", number: "17", labelKey: "dashboard.scamShield.nextSteps" },
-  {
-    key: "agency",
-    number: "18",
-    labelKey: "dashboard.scamShield.agencyReport",
-  },
-] as const;
-
-type ScamShieldStep = (typeof scamShieldSteps)[number]["key"];
-
-function ScamShieldFrame({
-  title,
-  subtitle,
-  step,
-  backHref,
-  children,
-}: {
-  title: string;
-  subtitle: string;
-  step: ScamShieldStep;
-  backHref: Route;
-  children: React.ReactNode;
-}) {
-  const { t } = useTranslation();
-  const activeStepIndex = scamShieldSteps.findIndex(
-    (item) => item.key === step
-  );
-
-  return (
-    <div className="px-2 pb-3 pt-2 sm:px-4 sm:pb-5 sm:pt-4">
-      <div className="mx-auto w-full max-w-[1184px]">
-        <div className="flex items-center justify-between border-b border-[#d9e2ee] px-1 py-2">
-          <Link
-            href={backHref}
-            className="inline-flex items-center gap-2 text-xs font-semibold text-[#1f2937]"
-          >
-            <IconChevronLeft size={14} />
-            {t("dashboard.scamShield.brand")}
-          </Link>
-          <Link
-            href="/dashboard"
-            className="text-xs font-medium text-[#7b8798]"
-          >
-            {t("common.cancel")}
-          </Link>
-        </div>
-
-        <article className="mt-3 rounded-[16px] border border-[#dce4ef] bg-white p-4 shadow-[0_10px_24px_rgba(15,23,42,0.04)] sm:p-5">
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
-            <div>
-              <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#0f5d9f]">
-                {t("dashboard.scamShield.brand")}
-              </p>
-              <h2 className="mt-1 text-[28px] font-extrabold leading-[1.02] text-[#1f2a3a] sm:text-[34px]">
-                {title}
-              </h2>
-              <p className="mt-1 text-xs text-[#6a7d94]">{subtitle}</p>
-            </div>
-
-            <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-              {scamShieldSteps.map((item, index) => (
-                <div
-                  key={item.key}
-                  className={cn(
-                    "rounded-xl px-3 py-2 text-center",
-                    index <= activeStepIndex ? "bg-[#eaf2ff]" : "bg-[#f3f6fb]"
-                  )}
-                >
-                  <p
-                    className={cn(
-                      "text-[11px] font-extrabold",
-                      index <= activeStepIndex
-                        ? "text-[#0f5d9f]"
-                        : "text-[#8fa0b6]"
-                    )}
-                  >
-                    {item.number}
-                  </p>
-                  <p className="mt-0.5 text-[9px] font-semibold text-[#60728a]">
-                    {t(item.labelKey)}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {children}
-        </article>
-      </div>
-    </div>
-  );
-}
+import { interFont } from "./dashboard-shared";
 
 function ScamShieldIntakePage() {
   const { t } = useTranslation();
@@ -456,10 +352,13 @@ function ScamShieldAssetsPage() {
                   </div>
                 </div>
 
-                <button className="inline-flex h-10 items-center gap-1.5 rounded-[8px] bg-[#ff9800] px-5 text-[11px] font-semibold text-white shadow-[0_8px_16px_rgba(255,152,0,0.26)]">
+                <Link
+                  href="/dashboard?view=scamshieldagency"
+                  className="inline-flex h-10 items-center gap-1.5 rounded-[8px] bg-[#ff9800] px-5 text-[11px] font-semibold text-white shadow-[0_8px_16px_rgba(255,152,0,0.26)]"
+                >
                   {t("dashboard.scamShield.launchReportTool")}
                   <IconExternalLink size={12} />
-                </button>
+                </Link>
               </div>
             </article>
 
@@ -497,102 +396,247 @@ function ScamShieldAssetsPage() {
 
 function ScamShieldAgencyPage() {
   const { t } = useTranslation();
+  const [expandedSection, setExpandedSection] = useState<
+    "accc" | "reportCyber" | "bank" | null
+  >("accc");
+  const [privacyConsentEnabled, setPrivacyConsentEnabled] = useState(false);
 
   return (
-    <ScamShieldFrame
-      title={t("dashboard.scamShield.agencyReport")}
-      subtitle={t("dashboard.scamShield.agencyReportSubtitle")}
-      step="agency"
-      backHref="/dashboard?view=scamshieldassets"
-    >
-      <div className="mt-4 grid grid-cols-1 gap-3 xl:grid-cols-[1.7fr_1fr]">
-        <article className="rounded-[14px] border border-[#e3ebf4] bg-[#f9fbfe] p-4">
-          <h3 className="text-lg font-extrabold text-[#1f2a3a]">
-            {t("dashboard.scamShield.prefilledAgencyReports")}
-          </h3>
-          <p className="mt-1 text-xs text-[#60728a]">
-            {t("dashboard.scamShield.prefilledAgencyReportsBody")}
-          </p>
+    <div className="px-2 pt-2 sm:px-4 sm:pt-4">
+      <div className="mx-auto flex min-h-[1196px] w-full max-w-[1184px] flex-col pb-8">
+        <div className="mx-auto flex h-[61px] w-full max-w-[1184px] items-center justify-between border-b border-[#E2E8F0] bg-[#FFFFFFCC] px-4 sm:px-8 lg:px-[80px]">
+          <Link
+            href="/dashboard?view=scamshieldassets"
+            className="inline-flex items-center gap-2 text-xs font-semibold text-[#1f2937]"
+          >
+            <IconChevronLeft size={14} />
+            {t("dashboard.scamShield.safeSpeakAnalyzer")}
+          </Link>
+          <Link
+            href="/dashboard"
+            className="text-xs font-medium text-[#7b8798]"
+          >
+            {t("common.cancel")}
+          </Link>
+        </div>
 
-          <div className="mt-3 space-y-2">
-            <div className="rounded-xl border border-[#dbe5f2] bg-white p-3">
-              <p className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#7c8da3]">
-                {t("dashboard.scamShield.scamNarrative")}
-              </p>
-              <p className="mt-1 text-[11px] text-[#42546b]">
-                {t("dashboard.scamShield.scamNarrativeBody")}
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-[#dbe5f2] bg-white p-3">
-              <p className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#7c8da3]">
-                {t("dashboard.scamShield.impactedAssets")}
-              </p>
-              <p className="mt-1 text-[11px] text-[#42546b]">
-                {t("dashboard.scamShield.impactedAssetsBody")}
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-[#dbe5f2] bg-white p-3">
-              <p className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#7c8da3]">
-                {t("dashboard.scamShield.bankSecurityStep")}
-              </p>
-              <p className="mt-1 text-[11px] text-[#42546b]">
-                {t("dashboard.scamShield.bankSecurityStepBody")}
-              </p>
-            </div>
-          </div>
-        </article>
-
-        <aside className="rounded-[14px] border border-[#e3ebf4] bg-white p-4">
-          <p className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#7c8da3]">
-            {t("dashboard.scamShield.submissionChecklist")}
-          </p>
-          <ul className="mt-2 space-y-2 text-[11px] text-[#60728a]">
-            <li className="inline-flex items-center gap-1.5">
-              <IconShieldFilled size={12} className="text-[#0f5d9f]" />
-              {t("dashboard.scamShield.identitySafeModeEnabled")}
-            </li>
-            <li className="inline-flex items-center gap-1.5">
-              <IconFolderFilled size={12} className="text-[#0f5d9f]" />
-              {t("dashboard.scamShield.evidencePackageAttached")}
-            </li>
-            <li className="inline-flex items-center gap-1.5">
-              <IconClock size={12} className="text-[#0f5d9f]" />
-              {t("dashboard.scamShield.timelineAndMetadataVerified")}
-            </li>
-          </ul>
-
-          <div className="mt-3 rounded-xl bg-[#f8fbff] p-3">
-            <p className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#7c8da3]">
-              {t("dashboard.scamShield.privacyTier")}
+        <article className="mt-3 rounded-[16px] border border-[#dce5f1] bg-[#f4f7fc] p-3 shadow-[0_10px_24px_rgba(15,23,42,0.04)] sm:p-4">
+          <article className="mx-auto w-full max-w-[1136px] rounded-[14px] border border-[#e3eaf5] bg-white px-4 py-5 text-center sm:px-6 sm:py-6">
+            <h2
+              className={`${interFont.className} mx-auto h-[36px] w-full max-w-[369px] text-[30px] font-extrabold leading-[36px] tracking-[0] text-[#1f2a3a]`}
+            >
+              {t("dashboard.scamShield.prefilledAgencyReports")}
+            </h2>
+            <p
+              className={`${interFont.className} mx-auto mt-3 w-full max-w-[780px] text-center text-[18px] font-normal leading-[29.25px] tracking-[0] text-[#6b7280]`}
+            >
+              {t("dashboard.scamShield.prefilledAgencyReportsAnalyzerBody")}
             </p>
-            <div className="mt-1 inline-flex h-6 items-center rounded-full bg-[#d7e5fa] px-2 text-[10px] font-bold text-[#20539d]">
-              {t("dashboard.scamShield.anonymousReporting")}
-            </div>
-          </div>
-        </aside>
-      </div>
+          </article>
 
-      <div className="mt-5 flex flex-wrap items-center justify-between gap-2">
-        <Link
-          href="/dashboard?view=scamshieldassets"
-          className="inline-flex h-10 items-center rounded-full border border-[#d7e0ec] px-5 text-xs font-semibold text-[#334155]"
-        >
-          {t("common.back")}
-        </Link>
-        <Link
-          href="/dashboard?view=reportsubmissionreview"
-          className="inline-flex h-10 items-center rounded-full bg-[#ff8f00] px-6 text-xs font-bold text-white shadow-[0_8px_18px_rgba(255,143,0,0.32)]"
-        >
-          {t("dashboard.scamShield.submitPackage")}
-          <IconChevronRight size={14} className="ml-1" />
-        </Link>
+          <div className="mt-3 space-y-3">
+            <article className="overflow-hidden rounded-[12px] border border-[#e2eaf4] bg-white">
+              <button
+                type="button"
+                onClick={() =>
+                  setExpandedSection((currentSection) =>
+                    currentSection === "accc" ? null : "accc"
+                  )
+                }
+                className="flex w-full items-center justify-between gap-3 px-3 py-3 text-left sm:px-4 sm:py-3.5"
+              >
+                <div className="flex min-w-0 items-center gap-3">
+                  <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#ecf3ff] text-[#2d66b0]">
+                    <IconGavel size={14} />
+                  </span>
+                  <p className="truncate text-[14px] font-bold text-[#1f2a3a] sm:text-[15px]">
+                    {t("dashboard.scamShield.reportToAcccScamwatch")}
+                  </p>
+                </div>
+                <IconChevronRight
+                  size={14}
+                  className={`text-[#8fa0b6] transition-transform ${
+                    expandedSection === "accc" ? "rotate-90" : "rotate-0"
+                  }`}
+                />
+              </button>
+
+              {expandedSection === "accc" ? (
+                <div className="border-t border-[#e8eff8] px-3 pb-3 pt-2.5 sm:px-4 sm:pb-4">
+                  <p className="text-[9px] font-bold uppercase tracking-[0.08em] text-[#8ca0b8]">
+                    {t("dashboard.scamShield.prefilledDetails")}
+                  </p>
+
+                  <div className="mt-2.5">
+                    <label className="text-[10px] font-semibold text-[#60728a]">
+                      {t("dashboard.scamShield.senderName")}
+                    </label>
+                    <div className="relative mt-1">
+                      <input
+                        readOnly
+                        value={t("dashboard.scamShield.prefilledSenderName")}
+                        className="h-10 w-full rounded-[8px] border border-[#dce5f1] bg-[#f8fbff] px-3 pr-10 text-[12px] text-[#253447] outline-none"
+                      />
+                      <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[#16a56a]">
+                        <IconShieldFilled size={13} />
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="mt-2.5 grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-3">
+                    <div>
+                      <label className="text-[10px] font-semibold text-[#60728a]">
+                        {t("dashboard.scamShield.scamCategory")}
+                      </label>
+                      <div className="relative mt-1">
+                        <input
+                          readOnly
+                          value={t(
+                            "dashboard.scamShield.prefilledScamCategory"
+                          )}
+                          className="h-10 w-full rounded-[8px] border border-[#dce5f1] bg-[#f8fbff] px-3 pr-9 text-[12px] text-[#253447] outline-none"
+                        />
+                        <IconChevronRight
+                          size={12}
+                          className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 rotate-90 text-[#8fa0b6]"
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label className="text-[10px] font-semibold text-[#60728a]">
+                        {t("dashboard.scamShield.platform")}
+                      </label>
+                      <div className="relative mt-1">
+                        <input
+                          readOnly
+                          value={t("dashboard.scamShield.prefilledPlatform")}
+                          className="h-10 w-full rounded-[8px] border border-[#dce5f1] bg-[#f8fbff] px-3 pr-9 text-[12px] text-[#253447] outline-none"
+                        />
+                        <IconChevronRight
+                          size={12}
+                          className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 rotate-90 text-[#8fa0b6]"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : null}
+            </article>
+
+            <article className="overflow-hidden rounded-[12px] border border-[#e2eaf4] bg-white">
+              <button
+                type="button"
+                onClick={() =>
+                  setExpandedSection((currentSection) =>
+                    currentSection === "reportCyber" ? null : "reportCyber"
+                  )
+                }
+                className="flex w-full items-center justify-between gap-3 px-3 py-3 text-left sm:px-4 sm:py-3.5"
+              >
+                <div className="flex min-w-0 items-center gap-3">
+                  <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#edf1ff] text-[#5f6be0]">
+                    <IconShieldFilled size={13} />
+                  </span>
+                  <p className="truncate text-[14px] font-bold text-[#1f2a3a] sm:text-[15px]">
+                    {t("dashboard.scamShield.reportCyberAcsc")}
+                  </p>
+                </div>
+                <IconChevronRight
+                  size={14}
+                  className={`text-[#8fa0b6] transition-transform ${
+                    expandedSection === "reportCyber" ? "rotate-90" : "rotate-0"
+                  }`}
+                />
+              </button>
+
+              {expandedSection === "reportCyber" ? (
+                <div className="border-t border-[#e8eff8] px-3 py-3 text-[12px] leading-[1.55] text-[#60728a] sm:px-4">
+                  {t("dashboard.scamShield.reportCyberPanelBody")}
+                </div>
+              ) : null}
+            </article>
+
+            <article className="overflow-hidden rounded-[12px] border border-[#e2eaf4] bg-white">
+              <button
+                type="button"
+                onClick={() =>
+                  setExpandedSection((currentSection) =>
+                    currentSection === "bank" ? null : "bank"
+                  )
+                }
+                className="flex w-full items-center justify-between gap-3 px-3 py-3 text-left sm:px-4 sm:py-3.5"
+              >
+                <div className="flex min-w-0 items-center gap-3">
+                  <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e7fbf6] text-[#0f9c7c]">
+                    <IconBuildingBank size={14} />
+                  </span>
+                  <p className="truncate text-[14px] font-bold text-[#1f2a3a] sm:text-[15px]">
+                    {t("dashboard.scamShield.bankSecurityDept")}
+                  </p>
+                </div>
+                <IconChevronRight
+                  size={14}
+                  className={`text-[#8fa0b6] transition-transform ${
+                    expandedSection === "bank" ? "rotate-90" : "rotate-0"
+                  }`}
+                />
+              </button>
+
+              {expandedSection === "bank" ? (
+                <div className="border-t border-[#e8eff8] px-3 py-3 text-[12px] leading-[1.55] text-[#60728a] sm:px-4">
+                  {t("dashboard.scamShield.bankSecurityPanelBody")}
+                </div>
+              ) : null}
+            </article>
+          </div>
+
+          <article className="mt-3 rounded-[12px] border border-[#e2eaf4] bg-white px-3 py-3 sm:px-4 sm:py-3.5">
+            <div className="flex items-center justify-between gap-3">
+              <div className="min-w-0">
+                <p className="text-[14px] font-bold text-[#1f2a3a]">
+                  {t("dashboard.scamShield.privacyConsent")}
+                </p>
+                <p className="mt-1 text-[10px] leading-[1.45] text-[#6a7e96] sm:text-[11px]">
+                  {t("dashboard.scamShield.privacyConsentBody")}
+                </p>
+              </div>
+
+              <button
+                type="button"
+                role="switch"
+                aria-checked={privacyConsentEnabled}
+                onClick={() =>
+                  setPrivacyConsentEnabled((isEnabled) => !isEnabled)
+                }
+                className={`relative inline-flex h-6 w-11 shrink-0 items-center rounded-full transition-colors ${
+                  privacyConsentEnabled ? "bg-[#ff9800]" : "bg-[#d5dde8]"
+                }`}
+              >
+                <span
+                  className={`h-5 w-5 rounded-full bg-white shadow-[0_1px_2px_rgba(15,23,42,0.35)] transition-transform ${
+                    privacyConsentEnabled ? "translate-x-5" : "translate-x-0.5"
+                  }`}
+                />
+              </button>
+            </div>
+          </article>
+
+          <Link
+            href="/dashboard?view=reportsubmissionreview"
+            className="mt-3 inline-flex h-11 w-full items-center justify-center gap-1.5 rounded-full bg-[#ff9800] px-6 text-[12px] font-bold text-white shadow-[0_8px_18px_rgba(255,152,0,0.34)]"
+          >
+            <IconArrowRight size={13} />
+            {t("dashboard.scamShield.submitAllReports")}
+          </Link>
+          <p className="mt-2 text-center text-[8px] font-semibold uppercase tracking-[0.08em] text-[#9aabc0]">
+            {t("dashboard.scamShield.encryptedSubmissionNotice")}
+          </p>
+        </article>
       </div>
-    </ScamShieldFrame>
+    </div>
   );
 }
-
 
 export {
   ScamShieldAgencyPage,

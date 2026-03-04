@@ -1,7 +1,8 @@
 "use client";
 
-import { Canvas, useFrame } from "@react-three/fiber";
 import { useMemo, useRef } from "react";
+
+import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
 import sphereAdv from "@/assets/sphere-adv.svg?url";
@@ -154,7 +155,11 @@ export default function AssistantSphereAnimated({
           className={styles.canvas}
           dpr={[1, 1.7]}
           camera={{ position: [0, 0, 2.3], fov: 44 }}
-          gl={{ alpha: true, antialias: false, powerPreference: "high-performance" }}
+          gl={{
+            alpha: true,
+            antialias: false,
+            powerPreference: "high-performance",
+          }}
           onCreated={({ gl }) => {
             gl.setClearColor(0x000000, 0);
           }}

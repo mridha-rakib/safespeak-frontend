@@ -2,7 +2,11 @@
 
 import { PropsWithChildren, useEffect } from "react";
 
-import i18n, { DEFAULT_LANGUAGE, isSupportedLanguage, LANGUAGE_STORAGE_KEY } from "@/lib/i18n";
+import i18n, {
+  DEFAULT_LANGUAGE,
+  LANGUAGE_STORAGE_KEY,
+  isSupportedLanguage,
+} from "@/lib/i18n";
 
 export function I18nProvider({ children }: PropsWithChildren) {
   useEffect(() => {

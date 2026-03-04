@@ -2,9 +2,14 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
 
-import { IconAlertTriangleFilled, IconMinus, IconMoon, IconPlus } from "@tabler/icons-react";
+import {
+  IconAlertTriangleFilled,
+  IconMinus,
+  IconMoon,
+  IconPlus,
+} from "@tabler/icons-react";
+import { useTranslation } from "react-i18next";
 
 import appleIcon from "@/assets/apple.svg";
 import playstoreIcon from "@/assets/playstore.svg";
@@ -24,8 +29,8 @@ export default function FaqSection() {
   }));
 
   return (
-    <section className="mx-auto w-full max-w-[1280px] bg-[#F0FDFA] pb-16 xl:min-h-[709px]">
-      <div className="mx-auto flex w-full max-w-[1280px] flex-col gap-10 px-4 sm:px-8 lg:gap-12 xl:px-0">
+    <section className="w-full max-w-none bg-[#F0FDFA]">
+      <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-10 px-4 py-12 sm:px-8 lg:gap-12 xl:h-[1260px] xl:min-h-[1252px] xl:px-[48px] xl:pb-[48.5px] xl:pt-[48.5px]">
         <div className="grid w-full gap-10 lg:gap-12 xl:h-[645px] xl:grid-cols-[362.66px_minmax(0,1fr)] xl:gap-12">
           <div className="xl:h-[645px] xl:w-[362.66px]">
             <h3
@@ -38,17 +43,29 @@ export default function FaqSection() {
             <article className="mt-[32px] rounded-[16px] border-l-[8px] border-l-[#EF4444] bg-white p-8 shadow-[0_10px_22px_rgba(15,23,42,0.10)] xl:h-[565px]">
               <div className="flex items-center gap-2 text-[#DC2626]">
                 <IconAlertTriangleFilled size={12} />
-                <p className="text-[20px] font-bold uppercase leading-[1.2] tracking-[0.02em]">{t("landing.faq.emergencyNotice")}</p>
+                <p className="text-[20px] font-bold uppercase leading-[1.2] tracking-[0.02em]">
+                  {t("landing.faq.emergencyNotice")}
+                </p>
               </div>
 
-              <p className="mt-7 text-[11px] font-medium uppercase tracking-[0.05em] text-[#6B7280]">{t("landing.faq.immediateDanger")}</p>
-              <p className="mt-1 text-[54px] font-extrabold leading-none text-[#111827]">{t("landing.faq.emergencyNumber")}</p>
+              <p className="mt-7 text-[11px] font-medium uppercase tracking-[0.05em] text-[#6B7280]">
+                {t("landing.faq.immediateDanger")}
+              </p>
+              <p className="mt-1 text-[54px] font-extrabold leading-none text-[#111827]">
+                {t("landing.faq.emergencyNumber")}
+              </p>
 
-              <p className="mt-6 text-[11px] font-medium uppercase tracking-[0.05em] text-[#6B7280]">{t("landing.faq.supportLabel")}</p>
-              <p className="mt-1 text-[38px] font-extrabold leading-none text-[#0B5FA6]">{t("landing.faq.supportNumber")}</p>
+              <p className="mt-6 text-[11px] font-medium uppercase tracking-[0.05em] text-[#6B7280]">
+                {t("landing.faq.supportLabel")}
+              </p>
+              <p className="mt-1 text-[38px] font-extrabold leading-none text-[#0B5FA6]">
+                {t("landing.faq.supportNumber")}
+              </p>
 
               <hr className="my-6 border-[#DFE4E3]" />
-              <p className="text-[11px] leading-[1.65] text-[#6B7280]">{t("landing.faq.disclaimer")}</p>
+              <p className="text-[11px] leading-[1.65] text-[#6B7280]">
+                {t("landing.faq.disclaimer")}
+              </p>
             </article>
           </div>
 
@@ -56,22 +73,33 @@ export default function FaqSection() {
             {faqItems.map((item, idx) => {
               const isOpen = openIndex === idx;
               return (
-                <div key={item.question + idx} className="border-b border-[#B9D8D4] py-5 sm:py-6">
+                <div
+                  key={item.question + idx}
+                  className="border-b border-[#B9D8D4] py-5 sm:py-6"
+                >
                   <button
                     type="button"
                     onClick={() => setOpenIndex(isOpen ? -1 : idx)}
                     className="flex w-full items-start justify-between gap-4 text-left sm:gap-6"
                   >
-                    <span className={`pr-4 text-[22px] leading-[1.35] text-[#111827] ${isOpen ? "font-semibold" : "font-medium"}`}>
+                    <span
+                      className={`pr-4 text-[22px] leading-[1.35] text-[#111827] ${isOpen ? "font-semibold" : "font-medium"}`}
+                    >
                       {item.question}
                     </span>
                     <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[#0F9D9A] text-[#0F9D9A]">
-                      {isOpen ? <IconMinus size={14} stroke={2.3} /> : <IconPlus size={14} stroke={2.3} />}
+                      {isOpen ? (
+                        <IconMinus size={14} stroke={2.3} />
+                      ) : (
+                        <IconPlus size={14} stroke={2.3} />
+                      )}
                     </span>
                   </button>
 
                   {isOpen && (
-                    <p className="mt-4 max-w-[760px] text-[13px] leading-[1.85] text-[#5E7774]">{item.answer}</p>
+                    <p className="mt-4 max-w-[760px] text-[13px] leading-[1.85] text-[#5E7774]">
+                      {item.answer}
+                    </p>
                   )}
                 </div>
               );
@@ -96,16 +124,25 @@ export default function FaqSection() {
             >
               {t("landing.faq.ctaTitle")}
             </h4>
-            <p className="mx-auto mt-3 max-w-[620px] text-[14px] leading-[1.45] text-[#D3EFFF] sm:text-[15px]">{t("landing.faq.ctaDescription")}</p>
+            <p className="mx-auto mt-3 max-w-[620px] text-[14px] leading-[1.45] text-[#D3EFFF] sm:text-[15px]">
+              {t("landing.faq.ctaDescription")}
+            </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3 sm:mt-10">
               <button
                 type="button"
                 className="inline-flex h-[52px] min-w-[186px] items-center gap-2.5 rounded-[11px] border border-white bg-white px-5 text-[#06558F] transition-colors hover:bg-[#F4FAFF]"
               >
-                <Image src={appleIcon} alt={t("landing.faq.appStore")} width={18} height={21} />
+                <Image
+                  src={appleIcon}
+                  alt={t("landing.faq.appStore")}
+                  width={18}
+                  height={21}
+                />
                 <span className="flex flex-col items-start text-left leading-none">
-                  <span className="text-[6.5px] font-semibold uppercase tracking-[0.08em] text-[#7E9AB9]">Download on the</span>
+                  <span className="text-[6.5px] font-semibold uppercase tracking-[0.08em] text-[#7E9AB9]">
+                    Download on the
+                  </span>
                   <span
                     className="mt-0.5 inline-flex h-6 w-[79px] items-center text-[16px] font-bold leading-6 tracking-[0px] text-[#01579B]"
                     style={{ fontFamily: "Inter, sans-serif" }}
@@ -118,9 +155,16 @@ export default function FaqSection() {
                 type="button"
                 className="inline-flex h-[52px] min-w-[186px] items-center gap-2.5 rounded-[11px] border border-white bg-white px-5 text-[#06558F] transition-colors hover:bg-[#F4FAFF]"
               >
-                <Image src={playstoreIcon} alt={t("landing.faq.android")} width={23} height={26} />
+                <Image
+                  src={playstoreIcon}
+                  alt={t("landing.faq.android")}
+                  width={23}
+                  height={26}
+                />
                 <span className="flex flex-col items-start text-left leading-none">
-                  <span className="text-[6.5px] font-semibold uppercase tracking-[0.08em] text-[#7E9AB9]">Download for</span>
+                  <span className="text-[6.5px] font-semibold uppercase tracking-[0.08em] text-[#7E9AB9]">
+                    Download for
+                  </span>
                   <span
                     className="mt-0.5 inline-flex h-6 w-[79px] items-center text-[16px] font-bold leading-6 tracking-[0px] text-[#01579B]"
                     style={{ fontFamily: "Inter, sans-serif" }}
@@ -133,7 +177,12 @@ export default function FaqSection() {
                 type="button"
                 className="inline-flex h-[52px] min-w-[186px] items-center gap-2.5 rounded-[11px] border border-[#F8D15A] bg-transparent px-6 text-[14px] font-semibold text-[#F8D15A] transition-colors hover:bg-[#F8D15A]/10"
               >
-                <Image src={worldIcon} alt={t("landing.faq.webVersion")} width={19} height={19} />
+                <Image
+                  src={worldIcon}
+                  alt={t("landing.faq.webVersion")}
+                  width={19}
+                  height={19}
+                />
                 {t("landing.faq.webVersion")}
               </button>
             </div>

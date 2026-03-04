@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 
 const interFont = Inter({
   subsets: ["latin"],
-  weight: ["600", "800", "900"],
+  weight: ["400", "600", "800", "900"],
 });
 
 // eslint-disable-next-line n/no-process-env

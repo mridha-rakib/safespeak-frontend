@@ -354,5 +354,4 @@ function MicroCardDetailPage() {
   );
 }
 
-
 export { MicroCardDetailPage, MicroCardsPage };

@@ -1,8 +1,9 @@
 "use client";
 
+import { useMemo, useRef } from "react";
+
 import { shaderMaterial } from "@react-three/drei";
 import { Canvas, extend, useFrame } from "@react-three/fiber";
-import { useMemo, useRef } from "react";
 import * as THREE from "three";
 
 const CORE_VERTEX_SHADER = `
@@ -302,15 +303,21 @@ function EnergySphereScene({
     }
 
     groupRef.current.rotation.y += delta * rotationSpeed;
-    groupRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.28) * 0.06;
-    groupRef.current.rotation.z = Math.cos(state.clock.elapsedTime * 0.21) * 0.03;
+    groupRef.current.rotation.x =
+      Math.sin(state.clock.elapsedTime * 0.28) * 0.06;
+    groupRef.current.rotation.z =
+      Math.cos(state.clock.elapsedTime * 0.21) * 0.03;
   });
 
   return (
     <group ref={groupRef}>
       <ambientLight intensity={0.24} />
       <pointLight intensity={1.0} color="#80b7ff" position={[2.2, 1.2, 2.8]} />
-      <pointLight intensity={0.7} color="#ff7dcf" position={[-2.4, -1.3, 2.2]} />
+      <pointLight
+        intensity={0.7}
+        color="#ff7dcf"
+        position={[-2.4, -1.3, 2.2]}
+      />
       <CoreSphere />
       <EnergyParticles count={particleCount} speed={particleSpeed} />
       <OuterGlow />
@@ -335,7 +342,11 @@ export default function EnergySphere({
       <Canvas
         dpr={[1, 2]}
         camera={{ position: [0, 0, 3.1], fov: 44 }}
-        gl={{ alpha: true, antialias: true, powerPreference: "high-performance" }}
+        gl={{
+          alpha: true,
+          antialias: true,
+          powerPreference: "high-performance",
+        }}
         onCreated={({ gl }) => gl.setClearColor(0x000000, 0)}
         style={{ background: "transparent" }}
       >

@@ -1,6 +1,7 @@
 "use client";
 
 import type { ComponentType } from "react";
+
 import { Circle, MapContainer, TileLayer } from "react-leaflet";
 
 const CENTER: [number, number] = [50.1109, 8.6821];
@@ -10,9 +11,15 @@ const HOTSPOTS: [number, number][] = [
   [50.1132, 8.697],
 ];
 
-const MapContainerCompat = MapContainer as unknown as ComponentType<Record<string, unknown>>;
-const TileLayerCompat = TileLayer as unknown as ComponentType<Record<string, unknown>>;
-const CircleCompat = Circle as unknown as ComponentType<Record<string, unknown>>;
+const MapContainerCompat = MapContainer as unknown as ComponentType<
+  Record<string, unknown>
+>;
+const TileLayerCompat = TileLayer as unknown as ComponentType<
+  Record<string, unknown>
+>;
+const CircleCompat = Circle as unknown as ComponentType<
+  Record<string, unknown>
+>;
 
 function Hotspot({ position }: { position: [number, number] }) {
   return (
@@ -20,12 +27,22 @@ function Hotspot({ position }: { position: [number, number] }) {
       <CircleCompat
         center={position}
         radius={70}
-        pathOptions={{ color: "#ffffff", weight: 3, fillColor: "#f29a1f", fillOpacity: 1 }}
+        pathOptions={{
+          color: "#ffffff",
+          weight: 3,
+          fillColor: "#f29a1f",
+          fillOpacity: 1,
+        }}
       />
       <CircleCompat
         center={position}
         radius={18}
-        pathOptions={{ color: "#ffffff", weight: 0, fillColor: "#ffffff", fillOpacity: 1 }}
+        pathOptions={{
+          color: "#ffffff",
+          weight: 0,
+          fillColor: "#ffffff",
+          fillOpacity: 1,
+        }}
       />
     </>
   );

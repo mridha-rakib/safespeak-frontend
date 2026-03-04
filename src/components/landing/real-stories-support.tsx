@@ -1,5 +1,6 @@
-import { IconQuote } from "@tabler/icons-react";
 import { Plus_Jakarta_Sans } from "next/font/google";
+
+import { IconQuote } from "@tabler/icons-react";
 
 const storiesHeadingFont = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -16,21 +17,24 @@ type Story = {
 
 const stories: Story[] = [
   {
-    quote: "I didn't know who to turn to. SafeSpeak gave me a way to document what was happening without fear.",
+    quote:
+      "I didn't know who to turn to. SafeSpeak gave me a way to document what was happening without fear.",
     name: "Indu",
     role: "Community Member",
     initials: "I",
     avatarTone: "bg-[#193E62]",
   },
   {
-    quote: "The guidance I received helped me understand my rights. I finally felt like I had someone in my corner.",
+    quote:
+      "The guidance I received helped me understand my rights. I finally felt like I had someone in my corner.",
     name: "David",
     role: "University Student",
     initials: "D",
     avatarTone: "bg-[#D7DDE4] text-[#264653]",
   },
   {
-    quote: "Accessing support in my own language made all the difference. It felt human, not bureaucratic.",
+    quote:
+      "Accessing support in my own language made all the difference. It felt human, not bureaucratic.",
     name: "Aisha",
     role: "Teacher",
     initials: "A",
@@ -58,14 +62,18 @@ export default function RealStoriesSupport() {
             <article
               key={story.name}
               className={`flex min-h-[220px] flex-col justify-between rounded-[16px] bg-[#3678AF] p-8 shadow-[0_10px_26px_rgba(18,74,122,0.2)] ${
-                index === 1 ? "-translate-y-4 transition-transform duration-200 sm:translate-y-0 lg:-translate-y-4" : ""
+                index === 1
+                  ? "-translate-y-4 transition-transform duration-200 sm:translate-y-0 lg:-translate-y-4"
+                  : ""
               }`}
             >
               <div>
                 <span className="inline-flex h-5 w-5 items-center justify-center text-[#FFB000]">
                   <IconQuote size={18} stroke={2.2} />
                 </span>
-                <p className="mt-4 max-w-[320px] text-[18px] leading-[32px] text-white/95">&quot;{story.quote}&quot;</p>
+                <p className="mt-4 max-w-[320px] text-[18px] leading-[32px] text-white/95">
+                  &quot;{story.quote}&quot;
+                </p>
               </div>
 
               <div className="mt-5 flex items-center gap-3">
@@ -75,8 +83,12 @@ export default function RealStoriesSupport() {
                   {story.initials}
                 </span>
                 <div>
-                  <p className="text-[13px] font-semibold leading-none text-white">{story.name}</p>
-                  <p className="mt-1 text-[10px] leading-none text-[#B8D2E7]">{story.role}</p>
+                  <p className="text-[13px] font-semibold leading-none text-white">
+                    {story.name}
+                  </p>
+                  <p className="mt-1 text-[10px] leading-none text-[#B8D2E7]">
+                    {story.role}
+                  </p>
                 </div>
               </div>
             </article>

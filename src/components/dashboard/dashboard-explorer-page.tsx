@@ -41,7 +41,7 @@ function ExplorerSupportCard({
   return (
     <article
       className={cn(
-        "group relative min-h-[160px] overflow-hidden rounded-[14px] border border-white/20",
+        "group relative min-h-[198px] overflow-hidden rounded-[18px] border border-white/20",
         className
       )}
     >

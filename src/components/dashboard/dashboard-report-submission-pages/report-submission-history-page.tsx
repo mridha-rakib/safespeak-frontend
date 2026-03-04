@@ -1,7 +1,7 @@
 "use client";
 
-import type { ReactNode } from "react";
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 import {
   IconChevronLeft,
@@ -15,8 +15,8 @@ import {
 } from "@tabler/icons-react";
 
 import {
-  incidentReports,
   type IncidentReportStatus,
+  incidentReports,
 } from "../dashboard-shared";
 
 type HistoryStatus = "ACTION REQUIRED" | "SUBMITTED" | "DRAFT";
@@ -109,7 +109,9 @@ function ReportSubmissionHistoryPage() {
             <h2 className="mt-5 text-[30px] font-extrabold leading-[1.05] text-[#1f2a3a] sm:text-[36px]">
               Your Incident History
             </h2>
-            <p className="mt-1 text-xs text-[#7b8ca2]">SafeSpeak Secure Records</p>
+            <p className="mt-1 text-xs text-[#7b8ca2]">
+              SafeSpeak Secure Records
+            </p>
           </div>
 
           <div className="relative mx-auto mt-4 max-w-[1136px]">

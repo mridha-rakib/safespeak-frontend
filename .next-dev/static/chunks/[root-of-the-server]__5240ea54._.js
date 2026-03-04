@@ -78,12 +78,12 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/react-i18next/dist/es/index.js [app-client] (ecmascript) <locals>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-i18next/dist/es/useTranslation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconAlertTriangleFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconAlertTriangleFilled$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconAlertTriangleFilled.mjs [app-client] (ecmascript) <export default as IconAlertTriangleFilled>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconMinus$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconMinus$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconMinus.mjs [app-client] (ecmascript) <export default as IconMinus>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconMoon$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconMoon$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconMoon.mjs [app-client] (ecmascript) <export default as IconMoon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconPlus$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconPlus$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconPlus.mjs [app-client] (ecmascript) <export default as IconPlus>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/react-i18next/dist/es/index.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-i18next/dist/es/useTranslation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$apple$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$apple$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/apple.svg.mjs { IMAGE => "[project]/src/assets/apple.svg (static in ecmascript)" } [app-client] (structured image object with data url, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$playstore$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$playstore$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/playstore.svg.mjs { IMAGE => "[project]/src/assets/playstore.svg (static in ecmascript)" } [app-client] (structured image object with data url, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$world$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$world$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/world.svg.mjs { IMAGE => "[project]/src/assets/world.svg (static in ecmascript)" } [app-client] (structured image object with data url, ecmascript)');
@@ -112,9 +112,9 @@ function FaqSection() {
             answer: t("landing.faq.items.".concat(index, ".answer"))
         }));
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "mx-auto w-full max-w-[1280px] bg-[#F0FDFA] pb-16 xl:min-h-[709px]",
+        className: "w-full max-w-none bg-[#F0FDFA]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "mx-auto flex w-full max-w-[1280px] flex-col gap-10 px-4 sm:px-8 lg:gap-12 xl:px-0",
+            className: "mx-auto flex w-full max-w-[1440px] flex-col gap-10 px-4 py-12 sm:px-8 lg:gap-12 xl:h-[1260px] xl:min-h-[1252px] xl:px-[48px] xl:pb-[48.5px] xl:pt-[48.5px]",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "grid w-full gap-10 lg:gap-12 xl:h-[645px] xl:grid-cols-[362.66px_minmax(0,1fr)] xl:gap-12",
@@ -130,7 +130,7 @@ function FaqSection() {
                                     children: t("landing.faq.heading")
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                                    lineNumber: 31,
+                                    lineNumber: 36,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -143,7 +143,7 @@ function FaqSection() {
                                                     size: 12
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                                                    lineNumber: 40,
+                                                    lineNumber: 45,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -151,13 +151,13 @@ function FaqSection() {
                                                     children: t("landing.faq.emergencyNotice")
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                                                    lineNumber: 41,
+                                                    lineNumber: 46,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                                            lineNumber: 39,
+                                            lineNumber: 44,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -165,7 +165,7 @@ function FaqSection() {
                                             children: t("landing.faq.immediateDanger")
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                                            lineNumber: 44,
+                                            lineNumber: 51,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -173,7 +173,7 @@ function FaqSection() {
                                             children: t("landing.faq.emergencyNumber")
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                                            lineNumber: 45,
+                                            lineNumber: 54,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -181,7 +181,7 @@ function FaqSection() {
                                             children: t("landing.faq.supportLabel")
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                                            lineNumber: 47,
+                                            lineNumber: 58,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -189,14 +189,14 @@ function FaqSection() {
                                             children: t("landing.faq.supportNumber")
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                                            lineNumber: 48,
+                                            lineNumber: 61,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {
                                             className: "my-6 border-[#DFE4E3]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                                            lineNumber: 50,
+                                            lineNumber: 65,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -204,19 +204,19 @@ function FaqSection() {
                                             children: t("landing.faq.disclaimer")
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                                            lineNumber: 51,
+                                            lineNumber: 66,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                                    lineNumber: 38,
+                                    lineNumber: 43,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                            lineNumber: 30,
+                            lineNumber: 35,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -236,7 +236,7 @@ function FaqSection() {
                                                     children: item.question
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                                                    lineNumber: 65,
+                                                    lineNumber: 85,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -246,25 +246,25 @@ function FaqSection() {
                                                         stroke: 2.3
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/landing/faq-section.tsx",
-                                                        lineNumber: 69,
-                                                        columnNumber: 33
+                                                        lineNumber: 92,
+                                                        columnNumber: 25
                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconPlus$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconPlus$3e$__["IconPlus"], {
                                                         size: 14,
                                                         stroke: 2.3
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/landing/faq-section.tsx",
-                                                        lineNumber: 69,
-                                                        columnNumber: 72
+                                                        lineNumber: 94,
+                                                        columnNumber: 25
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                                                    lineNumber: 68,
+                                                    lineNumber: 90,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 80,
                                             columnNumber: 19
                                         }, this),
                                         isOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -272,25 +272,25 @@ function FaqSection() {
                                             children: item.answer
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 100,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, item.question + idx, true, {
                                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 76,
                                     columnNumber: 17
                                 }, this);
                             })
                         }, void 0, false, {
                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                            lineNumber: 55,
+                            lineNumber: 72,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                    lineNumber: 29,
+                    lineNumber: 34,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -300,14 +300,14 @@ function FaqSection() {
                             className: "pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_28%_54%,rgba(35,172,216,0.38)_0%,rgba(35,172,216,0.22)_24%,rgba(35,172,216,0)_60%)]"
                         }, void 0, false, {
                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                            lineNumber: 83,
+                            lineNumber: 111,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-gradient-to-r from-[#054C84]/80 via-[#0D5F97]/75 to-[#1B75B0]/55"
                         }, void 0, false, {
                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                            lineNumber: 84,
+                            lineNumber: 112,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -321,7 +321,7 @@ function FaqSection() {
                                     children: t("landing.faq.ctaTag")
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                                    lineNumber: 87,
+                                    lineNumber: 115,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -332,7 +332,7 @@ function FaqSection() {
                                     children: t("landing.faq.ctaTitle")
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                                    lineNumber: 93,
+                                    lineNumber: 121,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -340,7 +340,7 @@ function FaqSection() {
                                     children: t("landing.faq.ctaDescription")
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                                    lineNumber: 99,
+                                    lineNumber: 127,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -357,7 +357,7 @@ function FaqSection() {
                                                     height: 21
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                                                    lineNumber: 106,
+                                                    lineNumber: 136,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -368,7 +368,7 @@ function FaqSection() {
                                                             children: "Download on the"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                                                            lineNumber: 108,
+                                                            lineNumber: 143,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -379,19 +379,19 @@ function FaqSection() {
                                                             children: t("landing.faq.appStore")
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                                                            lineNumber: 109,
+                                                            lineNumber: 146,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                                                    lineNumber: 107,
+                                                    lineNumber: 142,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                                            lineNumber: 102,
+                                            lineNumber: 132,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -405,7 +405,7 @@ function FaqSection() {
                                                     height: 26
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                                                    lineNumber: 121,
+                                                    lineNumber: 158,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -416,7 +416,7 @@ function FaqSection() {
                                                             children: "Download for"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                                                            lineNumber: 123,
+                                                            lineNumber: 165,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -427,19 +427,19 @@ function FaqSection() {
                                                             children: t("landing.faq.android")
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                                                            lineNumber: 124,
+                                                            lineNumber: 168,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                                                    lineNumber: 122,
+                                                    lineNumber: 164,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                                            lineNumber: 117,
+                                            lineNumber: 154,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -453,32 +453,32 @@ function FaqSection() {
                                                     height: 19
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                                                    lineNumber: 136,
+                                                    lineNumber: 180,
                                                     columnNumber: 17
                                                 }, this),
                                                 t("landing.faq.webVersion")
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                                            lineNumber: 132,
+                                            lineNumber: 176,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                                    lineNumber: 101,
+                                    lineNumber: 131,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/landing/faq-section.tsx",
-                            lineNumber: 86,
+                            lineNumber: 114,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                    lineNumber: 82,
+                    lineNumber: 110,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -488,23 +488,23 @@ function FaqSection() {
                         stroke: 2.2
                     }, void 0, false, {
                         fileName: "[project]/src/components/landing/faq-section.tsx",
-                        lineNumber: 144,
+                        lineNumber: 193,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/landing/faq-section.tsx",
-                    lineNumber: 143,
+                    lineNumber: 192,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/landing/faq-section.tsx",
-            lineNumber: 28,
+            lineNumber: 33,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/landing/faq-section.tsx",
-        lineNumber: 27,
+        lineNumber: 32,
         columnNumber: 5
     }, this);
 }
@@ -2331,7 +2331,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$landing_sca
 ;
 function PillarsVariant() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "mx-auto w-full max-w-[1440px] bg-[#E1F5FE] px-4 py-16 sm:px-8 sm:py-20 lg:h-[926px] lg:px-8 lg:py-[120px]",
+        className: "w-full max-w-none bg-[#E1F5FE] px-4 py-16 sm:px-8 sm:py-20 lg:h-[926px] lg:px-[32px] lg:pb-[120px] lg:pt-[120px]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "mx-auto flex h-full w-full max-w-[1376px] flex-col",
             children: [

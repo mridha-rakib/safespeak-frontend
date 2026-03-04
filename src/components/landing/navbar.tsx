@@ -1,20 +1,20 @@
 "use client";
 
-import Link from "next/link";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 import { IconChevronDown } from "@tabler/icons-react";
 import { useTranslation } from "react-i18next";
 
+import { SafeSpeakLogo } from "@/components/ui/safe-speak-logo";
 import {
   DEFAULT_LANGUAGE,
-  isSupportedLanguage,
   LANGUAGE_OPTIONS,
   LANGUAGE_STORAGE_KEY,
   type SupportedLanguage,
+  isSupportedLanguage,
 } from "@/lib/i18n";
-import { SafeSpeakLogo } from "@/components/ui/safe-speak-logo";
 
 const LANGUAGE_FLAGS: Record<SupportedLanguage, string> = {
   en: "🇺🇸",
@@ -32,12 +32,18 @@ export default function LandingNavbar() {
   const languageMenuRef = useRef<HTMLDivElement | null>(null);
 
   const currentLanguage = useMemo<SupportedLanguage>(() => {
-    const resolvedLanguage = i18n.resolvedLanguage ?? i18n.language ?? DEFAULT_LANGUAGE;
-    return isSupportedLanguage(resolvedLanguage) ? resolvedLanguage : DEFAULT_LANGUAGE;
+    const resolvedLanguage =
+      i18n.resolvedLanguage ?? i18n.language ?? DEFAULT_LANGUAGE;
+    return isSupportedLanguage(resolvedLanguage)
+      ? resolvedLanguage
+      : DEFAULT_LANGUAGE;
   }, [i18n.language, i18n.resolvedLanguage]);
 
   const activeLanguage = useMemo(() => {
-    return LANGUAGE_OPTIONS.find((option) => option.code === currentLanguage) ?? LANGUAGE_OPTIONS[0];
+    return (
+      LANGUAGE_OPTIONS.find((option) => option.code === currentLanguage) ??
+      LANGUAGE_OPTIONS[0]
+    );
   }, [currentLanguage]);
 
   const links = useMemo(
@@ -51,7 +57,10 @@ export default function LandingNavbar() {
 
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
-      if (languageMenuRef.current && !languageMenuRef.current.contains(event.target as Node)) {
+      if (
+        languageMenuRef.current &&
+        !languageMenuRef.current.contains(event.target as Node)
+      ) {
         setIsLanguageMenuOpen(false);
       }
     };
@@ -82,7 +91,11 @@ export default function LandingNavbar() {
 
           <nav className="hidden md:flex md:items-center md:gap-4 lg:gap-6 xl:gap-10">
             {links.map((item) => (
-              <a key={item.label} href={item.href} className="nav-link text-xs lg:text-sm xl:text-[15px]">
+              <a
+                key={item.label}
+                href={item.href}
+                className="nav-link text-xs lg:text-sm xl:text-[15px]"
+              >
                 {item.label}
               </a>
             ))}
@@ -110,7 +123,7 @@ export default function LandingNavbar() {
                 <span
                   className={`${interExtraBold.className} inline-flex h-[28px] ${
                     activeLanguage.code === "en" ? "w-[51px]" : "w-auto"
-                  } items-center text-[13.6px] font-extrabold leading-[28px] tracking-[0.15px] align-middle`}
+                  } items-center align-middle text-[13.6px] font-extrabold leading-[28px] tracking-[0.15px]`}
                 >
                   {t(activeLanguage.labelKey)}
                 </span>
@@ -131,7 +144,9 @@ export default function LandingNavbar() {
                         type="button"
                         onClick={() => void handleLanguageChange(option.code)}
                         className={`flex w-full items-center gap-2 rounded-xl px-3 py-2 text-left text-sm font-semibold transition ${
-                          isActive ? "bg-white/15 text-white" : "text-white/85 hover:bg-white/10 hover:text-white"
+                          isActive
+                            ? "bg-white/15 text-white"
+                            : "text-white/85 hover:bg-white/10 hover:text-white"
                         }`}
                       >
                         <span aria-hidden className="text-base leading-none">

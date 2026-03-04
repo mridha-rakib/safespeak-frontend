@@ -324,5 +324,4 @@ function ReportOverviewPage({ reportId }: { reportId?: string }) {
   );
 }
 
-
 export { ReportOverviewPage, ReportsHistoryPage };

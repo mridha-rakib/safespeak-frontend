@@ -204,7 +204,7 @@ export function DashboardShell({
 
   const sectionSizeClass =
     activeTab === "notifications"
-      ? "xl:min-h-[749px] xl:w-full xl:max-w-[1184px]"
+      ? "xl:mx-auto xl:min-h-[749px] xl:w-full xl:max-w-[1184px]"
       : activeTab === "home" && isIncidentBuilderView
         ? "xl:min-h-[868.68px]"
         : "xl:min-h-[1498px]";

@@ -1,3 +1,5 @@
+import { Plus_Jakarta_Sans } from "next/font/google";
+
 import {
   IconAlertTriangle,
   IconBook2,
@@ -6,7 +8,6 @@ import {
   IconLock,
   IconUsersGroup,
 } from "@tabler/icons-react";
-import { Plus_Jakarta_Sans } from "next/font/google";
 
 const sanctuaryHeadingFont = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -35,14 +36,30 @@ function SanctuaryMeta({
         <span
           className={[
             "inline-flex h-8 w-8 items-center justify-center rounded-full",
-            danger ? "bg-[#ffe9e9] text-[#dc2626]" : "bg-[#e9f2fb] text-[#0b63a8]",
+            danger
+              ? "bg-[#ffe9e9] text-[#dc2626]"
+              : "bg-[#e9f2fb] text-[#0b63a8]",
           ].join(" ")}
         >
           {icon}
         </span>
-        <h4 className={["text-sm font-extrabold", danger ? "text-[#dc2626]" : "text-[#1f2937]"].join(" ")}>{title}</h4>
+        <h4
+          className={[
+            "text-sm font-extrabold",
+            danger ? "text-[#dc2626]" : "text-[#1f2937]",
+          ].join(" ")}
+        >
+          {title}
+        </h4>
       </div>
-      <p className={["mt-3 text-xs leading-5", danger ? "text-[#b45353]" : "text-[#66788d]"].join(" ")}>{description}</p>
+      <p
+        className={[
+          "mt-3 text-xs leading-5",
+          danger ? "text-[#b45353]" : "text-[#66788d]",
+        ].join(" ")}
+      >
+        {description}
+      </p>
     </article>
   );
 }
@@ -52,7 +69,9 @@ export default function DigitalSanctuary() {
     <section className="mx-auto w-full max-w-[1440px] bg-white px-4 py-12 sm:px-8 sm:py-16 lg:min-h-[1083px] lg:px-16 lg:py-24">
       <div className="mx-auto flex h-full w-full max-w-[1312px] flex-col">
         <header className="text-center">
-          <p className="text-[11px] font-extrabold uppercase tracking-[0.25em] text-[#20a3aa]">Transparency First</p>
+          <p className="text-[11px] font-extrabold uppercase tracking-[0.25em] text-[#20a3aa]">
+            Transparency First
+          </p>
           <h3
             className={`${sanctuaryHeadingFont.className} mt-2 text-center align-middle text-[48px] font-extrabold leading-[48px] tracking-[0px] text-[#101828]`}
           >
@@ -62,29 +81,43 @@ export default function DigitalSanctuary() {
             </span>
           </h3>
           <p className="mx-auto mt-4 max-w-[760px] text-sm leading-6 text-[#708296] sm:text-base">
-            We believe in absolute clarity about what we do and what we do not do. Your safety relies on understanding
-            these boundaries.
+            We believe in absolute clarity about what we do and what we do not
+            do. Your safety relies on understanding these boundaries.
           </p>
         </header>
 
         <div className="mt-8 grid gap-4 lg:mt-10 lg:grid-cols-[1.25fr_1fr]">
           <article className="relative h-[436px] w-full max-w-[692px] overflow-hidden rounded-[40px] border border-[#BBF7D0] bg-[#FFFFFF] p-10 shadow-[0px_4px_20px_-5px_rgba(0,0,0,0.05)]">
-            <span aria-hidden className="pointer-events-none absolute left-6 right-6 top-0 h-1 rounded-b-full bg-[#0D9488]" />
+            <span
+              aria-hidden
+              className="pointer-events-none absolute left-6 right-6 top-0 h-1 rounded-b-full bg-[#0D9488]"
+            />
             <div className="flex items-center gap-3">
               <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#ddf8ea] text-[#0b9d72]">
                 <IconCircleCheck size={18} stroke={2} />
               </span>
-              <h4 className="text-[30px] font-extrabold leading-none text-[#1f2937]">We Are</h4>
+              <h4 className="text-[30px] font-extrabold leading-none text-[#1f2937]">
+                We Are
+              </h4>
             </div>
 
             <p className="mt-5 max-w-[560px] text-sm leading-6 text-[#4f6478] sm:text-base">
-              Your dedicated digital ally, providing a secure bridge between uncertainty and professional help.
+              Your dedicated digital ally, providing a secure bridge between
+              uncertainty and professional help.
             </p>
 
             <ul className="mt-5 space-y-2 text-sm font-medium text-[#334155] sm:text-base">
-              {["Confidential Reporting", "Community Support", "Resource Aggregator"].map((item) => (
+              {[
+                "Confidential Reporting",
+                "Community Support",
+                "Resource Aggregator",
+              ].map((item) => (
                 <li key={item} className="flex items-center gap-2">
-                  <IconCircleCheck size={16} className="text-[#0b9d72]" stroke={2} />
+                  <IconCircleCheck
+                    size={16}
+                    className="text-[#0b9d72]"
+                    stroke={2}
+                  />
                   <span>{item}</span>
                 </li>
               ))}
@@ -127,10 +160,12 @@ export default function DigitalSanctuary() {
             </span>
 
             <div>
-              <h4 className="text-2xl font-extrabold leading-none text-[#1f2937]">We Are NOT</h4>
+              <h4 className="text-2xl font-extrabold leading-none text-[#1f2937]">
+                We Are NOT
+              </h4>
               <p className="mt-3 max-w-[760px] text-sm leading-6 text-[#7f8ea2] sm:text-base">
-                We provide information, not legal representation. We document user reports but do not investigate crimes
-                independently.
+                We provide information, not legal representation. We document
+                user reports but do not investigate crimes independently.
               </p>
 
               <div className="mt-4 flex flex-wrap gap-2">

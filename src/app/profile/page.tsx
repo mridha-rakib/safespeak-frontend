@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 
 import { Card, CardBody, Chip, User } from "@nextui-org/react";
 
-import { clearAuthSession, type AuthSession, getAuthSession } from "@/lib/auth";
+import { type AuthSession, clearAuthSession, getAuthSession } from "@/lib/auth";
 
 function ProfileRow({ label, value }: { label: string; value: string }) {
   return (
@@ -33,16 +33,45 @@ export default function Profile() {
       { label: "Brokerage Name", value: session.profile.brokerageName },
       { label: "Title", value: session.profile.title },
       { label: "Active", value: session.profile.isActive ? "Yes" : "No" },
-      { label: "Accepting Requests", value: session.profile.acceptingRequests ? "Yes" : "No" },
-      { label: "Email Subscription", value: session.profile.emailSubscriptionEnabled ? "Enabled" : "Disabled" },
-      { label: "Total Renters Referred", value: String(session.profile.totalRentersReferred) },
-      { label: "Active Referrals", value: String(session.profile.activeReferrals) },
+      {
+        label: "Accepting Requests",
+        value: session.profile.acceptingRequests ? "Yes" : "No",
+      },
+      {
+        label: "Email Subscription",
+        value: session.profile.emailSubscriptionEnabled
+          ? "Enabled"
+          : "Disabled",
+      },
+      {
+        label: "Total Renters Referred",
+        value: String(session.profile.totalRentersReferred),
+      },
+      {
+        label: "Active Referrals",
+        value: String(session.profile.activeReferrals),
+      },
       { label: "Total Matches", value: String(session.profile.totalMatches) },
-      { label: "Successful Matches", value: String(session.profile.successfulMatches) },
-      { label: "Grant Access Count", value: String(session.profile.grantAccessCount) },
-      { label: "Has Grant Access", value: session.profile.hasGrantAccess ? "Yes" : "No" },
-      { label: "Created At", value: new Date(session.profile.createdAt).toLocaleString() },
-      { label: "Updated At", value: new Date(session.profile.updatedAt).toLocaleString() },
+      {
+        label: "Successful Matches",
+        value: String(session.profile.successfulMatches),
+      },
+      {
+        label: "Grant Access Count",
+        value: String(session.profile.grantAccessCount),
+      },
+      {
+        label: "Has Grant Access",
+        value: session.profile.hasGrantAccess ? "Yes" : "No",
+      },
+      {
+        label: "Created At",
+        value: new Date(session.profile.createdAt).toLocaleString(),
+      },
+      {
+        label: "Updated At",
+        value: new Date(session.profile.updatedAt).toLocaleString(),
+      },
     ];
   }, [session]);
 
@@ -60,11 +89,17 @@ export default function Profile() {
     return (
       <Card className="mx-auto mt-6 max-w-3xl">
         <CardBody className="space-y-3">
-          <p className="text-base font-semibold text-[#0f172a]">No active session found.</p>
-          <p className="text-sm text-[#64748b]">
-            Login first to load full agent details (license number, brokerage name, title, and more).
+          <p className="text-base font-semibold text-[#0f172a]">
+            No active session found.
           </p>
-          <a href="/login" className="text-sm font-semibold text-[#0b5fa6] hover:underline">
+          <p className="text-sm text-[#64748b]">
+            Login first to load full agent details (license number, brokerage
+            name, title, and more).
+          </p>
+          <a
+            href="/login"
+            className="text-sm font-semibold text-[#0b5fa6] hover:underline"
+          >
             Go to Login
           </a>
         </CardBody>
@@ -88,7 +123,11 @@ export default function Profile() {
           <Chip size="sm" color="primary" variant="flat">
             {session.user.role}
           </Chip>
-          <Chip size="sm" color={session.profile.isActive ? "success" : "warning"} variant="flat">
+          <Chip
+            size="sm"
+            color={session.profile.isActive ? "success" : "warning"}
+            variant="flat"
+          >
             {session.profile.isActive ? "Active" : "Inactive"}
           </Chip>
           <Chip size="sm" color="default" variant="flat">
@@ -103,7 +142,9 @@ export default function Profile() {
         </div>
 
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <p className="text-xs text-[#64748b]">Session saved at: {new Date(session.timestamp).toLocaleString()}</p>
+          <p className="text-xs text-[#64748b]">
+            Session saved at: {new Date(session.timestamp).toLocaleString()}
+          </p>
           <button
             type="button"
             onClick={() => {

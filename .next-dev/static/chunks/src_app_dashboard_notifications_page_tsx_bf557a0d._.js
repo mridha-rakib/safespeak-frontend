@@ -1,13 +1,13 @@
 (globalThis.TURBOPACK_CHUNK_LISTS || (globalThis.TURBOPACK_CHUNK_LISTS = [])).push({
     script: typeof document === "object" ? document.currentScript : undefined,
     chunks: [
-  "static/chunks/[root-of-the-server]__471826fd._.css",
+  "static/chunks/[root-of-the-server]__9595ddbf._.css",
   "static/chunks/src_components_dashboard_dashboard-report-submission-pages_ad4e8d2d._.js",
   "static/chunks/src_components_dashboard_dashboard-scam-shield-pages_tsx_f06a9294._.js",
   "static/chunks/src_components_dashboard_85aa9367._.js",
   "static/chunks/src_components_ui_safe-speak-logo_tsx_7ef8cdcf._.js",
   "static/chunks/src_67139366._.js",
-  "static/chunks/[next]_internal_font_google_9956d7d1._.js",
+  "static/chunks/[next]_internal_font_google_89db4dae._.js",
   "static/chunks/node_modules_next_f501f63f._.js",
   "static/chunks/node_modules_tailwind-merge_dist_bundle-mjs_mjs_56b6fd65._.js",
   "static/chunks/node_modules_three_build_three_core_996ef05a.js",

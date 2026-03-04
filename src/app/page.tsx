@@ -15,7 +15,7 @@ import SupportYourWay from "@/components/landing/support-your-way";
 export default function Home() {
   return (
     <>
-      <main> 
+      <main>
         <LandingNavbar />
         <Hero />
         <ResourcesSection />

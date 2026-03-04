@@ -2344,7 +2344,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 "[project]/src/components/dashboard/dashboard-home-overview-page.tsx [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 
-const e = new Error("Could not parse module '[project]/src/components/dashboard/dashboard-home-overview-page.tsx'\n\nExpected '</', got ','");
+const e = new Error("Could not parse module '[project]/src/components/dashboard/dashboard-home-overview-page.tsx'\n\nExpected '</', got 'src'");
 e.code = 'MODULE_UNPARSABLE';
 throw e;
 }),

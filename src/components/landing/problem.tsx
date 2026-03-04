@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+
 import { useTranslation } from "react-i18next";
 
 import phoneHand from "@/assets/Hand and iPhone 16 Pro.svg";
@@ -15,7 +16,7 @@ export default function ProblemSection() {
   ];
 
   return (
-    <section className="mx-auto w-full max-w-screen bg-[#E1F5FE] lg:min-h-[1200px]">
+    <section className="max-w-screen mx-auto w-full bg-[#E1F5FE] lg:min-h-[1200px]">
       <div className="landing-shell">
         <div className="landing-content landing-section">
           <div className="w-full">

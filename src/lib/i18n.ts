@@ -533,7 +533,8 @@ const resources = {
           brand: "ScamShield",
           analyzeMessage: "Analyze Message",
           messageContent: "Message Content",
-          messageContentPlaceholder: "Paste SMS, Email, or Web link text here...",
+          messageContentPlaceholder:
+            "Paste SMS, Email, or Web link text here...",
           journeyReport: "Journey Report",
           journeyReportSubtitle:
             "Tell us what happened and include any screenshots or files.",
@@ -629,6 +630,27 @@ const resources = {
           prefilledAgencyReports: "Prefilled Agency Reports",
           prefilledAgencyReportsBody:
             "Our system prepared fields from your narrative. Please verify details.",
+          safeSpeakAnalyzer: "SafeSpeak Analyzer",
+          prefilledAgencyReportsAnalyzerBody:
+            "Our AI has prefilled these forms based on your conversation analysis. Please review each section carefully before submitting to the relevant authorities.",
+          prefilledDetails: "Prefilled Details",
+          senderName: "Sender Name",
+          prefilledSenderName: "Unknown/PayPal Spoof",
+          scamCategory: "Scam Category",
+          prefilledScamCategory: "Phishing / Identity Theft",
+          platform: "Platform",
+          prefilledPlatform: "Email / Gmail",
+          reportCyberAcsc: "ReportCyber (ACSC)",
+          reportCyberPanelBody:
+            "This form is prefilled for cybercrime reporting and can be submitted directly to ReportCyber.",
+          bankSecurityDept: "Bank Security Dept",
+          bankSecurityPanelBody:
+            "Bank contact details and incident notes are prepared for immediate escalation to your bank security team.",
+          privacyConsent: "Privacy Consent",
+          privacyConsentBody:
+            "I authorize SafeSpeak to securely transmit this data to the selected agencies in accordance with the Privacy Policy.",
+          submitAllReports: "Submit All Reports",
+          encryptedSubmissionNotice: "End-to-end encrypted submission",
           scamNarrative: "Scam Narrative",
           scamNarrativeBody:
             "Phone impersonation + fake verification link + OTP harvesting.",
@@ -1448,6 +1470,27 @@ const resources = {
           prefilledAgencyReports: "Reportes de agencia prellenados",
           prefilledAgencyReportsBody:
             "El sistema preparo campos desde tu narrativa. Verifica los detalles.",
+          safeSpeakAnalyzer: "Analizador de SafeSpeak",
+          prefilledAgencyReportsAnalyzerBody:
+            "Nuestra IA ha prellenado estos formularios segun tu analisis de conversacion. Revisa cada seccion con cuidado antes de enviarla a las autoridades correspondientes.",
+          prefilledDetails: "Detalles prellenados",
+          senderName: "Nombre del remitente",
+          prefilledSenderName: "Desconocido/PayPal falso",
+          scamCategory: "Categoria de estafa",
+          prefilledScamCategory: "Phishing / Robo de identidad",
+          platform: "Plataforma",
+          prefilledPlatform: "Correo / Gmail",
+          reportCyberAcsc: "ReportCyber (ACSC)",
+          reportCyberPanelBody:
+            "Este formulario esta prellenado para reportar ciberdelitos y puede enviarse directamente a ReportCyber.",
+          bankSecurityDept: "Departamento de seguridad bancaria",
+          bankSecurityPanelBody:
+            "Los datos de contacto bancario y las notas del incidente estan preparados para una escalacion inmediata con tu equipo de seguridad bancaria.",
+          privacyConsent: "Consentimiento de privacidad",
+          privacyConsentBody:
+            "Autorizo a SafeSpeak a transmitir de forma segura estos datos a las agencias seleccionadas conforme a la Politica de privacidad.",
+          submitAllReports: "Enviar todos los reportes",
+          encryptedSubmissionNotice: "Envio cifrado de extremo a extremo",
           scamNarrative: "Narrativa de estafa",
           scamNarrativeBody:
             "Suplantacion telefonica + enlace falso de verificacion + robo de OTP.",

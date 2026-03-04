@@ -1,6 +1,11 @@
 "use client";
 
-import { IconCircleCheck, IconMicrophone, IconShield, IconUsers } from "@tabler/icons-react";
+import {
+  IconCircleCheck,
+  IconMicrophone,
+  IconShield,
+  IconUsers,
+} from "@tabler/icons-react";
 import { useTranslation } from "react-i18next";
 
 type Step = {
@@ -20,19 +25,28 @@ function StepIcon({ icon }: { icon: Step["icon"] }) {
 }
 
 function StepNumber({ number }: { number: string }) {
-  return <span className="select-none text-[72px] font-extrabold leading-none text-[#0b5fa6]">{number}</span>;
+  return (
+    <span className="select-none text-[72px] font-extrabold leading-none text-[#0b5fa6]">
+      {number}
+    </span>
+  );
 }
 
 function StepContent({ step, side }: { step: Step; side: "left" | "right" }) {
-  const alignmentClassName = side === "left" ? "items-end text-right" : "items-start text-left";
+  const alignmentClassName =
+    side === "left" ? "items-end text-right" : "items-start text-left";
 
   return (
     <div className={`flex w-full max-w-[320px] flex-col ${alignmentClassName}`}>
-      <h4 className="text-[34px] font-semibold leading-[1.05] text-[#1f2937]">{step.title}</h4>
+      <h4 className="text-[34px] font-semibold leading-[1.05] text-[#1f2937]">
+        {step.title}
+      </h4>
       <span className="mt-2 inline-flex rounded-full bg-[#cfe9ff] px-3 py-1 text-sm font-semibold text-[#0b5fa6]">
         {step.duration}
       </span>
-      <p className="mt-3 text-sm leading-6 text-[#5f6f84] sm:text-base">{step.description}</p>
+      <p className="mt-3 text-sm leading-6 text-[#5f6f84] sm:text-base">
+        {step.description}
+      </p>
     </div>
   );
 }
@@ -94,11 +108,15 @@ export default function HowItWorks() {
                   </span>
                 </div>
 
-                <h4 className="mt-4 text-2xl font-semibold text-[#1f2937]">{step.title}</h4>
+                <h4 className="mt-4 text-2xl font-semibold text-[#1f2937]">
+                  {step.title}
+                </h4>
                 <span className="mt-2 inline-block rounded-full bg-[#d9efff] px-3 py-1 text-sm font-semibold text-[#0b5fa6]">
                   {step.duration}
                 </span>
-                <p className="mt-3 text-sm leading-6 text-[#5f6f84] sm:text-base">{step.description}</p>
+                <p className="mt-3 text-sm leading-6 text-[#5f6f84] sm:text-base">
+                  {step.description}
+                </p>
               </article>
             ))}
           </div>
@@ -111,17 +129,32 @@ export default function HowItWorks() {
                 const contentOnLeft = index % 2 === 0;
 
                 return (
-                  <article key={step.number} className="grid grid-cols-[1fr_64px_1fr] items-start gap-x-8 lg:gap-x-10">
-                    <div className={`flex ${contentOnLeft ? "justify-end" : "justify-start"}`}>
-                      {contentOnLeft ? <StepContent step={step} side="left" /> : <StepNumber number={step.number} />}
+                  <article
+                    key={step.number}
+                    className="grid grid-cols-[1fr_64px_1fr] items-start gap-x-8 lg:gap-x-10"
+                  >
+                    <div
+                      className={`flex ${contentOnLeft ? "justify-end" : "justify-start"}`}
+                    >
+                      {contentOnLeft ? (
+                        <StepContent step={step} side="left" />
+                      ) : (
+                        <StepNumber number={step.number} />
+                      )}
                     </div>
 
                     <div className="relative z-10 flex h-14 w-14 items-center justify-center rounded-full border border-[#0b5fa6]/35 bg-white shadow-[0_6px_16px_rgba(11,95,166,0.28)]">
                       <StepIcon icon={step.icon} />
                     </div>
 
-                    <div className={`flex ${contentOnLeft ? "justify-end" : "justify-start"}`}>
-                      {contentOnLeft ? <StepNumber number={step.number} /> : <StepContent step={step} side="right" />}
+                    <div
+                      className={`flex ${contentOnLeft ? "justify-end" : "justify-start"}`}
+                    >
+                      {contentOnLeft ? (
+                        <StepNumber number={step.number} />
+                      ) : (
+                        <StepContent step={step} side="right" />
+                      )}
                     </div>
                   </article>
                 );

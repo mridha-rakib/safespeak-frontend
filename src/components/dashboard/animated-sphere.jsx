@@ -1,7 +1,8 @@
 "use client";
 
-import { Canvas, useFrame } from "@react-three/fiber";
 import { useEffect, useMemo, useRef } from "react";
+
+import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
 import sphereAdv from "../../assets/sphere-adv.svg?url";
@@ -158,8 +159,10 @@ export function AnimatedSphere({
     const node = wrapperRef.current;
 
     const tick = () => {
-      currentTiltRef.current.x += (targetTiltRef.current.x - currentTiltRef.current.x) * 0.08;
-      currentTiltRef.current.y += (targetTiltRef.current.y - currentTiltRef.current.y) * 0.08;
+      currentTiltRef.current.x +=
+        (targetTiltRef.current.x - currentTiltRef.current.x) * 0.08;
+      currentTiltRef.current.y +=
+        (targetTiltRef.current.y - currentTiltRef.current.y) * 0.08;
 
       node.style.transform = `perspective(900px) rotateX(${currentTiltRef.current.y * 4}deg) rotateY(${currentTiltRef.current.x * 4}deg)`;
       frameRef.current = window.requestAnimationFrame(tick);
@@ -217,7 +220,11 @@ export function AnimatedSphere({
         <Canvas
           dpr={[1, 1.8]}
           camera={{ position: [0, 0, 2.35], fov: 42 }}
-          gl={{ alpha: true, antialias: false, powerPreference: "high-performance" }}
+          gl={{
+            alpha: true,
+            antialias: false,
+            powerPreference: "high-performance",
+          }}
           onCreated={({ gl }) => gl.setClearColor(0x000000, 0)}
           style={{ width: "100%", height: "100%", background: "transparent" }}
         >

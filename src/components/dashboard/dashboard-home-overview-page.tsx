@@ -17,7 +17,6 @@ import topRight from "@/assets/top-right.svg?url";
 import { interFont, localIntelligenceMapSrc } from "./dashboard-shared";
 import SMDasboardHome from "./sm-dashboard-home";
 
-
 function HomeDashboardPage() {
   const { t } = useTranslation();
   const assistantViewHref = {
@@ -28,10 +27,10 @@ function HomeDashboardPage() {
   return (
     <div className="mx-auto w-full max-w-[1184px] px-2 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-4">
       <div className="relative mx-auto w-full [--dashboard-card-gap:12px] sm:[--dashboard-card-gap:16px] lg:[--dashboard-card-gap:20px] xl:[--dashboard-card-gap:24px]">
-        <div className="hidden lg:grid lg:grid-cols-12 lg:gap-[var(--dashboard-card-gap)]">
+        <div className="hidden lg:grid lg:grid-cols-12 lg:gap-y-[var(--dashboard-card-gap)]">
           <Link
             href={assistantViewHref}
-            className="notch-bl duration-[250ms] group relative block overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform ease-out hover:scale-[1.02] lg:col-span-3 lg:h-[280px] xl:h-[340px] 2xl:h-[390.4221px] xl:rounded-[30px] xl:border-[0.99px]"
+            className="notch-bl duration-[250ms] group relative block overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform ease-out hover:scale-[1.02] lg:col-span-3 lg:h-[280px] xl:h-[340px] xl:rounded-[30px] xl:border-[0.99px] 2xl:h-[390.4221px]"
           >
             <Image
               src={topLeft}
@@ -43,14 +42,19 @@ function HomeDashboardPage() {
 
           <Link
             href={assistantViewHref}
-            className="notch-bl duration-[250ms] group relative block overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform ease-out hover:scale-[1.02] lg:col-span-6 lg:h-[280px] xl:h-[340px] 2xl:h-[390.4221px] xl:rounded-[30px] xl:border-[0.99px]"
+            className="notch-bl duration-[250ms] group relative block overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform ease-out hover:scale-[1.02] lg:col-span-6 lg:h-[280px] xl:h-[340px] xl:rounded-[30px] xl:border-[0.99px] 2xl:h-[390.4221px]"
           >
-            <Image alt="Let's talk with SafeSpeak" fill src={topMask} />
+            <Image
+              alt="Let's talk with SafeSpeak"
+              className="object-fill"
+              fill
+              src={topMask}
+            />
           </Link>
 
           <Link
             href={assistantViewHref}
-            className="notch-bl duration-[250ms] group relative block overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform ease-out hover:scale-[1.02] lg:col-span-3 lg:h-[280px] xl:h-[340px] 2xl:h-[390.4221px] xl:rounded-[30px] xl:border-[0.99px]"
+            className="notch-bl duration-[250ms] group relative block overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform ease-out hover:scale-[1.02] lg:col-span-3 lg:h-[280px] xl:h-[340px] xl:rounded-[30px] xl:border-[0.99px] 2xl:h-[390.4221px]"
           >
             <Image
               src={topRight}
@@ -62,7 +66,7 @@ function HomeDashboardPage() {
 
           <Link
             href={assistantViewHref}
-            className="duration-[250ms] group relative block w-full overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform ease-out hover:scale-[1.02] lg:col-span-6 lg:aspect-[547/407] xl:rounded-[30px] xl:rounded-tr-[64px] xl:border-[0.99px]"
+            className="duration-[250ms] group relative mr-2 block w-full overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform ease-out hover:scale-[1.02] lg:col-span-6 lg:aspect-[547/407] xl:rounded-[30px] xl:rounded-tr-[64px] xl:border-[0.99px]"
           >
             <Image
               alt="Cyber scam"
@@ -74,7 +78,7 @@ function HomeDashboardPage() {
 
           <Link
             href={assistantViewHref}
-            className="duration-[250ms] group relative block w-full overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform ease-out hover:scale-[1.02] lg:col-span-6 lg:aspect-[547/407] xl:rounded-[30px] xl:rounded-tl-[64px] xl:border-[0.99px]"
+            className="duration-[250ms] group relative ml-2 block w-full overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.2)] transition-transform ease-out hover:scale-[1.02] lg:col-span-6 lg:aspect-[547/407] xl:rounded-[30px] xl:rounded-tl-[64px] xl:border-[0.99px]"
           >
             <Image
               alt="Migrant challenges"
@@ -85,14 +89,14 @@ function HomeDashboardPage() {
           </Link>
         </div>
         <SMDasboardHome />
-        <div className="grid grid-cols-1 gap-[var(--dashboard-card-gap)] md:grid-cols-2 xl:grid-cols-[262px_357.34px_1fr] lg:mt-6">
+        <div className="grid grid-cols-1 gap-[var(--dashboard-card-gap)] md:grid-cols-2 lg:mt-6 xl:grid-cols-[262px_357.34px_1fr]">
           <div className="grid grid-cols-1 gap-[var(--dashboard-card-gap)] xl:grid-rows-2">
             <Link
               href={{
                 pathname: "/dashboard",
                 query: { view: "scamshieldintake" },
               }}
-              className="relative block min-h-[190px] w-full overflow-hidden rounded-[24px] border border-white/20 bg-[#004D73] p-5 transition hover:brightness-110 sm:min-h-[220px] sm:p-6 xl:h-[220px] 2xl:h-[238px] xl:rounded-[40px]"
+              className="relative block min-h-[190px] w-full overflow-hidden rounded-[24px] border border-white/20 bg-[#004D73] p-5 transition hover:brightness-110 sm:min-h-[220px] sm:p-6 xl:h-[220px] xl:rounded-[40px] 2xl:h-[238px]"
             >
               <p className="text-[18px] font-semibold uppercase tracking-[0.18em] text-[#77c6df]">
                 {t("dashboard.home.cyber")}
@@ -122,7 +126,10 @@ function HomeDashboardPage() {
               </div>
             </Link>
 
-            <article className="relative min-h-[190px] w-full overflow-hidden rounded-[24px] bg-[#FFC107] p-5 sm:min-h-[220px] sm:p-6 xl:h-[220px] 2xl:h-[238px] xl:rounded-[40px]">
+            <Link
+              href="/dashboard/explorer"
+              className="relative block min-h-[190px] w-full overflow-hidden rounded-[24px] bg-[#FFC107] p-5 transition hover:brightness-105 sm:min-h-[220px] sm:p-6 xl:h-[220px] xl:rounded-[40px] 2xl:h-[238px]"
+            >
               <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-[#171717]">
                 {t("dashboard.home.legal")}
               </p>
@@ -135,7 +142,7 @@ function HomeDashboardPage() {
                 size={72}
                 className="absolute bottom-6 right-6 text-[#dca906]"
               />
-            </article>
+            </Link>
           </div>
 
           <Link
@@ -143,7 +150,7 @@ function HomeDashboardPage() {
               pathname: "/dashboard",
               query: { view: "microeducation" },
             }}
-            className="relative block min-h-[280px] w-full overflow-hidden rounded-[24px] bg-[#FF8F00] px-5 pb-5 pt-5 transition hover:brightness-105 sm:min-h-[360px] sm:px-6 sm:pb-6 sm:pt-[23.25px] xl:h-[440px] 2xl:h-[500px] xl:rounded-[40px]"
+            className="relative block min-h-[280px] w-full overflow-hidden rounded-[24px] bg-[#FF8F00] px-5 pb-5 pt-5 transition hover:brightness-105 sm:min-h-[360px] sm:px-6 sm:pb-6 sm:pt-[23.25px] xl:h-[440px] xl:rounded-[40px] 2xl:h-[500px]"
           >
             <h4
               className={`${interFont.className} h-[83.75px] w-full pb-2 text-[30px] font-extrabold leading-[37.5px] tracking-[0] text-white`}
@@ -160,7 +167,7 @@ function HomeDashboardPage() {
             </div>
           </Link>
 
-          <article className="min-h-[320px] w-full overflow-hidden rounded-[24px] border border-[#cfd9e5] bg-white p-3 sm:min-h-[420px] sm:p-4 md:col-span-2 xl:col-span-1 xl:h-[440px] 2xl:h-[500px] xl:rounded-[40px]">
+          <article className="min-h-[320px] w-full overflow-hidden rounded-[24px] border border-[#cfd9e5] bg-white p-3 sm:min-h-[420px] sm:p-4 md:col-span-2 xl:col-span-1 xl:h-[440px] xl:rounded-[40px] 2xl:h-[500px]">
             <div className="mb-4 flex items-center justify-between">
               <h4 className="text-sm font-bold text-[#334155]">
                 {t("dashboard.home.localIntelligence")}
@@ -170,7 +177,7 @@ function HomeDashboardPage() {
               </span>
             </div>
 
-            <div className="relative h-[240px] w-full overflow-hidden rounded-[18px] border border-[#d5dece] bg-[#d9e6d2] sm:h-[320px] sm:rounded-[24px] xl:h-[362px] 2xl:h-[422px] xl:rounded-[32px]">
+            <div className="relative h-[240px] w-full overflow-hidden rounded-[18px] border border-[#d5dece] bg-[#d9e6d2] sm:h-[320px] sm:rounded-[24px] xl:h-[362px] xl:rounded-[32px] 2xl:h-[422px]">
               {localIntelligenceMapSrc ? (
                 <iframe
                   title="Local Intelligence Map"
@@ -204,7 +211,7 @@ function HomeDashboardPage() {
 
         <Link
           href={assistantViewHref}
-          className="absolute left-1/2 z-20 hidden -translate-x-1/2 lg:block h-[50vh] w-[15dvh] lg:w-[22dvh] lg:top-[6%] xl:top-[13%] xl:w-[28dvh] 2xl:top-[11%] 2xl:w-[24dvh]"
+          className="absolute left-1/2 z-20 hidden -translate-x-1/2 lg:top-[clamp(176px,18vw,195px)] lg:block lg:h-[clamp(184px,19vw,236px)] lg:w-[clamp(184px,19vw,220px)] xl:top-[245px] xl:h-[248px] xl:w-[248px] 2xl:top-[279px] 2xl:h-[270px] 2xl:w-[270px]"
         >
           <Image
             src={sphereAdv}
