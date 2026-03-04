@@ -8,7 +8,7 @@ import topRightSM from "@/assets/topRightSM.svg?url";
 
 function SMDasboardHome() {
   return (
-    <div className="mx-auto w-full max-w-[px] px-4 pb-5 pt-2 xl:hidden md:hidden">
+    <div className="mx-auto w-full px-4 pb-5 pt-2 lg:hidden">
       <div className="relative grid w-full grid-cols-2 gap-4 gap-y-4">
           <article className="relative aspect-[172/230] overflow-visible">
             <Image

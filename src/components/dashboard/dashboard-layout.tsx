@@ -74,7 +74,7 @@ function Sidebar({ activeTab }: { activeTab: DashboardTab }) {
   const { t } = useTranslation();
 
   return (
-    <aside className="sticky top-0 w-[72px] shrink-0 border-r border-[#d7dee8] bg-[#f8fafc] px-2 py-6 sm:w-[88px] sm:px-3 lg:w-56 lg:px-5 lg:py-8 xl:h-[1574px] xl:w-[256px]">
+    <aside className="sticky top-0 w-[72px] shrink-0 border-r border-[#d7dee8] bg-[#f8fafc] px-2 py-6 sm:w-[88px] sm:px-3 lg:w-56 lg:px-5 lg:py-8 2xl:h-[1574px] 2xl:w-[256px]">
       <div className="px-1 lg:px-2">
         <SafeSpeakLogo
           tone="brand"
@@ -141,7 +141,7 @@ function EmergencyToolbar() {
   };
 
   return (
-    <div className="flex flex-col gap-2 px-3 py-3 max-w-[1120px] sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:px-4 mx-auto">
+    <div className="mx-auto flex max-w-[1120px] flex-col gap-2 px-3 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:px-4">
       <div className="flex flex-wrap items-center gap-2">
         <div className="inline-flex max-w-full items-center gap-2 whitespace-nowrap rounded-full bg-[#de3838] px-3 py-1.5 text-[10px] font-bold text-white sm:px-4 sm:text-[11px]">
           <IconAlertCircleFilled size={13} />
@@ -211,11 +211,13 @@ export function DashboardShell({
 
   return (
     <div
-      className={`${pageFont.className} mx-auto flex min-h-screen w-screen overflow-x-hidden bg-[#eef3f8]`}
+      className={`${pageFont.className} mx-auto flex min-h-screen w-full overflow-x-hidden bg-[#eef3f8]`}
     >
       <Sidebar activeTab={activeTab} />
 
-      <section className={cn("flex-1 p-2 w-screen sm:p-3 md:p-4", sectionSizeClass)}>
+      <section
+        className={cn("min-w-0 flex-1 p-2 sm:p-3 md:p-4", sectionSizeClass)}
+      >
         <div className="overflow-hidden rounded-[16px] bg-[#edf2f8] sm:rounded-[20px] xl:h-full">
           <EmergencyToolbar />
           {children}
