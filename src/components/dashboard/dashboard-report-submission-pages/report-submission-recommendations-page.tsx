@@ -26,19 +26,23 @@ function ReportSubmissionRecommendationsPage() {
             <IconChevronLeft size={14} />
             {t("dashboard.assistant.triage.recommendations.title")}
           </Link>
-          <span className="inline-flex h-6 w-6 items-center justify-center rounded-full text-[#9ba8bb]">
+          <Link
+            href="/dashboard?view=reportsubmissionhistory"
+            aria-label="View report history"
+            className="inline-flex h-6 w-6 items-center justify-center rounded-full text-[#9ba8bb] transition hover:text-[#74879e]"
+          >
             <IconClock size={12} />
-          </span>
+          </Link>
         </div>
 
-        <article className="mt-3 rounded-[16px] border border-[#dce5f1] bg-[#f7fafe] p-4 shadow-[0_10px_24px_rgba(15,23,42,0.04)] sm:p-5">
+        <article className="mt-3 flex w-full flex-col gap-6 rounded-[16px] border border-[#dce5f1] bg-[#f7fafe] px-4 pb-10 pt-4 shadow-[0_10px_24px_rgba(15,23,42,0.04)] sm:px-5 sm:pb-14 sm:pt-5 lg:min-h-[805px] lg:gap-10 lg:px-6 lg:pb-20 lg:pt-6">
           <p className="mx-auto max-w-[680px] text-center text-xs leading-[1.5] text-[#7a8ca2]">
             {t("dashboard.assistant.triage.recommendations.subtitle")}
           </p>
 
-          <div className="mt-4 space-y-2.5">
-            <article className="flex flex-col gap-3 rounded-2xl border border-[#e4ebf4] bg-white p-3.5 sm:flex-row sm:items-center sm:justify-between sm:p-4">
-              <div className="flex min-w-0 items-start gap-3">
+          <div className="space-y-6">
+            <article className="flex w-full flex-col gap-6 rounded-[24px] border border-[#FEE2E2] bg-white p-8 sm:flex-row sm:items-center sm:justify-between lg:h-[154px]">
+              <div className="flex min-w-0 items-start gap-6">
                 <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#ffe7e7] text-[#ef4b4b]">
                   <IconAlertCircleFilled size={13} />
                 </span>
@@ -62,9 +66,9 @@ function ReportSubmissionRecommendationsPage() {
 
             <Link
               href="/dashboard?view=reportsubmissionevidence"
-              className="flex flex-col gap-3 rounded-2xl border border-[#e4ebf4] bg-white p-3.5 transition hover:border-[#d5dfec] hover:bg-[#f9fbff] sm:flex-row sm:items-center sm:justify-between sm:p-4"
+              className="flex w-full flex-col gap-6 rounded-[24px] border border-[#FEE2E2] bg-white p-8 transition hover:border-[#f7d4d4] hover:bg-[#fffefe] sm:flex-row sm:items-center sm:justify-between lg:h-[154px]"
             >
-              <div className="flex min-w-0 items-start gap-3">
+              <div className="flex min-w-0 items-start gap-6">
                 <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#ece7ff] text-[#6a4de7]">
                   <IconShieldFilled size={12} />
                 </span>
@@ -91,9 +95,9 @@ function ReportSubmissionRecommendationsPage() {
 
             <Link
               href="/dashboard?view=reportsubmissionevidence"
-              className="flex flex-col gap-3 rounded-2xl border border-[#e4ebf4] bg-white p-3.5 transition hover:border-[#d5dfec] hover:bg-[#f9fbff] sm:flex-row sm:items-center sm:justify-between sm:p-4"
+              className="flex w-full flex-col gap-6 rounded-[24px] border border-[#FEE2E2] bg-white p-8 transition hover:border-[#f7d4d4] hover:bg-[#fffefe] sm:flex-row sm:items-center sm:justify-between lg:h-[154px]"
             >
-              <div className="flex min-w-0 items-start gap-3">
+              <div className="flex min-w-0 items-start gap-6">
                 <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#e6f7f3] text-[#00a486]">
                   <IconHeadphones size={12} />
                 </span>
@@ -119,7 +123,7 @@ function ReportSubmissionRecommendationsPage() {
 
           <Link
             href="/dashboard?view=reportsubmissiondetailedexplanations"
-            className="mt-4 inline-flex h-9 w-full items-center justify-center rounded-full bg-[#0f5d9f] px-5 text-[11px] font-bold text-white shadow-[0_8px_18px_rgba(15,93,159,0.22)]"
+            className="mx-auto inline-flex h-[68px] w-full max-w-[1136px] items-center justify-center rounded-[9999px] bg-[#005EA2] px-6 py-5 text-[11px] font-bold text-white shadow-[0_8px_18px_rgba(15,93,159,0.22)]"
           >
             {t("dashboard.assistant.triage.recommendations.readMore")}
           </Link>

@@ -12,6 +12,7 @@ import {
   ReportSubmissionDetailedExplanationsPage,
   ReportSubmissionDetailsPage,
   ReportSubmissionEvidencePage,
+  ReportSubmissionHistoryPage,
   ReportSubmissionRecommendationsPage,
   ReportSubmissionReviewPage,
   ReportSubmissionSuccessPage,
@@ -77,6 +78,8 @@ export default function DashboardScreen({
         <ReportSubmissionSupportPage />
       ) : homeView === "reportsubmissionrecommendations" ? (
         <ReportSubmissionRecommendationsPage />
+      ) : homeView === "reportsubmissionhistory" ? (
+        <ReportSubmissionHistoryPage />
       ) : homeView === "reportsubmissiondetailedexplanations" ? (
         <ReportSubmissionDetailedExplanationsPage />
       ) : homeView === "reportsubmissiondetails" ? (

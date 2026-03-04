@@ -122,9 +122,13 @@ function ReportSubmissionReviewPage() {
               Timeline Builder
             </span>
           </Link>
-          <span className="inline-flex h-6 w-6 items-center justify-center text-[#7f91a8]">
+          <Link
+            href="/dashboard?view=reportsubmissionhistory"
+            aria-label="View report history"
+            className="inline-flex h-6 w-6 items-center justify-center text-[#7f91a8] transition hover:text-[#5f728a]"
+          >
             <IconClock size={14} />
-          </span>
+          </Link>
         </div>
 
         <div className="flex flex-col gap-12 px-6 pb-12 pt-12">

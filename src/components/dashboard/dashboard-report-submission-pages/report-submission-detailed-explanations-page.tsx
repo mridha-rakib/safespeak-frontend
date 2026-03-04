@@ -24,9 +24,13 @@ function ReportSubmissionDetailedExplanationsPage() {
             <IconChevronLeft size={14} />
             Detailed Explanations
           </Link>
-          <span className="inline-flex h-6 w-6 items-center justify-center rounded-full text-[#9ba8bb]">
+          <Link
+            href="/dashboard?view=reportsubmissionhistory"
+            aria-label="View report history"
+            className="inline-flex h-6 w-6 items-center justify-center rounded-full text-[#9ba8bb] transition hover:text-[#74879e]"
+          >
             <IconClock size={12} />
-          </span>
+          </Link>
         </div>
 
         <article className="mt-3 rounded-[16px] border border-[#dce5f1] bg-[#f7fafe] p-4 shadow-[0_10px_24px_rgba(15,23,42,0.04)] sm:p-5">
@@ -109,10 +113,13 @@ function ReportSubmissionDetailedExplanationsPage() {
 
           <div className="mt-4 rounded-2xl border border-[#e4ebf4] bg-white px-2 py-2 shadow-[0_10px_24px_rgba(15,23,42,0.04)]">
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-              <button className="inline-flex h-10 items-center justify-center gap-2 rounded-xl text-xs font-semibold text-[#f97316] transition hover:bg-[#fff7ed]">
+              <Link
+                href="/dashboard?view=reportsubmissionhistory"
+                className="inline-flex h-10 items-center justify-center gap-2 rounded-xl text-xs font-semibold text-[#f97316] transition hover:bg-[#fff7ed]"
+              >
                 <IconFolderFilled size={14} />
                 Save to History
-              </button>
+              </Link>
               <button className="inline-flex h-10 items-center justify-center gap-2 rounded-xl text-xs font-semibold text-[#f97316] transition hover:bg-[#fff7ed]">
                 <IconClipboardText size={14} />
                 Share Report

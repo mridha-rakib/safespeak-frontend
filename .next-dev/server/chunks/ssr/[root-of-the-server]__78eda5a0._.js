@@ -99,6 +99,8 @@ async function DashboardPage({ searchParams }) {
         homeView = "reportsubmissionsupport";
     } else if (view === "reportsubmissionrecommendations") {
         homeView = "reportsubmissionrecommendations";
+    } else if (view === "reportsubmissionhistory") {
+        homeView = "reportsubmissionhistory";
     } else if (view === "reportsubmissiondetailedexplanations") {
         homeView = "reportsubmissiondetailedexplanations";
     } else if (view === "reportsubmissiondetails") {
@@ -118,7 +120,7 @@ async function DashboardPage({ searchParams }) {
         reportId: reportId
     }, void 0, false, {
         fileName: "[project]/src/app/dashboard/page.tsx",
-        lineNumber: 68,
+        lineNumber: 70,
         columnNumber: 5
     }, this);
 }

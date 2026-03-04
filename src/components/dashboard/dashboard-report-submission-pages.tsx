@@ -2,6 +2,7 @@ export {
   ReportSubmissionDetailedExplanationsPage,
   ReportSubmissionDetailsPage,
   ReportSubmissionEvidencePage,
+  ReportSubmissionHistoryPage,
   ReportSubmissionRecommendationsPage,
   ReportSubmissionReviewPage,
   ReportSubmissionSuccessPage,

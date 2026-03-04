@@ -195,6 +195,7 @@ export function DashboardShell({
     homeView === "reportoverview" ||
     homeView === "reportsubmissionsupport" ||
     homeView === "reportsubmissionrecommendations" ||
+    homeView === "reportsubmissionhistory" ||
     homeView === "reportsubmissiondetailedexplanations" ||
     homeView === "reportsubmissiondetails" ||
     homeView === "reportsubmissionevidence" ||

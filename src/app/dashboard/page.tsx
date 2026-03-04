@@ -52,6 +52,8 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
     homeView = "reportsubmissionsupport";
   } else if (view === "reportsubmissionrecommendations") {
     homeView = "reportsubmissionrecommendations";
+  } else if (view === "reportsubmissionhistory") {
+    homeView = "reportsubmissionhistory";
   } else if (view === "reportsubmissiondetailedexplanations") {
     homeView = "reportsubmissiondetailedexplanations";
   } else if (view === "reportsubmissiondetails") {

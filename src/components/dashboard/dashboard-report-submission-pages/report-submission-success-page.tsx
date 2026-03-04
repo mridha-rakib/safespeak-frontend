@@ -30,9 +30,13 @@ function ReportSubmissionSuccessPage() {
               Detailed Explanations
             </span>
           </Link>
-          <span className="inline-flex h-6 w-6 items-center justify-center text-[#7f91a8]">
+          <Link
+            href="/dashboard?view=reportsubmissionhistory"
+            aria-label="View report history"
+            className="inline-flex h-6 w-6 items-center justify-center text-[#7f91a8] transition hover:text-[#5f728a]"
+          >
             <IconClock size={14} />
-          </span>
+          </Link>
         </div>
 
         <article className="mt-5 rounded-[16px] border border-[#dce5f1] bg-[#f7fafe] p-4 sm:p-6">
@@ -134,13 +138,13 @@ function ReportSubmissionSuccessPage() {
 
           <div className="mt-4 rounded-[12px] border border-[#e5ebf4] bg-white">
             <div className="grid grid-cols-1 divide-y divide-[#edf2f8] sm:grid-cols-2 sm:divide-x sm:divide-y-0">
-              <button
-                type="button"
+              <Link
+                href="/dashboard?view=reportsubmissionhistory"
                 className="inline-flex h-[56px] items-center justify-center gap-2 text-[11px] font-semibold text-[#ff8f00]"
               >
                 <IconFolderFilled size={13} />
                 Save to History
-              </button>
+              </Link>
               <button
                 type="button"
                 className="inline-flex h-[56px] items-center justify-center gap-2 text-[11px] font-semibold text-[#ff8f00]"
