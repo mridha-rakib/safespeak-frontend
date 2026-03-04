@@ -8,9 +8,9 @@ import topRightSM from "@/assets/topRightSM.svg?url";
 
 function SMDasboardHome() {
   return (
-    <div className="mx-auto w-full max-w-[360px] px-4 pb-5 pt-2 xl:hidden md:hidden">
+    <div className="mx-auto w-full max-w-[px] px-4 pb-5 pt-2 xl:hidden md:hidden">
       <div className="relative grid w-full grid-cols-2 gap-4 gap-y-4">
-          <article className="relative w-full aspect-[172/230] overflow-visible">
+          <article className="relative aspect-[172/230] overflow-visible">
             <Image
               src={topLeftSM}
               alt="Domestic violence card"
@@ -28,7 +28,7 @@ function SMDasboardHome() {
             />
           </article>
 
-          <article className="relative h-[202px] overflow-hidden rounded-[20px]">
+          <article className="relative aspect-[172/230] overflow-visible">
             <Image
               src={bottomLeft}
               alt="Cyber scam card"
@@ -37,7 +37,7 @@ function SMDasboardHome() {
             />
           </article>
 
-          <article className="relative h-[202px] overflow-hidden rounded-[20px]">
+          <article className="relative aspect-[172/230] overflow-visible">
             <Image
               src={bottomRight}
               alt="Migrant challenges card"
@@ -51,7 +51,7 @@ function SMDasboardHome() {
             pathname: "/dashboard",
             query: { view: "assistant" },
           }}
-          className="absolute left-1/2 top-[124px] z-20 h-[184px] w-[184px] -translate-x-1/2 rounded-full"
+          className="absolute left-1/2 top-[30%] z-20 h-[40%] w-[55%] -translate-x-1/2 rounded-full"
           aria-label="Report an incident"
         >
           <span className="absolute inset-0" />
