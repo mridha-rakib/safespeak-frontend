@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import {
   IconBellFilled,
@@ -30,6 +31,7 @@ function ExplorerSupportCard({
   className,
   imageSrc,
   gradientClassName,
+  href,
 }: {
   title: string;
   subtitle: string;
@@ -37,11 +39,13 @@ function ExplorerSupportCard({
   className?: string;
   imageSrc?: React.ComponentProps<typeof Image>["src"];
   gradientClassName?: string;
+  href: React.ComponentProps<typeof Link>["href"];
 }) {
   return (
-    <article
+    <Link
+      href={href}
       className={cn(
-        "group relative min-h-[198px] overflow-hidden rounded-[18px] border border-white/20",
+        "group relative min-h-[198px] overflow-hidden rounded-[18px] border border-white/20 transition duration-200 ease-out hover:scale-[1.01]",
         className
       )}
     >
@@ -68,7 +72,7 @@ function ExplorerSupportCard({
         </h3>
         <p className="mt-1 text-[11px] text-white/80">{subtitle}</p>
       </div>
-    </article>
+    </Link>
   );
 }
 
@@ -133,36 +137,60 @@ export function ExplorerPage() {
             subtitle={t("dashboard.explorer.legalAidSubtitle")}
             icon={<IconFolderFilled size={10} />}
             imageSrc={hackerImage}
+            href={{
+              pathname: "/dashboard/explorer/service-details",
+              query: { service: "legal-aid" },
+            }}
           />
           <ExplorerSupportCard
             title={t("dashboard.explorer.communitySupport")}
             subtitle={t("dashboard.explorer.communitySupportSubtitle")}
             icon={<IconCompassFilled size={10} />}
             imageSrc={abuseImage}
+            href={{
+              pathname: "/dashboard/explorer/service-details",
+              query: { service: "community-support" },
+            }}
           />
           <ExplorerSupportCard
             title={t("dashboard.explorer.counselling")}
             subtitle={t("dashboard.explorer.counsellingSubtitle")}
             icon={<IconMicrophone size={10} />}
             imageSrc={domesticViolanceImage}
+            href={{
+              pathname: "/dashboard/explorer/service-details",
+              query: { service: "counselling" },
+            }}
           />
           <ExplorerSupportCard
             title={t("dashboard.explorer.healthServices")}
             subtitle={t("dashboard.explorer.healthServicesSubtitle")}
             icon={<IconShieldFilled size={10} />}
             imageSrc={topRight}
+            href={{
+              pathname: "/dashboard/explorer/service-details",
+              query: { service: "health-services" },
+            }}
           />
           <ExplorerSupportCard
             title={t("dashboard.explorer.elderSupport")}
             subtitle={t("dashboard.explorer.elderSupportSubtitle")}
             icon={<IconHomeFilled size={10} />}
             imageSrc={migrateImage}
+            href={{
+              pathname: "/dashboard/explorer/service-details",
+              query: { service: "elder-support" },
+            }}
           />
           <ExplorerSupportCard
             title={t("dashboard.explorer.crisisSupport")}
             subtitle={t("dashboard.explorer.crisisSupportSubtitle")}
             icon={<IconBellFilled size={10} />}
             imageSrc={bottomLeft}
+            href={{
+              pathname: "/dashboard/explorer/service-details",
+              query: { service: "crisis-support" },
+            }}
           />
           <ExplorerSupportCard
             className="md:col-span-2 xl:col-span-2"
@@ -170,6 +198,10 @@ export function ExplorerPage() {
             subtitle={t("dashboard.explorer.onlineSafetySubtitle")}
             icon={<IconShieldFilled size={10} />}
             gradientClassName="bg-[linear-gradient(130deg,#6240e6_0%,#6f4fe8_50%,#7f61ee_100%)]"
+            href={{
+              pathname: "/dashboard/explorer/service-details",
+              query: { service: "online-safety" },
+            }}
           />
         </div>
       </div>

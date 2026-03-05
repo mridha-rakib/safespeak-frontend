@@ -2,8 +2,8 @@
   "pages": {},
   "app": {
     "[project]/src/app/dashboard/settings/privacy-policy/page": [
-      "static/media/fba5a26ea33df6a3-s.p.1bbdebe6.woff2",
-      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+      "static/media/fba5a26ea33df6a3-s.p.1bbdebe6.woff2"
     ]
   },
   "appUsingSizeAdjust": true,

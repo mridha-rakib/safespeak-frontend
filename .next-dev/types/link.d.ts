@@ -35,6 +35,7 @@ declare namespace __next_route_internal_types__ {
     | `/`
     | `/dashboard`
     | `/dashboard/explorer`
+    | `/dashboard/explorer/service-details`
     | `/dashboard/notifications`
     | `/dashboard/reports`
     | `/dashboard/settings`

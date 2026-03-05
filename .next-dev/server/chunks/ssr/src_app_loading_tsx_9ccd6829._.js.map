@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/rakib_2zl331p/project/spark-tech/safespeak/safespeak-frontend/src/app/loading.tsx"],"sourcesContent":["\"use client\";\n\nimport { CircularProgress } from \"@nextui-org/react\";\n\nexport default function Loading() {\n  return (\n    <CircularProgress\n      className=\"mx-auto\"\n      classNames={{\n        svg: \"w-36 h-36\",\n      }}\n      aria-label=\"Loading page...\"\n    />\n  );\n}\n"],"names":[],"mappings":";;;;;AAEA;AAFA;;;AAIe,SAAS;IACtB,qBACE,8OAAC,8PAAgB;QACf,WAAU;QACV,YAAY;YACV,KAAK;QACP;QACA,cAAW;;;;;;AAGjB","debugId":null}}]
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///media/rakibmm/old_os/spark-tech/safespeak-frontend/src/app/loading.tsx"],"sourcesContent":["\"use client\";\n\nimport { CircularProgress } from \"@nextui-org/react\";\n\nexport default function Loading() {\n  return (\n    <CircularProgress\n      className=\"mx-auto\"\n      classNames={{\n        svg: \"w-36 h-36\",\n      }}\n      aria-label=\"Loading page...\"\n    />\n  );\n}\n"],"names":[],"mappings":";;;;;AAEA;AAFA;;;AAIe,SAAS;IACtB,qBACE,6WAAC,wcAAgB;QACf,WAAU;QACV,YAAY;YACV,KAAK;QACP;QACA,cAAW;;;;;;AAGjB","debugId":null}}]
 }

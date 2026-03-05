@@ -736,6 +736,25 @@ const resources = {
           onlineSafety: "Online Safety",
           onlineSafetySubtitle:
             "Private legal digital safety from online harassment",
+          serviceDetails: {
+            title: "Service Details",
+            availableNow: "Available Now",
+            contactInformation: "Contact Information",
+            phone: "Phone",
+            email: "Email",
+            languages: "Languages",
+            phoneValue: "(02) 5550 0123",
+            emailValue: "contact@clc.org.au",
+            languagesValue: "English, Arabic, Mandarin",
+            warmReferral: "Warm Referral",
+            warmReferralDescription:
+              "A warm referral ensures the provider has the context they need to help you immediately without repeating your story. This secure transfer of information helps build trust and accelerates the support process.",
+            includeIncidentSummary: "Include Incident Summary",
+            includeIncidentSummaryHelp:
+              "Shares your recent report securely.",
+            sendReferral: "Send Referral",
+            relevantResources: "Relevant Resources",
+          },
         },
         notifications: {
           notification: "Notification",
@@ -1578,6 +1597,25 @@ const resources = {
           onlineSafety: "Seguridad en linea",
           onlineSafetySubtitle:
             "Seguridad digital y legal privada contra el acoso en linea",
+          serviceDetails: {
+            title: "Detalles del servicio",
+            availableNow: "Disponible ahora",
+            contactInformation: "Informacion de contacto",
+            phone: "Telefono",
+            email: "Correo",
+            languages: "Idiomas",
+            phoneValue: "(02) 5550 0123",
+            emailValue: "contact@clc.org.au",
+            languagesValue: "Ingles, Arabe, Mandarin",
+            warmReferral: "Derivacion asistida",
+            warmReferralDescription:
+              "Una derivacion asistida asegura que el proveedor tenga el contexto necesario para ayudarte de inmediato sin repetir tu historia. Esta transferencia segura de informacion fortalece la confianza y acelera el proceso de apoyo.",
+            includeIncidentSummary: "Incluir resumen del incidente",
+            includeIncidentSummaryHelp:
+              "Comparte tu reporte reciente de forma segura.",
+            sendReferral: "Enviar derivacion",
+            relevantResources: "Recursos relevantes",
+          },
         },
         notifications: {
           notification: "Notificacion",
