@@ -174,7 +174,7 @@ export function ExplorerServiceDetailsPage({
             <div className="max-w-[560px]">
               <h3 className="inline-flex items-center gap-2 text-[29px] font-extrabold leading-none text-[#24344d]">
                 <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-[#dbe4f1] text-[13px] font-bold text-[#2b3d58]">
-                  ◇
+                  *
                 </span>
                 {t("dashboard.explorer.serviceDetails.warmReferral")}
               </h3>
