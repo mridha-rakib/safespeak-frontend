@@ -10,7 +10,7 @@ import {
   IconPhoto,
   IconWorld,
 } from "@tabler/icons-react";
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, type HTMLMotionProps, useReducedMotion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 import guidedTriageIcon from "@/assets/guidedTriage.svg";
@@ -58,7 +58,9 @@ export default function ResourcesSection() {
   const { t } = useTranslation();
   const shouldReduceMotion = useReducedMotion();
 
-  const cardMotionProps = shouldReduceMotion
+  const cardMotionProps: Partial<
+    Pick<HTMLMotionProps<"article">, "whileHover" | "whileTap" | "transition">
+  > = shouldReduceMotion
     ? {}
     : {
         whileHover: { y: -10, scale: 1.02 },

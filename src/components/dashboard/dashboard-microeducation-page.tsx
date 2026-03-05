@@ -19,6 +19,7 @@ import {
   AnimatePresence,
   LayoutGroup,
   motion,
+  type Transition,
   useReducedMotion,
 } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -377,11 +378,11 @@ function MicroEducationPage() {
     setIsFilterOpen(false);
   };
 
-  const sharedTransition = prefersReducedMotion
+  const sharedTransition: Transition = prefersReducedMotion
     ? { duration: 0 }
     : { type: "spring", stiffness: 230, damping: 32, mass: 0.9 };
 
-  const fadeTransition = prefersReducedMotion
+  const fadeTransition: Transition = prefersReducedMotion
     ? { duration: 0 }
     : { duration: 0.28, ease: "easeOut" };
 
