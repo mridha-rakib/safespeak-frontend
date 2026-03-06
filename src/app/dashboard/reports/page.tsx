@@ -1,5 +1,5 @@
-import DashboardScreen from "@/components/dashboard/dashboard-screen";
+import DashboardHomeScreen from "@/components/dashboard/dashboard-home-screen";
 
 export default function DashboardReportsPage() {
-  return <DashboardScreen activeTab="home" homeView="reportshistory" />;
+  return <DashboardHomeScreen homeView="reportshistory" />;
 }

@@ -1,4 +1,4 @@
-import DashboardScreen from "@/components/dashboard/dashboard-screen";
+import DashboardHomeScreen from "@/components/dashboard/dashboard-home-screen";
 
 type DashboardReportOverviewPageProps = {
   params: Promise<{
@@ -12,10 +12,6 @@ export default async function DashboardReportOverviewPage({
   const { reportId } = await params;
 
   return (
-    <DashboardScreen
-      activeTab="home"
-      homeView="reportoverview"
-      reportId={reportId}
-    />
+    <DashboardHomeScreen homeView="reportoverview" reportId={reportId} />
   );
 }

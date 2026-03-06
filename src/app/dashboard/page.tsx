@@ -1,4 +1,5 @@
-import DashboardScreen from "@/components/dashboard/dashboard-screen";
+import DashboardHomeScreen from "@/components/dashboard/dashboard-home-screen";
+import type { HomeView } from "@/components/dashboard/dashboard-types";
 
 type DashboardPageSearchParams = {
   view?: string | string[];
@@ -26,7 +27,7 @@ export default async function DashboardPage({
   const message = Array.isArray(rawMessage) ? rawMessage[0] : rawMessage;
   const reportId = Array.isArray(rawReportId) ? rawReportId[0] : rawReportId;
   const assistantRecording = recording === "1";
-  let homeView: Parameters<typeof DashboardScreen>[0]["homeView"] = "overview";
+  let homeView: HomeView = "overview";
 
   if (view === "microeducation") {
     homeView = "microeducation";
@@ -69,8 +70,7 @@ export default async function DashboardPage({
   }
 
   return (
-    <DashboardScreen
-      activeTab="home"
+    <DashboardHomeScreen
       homeView={homeView}
       assistantRecording={assistantRecording}
       assistantMessage={message}
