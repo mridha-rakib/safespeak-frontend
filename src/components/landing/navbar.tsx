@@ -17,8 +17,8 @@ import {
 } from "@/lib/i18n";
 
 const LANGUAGE_FLAGS: Record<SupportedLanguage, string> = {
-  en: "🇺🇸",
-  es: "🇪🇸",
+  en: "EN",
+  es: "ES",
 };
 
 const interExtraBold = Inter({
@@ -48,9 +48,12 @@ export default function LandingNavbar() {
 
   const links = useMemo(
     () => [
-      { label: t("navbar.links.whatIsSafeSpeak"), href: "#" },
-      { label: t("navbar.links.whatYouCanDoWithSafeSpeak"), href: "#" },
-      { label: t("navbar.links.contactUs"), href: "#" },
+      { label: t("navbar.links.whatIsSafeSpeak"), href: "#what-is-safespeak" },
+      {
+        label: t("navbar.links.whatYouCanDoWithSafeSpeak"),
+        href: "#what-you-can-do",
+      },
+      { label: t("navbar.links.contactUs"), href: "#contact-us" },
     ],
     [t]
   );
@@ -94,6 +97,7 @@ export default function LandingNavbar() {
               <a
                 key={item.label}
                 href={item.href}
+                aria-label={item.label}
                 className="nav-link text-xs lg:text-sm xl:text-[15px]"
               >
                 {item.label}
@@ -104,7 +108,7 @@ export default function LandingNavbar() {
           <div className="flex items-center gap-2 sm:gap-3 lg:h-[48px] lg:justify-end lg:gap-3">
             <a
               href="/login"
-              className="inline-flex h-9 items-center justify-center rounded-full bg-[#ff8f00] px-5 text-xs font-bold text-[#0b3152] shadow-[0_10px_24px_rgba(255,143,0,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(255,143,0,0.42)] lg:h-[38px] lg:w-[96px] lg:px-0"
+              className="inline-flex h-11 items-center justify-center rounded-full bg-[#ff8f00] px-5 text-xs font-bold text-[#0b3152] shadow-[0_10px_24px_rgba(255,143,0,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(255,143,0,0.42)] lg:h-[44px] lg:w-[196px] lg:px-0"
             >
               {t("navbar.login")}
             </a>
@@ -121,9 +125,7 @@ export default function LandingNavbar() {
                   {LANGUAGE_FLAGS[activeLanguage.code]}
                 </span>
                 <span
-                  className={`${interExtraBold.className} inline-flex h-[28px] ${
-                    activeLanguage.code === "en" ? "w-[51px]" : "w-auto"
-                  } items-center align-middle text-[13.6px] font-extrabold leading-[28px] tracking-[0.15px]`}
+                  className={`${interExtraBold.className} inline-flex h-[28px] items-center align-middle text-[13.6px] font-extrabold leading-[28px] tracking-[0.15px]`}
                 >
                   {t(activeLanguage.labelKey)}
                 </span>

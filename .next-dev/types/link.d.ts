@@ -33,6 +33,7 @@ declare namespace __next_route_internal_types__ {
 
   type StaticRoutes = 
     | `/`
+    | `/admin`
     | `/dashboard`
     | `/dashboard/explorer`
     | `/dashboard/explorer/service-details`
@@ -42,6 +43,7 @@ declare namespace __next_route_internal_types__ {
     | `/dashboard/settings/privacy-policy`
     | `/guestbook`
     | `/login`
+    | `/neutral`
     | `/profile`
     | `/register`
   type DynamicRoutes<T extends string = string> = 

@@ -124,7 +124,7 @@ export default function DigitalSanctuary() {
             </ul>
 
             <p className="mt-8 text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#16a08a]">
-              Trusted by 10,000+ users
+              Trauma-informed and privacy-first
             </p>
           </article>
 
@@ -147,7 +147,7 @@ export default function DigitalSanctuary() {
             <SanctuaryMeta
               icon={<IconAlertTriangle size={16} stroke={2} />}
               title="Not Emergency"
-              description="We cannot replace 911/999. In immediate danger, call authorities."
+              description="We cannot replace emergency services. In immediate danger, call 000."
               danger
             />
           </div>

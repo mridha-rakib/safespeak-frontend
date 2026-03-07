@@ -14,21 +14,21 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$lea
 ;
 ;
 const CENTER = [
-    50.1109,
-    8.6821
+    -33.8688,
+    151.2093
 ];
 const HOTSPOTS = [
     [
-        50.1118,
-        8.666
+        -33.8742,
+        151.2064
     ],
     [
-        50.1081,
-        8.6833
+        -33.8628,
+        151.2114
     ],
     [
-        50.1132,
-        8.697
+        -33.8709,
+        151.2232
     ]
 ];
 const MapContainerCompat = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$MapContainer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MapContainer"];

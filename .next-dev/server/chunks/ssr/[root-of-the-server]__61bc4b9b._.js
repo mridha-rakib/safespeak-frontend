@@ -173,8 +173,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-i18next/dist/es/useTranslation.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$safe$2d$speak$2d$logo$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/safe-speak-logo.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/i18n.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/safety.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -193,7 +195,7 @@ function NavItem({ href, icon, label, active, showDot = false }) {
                 children: icon
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                lineNumber: 62,
+                lineNumber: 68,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -201,20 +203,20 @@ function NavItem({ href, icon, label, active, showDot = false }) {
                 children: label
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                lineNumber: 65,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             showDot && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 className: "absolute right-2 top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-[#f05353] lg:right-3"
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                lineNumber: 67,
+                lineNumber: 73,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-        lineNumber: 53,
+        lineNumber: 59,
         columnNumber: 5
     }, this);
 }
@@ -232,7 +234,7 @@ function Sidebar({ activeTab }) {
                         className: "hidden lg:inline-flex"
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 79,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -242,18 +244,18 @@ function Sidebar({ activeTab }) {
                             size: "lg"
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                            lineNumber: 85,
+                            lineNumber: 91,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 84,
+                        lineNumber: 90,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                lineNumber: 78,
+                lineNumber: 84,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -265,14 +267,14 @@ function Sidebar({ activeTab }) {
                             size: 12
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                            lineNumber: 92,
+                            lineNumber: 98,
                             columnNumber: 17
                         }, void 0),
                         label: t("dashboard.nav.home"),
                         active: activeTab === "home"
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 90,
+                        lineNumber: 96,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavItem, {
@@ -281,14 +283,14 @@ function Sidebar({ activeTab }) {
                             size: 12
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                            lineNumber: 98,
+                            lineNumber: 104,
                             columnNumber: 17
                         }, void 0),
                         label: t("dashboard.nav.explorer"),
                         active: activeTab === "explorer"
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 96,
+                        lineNumber: 102,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavItem, {
@@ -297,7 +299,7 @@ function Sidebar({ activeTab }) {
                             size: 12
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                            lineNumber: 104,
+                            lineNumber: 110,
                             columnNumber: 17
                         }, void 0),
                         label: t("dashboard.nav.notifications"),
@@ -305,13 +307,13 @@ function Sidebar({ activeTab }) {
                         showDot: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 102,
+                        lineNumber: 108,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                lineNumber: 89,
+                lineNumber: 95,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -322,25 +324,25 @@ function Sidebar({ activeTab }) {
                         size: 12
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 114,
+                        lineNumber: 120,
                         columnNumber: 17
                     }, void 0),
                     label: t("dashboard.nav.settings"),
                     active: activeTab === "settings"
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                    lineNumber: 112,
+                    lineNumber: 118,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                lineNumber: 111,
+                lineNumber: 117,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-        lineNumber: 77,
+        lineNumber: 83,
         columnNumber: 5
     }, this);
 }
@@ -361,64 +363,84 @@ function EmergencyToolbar() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex flex-wrap items-center gap-2",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "inline-flex max-w-full items-center gap-2 whitespace-nowrap rounded-full bg-[#de3838] px-3 py-1.5 text-[10px] font-bold text-white sm:px-4 sm:text-[11px]",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: `tel:${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["EMERGENCY_NUMBER"]}`,
+                        className: "inline-flex h-11 max-w-full items-center gap-2 whitespace-nowrap rounded-full bg-[#de3838] px-3 py-1.5 text-[10px] font-bold text-white sm:px-4 sm:text-[11px]",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconAlertCircleFilled$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconAlertCircleFilled$3e$__["IconAlertCircleFilled"], {
                                 size: 13
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                                lineNumber: 147,
+                                lineNumber: 156,
                                 columnNumber: 11
                             }, this),
-                            t("dashboard.toolbar.emergencyCall"),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                type: "button",
-                                onClick: ()=>void toggleLanguage(),
-                                className: "inline-flex items-center gap-1 rounded-full bg-white/15 px-2 py-0.5 text-[10px]",
-                                "aria-label": t("navbar.language.chooseLanguage"),
-                                children: [
-                                    activeLanguage.shortCode,
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronDown$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronDown$3e$__["IconChevronDown"], {
-                                        size: 10
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                                        lineNumber: 156,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                            t("dashboard.toolbar.emergencyCall")
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                        lineNumber: 152,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: `tel:${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SUPPORT_NUMBER_DIAL"]}`,
+                        className: "inline-flex h-11 items-center rounded-full bg-[#0f5d9f] px-4 text-[10px] font-bold uppercase tracking-[0.08em] text-white",
+                        children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SUPPORT_NUMBER_DISPLAY"]
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                        lineNumber: 160,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        onClick: ()=>void toggleLanguage(),
+                        className: "inline-flex h-11 items-center gap-1 rounded-full bg-[#1f2a3a] px-2.5 text-[10px] font-bold text-white",
+                        "aria-label": t("navbar.language.chooseLanguage"),
+                        children: [
+                            activeLanguage.shortCode,
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronDown$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronDown$3e$__["IconChevronDown"], {
+                                size: 10
+                            }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                                lineNumber: 149,
+                                lineNumber: 174,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 146,
+                        lineNumber: 167,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: "inline-flex h-8 items-center gap-1.5 whitespace-nowrap rounded-full bg-[#de3838] px-5 text-[11px] font-extrabold uppercase tracking-[0.08em] text-white transition hover:bg-[#cf3131]",
+                        type: "button",
+                        onClick: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["triggerQuickExit"],
+                        className: "inline-flex h-11 items-center gap-1.5 whitespace-nowrap rounded-full bg-[#de3838] px-5 text-[11px] font-extrabold uppercase tracking-[0.08em] text-white transition hover:bg-[#cf3131]",
                         children: [
                             t("dashboard.toolbar.quickExit"),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconFolderFilled$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconFolderFilled$3e$__["IconFolderFilled"], {
                                 size: 12
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                                lineNumber: 162,
+                                lineNumber: 183,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 160,
+                        lineNumber: 177,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "inline-flex h-8 items-center rounded-full border border-[#c3d2e6] bg-[#ffffffcc] px-3 text-[10px] font-semibold uppercase tracking-[0.08em] text-[#334155]",
+                        children: "Safety info only"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                        lineNumber: 186,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                lineNumber: 145,
+                lineNumber: 151,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -429,7 +451,7 @@ function EmergencyToolbar() {
                         children: t("dashboard.toolbar.welcomeBack")
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 167,
+                        lineNumber: 192,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -437,19 +459,19 @@ function EmergencyToolbar() {
                         children: t("dashboard.toolbar.userName")
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 170,
+                        lineNumber: 195,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                lineNumber: 166,
+                lineNumber: 191,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-        lineNumber: 144,
+        lineNumber: 150,
         columnNumber: 5
     }, this);
 }
@@ -463,7 +485,7 @@ function DashboardShell({ activeTab, homeView, children }) {
                 activeTab: activeTab
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                lineNumber: 216,
+                lineNumber: 241,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -473,25 +495,25 @@ function DashboardShell({ activeTab, homeView, children }) {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(EmergencyToolbar, {}, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                            lineNumber: 222,
+                            lineNumber: 247,
                             columnNumber: 11
                         }, this),
                         children
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                    lineNumber: 221,
+                    lineNumber: 246,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                lineNumber: 218,
+                lineNumber: 243,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-        lineNumber: 213,
+        lineNumber: 238,
         columnNumber: 5
     }, this);
 }

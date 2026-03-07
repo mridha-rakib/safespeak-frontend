@@ -35,7 +35,7 @@ const resources = {
           whatYouCanDoWithSafeSpeak: "What You Can Do with SafeSpeak",
           contactUs: "Contact Us",
         },
-        login: "Login",
+        login: "Start Secure Report",
         language: {
           english: "English",
           spanish: "Spanish",
@@ -43,10 +43,10 @@ const resources = {
         },
       },
       hero: {
-        titleAccent: "AN APP",
-        titleMain: "THAT TALKS FOR YOU",
-        titleSecondLine: "EMPOWERS YOU",
-        subtitle: "Download the app now from our iOS & Android store.",
+        titleAccent: "REPORT RACISM",
+        titleMain: "SAFELY",
+        titleSecondLine: "& ANONYMOUSLY",
+        subtitle: "Your voice matters. Your privacy is protected.",
         alt: {
           sphere: "SafeSpeak sphere background",
           indicator: "Download indicator arrow",
@@ -59,7 +59,7 @@ const resources = {
       },
       footer: {
         tagline:
-          "Helps you build strength, lose fat, and stay fit with expert guidance and science-backed training designed for lasting results.",
+          "SafeSpeak helps you report safely, understand your options, and connect with support without exposing your identity.",
         social: {
           facebook: "Facebook",
           instagram: "Instagram",
@@ -67,14 +67,14 @@ const resources = {
         },
         quickLinksTitle: "Quick Links",
         aboutUs: "About us",
-        whatDoesItDo: "What does it do",
-        testimonials: "Testimonials",
-        gallery: "Gallery",
+        whatDoesItDo: "Safety features",
+        testimonials: "Stories",
+        gallery: "How it works",
         contactTitle: "Contact",
-        addressLine1: "Pure Training West,",
-        addressLine2: "SolmsstraBe 18, 60486",
-        email: "info@personaltrainer101.com",
-        phone: "+49177-384-0426",
+        addressLine1: "SafeSpeak NSW,",
+        addressLine2: "Sydney, Australia",
+        email: "support@safespeak.au",
+        phone: "+61 1800 737 732",
         copyright: "(c) 2025 SafeSpeak. All rights reserved.",
         privacyPolicy: "Privacy Policy",
         termsOfUse: "Terms of Use",
@@ -135,14 +135,14 @@ const resources = {
             multiLingual: {
               title: "Multilingual",
               description:
-                "Native support for 12+ languages. We speak your language, so you are heard clearly.",
+                "Support is currently available in English and Spanish, with additional language packs planned.",
               languageTag: "EN",
             },
             quickExit: {
               title: "Quick Exit",
               description:
                 "Instant disguise mode with a single tap. Protect your privacy immediately when needed.",
-              action: "Convert mode ready",
+              action: "Quick exit ready",
             },
             multiInput: {
               title: "Multi-Input",
@@ -215,12 +215,12 @@ const resources = {
           title: "FAQ",
           heading: "Help & FAQ",
           emergencyNotice: "Emergency & Legal Notice",
-          immediateDanger: "In immediate danger call",
+          immediateDanger: "In immediate danger, call",
           emergencyNumber: "000",
-          supportLabel: "Domestic violence support",
-          supportNumber: "1800 RESPECT",
+          supportLabel: "24/7 support",
+          supportNumber: "1800RESPECT",
           disclaimer:
-            "Disclaimer: The information provided on this website does not constitute legal advice and is for general informational purposes only. If you require legal assistance, please contact a qualified solicitor or legal aid service in your state or territory. If you are using a shared device.",
+            "This platform provides information only, not legal advice. If you need legal help, contact a qualified solicitor or legal aid service in your state or territory. If using a shared device, use Quick Exit when needed.",
           ctaTag: "Secure & Anonymous",
           ctaTitle: "Get Started Today",
           ctaDescription:
@@ -274,7 +274,7 @@ const resources = {
           settings: "Settings",
         },
         toolbar: {
-          emergencyCall: "In case of emergency call (000)",
+          emergencyCall: "Emergency: 000",
           quickExit: "Quick Exit",
           welcomeBack: "Welcome Back",
           userName: "Alex Rivera",
@@ -888,7 +888,7 @@ const resources = {
           whatYouCanDoWithSafeSpeak: "Lo que puedes hacer con SafeSpeak",
           contactUs: "Contactanos",
         },
-        login: "Iniciar sesion",
+        login: "Iniciar reporte seguro",
         language: {
           english: "Ingles",
           spanish: "Espanol",
@@ -896,10 +896,10 @@ const resources = {
         },
       },
       hero: {
-        titleAccent: "UNA APP",
-        titleMain: "QUE HABLA POR TI",
-        titleSecondLine: "TE DA PODER",
-        subtitle: "Descarga la app ahora en nuestra tienda de iOS y Android.",
+        titleAccent: "REPORTA RACISMO",
+        titleMain: "DE FORMA SEGURA",
+        titleSecondLine: "Y ANONIMA",
+        subtitle: "Tu voz importa. Tu privacidad esta protegida.",
         alt: {
           sphere: "Fondo de esfera de SafeSpeak",
           indicator: "Flecha de descarga",
@@ -912,7 +912,7 @@ const resources = {
       },
       footer: {
         tagline:
-          "Te ayuda a ganar fuerza, perder grasa y mantenerte en forma con guia experta y entrenamiento respaldado por la ciencia para resultados duraderos.",
+          "SafeSpeak te ayuda a reportar de forma segura, entender tus opciones y conectar con apoyo sin exponer tu identidad.",
         social: {
           facebook: "Facebook",
           instagram: "Instagram",
@@ -920,14 +920,14 @@ const resources = {
         },
         quickLinksTitle: "Enlaces rapidos",
         aboutUs: "Sobre nosotros",
-        whatDoesItDo: "Que hace",
-        testimonials: "Testimonios",
-        gallery: "Galeria",
+        whatDoesItDo: "Funciones de seguridad",
+        testimonials: "Historias",
+        gallery: "Como funciona",
         contactTitle: "Contacto",
-        addressLine1: "Pure Training West,",
-        addressLine2: "SolmsstraBe 18, 60486",
-        email: "info@personaltrainer101.com",
-        phone: "+49177-384-0426",
+        addressLine1: "SafeSpeak NSW,",
+        addressLine2: "Sydney, Australia",
+        email: "support@safespeak.au",
+        phone: "+61 1800 737 732",
         copyright: "(c) 2025 SafeSpeak. Todos los derechos reservados.",
         privacyPolicy: "Politica de privacidad",
         termsOfUse: "Terminos de uso",
@@ -988,14 +988,14 @@ const resources = {
             multiLingual: {
               title: "Multi-idioma",
               description:
-                "Soporte nativo para mas de 12 idiomas. Hablamos tu idioma para que te escuchen con claridad.",
+                "Soporte disponible actualmente en ingles y espanol, con mas idiomas planificados.",
               languageTag: "ES",
             },
             quickExit: {
               title: "Salida rapida",
               description:
                 "Modo encubierto instantaneo con un solo toque. Protege tu privacidad de inmediato cuando lo necesites.",
-              action: "Modo encubierto listo",
+              action: "Salida rapida lista",
             },
             multiInput: {
               title: "Entrada multiple",
@@ -1068,12 +1068,12 @@ const resources = {
           title: "Preguntas frecuentes",
           heading: "Ayuda y FAQ",
           emergencyNotice: "Aviso de emergencia y legal",
-          immediateDanger: "En peligro inmediato llama",
+          immediateDanger: "En peligro inmediato, llama al",
           emergencyNumber: "000",
-          supportLabel: "Soporte por violencia domestica",
-          supportNumber: "1800 RESPECT",
+          supportLabel: "Apoyo 24/7",
+          supportNumber: "1800RESPECT",
           disclaimer:
-            "Aviso: La informacion en este sitio web no constituye asesoramiento legal y se ofrece solo con fines informativos generales. Si necesitas asistencia legal, contacta a un abogado calificado o a un servicio de ayuda legal en tu estado o territorio. Si usas un dispositivo compartido.",
+            "Esta plataforma ofrece solo informacion, no asesoria legal. Si necesitas ayuda legal, contacta a un abogado calificado o servicio de asistencia legal de tu estado o territorio. Si usas un dispositivo compartido, usa Salida rapida cuando sea necesario.",
           ctaTag: "Seguro y anonimo",
           ctaTitle: "Comienza hoy",
           ctaDescription:
@@ -1127,7 +1127,7 @@ const resources = {
           settings: "Configuracion",
         },
         toolbar: {
-          emergencyCall: "En caso de emergencia llama al (000)",
+          emergencyCall: "Emergencia: 000",
           quickExit: "Salida rapida",
           welcomeBack: "Bienvenido de nuevo",
           userName: "Alex Rivera",

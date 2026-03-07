@@ -23,6 +23,12 @@ import {
   type SupportedLanguage,
   isSupportedLanguage,
 } from "@/lib/i18n";
+import {
+  EMERGENCY_NUMBER,
+  SUPPORT_NUMBER_DIAL,
+  SUPPORT_NUMBER_DISPLAY,
+  triggerQuickExit,
+} from "@/lib/safety";
 import { cn } from "@/lib/utils";
 
 import type { DashboardTab, HomeView } from "./dashboard-types";
@@ -143,24 +149,43 @@ function EmergencyToolbar() {
   return (
     <div className="mx-auto flex max-w-[1120px] flex-col gap-2 px-3 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:px-4">
       <div className="flex flex-wrap items-center gap-2">
-        <div className="inline-flex max-w-full items-center gap-2 whitespace-nowrap rounded-full bg-[#de3838] px-3 py-1.5 text-[10px] font-bold text-white sm:px-4 sm:text-[11px]">
+        <a
+          href={`tel:${EMERGENCY_NUMBER}`}
+          className="inline-flex h-11 max-w-full items-center gap-2 whitespace-nowrap rounded-full bg-[#de3838] px-3 py-1.5 text-[10px] font-bold text-white sm:px-4 sm:text-[11px]"
+        >
           <IconAlertCircleFilled size={13} />
           {t("dashboard.toolbar.emergencyCall")}
-          <button
-            type="button"
-            onClick={() => void toggleLanguage()}
-            className="inline-flex items-center gap-1 rounded-full bg-white/15 px-2 py-0.5 text-[10px]"
-            aria-label={t("navbar.language.chooseLanguage")}
-          >
-            {activeLanguage.shortCode}
-            <IconChevronDown size={10} />
-          </button>
-        </div>
+        </a>
 
-        <button className="inline-flex h-8 items-center gap-1.5 whitespace-nowrap rounded-full bg-[#de3838] px-5 text-[11px] font-extrabold uppercase tracking-[0.08em] text-white transition hover:bg-[#cf3131]">
+        <a
+          href={`tel:${SUPPORT_NUMBER_DIAL}`}
+          className="inline-flex h-11 items-center rounded-full bg-[#0f5d9f] px-4 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
+        >
+          {SUPPORT_NUMBER_DISPLAY}
+        </a>
+
+        <button
+          type="button"
+          onClick={() => void toggleLanguage()}
+          className="inline-flex h-11 items-center gap-1 rounded-full bg-[#1f2a3a] px-2.5 text-[10px] font-bold text-white"
+          aria-label={t("navbar.language.chooseLanguage")}
+        >
+          {activeLanguage.shortCode}
+          <IconChevronDown size={10} />
+        </button>
+
+        <button
+          type="button"
+          onClick={triggerQuickExit}
+          className="inline-flex h-11 items-center gap-1.5 whitespace-nowrap rounded-full bg-[#de3838] px-5 text-[11px] font-extrabold uppercase tracking-[0.08em] text-white transition hover:bg-[#cf3131]"
+        >
           {t("dashboard.toolbar.quickExit")}
           <IconFolderFilled size={12} />
         </button>
+
+        <span className="inline-flex h-8 items-center rounded-full border border-[#c3d2e6] bg-[#ffffffcc] px-3 text-[10px] font-semibold uppercase tracking-[0.08em] text-[#334155]">
+          Safety info only
+        </span>
       </div>
 
       <div className="self-end text-right">

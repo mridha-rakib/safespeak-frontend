@@ -402,7 +402,7 @@ function DigitalSanctuary() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "mt-8 text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#16a08a]",
-                                    children: "Trusted by 10,000+ users"
+                                    children: "Trauma-informed and privacy-first"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
                                     lineNumber: 126,
@@ -475,7 +475,7 @@ function DigitalSanctuary() {
                                         columnNumber: 21
                                     }, void 0),
                                     title: "Not Emergency",
-                                    description: "We cannot replace 911/999. In immediate danger, call authorities.",
+                                    description: "We cannot replace emergency services. In immediate danger, call 000.",
                                     danger: true
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/digital-sanctuary.tsx",
@@ -941,6 +941,7 @@ const stories = [
 ];
 function RealStoriesSupport() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "stories",
         className: "mx-auto w-full max-w-[1440px] bg-white px-4 py-16 sm:px-8 sm:py-20 lg:h-[732px] lg:px-8 lg:py-[120px]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "mx-auto flex h-full w-full max-w-[1280px] flex-col",
@@ -953,7 +954,7 @@ function RealStoriesSupport() {
                             children: "Real stories, real support"
                         }, void 0, false, {
                             fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                            lineNumber: 50,
+                            lineNumber: 53,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -961,13 +962,13 @@ function RealStoriesSupport() {
                             children: "See how others found their voice and safety through our community."
                         }, void 0, false, {
                             fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                            lineNumber: 55,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                    lineNumber: 49,
+                    lineNumber: 52,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -984,12 +985,12 @@ function RealStoriesSupport() {
                                                 stroke: 2.2
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                                lineNumber: 72,
+                                                lineNumber: 75,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                            lineNumber: 71,
+                                            lineNumber: 74,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1001,13 +1002,13 @@ function RealStoriesSupport() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 77,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                    lineNumber: 70,
+                                    lineNumber: 73,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1018,7 +1019,7 @@ function RealStoriesSupport() {
                                             children: story.initials
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 83,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1028,7 +1029,7 @@ function RealStoriesSupport() {
                                                     children: story.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                                    lineNumber: 86,
+                                                    lineNumber: 89,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1036,36 +1037,36 @@ function RealStoriesSupport() {
                                                     children: story.role
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                                    lineNumber: 89,
+                                                    lineNumber: 92,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                            lineNumber: 85,
+                                            lineNumber: 88,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                                    lineNumber: 79,
+                                    lineNumber: 82,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, story.name, true, {
                             fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                            lineNumber: 62,
+                            lineNumber: 65,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/landing/real-stories-support.tsx",
-                    lineNumber: 60,
+                    lineNumber: 63,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/landing/real-stories-support.tsx",
-            lineNumber: 48,
+            lineNumber: 51,
             columnNumber: 7
         }, this)
     }, void 0, false, {

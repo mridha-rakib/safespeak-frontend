@@ -86,7 +86,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="bg-[#f3f5f7]">
+    <section id="how-it-works" className="bg-[#f3f5f7]">
       <div className="mx-auto w-full max-w-[1440px] px-4 py-12 sm:px-8 sm:py-16 lg:px-20 lg:py-20 min-[1440px]:h-[1184px] min-[1440px]:px-[220px] min-[1440px]:py-[80px]">
         <div className="mx-auto flex h-full w-full max-w-[1000px] flex-col gap-12 sm:gap-14 min-[1440px]:gap-16">
           <h3 className="text-center text-4xl font-semibold text-[#1f2937] sm:text-5xl">

@@ -15,6 +15,7 @@ import { useTranslation } from "react-i18next";
 
 import guidedTriageIcon from "@/assets/guidedTriage.svg";
 import voiceInputIcon from "@/assets/voiceinpu.svg";
+import { triggerQuickExit } from "@/lib/safety";
 
 const outfitBold = Outfit({
   subsets: ["latin"],
@@ -31,7 +32,7 @@ function LanguageSwitcher() {
     <div className="flex h-8 w-[252px] items-center min-[1440px]:absolute min-[1440px]:left-[34px] min-[1440px]:top-[253px]">
       <button
         type="button"
-        className="bg-[#bfeee2]Multilingual flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[14px] font-semibold leading-none text-[#04574b]"
+        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#bfeee2] text-[14px] font-semibold leading-none text-[#04574b]"
         aria-label="English"
       >
         EN
@@ -113,7 +114,11 @@ export default function ResourcesSection() {
               <p className="relative z-10 mt-4 text-sm leading-6 text-white/90">
                 {t("landing.resources.cards.quickExit.description")}
               </p>
-              <button className="relative z-30 mt-auto inline-flex w-fit rounded-full border border-white/35 bg-white/10 px-3 py-2 text-[10px] font-bold uppercase tracking-[0.11em] text-white/95">
+              <button
+                type="button"
+                onClick={triggerQuickExit}
+                className="relative z-30 mt-auto inline-flex w-fit rounded-full border border-white/35 bg-white/10 px-3 py-2 text-[10px] font-bold uppercase tracking-[0.11em] text-white/95"
+              >
                 {t("landing.resources.cards.quickExit.action")}
               </button>
             </div>

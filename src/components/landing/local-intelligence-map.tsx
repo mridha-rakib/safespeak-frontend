@@ -4,11 +4,11 @@ import type { ComponentType } from "react";
 
 import { Circle, MapContainer, TileLayer } from "react-leaflet";
 
-const CENTER: [number, number] = [50.1109, 8.6821];
+const CENTER: [number, number] = [-33.8688, 151.2093];
 const HOTSPOTS: [number, number][] = [
-  [50.1118, 8.666],
-  [50.1081, 8.6833],
-  [50.1132, 8.697],
+  [-33.8742, 151.2064],
+  [-33.8628, 151.2114],
+  [-33.8709, 151.2232],
 ];
 
 const MapContainerCompat = MapContainer as unknown as ComponentType<

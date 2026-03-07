@@ -13,9 +13,12 @@ import { SafeSpeakLogo } from "@/components/ui/safe-speak-logo";
 
 export default function FooterSection() {
   const { t } = useTranslation();
+  const email = t("footer.email");
+  const phone = t("footer.phone");
+  const dialPhone = phone.replace(/[^\d+]/g, "");
 
   return (
-    <footer className="bg-[#0b5fa6]">
+    <footer id="contact-us" className="bg-[#0b5fa6]">
       <div className="landing-shell">
         <div className="mx-auto w-full max-w-[1312px] py-6 sm:py-7 lg:py-8">
           <div className="grid grid-cols-1 gap-y-6 border-b border-white/35 pb-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,484px)] lg:items-start lg:gap-x-16 2xl:grid-cols-[462px_484px] 2xl:gap-x-[366px]">
@@ -57,22 +60,22 @@ export default function FooterSection() {
                 </h4>
                 <ul className="mt-3 space-y-1.5 text-base font-semibold leading-snug text-white/95 sm:text-[18px]">
                   <li>
-                    <a href="#" className="hover:text-white">
+                    <a href="#what-is-safespeak" className="hover:text-white">
                       {t("footer.aboutUs")}
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-white">
+                    <a href="#what-you-can-do" className="hover:text-white">
                       {t("footer.whatDoesItDo")}
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-white">
+                    <a href="#stories" className="hover:text-white">
                       {t("footer.testimonials")}
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-white">
+                    <a href="#how-it-works" className="hover:text-white">
                       {t("footer.gallery")}
                     </a>
                   </li>
@@ -91,15 +94,15 @@ export default function FooterSection() {
                   </p>
                   <p>
                     <a
-                      href="mailto:info@personaltrainer101.com"
+                      href={`mailto:${email}`}
                       className="hover:text-white"
                     >
-                      {t("footer.email")}
+                      {email}
                     </a>
                   </p>
                   <p>
-                    <a href="tel:+491773840426" className="hover:text-white">
-                      {t("footer.phone")}
+                    <a href={`tel:${dialPhone}`} className="hover:text-white">
+                      {phone}
                     </a>
                   </p>
                 </div>

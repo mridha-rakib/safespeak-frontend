@@ -44,7 +44,10 @@ const stories: Story[] = [
 
 export default function RealStoriesSupport() {
   return (
-    <section className="mx-auto w-full max-w-[1440px] bg-white px-4 py-16 sm:px-8 sm:py-20 lg:h-[732px] lg:px-8 lg:py-[120px]">
+    <section
+      id="stories"
+      className="mx-auto w-full max-w-[1440px] bg-white px-4 py-16 sm:px-8 sm:py-20 lg:h-[732px] lg:px-8 lg:py-[120px]"
+    >
       <div className="mx-auto flex h-full w-full max-w-[1280px] flex-col">
         <header className="mx-auto flex flex-col items-center gap-4 text-center">
           <h3
