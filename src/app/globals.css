@@ -61,6 +61,64 @@ body {
   top: 12px;
 }
 
+.site-shell {
+  transition:
+    filter 0.12s ease,
+    opacity 0.12s ease,
+    transform 0.12s ease;
+}
+
+.dashboard-safety-rail {
+  --dashboard-sidebar-width: 72px;
+  --dashboard-shell-padding: 0.5rem;
+  --dashboard-content-max-width: 1184px;
+  --dashboard-content-inline-padding: 0.5rem;
+  --dashboard-safety-rail-x-offset: -12px;
+  left: calc(
+    var(--dashboard-sidebar-width) + var(--dashboard-shell-padding) +
+      max(
+        0px,
+        (
+            100vw - var(--dashboard-sidebar-width) -
+              (var(--dashboard-shell-padding) * 2) -
+              var(--dashboard-content-max-width)
+          ) / 2
+      ) + var(--dashboard-content-inline-padding) +
+      var(--dashboard-safety-rail-x-offset)
+  );
+  width: min(
+    calc(
+      100vw - var(--dashboard-sidebar-width) -
+        (var(--dashboard-shell-padding) * 2) -
+        (var(--dashboard-content-inline-padding) * 2)
+    ),
+    calc(
+      var(--dashboard-content-max-width) -
+        (var(--dashboard-content-inline-padding) * 2)
+    )
+  );
+}
+
+body.quick-exit-active {
+  overflow: hidden;
+}
+
+body.quick-exit-active .site-shell {
+  filter: blur(18px) saturate(0.35);
+  opacity: 0.16;
+  transform: scale(1.01);
+}
+
+body.quick-exit-active::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 130;
+  background: rgba(243, 245, 247, 0.82);
+  backdrop-filter: blur(12px);
+  pointer-events: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -69,6 +127,32 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .dashboard-safety-rail {
+    --dashboard-sidebar-width: 88px;
+    --dashboard-shell-padding: 0.75rem;
+    --dashboard-content-inline-padding: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .dashboard-safety-rail {
+    --dashboard-shell-padding: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard-safety-rail {
+    --dashboard-sidebar-width: 224px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .dashboard-safety-rail {
+    --dashboard-sidebar-width: 256px;
   }
 }
 

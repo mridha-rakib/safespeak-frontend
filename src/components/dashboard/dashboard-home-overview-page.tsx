@@ -15,6 +15,7 @@ import topMask from "@/assets/top-mask.svg?url";
 import topRight from "@/assets/top-right.svg?url";
 
 import { interFont, localIntelligenceMapSrc } from "./dashboard-shared";
+import AssistantSphereAnimated from "./AssistantSphereAnimated";
 import SMDasboardHome from "./sm-dashboard-home";
 
 function HomeDashboardPage() {
@@ -213,11 +214,11 @@ function HomeDashboardPage() {
           href={assistantViewHref}
           className="absolute left-1/2 z-20 hidden -translate-x-1/2 lg:top-[clamp(176px,18vw,195px)] lg:block lg:h-[clamp(184px,19vw,236px)] lg:w-[clamp(184px,19vw,220px)] xl:top-[245px] xl:h-[248px] xl:w-[248px] 2xl:top-[279px] 2xl:h-[270px] 2xl:w-[270px]"
         >
-          <Image
-            src={sphereAdv}
+          <AssistantSphereAnimated
+            imageSrc={sphereAdv}
             alt="SafeSpeak center sphere"
-            fill
-            className="object-contain"
+            particleCount={720}
+            fillParent
           />
         </Link>
       </div>

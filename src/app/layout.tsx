@@ -31,7 +31,7 @@ export default function RootLayout({
           <a href="#main-content" className="skip-link">
             Skip to content
           </a>
-          <main id="main-content" className="pb-24">
+          <main id="main-content" className="site-shell pb-24">
             <Suspense>{children}</Suspense>
           </main>
           <SafetyExperience />

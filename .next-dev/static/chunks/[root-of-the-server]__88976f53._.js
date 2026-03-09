@@ -2749,7 +2749,6 @@ function ProblemSection() {
         t("landing.problem.bullets.3")
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        id: "what-is-safespeak",
         className: "max-w-screen mx-auto w-full bg-[#E1F5FE] lg:min-h-[1200px]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "landing-shell",
@@ -2764,7 +2763,7 @@ function ProblemSection() {
                                 children: t("landing.problem.label")
                             }, void 0, false, {
                                 fileName: "[project]/src/components/landing/problem.tsx",
-                                lineNumber: 26,
+                                lineNumber: 23,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2773,20 +2772,20 @@ function ProblemSection() {
                                     t("landing.problem.titleLine1"),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/components/landing/problem.tsx",
-                                        lineNumber: 31,
+                                        lineNumber: 28,
                                         columnNumber: 15
                                     }, this),
                                     t("landing.problem.titleLine2")
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/landing/problem.tsx",
-                                lineNumber: 29,
+                                lineNumber: 26,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/landing/problem.tsx",
-                        lineNumber: 25,
+                        lineNumber: 22,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2803,12 +2802,12 @@ function ProblemSection() {
                                     priority: true
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/problem.tsx",
-                                    lineNumber: 38,
+                                    lineNumber: 35,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/landing/problem.tsx",
-                                lineNumber: 37,
+                                lineNumber: 34,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2819,7 +2818,7 @@ function ProblemSection() {
                                         children: t("landing.problem.description")
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/landing/problem.tsx",
-                                        lineNumber: 49,
+                                        lineNumber: 46,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2828,12 +2827,12 @@ function ProblemSection() {
                                                 children: item
                                             }, item, false, {
                                                 fileName: "[project]/src/components/landing/problem.tsx",
-                                                lineNumber: 54,
+                                                lineNumber: 51,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/landing/problem.tsx",
-                                        lineNumber: 52,
+                                        lineNumber: 49,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2841,7 +2840,7 @@ function ProblemSection() {
                                         children: t("landing.problem.conclusion")
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/landing/problem.tsx",
-                                        lineNumber: 57,
+                                        lineNumber: 54,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2851,35 +2850,35 @@ function ProblemSection() {
                                             children: t("landing.problem.reportNow")
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/problem.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 58,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/landing/problem.tsx",
-                                        lineNumber: 60,
+                                        lineNumber: 57,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/landing/problem.tsx",
-                                lineNumber: 48,
+                                lineNumber: 45,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/landing/problem.tsx",
-                        lineNumber: 36,
+                        lineNumber: 33,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/landing/problem.tsx",
-                lineNumber: 24,
+                lineNumber: 21,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/landing/problem.tsx",
-            lineNumber: 23,
+            lineNumber: 20,
             columnNumber: 7
         }, this)
     }, void 0, false, {

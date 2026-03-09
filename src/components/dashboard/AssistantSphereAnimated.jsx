@@ -142,11 +142,15 @@ export default function AssistantSphereAnimated({
   imageSrc = sphereAdv,
   alt = "SafeSpeak assistant sphere",
   particleCount = 900,
+  fillParent = false,
   className = "",
 }) {
   const resolvedImageSrc = resolveImageSrc(imageSrc);
+  const baseSizeClassName = fillParent
+    ? "h-full w-full"
+    : "h-[220px] w-[220px] sm:h-[260px] sm:w-[260px] xl:h-[311.31px] xl:w-[311.31px]";
   const wrapperClassName =
-    `relative h-[220px] w-[220px] sm:h-[260px] sm:w-[260px] xl:h-[311.31px] xl:w-[311.31px] ${styles.wrapper} ${className}`.trim();
+    `relative ${baseSizeClassName} ${styles.wrapper} ${className}`.trim();
 
   return (
     <div className={wrapperClassName}>

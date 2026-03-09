@@ -71,6 +71,8 @@ export function ExplorerServiceDetailsPage({
 }) {
   const { t } = useTranslation();
   const [includeIncidentSummary, setIncludeIncidentSummary] = useState(true);
+  const [isReferralPrepared, setIsReferralPrepared] = useState(false);
+  const [copiedReferral, setCopiedReferral] = useState(false);
   const selectedServiceId: ExplorerServiceId = isExplorerServiceId(serviceId)
     ? serviceId
     : "community-support";
@@ -106,6 +108,31 @@ export function ExplorerServiceDetailsPage({
     },
   };
   const selectedService = serviceMap[selectedServiceId];
+  const phoneValue = t("dashboard.explorer.serviceDetails.phoneValue");
+  const emailValue = t("dashboard.explorer.serviceDetails.emailValue");
+  const referralNotes = [
+    `Warm referral request for ${selectedService.title}.`,
+    includeIncidentSummary
+      ? "Prepared to include: incident summary, immediate safety concerns, and preferred contact method."
+      : "Prepared to include: preferred contact method only.",
+    "SafeSpeak is acting as a guidance and connection layer, not a legal or clinical provider.",
+  ].join(" ");
+  const emailHref = `mailto:${emailValue}?subject=${encodeURIComponent(
+    `Warm referral request - ${selectedService.title}`
+  )}&body=${encodeURIComponent(referralNotes)}`;
+
+  const copyReferralNotes = async () => {
+    if (typeof navigator === "undefined" || !navigator.clipboard) {
+      return;
+    }
+
+    await navigator.clipboard.writeText(referralNotes);
+    setCopiedReferral(true);
+
+    window.setTimeout(() => {
+      setCopiedReferral(false);
+    }, 1800);
+  };
 
   return (
     <div className="px-2 pb-5 pt-2 sm:px-4 sm:pb-8 sm:pt-4">
@@ -216,6 +243,7 @@ export function ExplorerServiceDetailsPage({
 
               <button
                 type="button"
+                onClick={() => setIsReferralPrepared(true)}
                 className="mt-5 inline-flex h-[46px] w-full items-center justify-center gap-2 rounded-full bg-[#ff9800] px-5 text-sm font-extrabold text-white shadow-[0_10px_24px_rgba(255,152,0,0.36)] transition hover:bg-[#eb8d00]"
               >
                 {t("dashboard.explorer.serviceDetails.sendReferral")}
@@ -224,6 +252,56 @@ export function ExplorerServiceDetailsPage({
             </div>
           </div>
         </section>
+
+        {isReferralPrepared ? (
+          <section className="mt-3 rounded-[16px] border border-[#cde7d6] bg-[#f5fff8] px-4 py-5 sm:px-6">
+            <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
+              <div className="max-w-[640px]">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.08em] text-[#15803d]">
+                  Warm referral prepared
+                </p>
+                <h3 className="mt-2 text-2xl font-extrabold leading-tight text-[#1f2a3a]">
+                  {selectedService.title} intake handoff is ready.
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-[#587086]">
+                  {includeIncidentSummary
+                    ? "The referral will include a concise incident summary, immediate safety needs, and the user's preferred contact method."
+                    : "The referral will include the user's preferred contact method only. Incident details can be shared later if the user decides it is safe."}
+                </p>
+                <div className="mt-4 rounded-[14px] border border-[#d8ebe0] bg-white px-4 py-3">
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.08em] text-[#8092aa]">
+                    Referral preview
+                  </p>
+                  <p className="mt-2 text-[12px] leading-[1.65] text-[#42566d]">
+                    {referralNotes}
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid w-full gap-3 sm:grid-cols-3 lg:w-[360px] lg:grid-cols-1">
+                <a
+                  href={`tel:${phoneValue.replace(/\s+/g, "")}`}
+                  className="inline-flex h-11 items-center justify-center rounded-full bg-[#0f5d9f] px-4 text-xs font-bold text-white shadow-[0_10px_22px_rgba(15,93,159,0.24)]"
+                >
+                  Call service
+                </a>
+                <a
+                  href={emailHref}
+                  className="inline-flex h-11 items-center justify-center rounded-full border border-[#d5deea] bg-white px-4 text-xs font-bold text-[#24344d]"
+                >
+                  Email intro
+                </a>
+                <button
+                  type="button"
+                  onClick={() => void copyReferralNotes()}
+                  className="inline-flex h-11 items-center justify-center rounded-full border border-[#d5deea] bg-white px-4 text-xs font-bold text-[#24344d]"
+                >
+                  {copiedReferral ? "Copied" : "Copy summary"}
+                </button>
+              </div>
+            </div>
+          </section>
+        ) : null}
 
         <section className="mt-3 border-t border-[#d6deea] px-1 py-4">
           <button

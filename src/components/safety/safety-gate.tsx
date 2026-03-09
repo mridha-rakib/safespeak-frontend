@@ -95,7 +95,7 @@ export function SafetyGate() {
             onClick={triggerQuickExit}
             className="inline-flex h-11 items-center rounded-full bg-[#111827] px-5 text-xs font-bold uppercase tracking-[0.08em] text-white"
           >
-            Quick Exit
+            Covert Exit
           </button>
           </div>
         </div>

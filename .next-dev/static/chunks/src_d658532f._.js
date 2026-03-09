@@ -133,22 +133,22 @@ const resources = {
                 resources: {
                     cards: {
                         multiLingual: {
-                            title: "Multilingual",
-                            description: "Support is currently available in English and Spanish, with additional language packs planned.",
+                            title: "Multilingual Support",
+                            description: "Culturally responsive guidance in English and Spanish today, with additional language support planned.",
                             languageTag: "EN"
                         },
                         quickExit: {
-                            title: "Quick Exit",
-                            description: "Instant disguise mode with a single tap. Protect your privacy immediately when needed.",
-                            action: "Quick exit ready"
+                            title: "Quick Exit + Safety Mode",
+                            description: "Instant disguise mode, covert state, and rapid exit controls that protect privacy when someone needs to leave fast.",
+                            action: "Covert mode ready"
                         },
                         multiInput: {
-                            title: "Multi-Input",
-                            description: "Document incidents securely in your way using voice, text, or image recording."
+                            title: "Multi-Input Reporting",
+                            description: "Capture incidents using text, voice notes, or images so users can report in the format that feels safest."
                         },
                         guidedTriage: {
-                            title: "Guided Triage",
-                            description: "Smart path to professional support tailored to your specific situation and needs."
+                            title: "Guided Triage & Referrals",
+                            description: "Trauma-informed pathways that help users understand urgency, next steps, and relevant support connections."
                         }
                     }
                 },
@@ -257,7 +257,7 @@ const resources = {
                 },
                 toolbar: {
                     emergencyCall: "Emergency: 000",
-                    quickExit: "Quick Exit",
+                    quickExit: "Covert Exit",
                     welcomeBack: "Welcome Back",
                     userName: "Alex Rivera"
                 },
@@ -880,22 +880,22 @@ const resources = {
                 resources: {
                     cards: {
                         multiLingual: {
-                            title: "Multi-idioma",
-                            description: "Soporte disponible actualmente en ingles y espanol, con mas idiomas planificados.",
+                            title: "Soporte multilingue",
+                            description: "Orientacion culturalmente sensible en ingles y espanol hoy, con mas idiomas planificados.",
                             languageTag: "ES"
                         },
                         quickExit: {
-                            title: "Salida rapida",
-                            description: "Modo encubierto instantaneo con un solo toque. Protege tu privacidad de inmediato cuando lo necesites.",
-                            action: "Salida rapida lista"
+                            title: "Salida rapida + modo seguro",
+                            description: "Modo encubierto instantaneo, estado discreto y controles de salida rapida para proteger la privacidad cuando alguien necesita salir rapido.",
+                            action: "Modo encubierto listo"
                         },
                         multiInput: {
-                            title: "Entrada multiple",
-                            description: "Documenta incidentes de forma segura a tu manera con voz, texto o imagen."
+                            title: "Reporte multientrada",
+                            description: "Registra incidentes con texto, notas de voz o imagenes para que cada persona reporte en el formato que le resulte mas seguro."
                         },
                         guidedTriage: {
-                            title: "Triaje guiado",
-                            description: "Ruta inteligente hacia apoyo profesional adaptado a tu situacion y necesidades."
+                            title: "Triaje guiado y derivaciones",
+                            description: "Rutas informadas por trauma que ayudan a entender la urgencia, los siguientes pasos y las conexiones de apoyo relevantes."
                         }
                     }
                 },
@@ -1004,7 +1004,7 @@ const resources = {
                 },
                 toolbar: {
                     emergencyCall: "Emergencia: 000",
-                    quickExit: "Salida rapida",
+                    quickExit: "Salida encubierta",
                     welcomeBack: "Bienvenido de nuevo",
                     userName: "Alex Rivera"
                 },
@@ -1704,16 +1704,24 @@ __turbopack_context__.s([
     ()=>EMERGENCY_NUMBER,
     "NEUTRAL_ROUTE",
     ()=>NEUTRAL_ROUTE,
+    "QUICK_EXIT_BODY_CLASS",
+    ()=>QUICK_EXIT_BODY_CLASS,
     "SAFETY_GATE_ACK_KEY",
     ()=>SAFETY_GATE_ACK_KEY,
     "SUPPORT_NUMBER_DIAL",
     ()=>SUPPORT_NUMBER_DIAL,
     "SUPPORT_NUMBER_DISPLAY",
     ()=>SUPPORT_NUMBER_DISPLAY,
+    "applyCovertSafetyPresentation",
+    ()=>applyCovertSafetyPresentation,
+    "applyDefaultSafetyPresentation",
+    ()=>applyDefaultSafetyPresentation,
     "launchEmergencyCall",
     ()=>launchEmergencyCall,
     "launchSupportCall",
     ()=>launchSupportCall,
+    "syncSafetyPresentation",
+    ()=>syncSafetyPresentation,
     "triggerQuickExit",
     ()=>triggerQuickExit
 ]);
@@ -1727,8 +1735,46 @@ const EMERGENCY_NUMBER = "000";
 const SUPPORT_NUMBER_DISPLAY = "1800RESPECT";
 const SUPPORT_NUMBER_DIAL = "1800737732";
 const NEUTRAL_ROUTE = "/neutral";
+const QUICK_EXIT_BODY_CLASS = "quick-exit-active";
+const DEFAULT_DOCUMENT_TITLE = "SafeSpeak";
+const COVERT_DOCUMENT_TITLE = "Calculator";
+const DEFAULT_FAVICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3ES%3C/text%3E%3C/svg%3E";
+const COVERT_FAVICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='8' y='6' width='48' height='52' rx='10' fill='%23e2e8f0'/%3E%3Crect x='16' y='14' width='32' height='10' rx='4' fill='%2394a3b8'/%3E%3Cg fill='%2364748b'%3E%3Crect x='16' y='30' width='8' height='8' rx='2'/%3E%3Crect x='28' y='30' width='8' height='8' rx='2'/%3E%3Crect x='40' y='30' width='8' height='8' rx='2'/%3E%3Crect x='16' y='42' width='8' height='8' rx='2'/%3E%3Crect x='28' y='42' width='20' height='8' rx='2'/%3E%3C/g%3E%3C/svg%3E";
 function telUri(phone) {
     return "tel:".concat(phone.replace(/\s+/g, ""));
+}
+function setFavicon(href) {
+    if (typeof document === "undefined") return;
+    let faviconLink = document.querySelector("link[rel='icon']");
+    if (!faviconLink) {
+        faviconLink = document.createElement("link");
+        faviconLink.rel = "icon";
+        document.head.appendChild(faviconLink);
+    }
+    faviconLink.href = href;
+}
+function setDocumentShell(title, favicon, blurActive) {
+    if (typeof document === "undefined") return;
+    document.title = title;
+    setFavicon(favicon);
+    document.body.classList.toggle(QUICK_EXIT_BODY_CLASS, blurActive);
+}
+function applyDefaultSafetyPresentation() {
+    if (typeof document === "undefined") return;
+    setDocumentShell(DEFAULT_DOCUMENT_TITLE, DEFAULT_FAVICON, false);
+}
+function applyCovertSafetyPresentation() {
+    let { blurActive = false } = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
+    if (typeof document === "undefined") return;
+    setDocumentShell(COVERT_DOCUMENT_TITLE, COVERT_FAVICON, blurActive);
+}
+function syncSafetyPresentation(pathname) {
+    if (typeof document === "undefined") return;
+    if (pathname.startsWith(NEUTRAL_ROUTE)) {
+        applyCovertSafetyPresentation();
+        return;
+    }
+    applyDefaultSafetyPresentation();
 }
 function launchEmergencyCall() {
     if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
@@ -1759,7 +1805,12 @@ function triggerQuickExit() {
     }
     window.sessionStorage.removeItem(SAFETY_GATE_ACK_KEY);
     window.sessionStorage.setItem(COVERT_MODE_KEY, "1");
-    window.location.replace(NEUTRAL_ROUTE);
+    applyCovertSafetyPresentation({
+        blurActive: true
+    });
+    window.setTimeout(()=>{
+        window.location.replace(NEUTRAL_ROUTE);
+    }, 90);
 }
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
@@ -1902,7 +1953,7 @@ function SafetyGate() {
                                     type: "button",
                                     onClick: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["triggerQuickExit"],
                                     className: "inline-flex h-11 items-center rounded-full bg-[#111827] px-5 text-xs font-bold uppercase tracking-[0.08em] text-white",
-                                    children: "Quick Exit"
+                                    children: "Covert Exit"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/safety/safety-gate.tsx",
                                     lineNumber: 93,
@@ -2022,6 +2073,9 @@ var _s = __turbopack_context__.k.signature();
 function isHiddenRoute(pathname) {
     return pathname.startsWith("/neutral");
 }
+function isDashboardRoute(pathname) {
+    return pathname.startsWith("/dashboard");
+}
 function SafetyRail() {
     _s();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
@@ -2054,29 +2108,80 @@ function SafetyRail() {
         document.documentElement.lang = nextLanguage;
     };
     if (isHiddenRoute(pathname)) return null;
+    const railClassName = isDashboardRoute(pathname) ? "dashboard-safety-rail fixed bottom-3 z-[110]" : "fixed bottom-3 left-1/2 z-[110] w-[calc(100%-1rem)] max-w-[980px] -translate-x-1/2";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
         "aria-label": "Safety controls",
-        className: "fixed bottom-3 left-1/2 z-[110] w-[calc(100%-1rem)] max-w-[980px] -translate-x-1/2",
+        className: railClassName,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "rounded-2xl border border-[#1f2937]/50 bg-[#0b1725]/95 px-3 py-3 text-white shadow-[0_14px_30px_rgba(0,0,0,0.35)] sm:px-4",
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-[11px] font-semibold leading-4 text-white/90",
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex flex-col gap-2",
                     children: [
-                        "Safety reminder: If you are in immediate danger, call",
-                        " ",
-                        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["EMERGENCY_NUMBER"],
-                        ". If safe, contact ",
-                        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUPPORT_NUMBER_DISPLAY"],
-                        " (24/7). Information only, not legal advice."
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-[10px] font-black uppercase tracking-[0.14em] text-[#facc15]",
+                            children: "In an Emergency"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/safety/safety-rail.tsx",
+                            lineNumber: 63,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex flex-wrap gap-2",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "inline-flex items-center rounded-full bg-[#7f1d1d]/70 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.08em] text-white",
+                                    children: [
+                                        "Emergency Services: ",
+                                        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["EMERGENCY_NUMBER"]
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/safety/safety-rail.tsx",
+                                    lineNumber: 67,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "inline-flex items-center rounded-full bg-[#0f5d9f]/65 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.08em] text-white",
+                                    children: [
+                                        "Domestic Violence Support: ",
+                                        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUPPORT_NUMBER_DISPLAY"],
+                                        " (24/7)"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/safety/safety-rail.tsx",
+                                    lineNumber: 70,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/safety/safety-rail.tsx",
+                            lineNumber: 66,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "max-w-3xl text-[11px] font-semibold leading-4 text-white/90",
+                            children: "SafeSpeak is a triage and intelligence platform. It is not a substitute for legal or medical advice."
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/safety/safety-rail.tsx",
+                            lineNumber: 74,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "max-w-3xl text-[11px] leading-4 text-white/80",
+                            children: "Information provided is educational only. Always prioritize your immediate safety and seek professional guidance."
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/safety/safety-rail.tsx",
+                            lineNumber: 78,
+                            columnNumber: 11
+                        }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/safety/safety-rail.tsx",
-                    lineNumber: 54,
+                    lineNumber: 62,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mt-2 flex flex-wrap items-center gap-2",
+                    className: "mt-3 flex flex-wrap items-center gap-2",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "tel:".concat(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["EMERGENCY_NUMBER"]),
@@ -2087,7 +2192,7 @@ function SafetyRail() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/safety/safety-rail.tsx",
-                            lineNumber: 61,
+                            lineNumber: 85,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -2096,17 +2201,17 @@ function SafetyRail() {
                             children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUPPORT_NUMBER_DISPLAY"]
                         }, void 0, false, {
                             fileName: "[project]/src/components/safety/safety-rail.tsx",
-                            lineNumber: 67,
+                            lineNumber: 91,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             type: "button",
                             onClick: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["triggerQuickExit"],
                             className: "inline-flex h-10 items-center rounded-full bg-[#111827] px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white",
-                            children: "Quick Exit"
+                            children: "Covert Exit"
                         }, void 0, false, {
                             fileName: "[project]/src/components/safety/safety-rail.tsx",
-                            lineNumber: 73,
+                            lineNumber: 97,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2119,14 +2224,14 @@ function SafetyRail() {
                                     size: 12
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/safety/safety-rail.tsx",
-                                    lineNumber: 86,
+                                    lineNumber: 110,
                                     columnNumber: 13
                                 }, this),
                                 currentLanguage
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/safety/safety-rail.tsx",
-                            lineNumber: 80,
+                            lineNumber: 104,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2136,31 +2241,31 @@ function SafetyRail() {
                                     size: 11
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/safety/safety-rail.tsx",
-                                    lineNumber: 90,
+                                    lineNumber: 114,
                                     columnNumber: 13
                                 }, this),
                                 isCovertModeActive ? "Covert mode on" : "Covert mode ready"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/safety/safety-rail.tsx",
-                            lineNumber: 89,
+                            lineNumber: 113,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/safety/safety-rail.tsx",
-                    lineNumber: 60,
+                    lineNumber: 84,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/safety/safety-rail.tsx",
-            lineNumber: 53,
+            lineNumber: 61,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/safety/safety-rail.tsx",
-        lineNumber: 49,
+        lineNumber: 57,
         columnNumber: 5
     }, this);
 }
@@ -2185,28 +2290,49 @@ __turbopack_context__.s([
     ()=>SafetyExperience
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/safety.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$safety$2f$safety$2d$gate$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/safety/safety-gate.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$safety$2f$safety$2d$rail$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/safety/safety-rail.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 ;
+;
+;
 function SafetyExperience() {
+    _s();
+    const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "SafetyExperience.useEffect": ()=>{
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["syncSafetyPresentation"])(pathname);
+        }
+    }["SafetyExperience.useEffect"], [
+        pathname
+    ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$safety$2f$safety$2d$gate$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SafetyGate"], {}, void 0, false, {
                 fileName: "[project]/src/components/safety/safety-experience.tsx",
-                lineNumber: 9,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$safety$2f$safety$2d$rail$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SafetyRail"], {}, void 0, false, {
                 fileName: "[project]/src/components/safety/safety-experience.tsx",
-                lineNumber: 10,
+                lineNumber: 22,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
+_s(SafetyExperience, "V/ldUoOTYUs0Cb2F6bbxKSn7KxI=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"]
+    ];
+});
 _c = SafetyExperience;
 var _c;
 __turbopack_context__.k.register(_c, "SafetyExperience");

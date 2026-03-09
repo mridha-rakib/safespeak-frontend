@@ -19,8 +19,8 @@ export default function Home() {
         <LandingNavbar />
         <Hero />
         <ResourcesSection />
-        <ProblemSection />
         <DigitalSanctuary />
+        <ProblemSection />
         <PillarsVariant />
         <RealStoriesSupport />
         <HowItWorks />

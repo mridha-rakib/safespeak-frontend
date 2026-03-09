@@ -133,26 +133,26 @@ const resources = {
         resources: {
           cards: {
             multiLingual: {
-              title: "Multilingual",
+              title: "Multilingual Support",
               description:
-                "Support is currently available in English and Spanish, with additional language packs planned.",
+                "Culturally responsive guidance in English and Spanish today, with additional language support planned.",
               languageTag: "EN",
             },
             quickExit: {
-              title: "Quick Exit",
+              title: "Quick Exit + Safety Mode",
               description:
-                "Instant disguise mode with a single tap. Protect your privacy immediately when needed.",
-              action: "Quick exit ready",
+                "Instant disguise mode, covert state, and rapid exit controls that protect privacy when someone needs to leave fast.",
+              action: "Covert mode ready",
             },
             multiInput: {
-              title: "Multi-Input",
+              title: "Multi-Input Reporting",
               description:
-                "Document incidents securely in your way using voice, text, or image recording.",
+                "Capture incidents using text, voice notes, or images so users can report in the format that feels safest.",
             },
             guidedTriage: {
-              title: "Guided Triage",
+              title: "Guided Triage & Referrals",
               description:
-                "Smart path to professional support tailored to your specific situation and needs.",
+                "Trauma-informed pathways that help users understand urgency, next steps, and relevant support connections.",
             },
           },
         },
@@ -275,7 +275,7 @@ const resources = {
         },
         toolbar: {
           emergencyCall: "Emergency: 000",
-          quickExit: "Quick Exit",
+          quickExit: "Covert Exit",
           welcomeBack: "Welcome Back",
           userName: "Alex Rivera",
         },
@@ -986,26 +986,26 @@ const resources = {
         resources: {
           cards: {
             multiLingual: {
-              title: "Multi-idioma",
+              title: "Soporte multilingue",
               description:
-                "Soporte disponible actualmente en ingles y espanol, con mas idiomas planificados.",
+                "Orientacion culturalmente sensible en ingles y espanol hoy, con mas idiomas planificados.",
               languageTag: "ES",
             },
             quickExit: {
-              title: "Salida rapida",
+              title: "Salida rapida + modo seguro",
               description:
-                "Modo encubierto instantaneo con un solo toque. Protege tu privacidad de inmediato cuando lo necesites.",
-              action: "Salida rapida lista",
+                "Modo encubierto instantaneo, estado discreto y controles de salida rapida para proteger la privacidad cuando alguien necesita salir rapido.",
+              action: "Modo encubierto listo",
             },
             multiInput: {
-              title: "Entrada multiple",
+              title: "Reporte multientrada",
               description:
-                "Documenta incidentes de forma segura a tu manera con voz, texto o imagen.",
+                "Registra incidentes con texto, notas de voz o imagenes para que cada persona reporte en el formato que le resulte mas seguro.",
             },
             guidedTriage: {
-              title: "Triaje guiado",
+              title: "Triaje guiado y derivaciones",
               description:
-                "Ruta inteligente hacia apoyo profesional adaptado a tu situacion y necesidades.",
+                "Rutas informadas por trauma que ayudan a entender la urgencia, los siguientes pasos y las conexiones de apoyo relevantes.",
             },
           },
         },
@@ -1128,7 +1128,7 @@ const resources = {
         },
         toolbar: {
           emergencyCall: "Emergencia: 000",
-          quickExit: "Salida rapida",
+          quickExit: "Salida encubierta",
           welcomeBack: "Bienvenido de nuevo",
           userName: "Alex Rivera",
         },

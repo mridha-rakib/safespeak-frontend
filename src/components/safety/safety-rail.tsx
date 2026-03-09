@@ -19,6 +19,10 @@ function isHiddenRoute(pathname: string): boolean {
   return pathname.startsWith("/neutral");
 }
 
+function isDashboardRoute(pathname: string): boolean {
+  return pathname.startsWith("/dashboard");
+}
+
 export function SafetyRail() {
   const pathname = usePathname();
   const { i18n } = useTranslation();
@@ -45,19 +49,39 @@ export function SafetyRail() {
 
   if (isHiddenRoute(pathname)) return null;
 
+  const railClassName = isDashboardRoute(pathname)
+    ? "dashboard-safety-rail fixed bottom-3 z-[110]"
+    : "fixed bottom-3 left-1/2 z-[110] w-[calc(100%-1rem)] max-w-[980px] -translate-x-1/2";
+
   return (
     <aside
       aria-label="Safety controls"
-      className="fixed bottom-3 left-1/2 z-[110] w-[calc(100%-1rem)] max-w-[980px] -translate-x-1/2"
+      className={railClassName}
     >
       <div className="rounded-2xl border border-[#1f2937]/50 bg-[#0b1725]/95 px-3 py-3 text-white shadow-[0_14px_30px_rgba(0,0,0,0.35)] sm:px-4">
-        <p className="text-[11px] font-semibold leading-4 text-white/90">
-          Safety reminder: If you are in immediate danger, call{" "}
-          {EMERGENCY_NUMBER}. If safe, contact {SUPPORT_NUMBER_DISPLAY} (24/7).
-          Information only, not legal advice.
-        </p>
+        <div className="flex flex-col gap-2">
+          <p className="text-[10px] font-black uppercase tracking-[0.14em] text-[#facc15]">
+            In an Emergency
+          </p>
+          <div className="flex flex-wrap gap-2">
+            <span className="inline-flex items-center rounded-full bg-[#7f1d1d]/70 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.08em] text-white">
+              Emergency Services: {EMERGENCY_NUMBER}
+            </span>
+            <span className="inline-flex items-center rounded-full bg-[#0f5d9f]/65 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.08em] text-white">
+              Domestic Violence Support: {SUPPORT_NUMBER_DISPLAY} (24/7)
+            </span>
+          </div>
+          <p className="max-w-3xl text-[11px] font-semibold leading-4 text-white/90">
+            SafeSpeak is a triage and intelligence platform. It is not a
+            substitute for legal or medical advice.
+          </p>
+          <p className="max-w-3xl text-[11px] leading-4 text-white/80">
+            Information provided is educational only. Always prioritize your
+            immediate safety and seek professional guidance.
+          </p>
+        </div>
 
-        <div className="mt-2 flex flex-wrap items-center gap-2">
+        <div className="mt-3 flex flex-wrap items-center gap-2">
           <a
             href={`tel:${EMERGENCY_NUMBER}`}
             className="inline-flex h-10 items-center rounded-full bg-[#dc2626] px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
@@ -75,7 +99,7 @@ export function SafetyRail() {
             onClick={triggerQuickExit}
             className="inline-flex h-10 items-center rounded-full bg-[#111827] px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
           >
-            Quick Exit
+            Covert Exit
           </button>
           <button
             type="button"

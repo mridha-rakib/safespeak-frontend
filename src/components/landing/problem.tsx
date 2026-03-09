@@ -16,10 +16,7 @@ export default function ProblemSection() {
   ];
 
   return (
-    <section
-      id="what-is-safespeak"
-      className="max-w-screen mx-auto w-full bg-[#E1F5FE] lg:min-h-[1200px]"
-    >
+    <section className="max-w-screen mx-auto w-full bg-[#E1F5FE] lg:min-h-[1200px]">
       <div className="landing-shell">
         <div className="landing-content landing-section">
           <div className="w-full">

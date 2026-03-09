@@ -207,9 +207,10 @@ function InnerParticles({ count = 900 }) {
         columnNumber: 5
     }, this);
 }
-function AssistantSphereAnimated({ imageSrc = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$sphere$2d$adv$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$sphere$2d$adv$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"], alt = "SafeSpeak assistant sphere", particleCount = 900, className = "" }) {
+function AssistantSphereAnimated({ imageSrc = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$sphere$2d$adv$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$sphere$2d$adv$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"], alt = "SafeSpeak assistant sphere", particleCount = 900, fillParent = false, className = "" }) {
     const resolvedImageSrc = resolveImageSrc(imageSrc);
-    const wrapperClassName = `relative h-[220px] w-[220px] sm:h-[260px] sm:w-[260px] xl:h-[311.31px] xl:w-[311.31px] ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$dashboard$2f$AssistantSphereAnimated$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].wrapper} ${className}`.trim();
+    const baseSizeClassName = fillParent ? "h-full w-full" : "h-[220px] w-[220px] sm:h-[260px] sm:w-[260px] xl:h-[311.31px] xl:w-[311.31px]";
+    const wrapperClassName = `relative ${baseSizeClassName} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$dashboard$2f$AssistantSphereAnimated$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].wrapper} ${className}`.trim();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: wrapperClassName,
         children: [
@@ -241,17 +242,17 @@ function AssistantSphereAnimated({ imageSrc = __TURBOPACK__imported__module__$5b
                         count: particleCount
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/AssistantSphereAnimated.jsx",
-                        lineNumber: 167,
+                        lineNumber: 171,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/AssistantSphereAnimated.jsx",
-                    lineNumber: 154,
+                    lineNumber: 158,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/AssistantSphereAnimated.jsx",
-                lineNumber: 153,
+                lineNumber: 157,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -261,13 +262,13 @@ function AssistantSphereAnimated({ imageSrc = __TURBOPACK__imported__module__$5b
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$dashboard$2f$AssistantSphereAnimated$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].sphereImage
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/AssistantSphereAnimated.jsx",
-                lineNumber: 172,
+                lineNumber: 176,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/AssistantSphereAnimated.jsx",
-        lineNumber: 152,
+        lineNumber: 156,
         columnNumber: 5
     }, this);
 }

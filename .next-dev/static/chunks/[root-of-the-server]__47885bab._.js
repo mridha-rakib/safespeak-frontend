@@ -764,7 +764,7 @@ __turbopack_context__.n(__turbopack_context__.i("[project]/src/components/dashbo
 "use strict";
 
 /**
- * @license @tabler/icons-react v3.35.0 - MIT
+ * @license @tabler/icons-react v3.36.1 - MIT
  *
  * This source code is licensed under the MIT license.
  * See the LICENSE file in the root directory of this source tree.
@@ -802,7 +802,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$
 "use strict";
 
 /**
- * @license @tabler/icons-react v3.35.0 - MIT
+ * @license @tabler/icons-react v3.36.1 - MIT
  *
  * This source code is licensed under the MIT license.
  * See the LICENSE file in the root directory of this source tree.
@@ -818,7 +818,7 @@ const __iconNode = [
     [
         "path",
         {
-            "d": "M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z",
+            "d": "M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12",
             "key": "svg-0"
         }
     ],
@@ -854,7 +854,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$
 "use strict";
 
 /**
- * @license @tabler/icons-react v3.35.0 - MIT
+ * @license @tabler/icons-react v3.36.1 - MIT
  *
  * This source code is licensed under the MIT license.
  * See the LICENSE file in the root directory of this source tree.
@@ -892,7 +892,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$
 "use strict";
 
 /**
- * @license @tabler/icons-react v3.35.0 - MIT
+ * @license @tabler/icons-react v3.36.1 - MIT
  *
  * This source code is licensed under the MIT license.
  * See the LICENSE file in the root directory of this source tree.
@@ -930,7 +930,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$
 "use strict";
 
 /**
- * @license @tabler/icons-react v3.35.0 - MIT
+ * @license @tabler/icons-react v3.36.1 - MIT
  *
  * This source code is licensed under the MIT license.
  * See the LICENSE file in the root directory of this source tree.
@@ -975,7 +975,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$
 "use strict";
 
 /**
- * @license @tabler/icons-react v3.35.0 - MIT
+ * @license @tabler/icons-react v3.36.1 - MIT
  *
  * This source code is licensed under the MIT license.
  * See the LICENSE file in the root directory of this source tree.
@@ -991,14 +991,14 @@ const __iconNode = [
     [
         "path",
         {
-            "d": "M4 13m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z",
+            "d": "M4 15a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2l0 -3",
             "key": "svg-0"
         }
     ],
     [
         "path",
         {
-            "d": "M15 13m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z",
+            "d": "M15 15a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2l0 -3",
             "key": "svg-1"
         }
     ],
@@ -1027,7 +1027,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$
 "use strict";
 
 /**
- * @license @tabler/icons-react v3.35.0 - MIT
+ * @license @tabler/icons-react v3.36.1 - MIT
  *
  * This source code is licensed under the MIT license.
  * See the LICENSE file in the root directory of this source tree.
