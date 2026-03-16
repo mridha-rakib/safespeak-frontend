@@ -16,6 +16,13 @@ import {
 import { useTranslation } from "react-i18next";
 
 import safeReporting from "@/assets/safe_reporting.svg?url";
+import { useSafeSpeakProfile } from "@/hooks/use-safespeak-profile";
+import {
+  communityOptions,
+  cultureOptions,
+  faithOptions,
+  interpreterLanguageOptions,
+} from "@/lib/safespeak-profile";
 import { cn } from "@/lib/utils";
 
 function SettingsQuickCard({
@@ -50,7 +57,45 @@ function SettingsQuickCard({
 }
 
 export function SettingsPage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const { profile, updateProfile } = useSafeSpeakProfile();
+  const isSpanish =
+    (i18n.resolvedLanguage ?? i18n.language ?? "en").toLowerCase() === "es";
+  const profileCopy = isSpanish
+    ? {
+        profileSaved: "Los cambios se guardan en este dispositivo.",
+        profileEditorTitle: "Preferencias del perfil",
+        profileEditorBody:
+          "Estas selecciones ayudan a adaptar referencias, guiones de llamada y apoyo cultural.",
+        culturalProfile: "Perfil cultural",
+        faithProfile: "Perfil de fe",
+        communityBackground: "Comunidad",
+        interpreterLanguage: "Idioma del interprete",
+        shareProfileInReferral: "Compartir contexto cultural en derivaciones",
+        shareProfileHint:
+          "Incluye tu comunidad, fe e idioma preferido cuando prepares una derivacion.",
+        interpreterPreview: "Los guiones de llamada usaran",
+        referralPreview: "Estado de derivacion",
+        referralEnabled: "Se compartira el contexto del perfil",
+        referralDisabled: "Se ocultara el contexto del perfil",
+      }
+    : {
+        profileSaved: "Changes save on this device.",
+        profileEditorTitle: "Profile preferences",
+        profileEditorBody:
+          "These selections help tailor warm referrals, call scripts, and culturally responsive support.",
+        culturalProfile: "Cultural profile",
+        faithProfile: "Faith profile",
+        communityBackground: "Community background",
+        interpreterLanguage: "Interpreter language",
+        shareProfileInReferral: "Share cultural context in warm referrals",
+        shareProfileHint:
+          "Include your community, faith, and preferred language when a referral is prepared.",
+        interpreterPreview: "Call scripts will use",
+        referralPreview: "Referral status",
+        referralEnabled: "Profile context will be shared",
+        referralDisabled: "Profile context will stay private",
+      };
 
   return (
     <div className="px-2 pb-5 pt-2 sm:px-4 sm:pb-8 sm:pt-4">
@@ -84,17 +129,181 @@ export function SettingsPage() {
               </h2>
               <p className="mt-2 inline-flex items-center gap-1.5 text-sm font-semibold text-white/90">
                 <IconHomeFilled size={12} />
-                Muslim
+                {profile.faithProfile}
               </p>
               <p className="mt-3 max-w-[580px] text-xs leading-[1.45] text-white/80">
                 {t("dashboard.settings.culturalPreference")}
               </p>
             </div>
 
-            <button className="inline-flex h-11 items-center justify-center gap-1 rounded-full bg-white px-6 text-sm font-bold text-[#0e5d9f] shadow-[0_8px_20px_rgba(6,46,80,0.22)] sm:shrink-0">
-              {t("dashboard.settings.change")}
-              <IconChevronRight size={14} />
-            </button>
+            <div className="rounded-[18px] bg-white/12 px-4 py-3 text-white shadow-[0_8px_20px_rgba(6,46,80,0.18)] sm:shrink-0">
+              <p className="text-[10px] font-bold uppercase tracking-[0.08em] text-white/70">
+                {profile.communityBackground}
+              </p>
+              <p className="mt-1 text-sm font-semibold text-white">
+                {profile.interpreterLanguage}
+              </p>
+              <p className="mt-1 text-[10px] text-white/75">
+                {profileCopy.profileSaved}
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article className="mt-4 rounded-[22px] border border-[#dbe4f0] bg-white p-5 shadow-[0_10px_24px_rgba(15,23,42,0.05)] sm:p-6">
+          <div className="flex flex-col gap-5">
+            <div>
+              <h3 className="text-[24px] font-bold leading-tight text-[#1f2a3a]">
+                {profileCopy.profileEditorTitle}
+              </h3>
+              <p className="mt-1 max-w-[720px] text-sm text-[#6a7d94]">
+                {profileCopy.profileEditorBody}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+              <label className="text-sm font-semibold text-[#334155]">
+                {profileCopy.culturalProfile}
+                <select
+                  value={profile.culturalProfile}
+                  onChange={(event) =>
+                    updateProfile((currentProfile) => ({
+                      ...currentProfile,
+                      culturalProfile: event.target.value as (typeof cultureOptions)[number],
+                    }))
+                  }
+                  className="mt-2 h-11 w-full rounded-[12px] border border-[#dbe4f0] bg-[#f8fbff] px-3 text-sm font-medium text-[#1f2a3a] outline-none"
+                >
+                  {cultureOptions.map((option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="text-sm font-semibold text-[#334155]">
+                {profileCopy.faithProfile}
+                <select
+                  value={profile.faithProfile}
+                  onChange={(event) =>
+                    updateProfile((currentProfile) => ({
+                      ...currentProfile,
+                      faithProfile: event.target.value as (typeof faithOptions)[number],
+                    }))
+                  }
+                  className="mt-2 h-11 w-full rounded-[12px] border border-[#dbe4f0] bg-[#f8fbff] px-3 text-sm font-medium text-[#1f2a3a] outline-none"
+                >
+                  {faithOptions.map((option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="text-sm font-semibold text-[#334155]">
+                {profileCopy.communityBackground}
+                <select
+                  value={profile.communityBackground}
+                  onChange={(event) =>
+                    updateProfile((currentProfile) => ({
+                      ...currentProfile,
+                      communityBackground:
+                        event.target.value as (typeof communityOptions)[number],
+                    }))
+                  }
+                  className="mt-2 h-11 w-full rounded-[12px] border border-[#dbe4f0] bg-[#f8fbff] px-3 text-sm font-medium text-[#1f2a3a] outline-none"
+                >
+                  {communityOptions.map((option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="text-sm font-semibold text-[#334155]">
+                {profileCopy.interpreterLanguage}
+                <select
+                  value={profile.interpreterLanguage}
+                  onChange={(event) =>
+                    updateProfile((currentProfile) => ({
+                      ...currentProfile,
+                      interpreterLanguage:
+                        event.target.value as (typeof interpreterLanguageOptions)[number],
+                    }))
+                  }
+                  className="mt-2 h-11 w-full rounded-[12px] border border-[#dbe4f0] bg-[#f8fbff] px-3 text-sm font-medium text-[#1f2a3a] outline-none"
+                >
+                  {interpreterLanguageOptions.map((option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            </div>
+
+            <div className="grid grid-cols-1 gap-3 lg:grid-cols-[1.2fr_0.8fr]">
+              <article className="rounded-[18px] border border-[#dbe4f0] bg-[#f8fbff] p-4">
+                <div className="flex items-center justify-between gap-3">
+                  <div>
+                    <p className="text-sm font-bold text-[#1f2a3a]">
+                      {profileCopy.shareProfileInReferral}
+                    </p>
+                    <p className="mt-1 text-xs text-[#6a7d94]">
+                      {profileCopy.shareProfileHint}
+                    </p>
+                  </div>
+
+                  <button
+                    type="button"
+                    role="switch"
+                    aria-checked={profile.shareProfileInReferral}
+                    onClick={() =>
+                      updateProfile((currentProfile) => ({
+                        ...currentProfile,
+                        shareProfileInReferral:
+                          !currentProfile.shareProfileInReferral,
+                      }))
+                    }
+                    className={cn(
+                      "relative inline-flex h-7 w-12 shrink-0 items-center rounded-full transition-colors",
+                      profile.shareProfileInReferral
+                        ? "bg-[#0f5d9f]"
+                        : "bg-[#cbd5e1]"
+                    )}
+                  >
+                    <span
+                      className={cn(
+                        "h-5 w-5 rounded-full bg-white shadow-[0_1px_2px_rgba(15,23,42,0.35)] transition-transform",
+                        profile.shareProfileInReferral
+                          ? "translate-x-6"
+                          : "translate-x-1"
+                      )}
+                    />
+                  </button>
+                </div>
+              </article>
+
+              <article className="rounded-[18px] border border-[#dbe4f0] bg-white p-4">
+                <p className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#7c8da3]">
+                  {profileCopy.interpreterPreview}
+                </p>
+                <p className="mt-2 text-lg font-extrabold text-[#0f5d9f]">
+                  {profile.interpreterLanguage}
+                </p>
+                <p className="mt-4 text-[10px] font-bold uppercase tracking-[0.08em] text-[#7c8da3]">
+                  {profileCopy.referralPreview}
+                </p>
+                <p className="mt-2 text-sm font-semibold text-[#1f2a3a]">
+                  {profile.shareProfileInReferral
+                    ? profileCopy.referralEnabled
+                    : profileCopy.referralDisabled}
+                </p>
+              </article>
+            </div>
           </div>
         </article>
 
@@ -102,7 +311,7 @@ export function SettingsPage() {
           <SettingsQuickCard
             icon={<IconCompassFilled size={17} />}
             title={t("dashboard.settings.language")}
-            subtitle={t("dashboard.settings.english")}
+            subtitle={profile.interpreterLanguage}
             actionLabel={t("dashboard.settings.update")}
           />
           <SettingsQuickCard

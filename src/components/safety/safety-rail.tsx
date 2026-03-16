@@ -15,6 +15,8 @@ import {
   triggerQuickExit,
 } from "@/lib/safety";
 
+import { SmartDialerModal } from "./smart-dialer-modal";
+
 function isHiddenRoute(pathname: string): boolean {
   return pathname.startsWith("/neutral");
 }
@@ -27,6 +29,7 @@ export function SafetyRail() {
   const pathname = usePathname();
   const { i18n } = useTranslation();
   const [isCovertModeActive, setIsCovertModeActive] = useState(false);
+  const [isSmartDialerOpen, setIsSmartDialerOpen] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -54,68 +57,82 @@ export function SafetyRail() {
     : "fixed bottom-3 left-1/2 z-[110] w-[calc(100%-1rem)] max-w-[980px] -translate-x-1/2";
 
   return (
-    <aside
-      aria-label="Safety controls"
-      className={railClassName}
-    >
-      <div className="rounded-2xl border border-[#1f2937]/50 bg-[#0b1725]/95 px-3 py-3 text-white shadow-[0_14px_30px_rgba(0,0,0,0.35)] sm:px-4">
-        <div className="flex flex-col gap-2">
-          <p className="text-[10px] font-black uppercase tracking-[0.14em] text-[#facc15]">
-            In an Emergency
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <span className="inline-flex items-center rounded-full bg-[#7f1d1d]/70 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.08em] text-white">
-              Emergency Services: {EMERGENCY_NUMBER}
-            </span>
-            <span className="inline-flex items-center rounded-full bg-[#0f5d9f]/65 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.08em] text-white">
-              Domestic Violence Support: {SUPPORT_NUMBER_DISPLAY} (24/7)
+    <>
+      <aside
+        aria-label="Safety controls"
+        className={railClassName}
+      >
+        <div className="rounded-2xl border border-[#1f2937]/50 bg-[#0b1725]/95 px-3 py-3 text-white shadow-[0_14px_30px_rgba(0,0,0,0.35)] sm:px-4">
+          <div className="flex flex-col gap-2">
+            <p className="text-[10px] font-black uppercase tracking-[0.14em] text-[#facc15]">
+              In an Emergency
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="inline-flex items-center rounded-full bg-[#7f1d1d]/70 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.08em] text-white">
+                Emergency Services: {EMERGENCY_NUMBER}
+              </span>
+              <span className="inline-flex items-center rounded-full bg-[#0f5d9f]/65 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.08em] text-white">
+                Domestic Violence Support: {SUPPORT_NUMBER_DISPLAY} (24/7)
+              </span>
+            </div>
+            <p className="max-w-3xl text-[11px] font-semibold leading-4 text-white/90">
+              SafeSpeak is a triage and intelligence platform. It is not a
+              substitute for legal or medical advice.
+            </p>
+            <p className="max-w-3xl text-[11px] leading-4 text-white/80">
+              Information provided is educational only. Always prioritize your
+              immediate safety and seek professional guidance.
+            </p>
+          </div>
+
+          <div className="mt-3 flex flex-wrap items-center gap-2">
+            <a
+              href={`tel:${EMERGENCY_NUMBER}`}
+              className="inline-flex h-10 items-center rounded-full bg-[#dc2626] px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
+            >
+              Emergency {EMERGENCY_NUMBER}
+            </a>
+            <a
+              href={`tel:${SUPPORT_NUMBER_DIAL}`}
+              className="inline-flex h-10 items-center rounded-full bg-[#0f5d9f] px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
+            >
+              {SUPPORT_NUMBER_DISPLAY}
+            </a>
+            <button
+              type="button"
+              onClick={() => setIsSmartDialerOpen(true)}
+              className="inline-flex h-10 items-center rounded-full bg-[#1d4ed8] px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
+            >
+              Smart Dialler
+            </button>
+            <button
+              type="button"
+              onClick={triggerQuickExit}
+              className="inline-flex h-10 items-center rounded-full bg-[#111827] px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
+            >
+              Covert Exit
+            </button>
+            <button
+              type="button"
+              onClick={() => void toggleLanguage()}
+              className="inline-flex h-10 items-center gap-1 rounded-full border border-white/35 bg-transparent px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
+              aria-label="Toggle language"
+            >
+              <IconLanguage size={12} />
+              {currentLanguage}
+            </button>
+            <span className="inline-flex h-10 items-center gap-1 rounded-full border border-[#35a463]/40 bg-[#0b2a1f] px-3 text-[10px] font-semibold uppercase tracking-[0.08em] text-[#9de6ba]">
+              <IconShieldFilled size={11} />
+              {isCovertModeActive ? "Covert mode on" : "Covert mode ready"}
             </span>
           </div>
-          <p className="max-w-3xl text-[11px] font-semibold leading-4 text-white/90">
-            SafeSpeak is a triage and intelligence platform. It is not a
-            substitute for legal or medical advice.
-          </p>
-          <p className="max-w-3xl text-[11px] leading-4 text-white/80">
-            Information provided is educational only. Always prioritize your
-            immediate safety and seek professional guidance.
-          </p>
         </div>
+      </aside>
 
-        <div className="mt-3 flex flex-wrap items-center gap-2">
-          <a
-            href={`tel:${EMERGENCY_NUMBER}`}
-            className="inline-flex h-10 items-center rounded-full bg-[#dc2626] px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
-          >
-            Emergency {EMERGENCY_NUMBER}
-          </a>
-          <a
-            href={`tel:${SUPPORT_NUMBER_DIAL}`}
-            className="inline-flex h-10 items-center rounded-full bg-[#0f5d9f] px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
-          >
-            {SUPPORT_NUMBER_DISPLAY}
-          </a>
-          <button
-            type="button"
-            onClick={triggerQuickExit}
-            className="inline-flex h-10 items-center rounded-full bg-[#111827] px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
-          >
-            Covert Exit
-          </button>
-          <button
-            type="button"
-            onClick={() => void toggleLanguage()}
-            className="inline-flex h-10 items-center gap-1 rounded-full border border-white/35 bg-transparent px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
-            aria-label="Toggle language"
-          >
-            <IconLanguage size={12} />
-            {currentLanguage}
-          </button>
-          <span className="inline-flex h-10 items-center gap-1 rounded-full border border-[#35a463]/40 bg-[#0b2a1f] px-3 text-[10px] font-semibold uppercase tracking-[0.08em] text-[#9de6ba]">
-            <IconShieldFilled size={11} />
-            {isCovertModeActive ? "Covert mode on" : "Covert mode ready"}
-          </span>
-        </div>
-      </div>
-    </aside>
+      <SmartDialerModal
+        isOpen={isSmartDialerOpen}
+        onClose={() => setIsSmartDialerOpen(false)}
+      />
+    </>
   );
 }

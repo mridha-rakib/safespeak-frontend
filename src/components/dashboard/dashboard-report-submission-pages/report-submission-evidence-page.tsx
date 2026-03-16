@@ -9,6 +9,7 @@ import {
   IconChevronLeft,
   IconChevronRight,
   IconClock,
+  IconDownload,
   IconFileText,
   IconFileTypePdf,
   IconFolderFilled,
@@ -26,7 +27,16 @@ type EvidenceItem = {
   name: string;
   sizeLabel: string;
   kind: EvidenceKind;
+  sha256Hash: string;
+  uploadedAt: string;
   status: "attached" | "restored";
+};
+
+type EvidenceAuditEntry = {
+  id: string;
+  action: "attached" | "removed" | "draft-saved" | "restored";
+  detail: string;
+  timestamp: string;
 };
 
 const DRAFT_STORAGE_KEY = "safespeak_report_evidence_draft";
@@ -53,6 +63,41 @@ function inferEvidenceKind(file: File): EvidenceKind {
   }
 
   return "document";
+}
+
+async function computeSha256Hash(file: File): Promise<string> {
+  if (typeof crypto === "undefined" || !crypto.subtle) {
+    return "hash-unavailable";
+  }
+
+  const buffer = await file.arrayBuffer();
+  const digest = await crypto.subtle.digest("SHA-256", buffer);
+
+  return Array.from(new Uint8Array(digest))
+    .map((value) => value.toString(16).padStart(2, "0"))
+    .join("");
+}
+
+function formatEvidenceTimestamp(timestamp: string): string {
+  return new Date(timestamp).toLocaleString([], {
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+  });
+}
+
+function createAuditEntry(
+  action: EvidenceAuditEntry["action"],
+  detail: string,
+  timestamp = new Date().toISOString()
+): EvidenceAuditEntry {
+  return {
+    id: `${action}-${timestamp}-${Math.random().toString(36).slice(2, 8)}`,
+    action,
+    detail,
+    timestamp,
+  };
 }
 
 function EvidenceCard({
@@ -108,6 +153,12 @@ function EvidenceCard({
             {item.name}
           </p>
           <p className="mt-1 text-[10px] text-[#8ea0b8]">{item.sizeLabel}</p>
+          <p className="mt-1 text-[10px] text-[#8ea0b8]">
+            {formatEvidenceTimestamp(item.uploadedAt)}
+          </p>
+          <p className="mt-3 font-mono text-[10px] leading-5 text-[#50627a]">
+            SHA-256 {item.sha256Hash.slice(0, 20)}...
+          </p>
           <div className="mt-4 flex flex-wrap gap-2">
             <span className="inline-flex h-5 items-center rounded-full bg-[#f5f8fc] px-2.5 text-[9px] font-bold uppercase tracking-[0.08em] text-[#66788d]">
               {item.kind}
@@ -135,10 +186,12 @@ function ReportSubmissionEvidencePage() {
   const [description, setDescription] = useState("");
   const [supportMessage, setSupportMessage] = useState("");
   const [attachedFiles, setAttachedFiles] = useState<EvidenceItem[]>([]);
+  const [auditTrail, setAuditTrail] = useState<EvidenceAuditEntry[]>([]);
   const [draftSavedAt, setDraftSavedAt] = useState<string | null>(null);
   const [restoredDraftNotice, setRestoredDraftNotice] = useState<string | null>(
     null
   );
+  const [isHashingEvidence, setIsHashingEvidence] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") {
@@ -155,7 +208,13 @@ function ReportSubmissionEvidencePage() {
       const parsed = JSON.parse(savedDraft) as {
         description?: string;
         supportMessage?: string;
-        attachments?: Array<Pick<EvidenceItem, "name" | "sizeLabel" | "kind">>;
+        attachments?: Array<
+          Pick<
+            EvidenceItem,
+            "name" | "sizeLabel" | "kind" | "sha256Hash" | "uploadedAt"
+          >
+        >;
+        auditTrail?: EvidenceAuditEntry[];
         savedAt?: string;
       };
 
@@ -177,11 +236,23 @@ function ReportSubmissionEvidencePage() {
             name: item.name,
             sizeLabel: item.sizeLabel,
             kind: item.kind,
+            sha256Hash: item.sha256Hash ?? "hash-unavailable",
+            uploadedAt: item.uploadedAt ?? new Date().toISOString(),
             status: "restored",
           }))
         );
+        setAuditTrail(
+          parsed.auditTrail?.length
+            ? parsed.auditTrail
+            : [
+                createAuditEntry(
+                  "restored",
+                  "Draft metadata restored. Evidence files need re-upload."
+                ),
+              ]
+        );
         setRestoredDraftNotice(
-          "Draft text was restored. Re-upload any evidence files before continuing."
+          "Draft text and metadata were restored. Re-upload any evidence files before continuing."
         );
       }
     } catch {
@@ -189,26 +260,58 @@ function ReportSubmissionEvidencePage() {
     }
   }, []);
 
-  const handleFilesSelected = (files: FileList | null) => {
+  const handleFilesSelected = async (files: FileList | null) => {
     if (!files?.length) {
       return;
     }
 
-    const nextItems = Array.from(files).map((file) => ({
-      id: `${file.name}-${file.lastModified}-${Math.random().toString(36).slice(2, 8)}`,
-      name: file.name,
-      sizeLabel: formatFileSize(file.size),
-      kind: inferEvidenceKind(file),
-      status: "attached" as const,
-    }));
+    setIsHashingEvidence(true);
 
-    setAttachedFiles((currentItems) => [...currentItems, ...nextItems]);
+    try {
+      const nextItems = await Promise.all(
+        Array.from(files).map(async (file) => {
+          const uploadedAt = new Date().toISOString();
+
+          return {
+            id: `${file.name}-${file.lastModified}-${Math.random().toString(36).slice(2, 8)}`,
+            name: file.name,
+            sizeLabel: formatFileSize(file.size),
+            kind: inferEvidenceKind(file),
+            sha256Hash: await computeSha256Hash(file),
+            uploadedAt,
+            status: "attached" as const,
+          };
+        })
+      );
+
+      setAttachedFiles((currentItems) => [...currentItems, ...nextItems]);
+      setAuditTrail((currentTrail) => [
+        ...currentTrail,
+        ...nextItems.map((item) =>
+          createAuditEntry(
+            "attached",
+            `${item.name} hashed and attached at ${formatEvidenceTimestamp(item.uploadedAt)}.`
+          )
+        ),
+      ]);
+    } finally {
+      setIsHashingEvidence(false);
+    }
   };
 
   const removeAttachment = (id: string) => {
-    setAttachedFiles((currentItems) =>
-      currentItems.filter((item) => item.id !== id)
-    );
+    setAttachedFiles((currentItems) => {
+      const itemToRemove = currentItems.find((item) => item.id === id);
+
+      if (itemToRemove) {
+        setAuditTrail((currentTrail) => [
+          ...currentTrail,
+          createAuditEntry("removed", `${itemToRemove.name} removed from draft.`),
+        ]);
+      }
+
+      return currentItems.filter((item) => item.id !== id);
+    });
   };
 
   const saveDraft = () => {
@@ -222,11 +325,19 @@ function ReportSubmissionEvidencePage() {
       JSON.stringify({
         description,
         supportMessage,
-        attachments: attachedFiles.map(({ name, sizeLabel, kind }) => ({
+        attachments: attachedFiles.map(
+          ({ name, sizeLabel, kind, sha256Hash, uploadedAt }) => ({
           name,
           sizeLabel,
           kind,
-        })),
+          sha256Hash,
+          uploadedAt,
+          })
+        ),
+        auditTrail: [
+          ...auditTrail,
+          createAuditEntry("draft-saved", "Draft metadata saved locally."),
+        ],
         savedAt: savedAt.toISOString(),
       })
     );
@@ -237,7 +348,45 @@ function ReportSubmissionEvidencePage() {
         minute: "2-digit",
       })
     );
+    setAuditTrail((currentTrail) => [
+      ...currentTrail,
+      createAuditEntry("draft-saved", "Draft metadata saved locally."),
+    ]);
     setRestoredDraftNotice(null);
+  };
+
+  const exportMetadata = () => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const payload = {
+      exportedAt: new Date().toISOString(),
+      description,
+      supportMessage,
+      attachments: attachedFiles.map((item) => ({
+        name: item.name,
+        kind: item.kind,
+        sizeLabel: item.sizeLabel,
+        sha256Hash: item.sha256Hash,
+        uploadedAt: item.uploadedAt,
+        status: item.status,
+      })),
+      auditTrail,
+    };
+
+    const blob = new Blob([JSON.stringify(payload, null, 2)], {
+      type: "application/json",
+    });
+    const objectUrl = window.URL.createObjectURL(blob);
+    const anchor = document.createElement("a");
+
+    anchor.href = objectUrl;
+    anchor.download = "safespeak-evidence-metadata.json";
+    document.body.appendChild(anchor);
+    anchor.click();
+    anchor.remove();
+    window.URL.revokeObjectURL(objectUrl);
   };
 
   return (
@@ -366,6 +515,115 @@ function ReportSubmissionEvidencePage() {
                 </div>
               </article>
             ) : null}
+          </div>
+
+          <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-[1.08fr_0.92fr]">
+            <article className="rounded-[16px] border border-[#dfe7f2] bg-white p-4">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.08em] text-[#7c8da3]">
+                    Chain of Custody
+                  </p>
+                  <p className="mt-1 text-[11px] text-[#6d7f96]">
+                    Local-first metadata for each file stays on this device until
+                    you choose to submit.
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap gap-2">
+                  {isHashingEvidence ? (
+                    <span className="inline-flex h-8 items-center rounded-full bg-[#fff7ed] px-3 text-[10px] font-bold text-[#d97706]">
+                      Hashing evidence...
+                    </span>
+                  ) : null}
+                  <button
+                    type="button"
+                    onClick={exportMetadata}
+                    className="inline-flex h-8 items-center gap-1 rounded-full border border-[#dbe4ef] bg-white px-3 text-[10px] font-semibold text-[#334155]"
+                  >
+                    <IconDownload size={11} />
+                    Export metadata
+                  </button>
+                </div>
+              </div>
+
+              <div className="mt-4 space-y-3">
+                {attachedFiles.length === 0 ? (
+                  <p className="text-[11px] leading-5 text-[#8ea0b8]">
+                    Add a file to generate a SHA-256 hash, timestamp, and local
+                    chain-of-custody record.
+                  </p>
+                ) : (
+                  attachedFiles.map((item) => (
+                    <article
+                      key={`custody-${item.id}`}
+                      className="rounded-[14px] border border-[#e2eaf4] bg-[#f8fbff] px-4 py-3"
+                    >
+                      <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                        <div>
+                          <p className="text-[11px] font-semibold text-[#1f2a3a]">
+                            {item.name}
+                          </p>
+                          <p className="mt-1 text-[10px] text-[#6d7f96]">
+                            {item.sizeLabel} | {formatEvidenceTimestamp(item.uploadedAt)}
+                          </p>
+                        </div>
+                        <span
+                          className={cn(
+                            "inline-flex h-5 items-center rounded-full px-2.5 text-[9px] font-bold uppercase tracking-[0.08em]",
+                            item.status === "restored"
+                              ? "bg-[#fff1e4] text-[#d97706]"
+                              : "bg-[#e8f7ee] text-[#15803d]"
+                          )}
+                        >
+                          {item.status === "restored" ? "Restored metadata" : "Verified"}
+                        </span>
+                      </div>
+                      <p className="mt-3 font-mono text-[10px] leading-5 text-[#50627a] break-all">
+                        {item.sha256Hash}
+                      </p>
+                    </article>
+                  ))
+                )}
+              </div>
+            </article>
+
+            <article className="rounded-[16px] border border-[#dfe7f2] bg-white p-4">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.08em] text-[#7c8da3]">
+                Audit Log
+              </p>
+              <p className="mt-1 text-[11px] text-[#6d7f96]">
+                Every local evidence action is recorded here for later review.
+              </p>
+
+              <div className="mt-4 space-y-3">
+                {auditTrail.length === 0 ? (
+                  <p className="text-[11px] leading-5 text-[#8ea0b8]">
+                    No audit entries yet. Attach, remove, or save a draft to
+                    start the log.
+                  </p>
+                ) : (
+                  [...auditTrail].reverse().map((entry) => (
+                    <article
+                      key={entry.id}
+                      className="rounded-[14px] border border-[#e2eaf4] bg-[#f8fbff] px-4 py-3"
+                    >
+                      <div className="flex items-center justify-between gap-3">
+                        <span className="inline-flex rounded-full bg-[#e8f1ff] px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.08em] text-[#0f5d9f]">
+                          {entry.action.replace("-", " ")}
+                        </span>
+                        <span className="text-[10px] text-[#8ea0b8]">
+                          {formatEvidenceTimestamp(entry.timestamp)}
+                        </span>
+                      </div>
+                      <p className="mt-2 text-[11px] leading-5 text-[#50627a]">
+                        {entry.detail}
+                      </p>
+                    </article>
+                  ))
+                )}
+              </div>
+            </article>
           </div>
 
           <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">

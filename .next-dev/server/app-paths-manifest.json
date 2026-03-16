@@ -1,9 +1,6 @@
 {
   "/dashboard/explorer/page": "app/dashboard/explorer/page.js",
-  "/dashboard/notifications/page": "app/dashboard/notifications/page.js",
+  "/dashboard/explorer/service-details/page": "app/dashboard/explorer/service-details/page.js",
   "/dashboard/page": "app/dashboard/page.js",
-  "/dashboard/settings/page": "app/dashboard/settings/page.js",
-  "/login/page": "app/login/page.js",
-  "/neutral/page": "app/neutral/page.js",
   "/page": "app/page.js"
 }

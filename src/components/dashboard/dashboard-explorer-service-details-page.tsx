@@ -14,6 +14,7 @@ import {
 } from "@tabler/icons-react";
 import { useTranslation } from "react-i18next";
 
+import { useSafeSpeakProfile } from "@/hooks/use-safespeak-profile";
 import { cn } from "@/lib/utils";
 
 const explorerServiceIds = [
@@ -70,6 +71,7 @@ export function ExplorerServiceDetailsPage({
   serviceId?: string;
 }) {
   const { t } = useTranslation();
+  const { profile } = useSafeSpeakProfile();
   const [includeIncidentSummary, setIncludeIncidentSummary] = useState(true);
   const [isReferralPrepared, setIsReferralPrepared] = useState(false);
   const [copiedReferral, setCopiedReferral] = useState(false);
@@ -115,6 +117,10 @@ export function ExplorerServiceDetailsPage({
     includeIncidentSummary
       ? "Prepared to include: incident summary, immediate safety concerns, and preferred contact method."
       : "Prepared to include: preferred contact method only.",
+    `Interpreter preference: ${profile.interpreterLanguage}.`,
+    profile.shareProfileInReferral
+      ? `Cultural context approved for sharing: ${profile.culturalProfile}; faith profile: ${profile.faithProfile}; community background: ${profile.communityBackground}.`
+      : "Cultural profile withheld at the user's request.",
     "SafeSpeak is acting as a guidance and connection layer, not a legal or clinical provider.",
   ].join(" ");
   const emailHref = `mailto:${emailValue}?subject=${encodeURIComponent(
@@ -191,7 +197,7 @@ export function ExplorerServiceDetailsPage({
             <ContactInfoItem
               icon={<IconLanguage size={13} />}
               label={t("dashboard.explorer.serviceDetails.languages")}
-              value={t("dashboard.explorer.serviceDetails.languagesValue")}
+              value={`${t("dashboard.explorer.serviceDetails.languagesValue")} | ${profile.interpreterLanguage}`}
             />
           </div>
         </section>
@@ -211,6 +217,20 @@ export function ExplorerServiceDetailsPage({
             </div>
 
             <div className="w-full max-w-[292px]">
+              <div className="mb-3 rounded-xl bg-white px-3 py-2 shadow-sm ring-1 ring-[#d7deea]">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.08em] text-[#8092aa]">
+                  Profile context
+                </p>
+                <p className="mt-1 text-[12px] font-semibold text-[#273955]">
+                  {profile.culturalProfile} | {profile.faithProfile}
+                </p>
+                <p className="mt-1 text-[10px] text-[#98a6b9]">
+                  {profile.shareProfileInReferral
+                    ? `Warm referral can include ${profile.communityBackground} context and ${profile.interpreterLanguage} interpreter preference.`
+                    : "Warm referral will exclude profile context until you choose to share it."}
+                </p>
+              </div>
+
               <div className="rounded-xl bg-white px-3 py-2 shadow-sm ring-1 ring-[#d7deea]">
                 <div className="flex items-center justify-between gap-3">
                   <div>

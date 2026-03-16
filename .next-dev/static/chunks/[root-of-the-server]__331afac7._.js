@@ -1,0 +1,900 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[next]/internal/font/google/plus_jakarta_sans_f292c225.module.css [app-client] (css module)", ((__turbopack_context__) => {
+
+__turbopack_context__.v({
+  "className": "plus_jakarta_sans_f292c225-module__SFxk2W__className",
+});
+}),
+"[next]/internal/font/google/plus_jakarta_sans_f292c225.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$plus_jakarta_sans_f292c225$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[next]/internal/font/google/plus_jakarta_sans_f292c225.module.css [app-client] (css module)");
+;
+const fontData = {
+    className: __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$plus_jakarta_sans_f292c225$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].className,
+    style: {
+        fontFamily: "'Plus Jakarta Sans', 'Plus Jakarta Sans Fallback'",
+        fontStyle: "normal"
+    }
+};
+if (__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$plus_jakarta_sans_f292c225$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].variable != null) {
+    fontData.variable = __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$plus_jakarta_sans_f292c225$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].variable;
+}
+const __TURBOPACK__default__export__ = fontData;
+}),
+"[project]/src/assets/tickSign.svg (static in ecmascript)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/tickSign.0d669ada.svg");}),
+"[project]/src/assets/tickSign.svg.mjs { IMAGE => \"[project]/src/assets/tickSign.svg (static in ecmascript)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$tickSign$2e$svg__$28$static__in__ecmascript$29$__ = __turbopack_context__.i("[project]/src/assets/tickSign.svg (static in ecmascript)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$tickSign$2e$svg__$28$static__in__ecmascript$29$__["default"],
+    width: 23,
+    height: 23,
+    blurWidth: 0,
+    blurHeight: 0
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/ui/safe-speak-logo.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "SafeSpeakLogo",
+    ()=>SafeSpeakLogo
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$tickSign$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$tickSign$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/tickSign.svg.mjs { IMAGE => "[project]/src/assets/tickSign.svg (static in ecmascript)" } [app-client] (structured image object with data url, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-client] (ecmascript)");
+;
+;
+;
+;
+const logoSizeMap = {
+    sm: {
+        text: "text-[1.5rem]",
+        tick: 20
+    },
+    md: {
+        text: "text-[1.75rem]",
+        tick: 23
+    },
+    lg: {
+        text: "text-[2rem]",
+        tick: 26
+    }
+};
+function SafeSpeakLogo(param) {
+    let { variant = "full", tone = "brand", size = "md", className, textClassName } = param;
+    const { tick, text } = logoSizeMap[size];
+    const toneClass = tone === "brand" ? "text-[#0b5fa6]" : "text-white";
+    if (variant === "mark") {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$tickSign$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$tickSign$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
+            alt: "SafeSpeak tick",
+            width: tick,
+            height: tick,
+            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("shrink-0", className)
+        }, void 0, false, {
+            fileName: "[project]/src/components/ui/safe-speak-logo.tsx",
+            lineNumber: 49,
+            columnNumber: 7
+        }, this);
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("inline-flex flex-col font-extrabold leading-none tracking-normal", text, toneClass, className, textClassName),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex items-start gap-0.5 leading-none",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        children: "Safe"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/ui/safe-speak-logo.tsx",
+                        lineNumber: 70,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$tickSign$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$tickSign$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
+                        alt: "SafeSpeak tick",
+                        width: tick,
+                        height: tick,
+                        className: "shrink-0"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/ui/safe-speak-logo.tsx",
+                        lineNumber: 71,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/ui/safe-speak-logo.tsx",
+                lineNumber: 69,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "leading-none",
+                children: "Speak"
+            }, void 0, false, {
+                fileName: "[project]/src/components/ui/safe-speak-logo.tsx",
+                lineNumber: 79,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/ui/safe-speak-logo.tsx",
+        lineNumber: 60,
+        columnNumber: 5
+    }, this);
+}
+_c = SafeSpeakLogo;
+var _c;
+__turbopack_context__.k.register(_c, "SafeSpeakLogo");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/dashboard/dashboard-layout.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "DashboardShell",
+    ()=>DashboardShell
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$plus_jakarta_sans_f292c225$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[next]/internal/font/google/plus_jakarta_sans_f292c225.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconAlertCircleFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconAlertCircleFilled$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconAlertCircleFilled.mjs [app-client] (ecmascript) <export default as IconAlertCircleFilled>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconBellFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconBellFilled$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconBellFilled.mjs [app-client] (ecmascript) <export default as IconBellFilled>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronDown$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconChevronDown.mjs [app-client] (ecmascript) <export default as IconChevronDown>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconCompassFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconCompassFilled$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconCompassFilled.mjs [app-client] (ecmascript) <export default as IconCompassFilled>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconFolderFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconFolderFilled$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconFolderFilled.mjs [app-client] (ecmascript) <export default as IconFolderFilled>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconHomeFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconHomeFilled$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconHomeFilled.mjs [app-client] (ecmascript) <export default as IconHomeFilled>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconSettingsFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconSettingsFilled$3e$__ = __turbopack_context__.i("[project]/node_modules/@tabler/icons-react/dist/esm/icons/IconSettingsFilled.mjs [app-client] (ecmascript) <export default as IconSettingsFilled>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/react-i18next/dist/es/index.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-i18next/dist/es/useTranslation.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$safe$2d$speak$2d$logo$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/safe-speak-logo.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/i18n.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/safety.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+function NavItem(param) {
+    let { href, icon, label, active, showDot = false } = param;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        href: href,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("relative flex items-center justify-center rounded-full px-2 py-2.5 text-sm font-semibold transition lg:justify-start lg:gap-3 lg:px-4", active ? "bg-[#f6ebda] text-[#f39a22]" : "text-[#60718a] hover:bg-[#eef2f7]"),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "inline-flex h-4 w-4 items-center justify-center",
+                children: icon
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 68,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "hidden lg:inline",
+                children: label
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 71,
+                columnNumber: 7
+            }, this),
+            showDot && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "absolute right-2 top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-[#f05353] lg:right-3"
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 73,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+        lineNumber: 59,
+        columnNumber: 5
+    }, this);
+}
+_c = NavItem;
+function Sidebar(param) {
+    let { activeTab } = param;
+    _s();
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
+        className: "sticky top-0 w-[72px] shrink-0 border-r border-[#d7dee8] bg-[#f8fafc] px-2 py-6 sm:w-[88px] sm:px-3 lg:w-56 lg:px-5 lg:py-8 2xl:h-[1574px] 2xl:w-[256px]",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "px-1 lg:px-2",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$safe$2d$speak$2d$logo$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SafeSpeakLogo"], {
+                        tone: "brand",
+                        size: "md",
+                        className: "hidden lg:inline-flex"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                        lineNumber: 85,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex justify-center lg:hidden",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$safe$2d$speak$2d$logo$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SafeSpeakLogo"], {
+                            variant: "mark",
+                            size: "lg"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                            lineNumber: 91,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                        lineNumber: 90,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 84,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+                className: "mt-6 flex flex-col gap-2 lg:mt-10",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(NavItem, {
+                        href: "/dashboard",
+                        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconHomeFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconHomeFilled$3e$__["IconHomeFilled"], {
+                            size: 12
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                            lineNumber: 98,
+                            columnNumber: 17
+                        }, void 0),
+                        label: t("dashboard.nav.home"),
+                        active: activeTab === "home"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                        lineNumber: 96,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(NavItem, {
+                        href: "/dashboard/explorer",
+                        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconCompassFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconCompassFilled$3e$__["IconCompassFilled"], {
+                            size: 12
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                            lineNumber: 104,
+                            columnNumber: 17
+                        }, void 0),
+                        label: t("dashboard.nav.explorer"),
+                        active: activeTab === "explorer"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                        lineNumber: 102,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(NavItem, {
+                        href: "/dashboard/notifications",
+                        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconBellFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconBellFilled$3e$__["IconBellFilled"], {
+                            size: 12
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                            lineNumber: 110,
+                            columnNumber: 17
+                        }, void 0),
+                        label: t("dashboard.nav.notifications"),
+                        active: activeTab === "notifications",
+                        showDot: true
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                        lineNumber: 108,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 95,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mt-auto",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(NavItem, {
+                    href: "/dashboard/settings",
+                    icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconSettingsFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconSettingsFilled$3e$__["IconSettingsFilled"], {
+                        size: 12
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                        lineNumber: 120,
+                        columnNumber: 17
+                    }, void 0),
+                    label: t("dashboard.nav.settings"),
+                    active: activeTab === "settings"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                    lineNumber: 118,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 117,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+        lineNumber: 83,
+        columnNumber: 5
+    }, this);
+}
+_s(Sidebar, "zlIdU9EjM2llFt74AbE2KsUJXyM=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"]
+    ];
+});
+_c1 = Sidebar;
+function EmergencyToolbar() {
+    _s1();
+    const { t, i18n } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"])();
+    var _i18n_resolvedLanguage, _ref;
+    const resolvedLanguage = (_ref = (_i18n_resolvedLanguage = i18n.resolvedLanguage) !== null && _i18n_resolvedLanguage !== void 0 ? _i18n_resolvedLanguage : i18n.language) !== null && _ref !== void 0 ? _ref : __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DEFAULT_LANGUAGE"];
+    const currentLanguage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isSupportedLanguage"])(resolvedLanguage) ? resolvedLanguage : __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DEFAULT_LANGUAGE"];
+    var _LANGUAGE_OPTIONS_find;
+    const activeLanguage = (_LANGUAGE_OPTIONS_find = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LANGUAGE_OPTIONS"].find((option)=>option.code === currentLanguage)) !== null && _LANGUAGE_OPTIONS_find !== void 0 ? _LANGUAGE_OPTIONS_find : __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LANGUAGE_OPTIONS"][0];
+    const toggleLanguage = async ()=>{
+        const nextLanguage = currentLanguage === "en" ? "es" : "en";
+        await i18n.changeLanguage(nextLanguage);
+        window.localStorage.setItem(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LANGUAGE_STORAGE_KEY"], nextLanguage);
+        document.documentElement.lang = nextLanguage;
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "mx-auto flex max-w-[1120px] flex-col gap-2 px-3 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:px-4",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex flex-wrap items-center gap-2",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "tel:".concat(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["EMERGENCY_NUMBER"]),
+                        className: "inline-flex h-11 max-w-full items-center gap-2 whitespace-nowrap rounded-full bg-[#de3838] px-3 py-1.5 text-[10px] font-bold text-white sm:px-4 sm:text-[11px]",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconAlertCircleFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconAlertCircleFilled$3e$__["IconAlertCircleFilled"], {
+                                size: 13
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                                lineNumber: 156,
+                                columnNumber: 11
+                            }, this),
+                            t("dashboard.toolbar.emergencyCall")
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                        lineNumber: 152,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "tel:".concat(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUPPORT_NUMBER_DIAL"]),
+                        className: "inline-flex h-11 items-center rounded-full bg-[#0f5d9f] px-4 text-[10px] font-bold uppercase tracking-[0.08em] text-white",
+                        children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUPPORT_NUMBER_DISPLAY"]
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                        lineNumber: 160,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        onClick: ()=>void toggleLanguage(),
+                        className: "inline-flex h-11 items-center gap-1 rounded-full bg-[#1f2a3a] px-2.5 text-[10px] font-bold text-white",
+                        "aria-label": t("navbar.language.chooseLanguage"),
+                        children: [
+                            activeLanguage.shortCode,
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconChevronDown$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconChevronDown$3e$__["IconChevronDown"], {
+                                size: 10
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                                lineNumber: 174,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                        lineNumber: 167,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        onClick: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["triggerQuickExit"],
+                        className: "inline-flex h-11 items-center gap-1.5 whitespace-nowrap rounded-full bg-[#de3838] px-5 text-[11px] font-extrabold uppercase tracking-[0.08em] text-white transition hover:bg-[#cf3131]",
+                        children: [
+                            t("dashboard.toolbar.quickExit"),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconFolderFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconFolderFilled$3e$__["IconFolderFilled"], {
+                                size: 12
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                                lineNumber: 183,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                        lineNumber: 177,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "inline-flex h-8 items-center rounded-full border border-[#c3d2e6] bg-[#ffffffcc] px-3 text-[10px] font-semibold uppercase tracking-[0.08em] text-[#334155]",
+                        children: "Safety info only"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                        lineNumber: 186,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 151,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "self-end text-right",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-[9px] font-semibold uppercase tracking-[0.08em] text-[#93a3b8]",
+                        children: t("dashboard.toolbar.welcomeBack")
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                        lineNumber: 192,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-sm font-bold text-[#1f2a3a]",
+                        children: t("dashboard.toolbar.userName")
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                        lineNumber: 195,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 191,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+        lineNumber: 150,
+        columnNumber: 5
+    }, this);
+}
+_s1(EmergencyToolbar, "OZwazanA59tbNDUkc8lMSmTHj9Q=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"]
+    ];
+});
+_c2 = EmergencyToolbar;
+function DashboardShell(param) {
+    let { activeTab, homeView, children } = param;
+    const isIncidentBuilderView = homeView === "assistant" || homeView === "assistantconversation" || homeView === "scamshieldintake" || homeView === "scamshieldrisk" || homeView === "scamshieldassets" || homeView === "scamshieldagency" || homeView === "reportshistory" || homeView === "reportoverview" || homeView === "reportsubmissionsupport" || homeView === "reportsubmissionrecommendations" || homeView === "reportsubmissionhistory" || homeView === "reportsubmissiondetailedexplanations" || homeView === "reportsubmissiondetails" || homeView === "reportsubmissionevidence" || homeView === "reportsubmissionreview" || homeView === "reportsubmissionsuccess";
+    const sectionSizeClass = activeTab === "notifications" ? "xl:mx-auto xl:min-h-[749px] xl:w-full xl:max-w-[1184px]" : activeTab === "home" && isIncidentBuilderView ? "xl:min-h-[868.68px]" : "xl:min-h-[1498px]";
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "".concat(__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$plus_jakarta_sans_f292c225$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].className, " mx-auto flex min-h-screen w-full overflow-x-hidden bg-[#eef3f8]"),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Sidebar, {
+                activeTab: activeTab
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 241,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("min-w-0 flex-1 p-2 sm:p-3 md:p-4", sectionSizeClass),
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "overflow-hidden rounded-[16px] bg-[#edf2f8] sm:rounded-[20px] xl:h-full",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(EmergencyToolbar, {}, void 0, false, {
+                            fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                            lineNumber: 247,
+                            columnNumber: 11
+                        }, this),
+                        children
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                    lineNumber: 246,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 243,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+        lineNumber: 238,
+        columnNumber: 5
+    }, this);
+}
+_c3 = DashboardShell;
+var _c, _c1, _c2, _c3;
+__turbopack_context__.k.register(_c, "NavItem");
+__turbopack_context__.k.register(_c1, "Sidebar");
+__turbopack_context__.k.register(_c2, "EmergencyToolbar");
+__turbopack_context__.k.register(_c3, "DashboardShell");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/dashboard/dashboard-home-screen.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>DashboardHomeScreen
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$dashboard$2f$dashboard$2d$layout$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/dashboard/dashboard-layout.tsx [app-client] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+"use client";
+;
+;
+;
+function DashboardViewFallback() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "px-4 py-6 text-sm text-[#60718a]",
+        children: "Loading..."
+    }, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 9,
+        columnNumber: 10
+    }, this);
+}
+_c = DashboardViewFallback;
+const HomeDashboardPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-home-overview-page.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.HomeDashboardPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-home-overview-page.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c1 = HomeDashboardPage;
+const MicroEducationPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-microeducation-page.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.MicroEducationPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-microeducation-page.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c2 = MicroEducationPage;
+const MicroCardsPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-microcards-pages.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.MicroCardsPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-microcards-pages.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c3 = MicroCardsPage;
+const MicroCardDetailPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-microcards-pages.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.MicroCardDetailPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-microcards-pages.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c4 = MicroCardDetailPage;
+const SafeSpeakAssistantConversationPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-assistant-pages.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.SafeSpeakAssistantConversationPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-assistant-pages.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c5 = SafeSpeakAssistantConversationPage;
+const SafeSpeakAssistantPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-assistant-pages.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.SafeSpeakAssistantPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-assistant-pages.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c6 = SafeSpeakAssistantPage;
+const ScamShieldIntakePage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.ScamShieldIntakePage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c7 = ScamShieldIntakePage;
+const ScamShieldRiskPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.ScamShieldRiskPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c8 = ScamShieldRiskPage;
+const ScamShieldAssetsPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.ScamShieldAssetsPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c9 = ScamShieldAssetsPage;
+const ScamShieldAgencyPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.ScamShieldAgencyPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-scam-shield-pages.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c10 = ScamShieldAgencyPage;
+const ReportsHistoryPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-reports-pages.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.ReportsHistoryPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-reports-pages.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c11 = ReportsHistoryPage;
+const ReportOverviewPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-reports-pages.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.ReportOverviewPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-reports-pages.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c12 = ReportOverviewPage;
+const ReportSubmissionSupportPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-report-submission-pages/report-submission-support-page.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.ReportSubmissionSupportPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-report-submission-pages/report-submission-support-page.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c13 = ReportSubmissionSupportPage;
+const ReportSubmissionRecommendationsPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-report-submission-pages/report-submission-recommendations-page.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.ReportSubmissionRecommendationsPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-report-submission-pages/report-submission-recommendations-page.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c14 = ReportSubmissionRecommendationsPage;
+const ReportSubmissionHistoryPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-report-submission-pages/report-submission-history-page.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.ReportSubmissionHistoryPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-report-submission-pages/report-submission-history-page.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c15 = ReportSubmissionHistoryPage;
+const ReportSubmissionDetailedExplanationsPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-report-submission-pages/report-submission-detailed-explanations-page.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.ReportSubmissionDetailedExplanationsPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-report-submission-pages/report-submission-detailed-explanations-page.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c16 = ReportSubmissionDetailedExplanationsPage;
+const ReportSubmissionDetailsPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-report-submission-pages/report-submission-details-page.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.ReportSubmissionDetailsPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-report-submission-pages/report-submission-details-page.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c17 = ReportSubmissionDetailsPage;
+const ReportSubmissionEvidencePage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-report-submission-pages/report-submission-evidence-page.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.ReportSubmissionEvidencePage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-report-submission-pages/report-submission-evidence-page.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c18 = ReportSubmissionEvidencePage;
+const ReportSubmissionReviewPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-report-submission-pages/report-submission-review-page.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.ReportSubmissionReviewPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-report-submission-pages/report-submission-review-page.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c19 = ReportSubmissionReviewPage;
+const ReportSubmissionSuccessPage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/dashboard/dashboard-report-submission-pages/report-submission-success-page.tsx [app-client] (ecmascript, next/dynamic entry, async loader)").then((module)=>module.ReportSubmissionSuccessPage), {
+    loadableGenerated: {
+        modules: [
+            "[project]/src/components/dashboard/dashboard-report-submission-pages/report-submission-success-page.tsx [app-client] (ecmascript, next/dynamic entry)"
+        ]
+    },
+    loading: DashboardViewFallback
+});
+_c20 = ReportSubmissionSuccessPage;
+function DashboardHomeScreen(param) {
+    let { homeView = "overview", assistantRecording = false, assistantMessage, reportId } = param;
+    const page = homeView === "microeducation" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MicroEducationPage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 166,
+        columnNumber: 7
+    }, this) : homeView === "microcards" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MicroCardsPage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 168,
+        columnNumber: 7
+    }, this) : homeView === "microcarddetail" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MicroCardDetailPage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 170,
+        columnNumber: 7
+    }, this) : homeView === "assistantconversation" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SafeSpeakAssistantConversationPage, {
+        initialMessage: assistantMessage
+    }, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 172,
+        columnNumber: 7
+    }, this) : homeView === "assistant" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SafeSpeakAssistantPage, {
+        isRecording: assistantRecording
+    }, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 174,
+        columnNumber: 7
+    }, this) : homeView === "scamshieldintake" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ScamShieldIntakePage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 176,
+        columnNumber: 7
+    }, this) : homeView === "scamshieldrisk" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ScamShieldRiskPage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 178,
+        columnNumber: 7
+    }, this) : homeView === "scamshieldassets" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ScamShieldAssetsPage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 180,
+        columnNumber: 7
+    }, this) : homeView === "scamshieldagency" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ScamShieldAgencyPage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 182,
+        columnNumber: 7
+    }, this) : homeView === "reportshistory" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ReportsHistoryPage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 184,
+        columnNumber: 7
+    }, this) : homeView === "reportoverview" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ReportOverviewPage, {
+        reportId: reportId
+    }, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 186,
+        columnNumber: 7
+    }, this) : homeView === "reportsubmissionsupport" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ReportSubmissionSupportPage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 188,
+        columnNumber: 7
+    }, this) : homeView === "reportsubmissionrecommendations" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ReportSubmissionRecommendationsPage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 190,
+        columnNumber: 7
+    }, this) : homeView === "reportsubmissionhistory" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ReportSubmissionHistoryPage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 192,
+        columnNumber: 7
+    }, this) : homeView === "reportsubmissiondetailedexplanations" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ReportSubmissionDetailedExplanationsPage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 194,
+        columnNumber: 7
+    }, this) : homeView === "reportsubmissiondetails" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ReportSubmissionDetailsPage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 196,
+        columnNumber: 7
+    }, this) : homeView === "reportsubmissionevidence" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ReportSubmissionEvidencePage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 198,
+        columnNumber: 7
+    }, this) : homeView === "reportsubmissionreview" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ReportSubmissionReviewPage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 200,
+        columnNumber: 7
+    }, this) : homeView === "reportsubmissionsuccess" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ReportSubmissionSuccessPage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 202,
+        columnNumber: 7
+    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HomeDashboardPage, {}, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 204,
+        columnNumber: 7
+    }, this);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$dashboard$2f$dashboard$2d$layout$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DashboardShell"], {
+        activeTab: "home",
+        homeView: homeView,
+        children: page
+    }, void 0, false, {
+        fileName: "[project]/src/components/dashboard/dashboard-home-screen.tsx",
+        lineNumber: 208,
+        columnNumber: 5
+    }, this);
+}
+_c21 = DashboardHomeScreen;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13, _c14, _c15, _c16, _c17, _c18, _c19, _c20, _c21;
+__turbopack_context__.k.register(_c, "DashboardViewFallback");
+__turbopack_context__.k.register(_c1, "HomeDashboardPage");
+__turbopack_context__.k.register(_c2, "MicroEducationPage");
+__turbopack_context__.k.register(_c3, "MicroCardsPage");
+__turbopack_context__.k.register(_c4, "MicroCardDetailPage");
+__turbopack_context__.k.register(_c5, "SafeSpeakAssistantConversationPage");
+__turbopack_context__.k.register(_c6, "SafeSpeakAssistantPage");
+__turbopack_context__.k.register(_c7, "ScamShieldIntakePage");
+__turbopack_context__.k.register(_c8, "ScamShieldRiskPage");
+__turbopack_context__.k.register(_c9, "ScamShieldAssetsPage");
+__turbopack_context__.k.register(_c10, "ScamShieldAgencyPage");
+__turbopack_context__.k.register(_c11, "ReportsHistoryPage");
+__turbopack_context__.k.register(_c12, "ReportOverviewPage");
+__turbopack_context__.k.register(_c13, "ReportSubmissionSupportPage");
+__turbopack_context__.k.register(_c14, "ReportSubmissionRecommendationsPage");
+__turbopack_context__.k.register(_c15, "ReportSubmissionHistoryPage");
+__turbopack_context__.k.register(_c16, "ReportSubmissionDetailedExplanationsPage");
+__turbopack_context__.k.register(_c17, "ReportSubmissionDetailsPage");
+__turbopack_context__.k.register(_c18, "ReportSubmissionEvidencePage");
+__turbopack_context__.k.register(_c19, "ReportSubmissionReviewPage");
+__turbopack_context__.k.register(_c20, "ReportSubmissionSuccessPage");
+__turbopack_context__.k.register(_c21, "DashboardHomeScreen");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+]);
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__331afac7._.js.map
