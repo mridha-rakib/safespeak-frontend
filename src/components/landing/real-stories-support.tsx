@@ -1,11 +1,4 @@
-import { Plus_Jakarta_Sans } from "next/font/google";
-
 import { IconQuote } from "@tabler/icons-react";
-
-const storiesHeadingFont = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["700"],
-});
 
 type Story = {
   quote: string;
@@ -51,7 +44,7 @@ export default function RealStoriesSupport() {
       <div className="mx-auto flex h-full w-full max-w-[1280px] flex-col">
         <header className="mx-auto flex flex-col items-center gap-4 text-center">
           <h3
-            className={`${storiesHeadingFont.className} mx-auto w-full max-w-[432.38px] text-[36px] font-bold leading-[40px] text-[#264653]`}
+            className="mx-auto w-full max-w-[432.38px] text-[36px] font-bold leading-[40px] text-[#264653]"
           >
             Real stories, real support
           </h3>

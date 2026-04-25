@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///E:/projects/sta/safespeak-frontend/src/app/loading.tsx"],"sourcesContent":["export default function Loading() {\n  return (\n    <div className=\"flex min-h-[220px] items-center justify-center\">\n      <div\n        className=\"h-12 w-12 animate-spin rounded-full border-4 border-[#d9e8f3] border-t-[#01579b]\"\n        aria-label=\"Loading page...\"\n        role=\"status\"\n      />\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YACC,WAAU;YACV,cAAW;YACX,MAAK;;;;;;;;;;;AAIb","debugId":null}}]
+}

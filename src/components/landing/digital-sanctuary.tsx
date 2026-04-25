@@ -1,5 +1,3 @@
-import { Plus_Jakarta_Sans } from "next/font/google";
-
 import {
   IconAlertTriangle,
   IconBook2,
@@ -15,11 +13,6 @@ import {
   SUPPORT_NUMBER_DIAL,
   SUPPORT_NUMBER_DISPLAY,
 } from "@/lib/safety";
-
-const sanctuaryHeadingFont = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["800"],
-});
 
 function SanctuaryMeta({
   icon,
@@ -96,7 +89,7 @@ export default function DigitalSanctuary() {
             Transparency First
           </p>
           <h3
-            className={`${sanctuaryHeadingFont.className} mt-2 text-center align-middle text-[48px] font-extrabold leading-[48px] tracking-[0px] text-[#101828]`}
+            className="mt-2 text-center align-middle text-[48px] font-extrabold leading-[48px] tracking-[0px] text-[#101828]"
           >
             What SafeSpeak{" "}
             <span className="align-middle text-[48px] font-extrabold leading-[100%] tracking-[0px] text-[#0b5fa6]">

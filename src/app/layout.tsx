@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 
-import "leaflet/dist/leaflet.css";
-
 import { I18nProvider } from "@/components/providers/i18n-provider";
 import { SafetyExperience } from "@/components/safety/safety-experience";
 

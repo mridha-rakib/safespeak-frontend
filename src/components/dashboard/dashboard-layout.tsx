@@ -1,17 +1,21 @@
 "use client";
 
 import { Plus_Jakarta_Sans } from "next/font/google";
+import type { Route } from "next";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import type { UrlObject } from "url";
 
 import {
   IconAlertCircleFilled,
   IconBellFilled,
+  IconBook2,
   IconChevronDown,
   IconCompassFilled,
   IconFolderFilled,
   IconHomeFilled,
   IconSettingsFilled,
+  IconShieldFilled,
 } from "@tabler/icons-react";
 import { useTranslation } from "react-i18next";
 
@@ -45,11 +49,7 @@ function NavItem({
   active,
   showDot = false,
 }: {
-  href:
-    | "/dashboard"
-    | "/dashboard/explorer"
-    | "/dashboard/notifications"
-    | "/dashboard/settings";
+  href: Route | UrlObject;
   icon: ReactNode;
   label: string;
   active: boolean;
@@ -59,13 +59,15 @@ function NavItem({
     <Link
       href={href}
       className={cn(
-        "relative flex items-center justify-center rounded-full px-2 py-2.5 text-sm font-semibold transition lg:justify-start lg:gap-3 lg:px-4",
+        "relative flex min-h-11 items-center justify-center rounded-full px-2 py-2.5 text-sm font-semibold transition lg:justify-start lg:gap-3 lg:px-4",
         active
           ? "bg-[#f6ebda] text-[#f39a22]"
           : "text-[#60718a] hover:bg-[#eef2f7]"
       )}
+      aria-current={active ? "page" : undefined}
+      title={label}
     >
-      <span className="inline-flex h-4 w-4 items-center justify-center">
+      <span className="inline-flex h-5 w-5 items-center justify-center">
         {icon}
       </span>
       <span className="hidden lg:inline">{label}</span>
@@ -76,11 +78,49 @@ function NavItem({
   );
 }
 
-function Sidebar({ activeTab }: { activeTab: DashboardTab }) {
+const REPORT_VIEWS: HomeView[] = [
+  "assistant",
+  "assistantconversation",
+  "reportshistory",
+  "reportoverview",
+  "reportsubmissionsupport",
+  "reportsubmissionrecommendations",
+  "reportsubmissionhistory",
+  "reportsubmissiondetailedexplanations",
+  "reportsubmissiondetails",
+  "reportsubmissionevidence",
+  "reportsubmissionreview",
+  "reportsubmissionsuccess",
+];
+
+const SCAMSHIELD_VIEWS: HomeView[] = [
+  "scamshieldintake",
+  "scamshieldrisk",
+  "scamshieldassets",
+  "scamshieldagency",
+];
+
+const LEARNING_VIEWS: HomeView[] = [
+  "microeducation",
+  "microcards",
+  "microcarddetail",
+];
+
+function Sidebar({
+  activeTab,
+  homeView = "overview",
+}: {
+  activeTab: DashboardTab;
+  homeView?: HomeView;
+}) {
   const { t } = useTranslation();
+  const isHomeTab = activeTab === "home";
+  const isReportActive = isHomeTab && REPORT_VIEWS.includes(homeView);
+  const isScamShieldActive = isHomeTab && SCAMSHIELD_VIEWS.includes(homeView);
+  const isLearningActive = isHomeTab && LEARNING_VIEWS.includes(homeView);
 
   return (
-    <aside className="sticky top-0 w-[72px] shrink-0 border-r border-[#d7dee8] bg-[#f8fafc] px-2 py-6 sm:w-[88px] sm:px-3 lg:w-56 lg:px-5 lg:py-8 2xl:h-[1574px] 2xl:w-[256px]">
+    <aside className="fixed inset-y-0 left-0 z-30 flex h-screen w-[72px] shrink-0 flex-col overflow-y-auto border-r border-[#d7dee8] bg-[#f8fafc] px-2 py-6 sm:w-[88px] sm:px-3 lg:w-56 lg:px-5 lg:py-8 2xl:w-[256px]">
       <div className="px-1 lg:px-2">
         <SafeSpeakLogo
           tone="brand"
@@ -97,13 +137,40 @@ function Sidebar({ activeTab }: { activeTab: DashboardTab }) {
           href="/dashboard"
           icon={<IconHomeFilled size={12} />}
           label={t("dashboard.nav.home")}
-          active={activeTab === "home"}
+          active={isHomeTab && homeView === "overview"}
+        />
+        <NavItem
+          href={{
+            pathname: "/dashboard",
+            query: { view: "assistant" },
+          }}
+          icon={<IconAlertCircleFilled size={13} />}
+          label="Report Incident"
+          active={isReportActive}
+        />
+        <NavItem
+          href={{
+            pathname: "/dashboard",
+            query: { view: "scamshieldintake" },
+          }}
+          icon={<IconShieldFilled size={13} />}
+          label="ScamShield"
+          active={isScamShieldActive}
         />
         <NavItem
           href="/dashboard/explorer"
           icon={<IconCompassFilled size={12} />}
-          label={t("dashboard.nav.explorer")}
+          label="Get Support"
           active={activeTab === "explorer"}
+        />
+        <NavItem
+          href={{
+            pathname: "/dashboard",
+            query: { view: "microeducation" },
+          }}
+          icon={<IconBook2 size={13} stroke={2.2} />}
+          label="Learn & Resources"
+          active={isLearningActive}
         />
         <NavItem
           href="/dashboard/notifications"
@@ -118,7 +185,7 @@ function Sidebar({ activeTab }: { activeTab: DashboardTab }) {
         <NavItem
           href="/dashboard/settings"
           icon={<IconSettingsFilled size={12} />}
-          label={t("dashboard.nav.settings")}
+          label="My SafeSpeak"
           active={activeTab === "settings"}
         />
       </div>
@@ -236,12 +303,15 @@ export function DashboardShell({
 
   return (
     <div
-      className={`${pageFont.className} mx-auto flex min-h-screen w-full overflow-x-hidden bg-[#eef3f8]`}
+      className={`${pageFont.className} min-h-screen w-full overflow-x-hidden bg-[#eef3f8]`}
     >
-      <Sidebar activeTab={activeTab} />
+      <Sidebar activeTab={activeTab} homeView={homeView} />
 
       <section
-        className={cn("min-w-0 flex-1 p-2 sm:p-3 md:p-4", sectionSizeClass)}
+        className={cn(
+          "min-w-0 p-2 pl-[80px] sm:p-3 sm:pl-[100px] md:p-4 md:pl-[104px] lg:pl-[240px] 2xl:pl-[272px]",
+          sectionSizeClass
+        )}
       >
         <div className="overflow-hidden rounded-[16px] bg-[#edf2f8] sm:rounded-[20px] xl:h-full">
           <EmergencyToolbar />

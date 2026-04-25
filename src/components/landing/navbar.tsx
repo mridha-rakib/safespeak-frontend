@@ -1,6 +1,5 @@
 "use client";
 
-import { Inter } from "next/font/google";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 
@@ -20,11 +19,6 @@ const LANGUAGE_FLAGS: Record<SupportedLanguage, string> = {
   en: "EN",
   es: "ES",
 };
-
-const interExtraBold = Inter({
-  subsets: ["latin"],
-  weight: ["800"],
-});
 
 export default function LandingNavbar() {
   const { t, i18n } = useTranslation();
@@ -125,7 +119,7 @@ export default function LandingNavbar() {
                   {LANGUAGE_FLAGS[activeLanguage.code]}
                 </span>
                 <span
-                  className={`${interExtraBold.className} inline-flex h-[28px] items-center align-middle text-[13.6px] font-extrabold leading-[28px] tracking-[0.15px]`}
+                  className="inline-flex h-[28px] items-center align-middle text-[13.6px] font-extrabold leading-[28px] tracking-[0.15px]"
                 >
                   {t(activeLanguage.labelKey)}
                 </span>

@@ -1,6 +1,5 @@
 "use client";
 
-import { Outfit, Space_Grotesk } from "next/font/google";
 import Image from "next/image";
 
 import {
@@ -16,16 +15,6 @@ import { useTranslation } from "react-i18next";
 import guidedTriageIcon from "@/assets/guidedTriage.svg";
 import voiceInputIcon from "@/assets/voiceinpu.svg";
 import { triggerQuickExit } from "@/lib/safety";
-
-const outfitBold = Outfit({
-  subsets: ["latin"],
-  weight: ["700"],
-});
-
-const spaceGroteskRegular = Space_Grotesk({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 function LanguageSwitcher() {
   return (
@@ -85,12 +74,12 @@ export default function ResourcesSection() {
               <IconWorld size={20} stroke={2} />
             </div>
             <h3
-              className={`relative z-10 mt-5 text-[24px] font-extrabold leading-tight text-[#093b33] min-[1440px]:mt-6 min-[1440px]:h-7 min-[1440px]:w-[252px] min-[1440px]:text-[20px] min-[1440px]:leading-[28px] min-[1440px]:tracking-[0px] ${outfitBold.className}`}
+              className="relative z-10 mt-5 text-[24px] font-extrabold leading-tight text-[#093b33] min-[1440px]:mt-6 min-[1440px]:h-7 min-[1440px]:w-[252px] min-[1440px]:text-[20px] min-[1440px]:leading-[28px] min-[1440px]:tracking-[0px]"
             >
               {t("landing.resources.cards.multiLingual.title")}
             </h3>
             <p
-              className={`relative z-10 mt-4 text-sm leading-6 text-[#4b5b57] min-[1440px]:mt-3 min-[1440px]:h-[91px] min-[1440px]:w-[252px] min-[1440px]:text-[14px] min-[1440px]:leading-[22.75px] min-[1440px]:tracking-[0px] ${spaceGroteskRegular.className}`}
+              className="relative z-10 mt-4 text-sm leading-6 text-[#4b5b57] min-[1440px]:mt-3 min-[1440px]:h-[91px] min-[1440px]:w-[252px] min-[1440px]:text-[14px] min-[1440px]:leading-[22.75px] min-[1440px]:tracking-[0px]"
             >
               {t("landing.resources.cards.multiLingual.description")}
             </p>
@@ -139,12 +128,12 @@ export default function ResourcesSection() {
               />
             </div>
             <h3
-              className={`relative z-10 mt-5 text-[24px] font-extrabold leading-tight text-[#004D40] min-[1440px]:mt-6 min-[1440px]:h-7 min-[1440px]:w-[103.56px] min-[1440px]:text-[20px] min-[1440px]:leading-[28px] min-[1440px]:tracking-[0px] ${outfitBold.className}`}
+              className="relative z-10 mt-5 text-[24px] font-extrabold leading-tight text-[#004D40] min-[1440px]:mt-6 min-[1440px]:h-7 min-[1440px]:w-[103.56px] min-[1440px]:text-[20px] min-[1440px]:leading-[28px] min-[1440px]:tracking-[0px]"
             >
               {t("landing.resources.cards.multiInput.title")}
             </h3>
             <p
-              className={`relative z-10 mt-4 text-sm leading-6 text-[#5f5d2f] min-[1440px]:mt-[20.25px] min-[1440px]:h-[69px] min-[1440px]:w-[252px] min-[1440px]:text-[14px] min-[1440px]:leading-[23px] min-[1440px]:tracking-[0px] ${spaceGroteskRegular.className}`}
+              className="relative z-10 mt-4 text-sm leading-6 text-[#5f5d2f] min-[1440px]:mt-[20.25px] min-[1440px]:h-[69px] min-[1440px]:w-[252px] min-[1440px]:text-[14px] min-[1440px]:leading-[23px] min-[1440px]:tracking-[0px]"
             >
               {t("landing.resources.cards.multiInput.description")}
             </p>
