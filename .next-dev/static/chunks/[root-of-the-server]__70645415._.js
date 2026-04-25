@@ -739,7 +739,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/safety.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-client] (ecmascript)");
 ;
-var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature();
+var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
@@ -822,7 +822,7 @@ function Sidebar(param) {
     const isScamShieldActive = isHomeTab && SCAMSHIELD_VIEWS.includes(homeView);
     const isLearningActive = isHomeTab && LEARNING_VIEWS.includes(homeView);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
-        className: "fixed inset-y-0 left-0 z-30 flex h-screen w-[72px] shrink-0 flex-col overflow-y-auto border-r border-[#d7dee8] bg-[#f8fafc] px-2 py-6 sm:w-[88px] sm:px-3 lg:w-56 lg:px-5 lg:py-8 2xl:w-[256px]",
+        className: "fixed inset-y-0 left-0 z-30 hidden h-screen w-56 shrink-0 flex-col overflow-y-auto border-r border-[#d7dee8] bg-[#f8fafc] px-5 py-8 lg:flex 2xl:w-[256px]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "px-1 lg:px-2",
@@ -1015,8 +1015,186 @@ _s(Sidebar, "zlIdU9EjM2llFt74AbE2KsUJXyM=", false, function() {
     ];
 });
 _c1 = Sidebar;
-function EmergencyToolbar() {
+function MobileNavItem(param) {
+    let { href, icon, label, active, showDot = false } = param;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        href: href,
+        "aria-label": label,
+        "aria-current": active ? "page" : undefined,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("relative grid h-11 w-11 place-items-center rounded-2xl transition", active ? "bg-[#f6ebda] text-[#f39a22]" : "text-[#60718a] hover:bg-[#eef2f7]"),
+        children: [
+            icon,
+            showDot ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "absolute right-2 top-2 h-1.5 w-1.5 rounded-full bg-[#f05353]"
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 223,
+                columnNumber: 9
+            }, this) : null
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+        lineNumber: 210,
+        columnNumber: 5
+    }, this);
+}
+_c2 = MobileNavItem;
+function MobileDashboardNav(param) {
+    let { activeTab, homeView = "overview" } = param;
     _s1();
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"])();
+    const isHomeTab = activeTab === "home";
+    const isReportActive = isHomeTab && REPORT_VIEWS.includes(homeView);
+    const isScamShieldActive = isHomeTab && SCAMSHIELD_VIEWS.includes(homeView);
+    const isLearningActive = isHomeTab && LEARNING_VIEWS.includes(homeView);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+        "aria-label": "Dashboard navigation",
+        className: "fixed inset-x-3 bottom-3 z-[105] flex items-center justify-between rounded-[24px] border border-[#d7dee8] bg-white/95 px-2 py-2 shadow-[0_14px_32px_rgba(15,23,42,0.18)] backdrop-blur lg:hidden",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MobileNavItem, {
+                href: "/dashboard",
+                icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconHomeFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconHomeFilled$3e$__["IconHomeFilled"], {
+                    size: 15
+                }, void 0, false, {
+                    fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                    lineNumber: 249,
+                    columnNumber: 15
+                }, void 0),
+                label: t("dashboard.nav.home"),
+                active: isHomeTab && homeView === "overview"
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 247,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MobileNavItem, {
+                href: {
+                    pathname: "/dashboard",
+                    query: {
+                        view: "assistant"
+                    }
+                },
+                icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconAlertCircleFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconAlertCircleFilled$3e$__["IconAlertCircleFilled"], {
+                    size: 16
+                }, void 0, false, {
+                    fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                    lineNumber: 258,
+                    columnNumber: 15
+                }, void 0),
+                label: "Report Incident",
+                active: isReportActive
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 253,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MobileNavItem, {
+                href: {
+                    pathname: "/dashboard",
+                    query: {
+                        view: "scamshieldintake"
+                    }
+                },
+                icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShieldFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShieldFilled$3e$__["IconShieldFilled"], {
+                    size: 16
+                }, void 0, false, {
+                    fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                    lineNumber: 267,
+                    columnNumber: 15
+                }, void 0),
+                label: "ScamShield",
+                active: isScamShieldActive
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 262,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MobileNavItem, {
+                href: "/dashboard/explorer",
+                icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconCompassFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconCompassFilled$3e$__["IconCompassFilled"], {
+                    size: 15
+                }, void 0, false, {
+                    fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                    lineNumber: 273,
+                    columnNumber: 15
+                }, void 0),
+                label: "Get Support",
+                active: activeTab === "explorer"
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 271,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MobileNavItem, {
+                href: {
+                    pathname: "/dashboard",
+                    query: {
+                        view: "microeducation"
+                    }
+                },
+                icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconBook2$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconBook2$3e$__["IconBook2"], {
+                    size: 16,
+                    stroke: 2.2
+                }, void 0, false, {
+                    fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                    lineNumber: 282,
+                    columnNumber: 15
+                }, void 0),
+                label: "Learn & Resources",
+                active: isLearningActive
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 277,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MobileNavItem, {
+                href: "/dashboard/settings",
+                icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconSettingsFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconSettingsFilled$3e$__["IconSettingsFilled"], {
+                    size: 15
+                }, void 0, false, {
+                    fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                    lineNumber: 288,
+                    columnNumber: 15
+                }, void 0),
+                label: "My SafeSpeak",
+                active: activeTab === "settings"
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 286,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MobileNavItem, {
+                href: "/dashboard/notifications",
+                icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconBellFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconBellFilled$3e$__["IconBellFilled"], {
+                    size: 15
+                }, void 0, false, {
+                    fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                    lineNumber: 294,
+                    columnNumber: 15
+                }, void 0),
+                label: t("dashboard.nav.notifications"),
+                active: activeTab === "notifications",
+                showDot: true
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 292,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+        lineNumber: 243,
+        columnNumber: 5
+    }, this);
+}
+_s1(MobileDashboardNav, "zlIdU9EjM2llFt74AbE2KsUJXyM=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"]
+    ];
+});
+_c3 = MobileDashboardNav;
+function EmergencyToolbar() {
+    _s2();
     const { t, i18n } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"])();
     var _i18n_resolvedLanguage, _ref;
     const resolvedLanguage = (_ref = (_i18n_resolvedLanguage = i18n.resolvedLanguage) !== null && _i18n_resolvedLanguage !== void 0 ? _i18n_resolvedLanguage : i18n.language) !== null && _ref !== void 0 ? _ref : __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DEFAULT_LANGUAGE"];
@@ -1043,14 +1221,14 @@ function EmergencyToolbar() {
                                 size: 13
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                                lineNumber: 223,
+                                lineNumber: 330,
                                 columnNumber: 11
                             }, this),
                             t("dashboard.toolbar.emergencyCall")
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 219,
+                        lineNumber: 326,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1059,7 +1237,7 @@ function EmergencyToolbar() {
                         children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$safety$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUPPORT_NUMBER_DISPLAY"]
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 227,
+                        lineNumber: 334,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1073,13 +1251,13 @@ function EmergencyToolbar() {
                                 size: 10
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                                lineNumber: 241,
+                                lineNumber: 348,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 234,
+                        lineNumber: 341,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1092,13 +1270,13 @@ function EmergencyToolbar() {
                                 size: 12
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                                lineNumber: 250,
+                                lineNumber: 357,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 244,
+                        lineNumber: 351,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1106,13 +1284,13 @@ function EmergencyToolbar() {
                         children: "Safety info only"
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 253,
+                        lineNumber: 360,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                lineNumber: 218,
+                lineNumber: 325,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1123,7 +1301,7 @@ function EmergencyToolbar() {
                         children: t("dashboard.toolbar.welcomeBack")
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 259,
+                        lineNumber: 366,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1131,28 +1309,28 @@ function EmergencyToolbar() {
                         children: t("dashboard.toolbar.userName")
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                        lineNumber: 262,
+                        lineNumber: 369,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                lineNumber: 258,
+                lineNumber: 365,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-        lineNumber: 217,
+        lineNumber: 324,
         columnNumber: 5
     }, this);
 }
-_s1(EmergencyToolbar, "OZwazanA59tbNDUkc8lMSmTHj9Q=", false, function() {
+_s2(EmergencyToolbar, "OZwazanA59tbNDUkc8lMSmTHj9Q=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"]
     ];
 });
-_c2 = EmergencyToolbar;
+_c4 = EmergencyToolbar;
 function DashboardShell(param) {
     let { activeTab, homeView, children } = param;
     const isIncidentBuilderView = homeView === "assistant" || homeView === "assistantconversation" || homeView === "scamshieldintake" || homeView === "scamshieldrisk" || homeView === "scamshieldassets" || homeView === "scamshieldagency" || homeView === "reportshistory" || homeView === "reportoverview" || homeView === "reportsubmissionsupport" || homeView === "reportsubmissionrecommendations" || homeView === "reportsubmissionhistory" || homeView === "reportsubmissiondetailedexplanations" || homeView === "reportsubmissiondetails" || homeView === "reportsubmissionevidence" || homeView === "reportsubmissionreview" || homeView === "reportsubmissionsuccess";
@@ -1165,44 +1343,54 @@ function DashboardShell(param) {
                 homeView: homeView
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                lineNumber: 308,
+                lineNumber: 415,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MobileDashboardNav, {
+                activeTab: activeTab,
+                homeView: homeView
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
+                lineNumber: 416,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("min-w-0 p-2 pl-[80px] sm:p-3 sm:pl-[100px] md:p-4 md:pl-[104px] lg:pl-[240px] 2xl:pl-[272px]", sectionSizeClass),
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("min-w-0 p-3 pb-[168px] sm:p-4 sm:pb-[300px] lg:pb-4 lg:pl-[240px] 2xl:pl-[272px]", sectionSizeClass),
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "overflow-hidden rounded-[16px] bg-[#edf2f8] sm:rounded-[20px] xl:h-full",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(EmergencyToolbar, {}, void 0, false, {
                             fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                            lineNumber: 317,
+                            lineNumber: 425,
                             columnNumber: 11
                         }, this),
                         children
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                    lineNumber: 316,
+                    lineNumber: 424,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-                lineNumber: 310,
+                lineNumber: 418,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/dashboard-layout.tsx",
-        lineNumber: 305,
+        lineNumber: 412,
         columnNumber: 5
     }, this);
 }
-_c3 = DashboardShell;
-var _c, _c1, _c2, _c3;
+_c5 = DashboardShell;
+var _c, _c1, _c2, _c3, _c4, _c5;
 __turbopack_context__.k.register(_c, "NavItem");
 __turbopack_context__.k.register(_c1, "Sidebar");
-__turbopack_context__.k.register(_c2, "EmergencyToolbar");
-__turbopack_context__.k.register(_c3, "DashboardShell");
+__turbopack_context__.k.register(_c2, "MobileNavItem");
+__turbopack_context__.k.register(_c3, "MobileDashboardNav");
+__turbopack_context__.k.register(_c4, "EmergencyToolbar");
+__turbopack_context__.k.register(_c5, "DashboardShell");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }

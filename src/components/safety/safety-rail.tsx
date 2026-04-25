@@ -52,8 +52,9 @@ export function SafetyRail() {
 
   if (isHiddenRoute(pathname)) return null;
 
-  const railClassName = isDashboardRoute(pathname)
-    ? "dashboard-safety-rail fixed bottom-3 z-[110]"
+  const isDashboard = isDashboardRoute(pathname);
+  const railClassName = isDashboard
+    ? "dashboard-safety-rail fixed z-[110]"
     : "fixed bottom-3 left-1/2 z-[110] w-[calc(100%-1rem)] max-w-[980px] -translate-x-1/2";
 
   return (
@@ -62,8 +63,23 @@ export function SafetyRail() {
         aria-label="Safety controls"
         className={railClassName}
       >
-        <div className="rounded-2xl border border-[#1f2937]/50 bg-[#0b1725]/95 px-3 py-3 text-white shadow-[0_14px_30px_rgba(0,0,0,0.35)] sm:px-4">
-          <div className="flex flex-col gap-2">
+        <div className="rounded-2xl border border-[#1f2937]/50 bg-[#0b1725]/95 px-3 py-2 text-white shadow-[0_14px_30px_rgba(0,0,0,0.35)] sm:px-4 sm:py-3">
+          <div className="flex items-center justify-between gap-3 sm:hidden">
+            <div>
+              <p className="text-[11px] font-black uppercase tracking-[0.12em] text-[#facc15]">
+                In an Emergency
+              </p>
+              <p className="mt-0.5 text-[11px] font-semibold leading-4 text-white/80">
+                Safety info only. Use quick exit if needed.
+              </p>
+            </div>
+            <span className="inline-flex shrink-0 items-center gap-1 rounded-full border border-[#35a463]/40 bg-[#0b2a1f] px-2.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.06em] text-[#9de6ba]">
+              <IconShieldFilled size={11} />
+              {isCovertModeActive ? "On" : "Ready"}
+            </span>
+          </div>
+
+          <div className="hidden flex-col gap-2 sm:flex">
             <p className="text-[10px] font-black uppercase tracking-[0.14em] text-[#facc15]">
               In an Emergency
             </p>
@@ -85,43 +101,46 @@ export function SafetyRail() {
             </p>
           </div>
 
-          <div className="mt-3 flex flex-wrap items-center gap-2">
+          <div className="mt-2 grid grid-cols-4 gap-2 sm:mt-3 sm:flex sm:flex-wrap sm:items-center">
             <a
               href={`tel:${EMERGENCY_NUMBER}`}
-              className="inline-flex h-10 items-center rounded-full bg-[#dc2626] px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
+              className="inline-flex h-9 items-center justify-center rounded-full bg-[#dc2626] px-2 text-[11px] font-bold uppercase tracking-[0.04em] text-white sm:h-10 sm:px-3 sm:text-[10px] sm:tracking-[0.08em]"
             >
-              Emergency {EMERGENCY_NUMBER}
+              <span className="hidden sm:inline">Emergency </span>
+              {EMERGENCY_NUMBER}
             </a>
             <a
               href={`tel:${SUPPORT_NUMBER_DIAL}`}
-              className="inline-flex h-10 items-center rounded-full bg-[#0f5d9f] px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
+              aria-label={`Call ${SUPPORT_NUMBER_DISPLAY}`}
+              className="inline-flex h-9 min-w-0 items-center justify-center overflow-hidden rounded-full bg-[#0f5d9f] px-2 text-[11px] font-bold uppercase tracking-[0.04em] text-white sm:h-10 sm:px-3 sm:text-[10px] sm:tracking-[0.08em]"
             >
-              {SUPPORT_NUMBER_DISPLAY}
+              <span className="truncate sm:hidden">Respect</span>
+              <span className="hidden sm:inline">{SUPPORT_NUMBER_DISPLAY}</span>
             </a>
             <button
               type="button"
               onClick={() => setIsSmartDialerOpen(true)}
-              className="inline-flex h-10 items-center rounded-full bg-[#1d4ed8] px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
+              className="hidden h-10 items-center rounded-full bg-[#1d4ed8] px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white sm:inline-flex"
             >
               Smart Dialler
             </button>
             <button
               type="button"
               onClick={triggerQuickExit}
-              className="inline-flex h-10 items-center rounded-full bg-[#111827] px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
+              className="inline-flex h-9 items-center justify-center rounded-full bg-[#111827] px-2 text-[11px] font-bold uppercase tracking-[0.04em] text-white sm:h-10 sm:px-3 sm:text-[10px] sm:tracking-[0.08em]"
             >
-              Covert Exit
+              Exit
             </button>
             <button
               type="button"
               onClick={() => void toggleLanguage()}
-              className="inline-flex h-10 items-center gap-1 rounded-full border border-white/35 bg-transparent px-3 text-[10px] font-bold uppercase tracking-[0.08em] text-white"
+              className="inline-flex h-9 items-center justify-center gap-1 rounded-full border border-white/35 bg-transparent px-2 text-[11px] font-bold uppercase tracking-[0.04em] text-white sm:h-10 sm:px-3 sm:text-[10px] sm:tracking-[0.08em]"
               aria-label="Toggle language"
             >
               <IconLanguage size={12} />
               {currentLanguage}
             </button>
-            <span className="inline-flex h-10 items-center gap-1 rounded-full border border-[#35a463]/40 bg-[#0b2a1f] px-3 text-[10px] font-semibold uppercase tracking-[0.08em] text-[#9de6ba]">
+            <span className="hidden h-10 items-center gap-1 rounded-full border border-[#35a463]/40 bg-[#0b2a1f] px-3 text-[10px] font-semibold uppercase tracking-[0.08em] text-[#9de6ba] sm:inline-flex">
               <IconShieldFilled size={11} />
               {isCovertModeActive ? "Covert mode on" : "Covert mode ready"}
             </span>

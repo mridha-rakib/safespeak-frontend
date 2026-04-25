@@ -120,7 +120,7 @@ function Sidebar({
   const isLearningActive = isHomeTab && LEARNING_VIEWS.includes(homeView);
 
   return (
-    <aside className="fixed inset-y-0 left-0 z-30 flex h-screen w-[72px] shrink-0 flex-col overflow-y-auto border-r border-[#d7dee8] bg-[#f8fafc] px-2 py-6 sm:w-[88px] sm:px-3 lg:w-56 lg:px-5 lg:py-8 2xl:w-[256px]">
+    <aside className="fixed inset-y-0 left-0 z-30 hidden h-screen w-56 shrink-0 flex-col overflow-y-auto border-r border-[#d7dee8] bg-[#f8fafc] px-5 py-8 lg:flex 2xl:w-[256px]">
       <div className="px-1 lg:px-2">
         <SafeSpeakLogo
           tone="brand"
@@ -190,6 +190,113 @@ function Sidebar({
         />
       </div>
     </aside>
+  );
+}
+
+function MobileNavItem({
+  href,
+  icon,
+  label,
+  active,
+  showDot = false,
+}: {
+  href: Route | UrlObject;
+  icon: ReactNode;
+  label: string;
+  active: boolean;
+  showDot?: boolean;
+}) {
+  return (
+    <Link
+      href={href}
+      aria-label={label}
+      aria-current={active ? "page" : undefined}
+      className={cn(
+        "relative grid h-11 w-11 place-items-center rounded-2xl transition",
+        active
+          ? "bg-[#f6ebda] text-[#f39a22]"
+          : "text-[#60718a] hover:bg-[#eef2f7]"
+      )}
+    >
+      {icon}
+      {showDot ? (
+        <span className="absolute right-2 top-2 h-1.5 w-1.5 rounded-full bg-[#f05353]" />
+      ) : null}
+    </Link>
+  );
+}
+
+function MobileDashboardNav({
+  activeTab,
+  homeView = "overview",
+}: {
+  activeTab: DashboardTab;
+  homeView?: HomeView;
+}) {
+  const { t } = useTranslation();
+  const isHomeTab = activeTab === "home";
+  const isReportActive = isHomeTab && REPORT_VIEWS.includes(homeView);
+  const isScamShieldActive = isHomeTab && SCAMSHIELD_VIEWS.includes(homeView);
+  const isLearningActive = isHomeTab && LEARNING_VIEWS.includes(homeView);
+
+  return (
+    <nav
+      aria-label="Dashboard navigation"
+      className="fixed inset-x-3 bottom-3 z-[105] flex items-center justify-between rounded-[24px] border border-[#d7dee8] bg-white/95 px-2 py-2 shadow-[0_14px_32px_rgba(15,23,42,0.18)] backdrop-blur lg:hidden"
+    >
+      <MobileNavItem
+        href="/dashboard"
+        icon={<IconHomeFilled size={15} />}
+        label={t("dashboard.nav.home")}
+        active={isHomeTab && homeView === "overview"}
+      />
+      <MobileNavItem
+        href={{
+          pathname: "/dashboard",
+          query: { view: "assistant" },
+        }}
+        icon={<IconAlertCircleFilled size={16} />}
+        label="Report Incident"
+        active={isReportActive}
+      />
+      <MobileNavItem
+        href={{
+          pathname: "/dashboard",
+          query: { view: "scamshieldintake" },
+        }}
+        icon={<IconShieldFilled size={16} />}
+        label="ScamShield"
+        active={isScamShieldActive}
+      />
+      <MobileNavItem
+        href="/dashboard/explorer"
+        icon={<IconCompassFilled size={15} />}
+        label="Get Support"
+        active={activeTab === "explorer"}
+      />
+      <MobileNavItem
+        href={{
+          pathname: "/dashboard",
+          query: { view: "microeducation" },
+        }}
+        icon={<IconBook2 size={16} stroke={2.2} />}
+        label="Learn & Resources"
+        active={isLearningActive}
+      />
+      <MobileNavItem
+        href="/dashboard/settings"
+        icon={<IconSettingsFilled size={15} />}
+        label="My SafeSpeak"
+        active={activeTab === "settings"}
+      />
+      <MobileNavItem
+        href="/dashboard/notifications"
+        icon={<IconBellFilled size={15} />}
+        label={t("dashboard.nav.notifications")}
+        active={activeTab === "notifications"}
+        showDot
+      />
+    </nav>
   );
 }
 
@@ -306,10 +413,11 @@ export function DashboardShell({
       className={`${pageFont.className} min-h-screen w-full overflow-x-hidden bg-[#eef3f8]`}
     >
       <Sidebar activeTab={activeTab} homeView={homeView} />
+      <MobileDashboardNav activeTab={activeTab} homeView={homeView} />
 
       <section
         className={cn(
-          "min-w-0 p-2 pl-[80px] sm:p-3 sm:pl-[100px] md:p-4 md:pl-[104px] lg:pl-[240px] 2xl:pl-[272px]",
+          "min-w-0 p-3 pb-[168px] sm:p-4 sm:pb-[300px] lg:pb-4 lg:pl-[240px] 2xl:pl-[272px]",
           sectionSizeClass
         )}
       >
