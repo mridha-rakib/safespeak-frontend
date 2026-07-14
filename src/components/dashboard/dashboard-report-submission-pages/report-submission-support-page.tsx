@@ -98,6 +98,151 @@ function shouldShowTriageDebug() {
   );
 }
 
+const LOW_VALUE_MICRO_CARD_TITLE_PATTERN =
+  /\b(?:test|new educational content)\b/i;
+
+const TRIAGE_MICRO_CARD_FALLBACK_TERMS: Record<string, string[]> = {
+  domestic_violence: [
+    "safety",
+    "evidence",
+    "mental health",
+    "legal aid",
+    "rights",
+  ],
+  workplace_bullying: [
+    "bullying",
+    "workplace",
+    "evidence",
+    "mental health",
+    "legal aid",
+    "rights",
+  ],
+  racism_discrimination: [
+    "discrimination",
+    "racism",
+    "rights",
+    "migrant",
+    "student",
+    "bullying",
+    "evidence",
+    "legal aid",
+  ],
+  online_abuse: [
+    "online safety",
+    "online",
+    "image-based",
+    "blackmail",
+    "threats",
+    "evidence",
+    "rights online",
+  ],
+  scam_fraud: [
+    "scam",
+    "phishing",
+    "identity",
+    "data breach",
+    "privacy",
+    "evidence",
+  ],
+  theft_property: ["evidence", "safety", "legal aid", "rights"],
+  harassment: ["harassment", "bullying", "evidence", "mental health", "safety"],
+  mental_health_distress: ["mental health", "support", "safety"],
+  general_support: ["rights", "safety", "evidence", "legal aid", "mental health"],
+};
+
+function getMicroCardSearchText(card: MicroEducationItem): string {
+  return [
+    card.title,
+    card.summary,
+    card.tag,
+    card.detailHeading,
+    card.detailSummary,
+    card.detailBody,
+    card.detailTakeaway,
+    ...(card.chips ?? []),
+    ...(card.incidentCategories ?? []),
+    ...(card.matchKeywords ?? []),
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+function isUsableMicroCard(card: MicroEducationItem): boolean {
+  return !LOW_VALUE_MICRO_CARD_TITLE_PATTERN.test(card.title);
+}
+
+function scoreMicroCardForTriage(
+  card: MicroEducationItem,
+  triage: ConversationFlowTriage | null
+): number {
+  if (!triage) {
+    return 0;
+  }
+
+  const category = triage.likelyCategory || "general_support";
+  const terms = new Set([
+    ...(TRIAGE_MICRO_CARD_FALLBACK_TERMS[category] ??
+      TRIAGE_MICRO_CARD_FALLBACK_TERMS.general_support),
+    ...(triage.relatedIssueTypes ?? []),
+    ...(triage.structuredFacts?.matchedFacts ?? []),
+    triage.likelyCategoryLabel ?? "",
+  ].map((term) => term.toLowerCase()).filter(Boolean));
+  const text = getMicroCardSearchText(card);
+  let score = 0;
+
+  if (card.incidentCategories?.some((item) => item === category)) {
+    score += 50;
+  }
+
+  terms.forEach((term) => {
+    if (term.length >= 3 && text.includes(term)) {
+      score += term.length > 14 ? 8 : 5;
+    }
+  });
+
+  if (
+    triage.safetyRiskLevel !== "low" &&
+    (card.chips?.includes("safety") || text.includes("safety"))
+  ) {
+    score += 4;
+  }
+
+  if (
+    triage.structuredFacts?.evidenceAvailable &&
+    /evidence|screenshot|record/i.test(text)
+  ) {
+    score += 8;
+  }
+
+  if (
+    category === "racism_discrimination" &&
+    /discrimination|migrant|student rights|legal aid|bullying/i.test(text)
+  ) {
+    score += 12;
+  }
+
+  if (
+    category === "workplace_bullying" &&
+    /bullying|workplace|employer|legal aid/i.test(text)
+  ) {
+    score += 12;
+  }
+
+  if (
+    category === "online_abuse" &&
+    /online|image-based|blackmail|threat/i.test(text)
+  ) {
+    score += 12;
+  }
+
+  if (category === "scam_fraud" && /scam|phishing|identity/i.test(text)) {
+    score += 12;
+  }
+
+  return score;
+}
+
 function withConversationSessionId(
   href: string,
   conversationSessionId?: string | null
@@ -983,20 +1128,69 @@ function ReportSubmissionSupportPage() {
     () => buildTriagePresentation(triage, loading),
     [loading, triage]
   );
-  const shouldShowSupportOptions =
-    !loading && !pendingConsentRequirement && Boolean(triage);
-  const suggestedMicroCards = useMemo(() => {
-    if (support.suggestedMicroCardIds.length === 0 || microCards.length === 0) {
+  const classificationSignals = useMemo(
+    () =>
+      (triage?.structuredFacts?.matchedFacts ?? [])
+        .filter((fact) => Boolean(fact.trim()))
+        .slice(0, 4),
+    [triage?.structuredFacts?.matchedFacts]
+  );
+  const classificationSummaryItems = useMemo(() => {
+    if (!triage || loading) {
       return [];
     }
 
-    const cardsById = new Map(microCards.map((card) => [card.id, card]));
+    const categoryLabel =
+      triage.likelyCategory === "general_support"
+        ? "Needs more detail"
+        : triage.likelyCategoryLabel || toLabel(triage.likelyCategory);
 
-    return support.suggestedMicroCardIds
+    return [
+      {
+        label: "Category",
+        value: categoryLabel,
+      },
+      {
+        label: "Confidence",
+        value: `${Math.round((triage.confidenceScore ?? 0) * 100)}%`,
+      },
+      {
+        label: "Risk level",
+        value: toLabel(triage.safetyRiskLevel),
+      },
+    ];
+  }, [loading, triage]);
+  const shouldShowSupportOptions =
+    !loading && !pendingConsentRequirement && Boolean(triage);
+  const suggestedMicroCards = useMemo(() => {
+    if (microCards.length === 0) {
+      return [];
+    }
+
+    const usableCards = microCards.filter(isUsableMicroCard);
+    const cardsById = new Map(usableCards.map((card) => [card.id, card]));
+    const resolvedBackendCards = support.suggestedMicroCardIds
       .map((id) => cardsById.get(id))
-      .filter((card): card is MicroEducationItem => Boolean(card))
-      .slice(0, 6);
-  }, [microCards, support.suggestedMicroCardIds]);
+      .filter((card): card is MicroEducationItem => Boolean(card));
+    const selectedIds = new Set(resolvedBackendCards.map((card) => card.id));
+    const fallbackCards = usableCards
+      .filter((card) => !selectedIds.has(card.id))
+      .map((card) => ({
+        card,
+        score: scoreMicroCardForTriage(card, triage),
+      }))
+      .filter(({ score }) => score > 0)
+      .sort((left, right) => {
+        if (right.score !== left.score) {
+          return right.score - left.score;
+        }
+
+        return left.card.sortOrder - right.card.sortOrder;
+      })
+      .map(({ card }) => card);
+
+    return [...resolvedBackendCards, ...fallbackCards].slice(0, 6);
+  }, [microCards, support.suggestedMicroCardIds, triage]);
   const displayedActionRows = useMemo(
     () =>
       buildDisplayedActionRows({
@@ -1112,6 +1306,29 @@ function ReportSubmissionSupportPage() {
                 <p className="mt-4 text-xs italic leading-5 text-[#9CA3AF] sm:text-sm">
                   {triagePresentation.assessmentNote}
                 </p>
+                {classificationSummaryItems.length > 0 ? (
+                  <div className="mt-6 flex flex-wrap justify-center gap-2">
+                    {classificationSummaryItems.map((item) => (
+                      <span
+                        key={item.label}
+                        className="inline-flex items-center gap-2 rounded-full border border-[#D8E3F0] bg-[#F8FAFC] px-3 py-2 text-xs font-bold text-[#334155]"
+                      >
+                        <span className="text-[#94A3B8]">{item.label}</span>
+                        <span className="text-[#0F5D9F]">{item.value}</span>
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
+                {classificationSignals.length > 0 ? (
+                  <p className="mt-4 max-w-[620px] text-xs leading-5 text-[#64748B]">
+                    Matched from chat: {classificationSignals.join("; ")}.
+                  </p>
+                ) : triage?.likelyCategory === "general_support" && !loading ? (
+                  <p className="mt-4 max-w-[620px] text-xs leading-5 text-[#64748B]">
+                    SafeSpeak needs a little more incident detail in the chat
+                    before it can choose a stronger category.
+                  </p>
+                ) : null}
               </div>
             </article>
 
@@ -1454,7 +1671,7 @@ function ReportSubmissionSupportPage() {
 
                 <p className="mt-2 text-sm leading-5 text-[#64748B]">
                   {triagePresentation.microCardSummary ||
-                    "These guides were selected from the triage support response, so the page is not re-classifying your situation in the browser."}
+                    "These guides are selected from the backend triage response, with a category fallback if a saved card ID no longer resolves."}
                 </p>
 
                 <div className="mt-5">
