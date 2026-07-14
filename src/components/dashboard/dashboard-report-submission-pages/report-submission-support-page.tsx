@@ -1,12 +1,14 @@
 "use client";
 
 import type { Route } from "next";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import {
   type ReactNode,
   useCallback,
   useEffect,
   useMemo,
+  useRef,
   useState,
 } from "react";
 
@@ -31,6 +33,7 @@ import { useTranslation } from "react-i18next";
 import { ConsentRequiredCard } from "@/components/consent/consent-required-card";
 import { ReportSubmissionFrame } from "./report-submission-frame";
 import { useConsentGate } from "@/hooks/use-consent-gate";
+import type { AssistantIncidentCategory } from "@/lib/assistant-categories";
 import { getAssistantTriageSource } from "@/lib/assistant-triage";
 import {
   type ConversationFlowSupportAction,
@@ -43,6 +46,8 @@ import {
   type MicroEducationItem,
   listPublishedMicroEducation,
 } from "@/lib/microeducation";
+import { getReportFlowDraft, mergeReportFlowDraft } from "@/lib/report-flow";
+import { createOrUpdateReportFromConversation } from "@/lib/reports-client";
 import { EMERGENCY_NUMBER } from "@/lib/safety";
 
 const EMPTY_SUPPORT_BUNDLE: ConversationFlowSupportBundle = {
@@ -81,17 +86,6 @@ function toLabel(value: string): string {
     .join(" ");
 }
 
-function getConversationSessionIdFromUrl() {
-  if (typeof window === "undefined") {
-    return undefined;
-  }
-
-  return (
-    new URLSearchParams(window.location.search).get("conversationSessionId") ??
-    undefined
-  );
-}
-
 function shouldShowTriageDebug() {
   if (typeof window === "undefined") {
     return false;
@@ -120,6 +114,26 @@ function withConversationSessionId(
 
   const nextHref = `${basePath}?${params.toString()}`;
   return (hash ? `${nextHref}#${hash}` : nextHref) as Route;
+}
+
+function buildReportDetailsHref(input: {
+  conversationSessionId?: string | null;
+  reportId?: string | null;
+}): Route {
+  const params = new URLSearchParams();
+
+  params.set("view", "reportsubmissiondetails");
+  params.set("fromTriage", "1");
+
+  if (input.conversationSessionId) {
+    params.set("conversationSessionId", input.conversationSessionId);
+  }
+
+  if (input.reportId) {
+    params.set("reportId", input.reportId);
+  }
+
+  return `/dashboard?${params.toString()}` as Route;
 }
 
 function buildTriagePresentation(
@@ -716,6 +730,8 @@ function buildDisplayedActionRows(input: {
 }
 
 function ReportSubmissionSupportPage() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
   const { t } = useTranslation();
   const [triage, setTriage] = useState<ConversationFlowTriage | null>(null);
   const [support, setSupport] =
@@ -732,6 +748,10 @@ function ReportSubmissionSupportPage() {
   const [activeMicroCardId, setActiveMicroCardId] = useState<string | null>(
     null
   );
+  const [isStartingReport, setIsStartingReport] = useState(false);
+  const pendingPostConsentActionRef = useRef<"loadTriage" | "startReport" | null>(
+    null
+  );
   const {
     pendingConsentRequirement,
     isGrantingConsent,
@@ -739,10 +759,13 @@ function ReportSubmissionSupportPage() {
     clearPendingConsent,
     grantPendingConsent,
   } = useConsentGate();
+  const conversationSessionIdFromUrl =
+    searchParams.get("conversationSessionId") ?? undefined;
+  const triageRefreshKey = searchParams.get("triageRefresh") ?? "";
 
   const loadTriage = useCallback(async () => {
     const conversationSessionId =
-      getConversationSessionIdFromUrl() ??
+      conversationSessionIdFromUrl ??
       getAssistantTriageSource()?.conversationSessionId;
 
     setResolvedConversationSessionId(conversationSessionId ?? null);
@@ -758,6 +781,8 @@ function ReportSubmissionSupportPage() {
     }
 
     setLoading(true);
+    setTriage(null);
+    setSupport(EMPTY_SUPPORT_BUNDLE);
     setSupportLoadNotice(null);
 
     try {
@@ -800,11 +825,85 @@ function ReportSubmissionSupportPage() {
     } finally {
       setLoading(false);
     }
-  }, [captureConsentError]);
+  }, [captureConsentError, conversationSessionIdFromUrl]);
 
   useEffect(() => {
     void loadTriage();
-  }, [loadTriage]);
+  }, [loadTriage, triageRefreshKey]);
+
+  const handleStartReport = useCallback(async () => {
+    const conversationSessionId =
+      resolvedConversationSessionId ??
+      conversationSessionIdFromUrl ??
+      getAssistantTriageSource()?.conversationSessionId;
+
+    if (!conversationSessionId) {
+      router.push(
+        buildReportDetailsHref({
+          conversationSessionId: null,
+          reportId: null,
+        })
+      );
+      return;
+    }
+
+    setIsStartingReport(true);
+    setSupportLoadNotice(null);
+
+    try {
+      const existingDraft = getReportFlowDraft();
+      const result = await createOrUpdateReportFromConversation({
+        conversationSessionId,
+        reportId: existingDraft?.reportId,
+      });
+
+      mergeReportFlowDraft({
+        reportId: result.report._id,
+        title: result.prefill.title,
+        date: result.prefill.date,
+        location: result.prefill.location,
+        summary: result.prefill.summary,
+        structuredFields: result.prefill.structuredFields,
+        incidentType: result.prefill.incidentType,
+        incidentCategory:
+          triage?.likelyCategory === "general_support"
+            ? existingDraft?.incidentCategory
+            : (triage?.likelyCategory as
+                | AssistantIncidentCategory
+                | undefined) ??
+              existingDraft?.incidentCategory,
+        topic: existingDraft?.topic,
+        starterPrompt: existingDraft?.starterPrompt,
+        evidenceIds: existingDraft?.evidenceIds ?? [],
+      });
+
+      router.push(
+        buildReportDetailsHref({
+          conversationSessionId,
+          reportId: result.report._id,
+        })
+      );
+    } catch (error) {
+      if (captureConsentError(error)) {
+        pendingPostConsentActionRef.current = "startReport";
+        return;
+      }
+
+      setSupportLoadNotice(
+        error instanceof Error
+          ? error.message
+          : "SafeSpeak could not start the report draft from this conversation."
+      );
+    } finally {
+      setIsStartingReport(false);
+    }
+  }, [
+    captureConsentError,
+    conversationSessionIdFromUrl,
+    resolvedConversationSessionId,
+    router,
+    triage?.likelyCategory,
+  ]);
 
   useEffect(() => {
     let isMounted = true;
@@ -845,6 +944,14 @@ function ReportSubmissionSupportPage() {
   const handleAllowPendingConsent = async () => {
     try {
       await grantPendingConsent();
+      const pendingAction = pendingPostConsentActionRef.current;
+      pendingPostConsentActionRef.current = null;
+
+      if (pendingAction === "startReport") {
+        await handleStartReport();
+        return;
+      }
+
       await loadTriage();
     } catch {
       setTriage(null);
@@ -857,6 +964,7 @@ function ReportSubmissionSupportPage() {
   };
 
   const handleDeclinePendingConsent = () => {
+    pendingPostConsentActionRef.current = null;
     clearPendingConsent();
     setTriage(null);
     setSupport(EMPTY_SUPPORT_BUNDLE);
@@ -864,6 +972,7 @@ function ReportSubmissionSupportPage() {
       "Grant AI consent to load live SafeSpeak triage support for this report."
     );
     setLoading(false);
+    setIsStartingReport(false);
   };
 
   const canProceedToRecommendations = useMemo(() => {
@@ -1310,16 +1419,17 @@ function ReportSubmissionSupportPage() {
                     description="Safely submit details about what happened. You can choose to remain anonymous."
                     detail="SafeSpeak does not submit anything automatically. You have full control."
                     action={
-                      <ActionLink
-                        href={withConversationSessionId(
-                          "/dashboard?view=reportsubmissiondetails&fromTriage=1",
-                          resolvedConversationSessionId
-                        )}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          void handleStartReport();
+                        }}
+                        disabled={isStartingReport}
                         className="inline-flex h-12 w-full items-center justify-center gap-3 rounded-full bg-[#0F5D9F] px-6 text-xs font-extrabold text-white shadow-[0_12px_22px_rgba(15,93,159,0.28)] transition hover:bg-[#004E92] sm:w-auto"
                       >
-                        Start Report
+                        {isStartingReport ? "Preparing report..." : "Start Report"}
                         <IconArrowRight size={16} className="text-white" />
-                      </ActionLink>
+                      </button>
                     }
                   />
                 </div>
@@ -1474,16 +1584,19 @@ function ReportSubmissionSupportPage() {
               ) : null}
 
               <div className="mt-8 flex justify-center border-t border-[#e2e8f0] pt-6">
-                <Link
-                  href={withConversationSessionId(
-                    "/dashboard?view=reportsubmissiondetails&fromTriage=1",
-                    resolvedConversationSessionId
-                  )}
+                <button
+                  type="button"
+                  onClick={() => {
+                    void handleStartReport();
+                  }}
+                  disabled={isStartingReport}
                   className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-[#ff8f00] px-8 text-xs font-bold text-white shadow-[0_8px_20px_rgba(255,143,0,0.3)] transition hover:bg-[#ec8200]"
                 >
-                  Continue to Incident Details
+                  {isStartingReport
+                    ? "Preparing incident details..."
+                    : "Continue to Incident Details"}
                   <IconArrowRight size={14} className="text-white" />
-                </Link>
+                </button>
               </div>
 
               <footer className="border-t border-[#F3F4F6] pt-8">

@@ -60,6 +60,7 @@ import {
   REPORT_SUBMISSION_MOCK_MODE,
 } from "@/lib/report-submission-mock";
 import {
+  createOrUpdateReportFromConversation,
   type ReportCreateInput,
   createReport,
   getReport,
@@ -722,6 +723,11 @@ function ReportSubmissionEvidencePage({
 
     void (async () => {
       try {
+        const existingDraft = getReportFlowDraft();
+        const reportBootstrap = await createOrUpdateReportFromConversation({
+          conversationSessionId,
+          reportId: existingDraft?.reportId,
+        }).catch(() => null);
         const sessionEnvelope = await getConversationFlowSession(
           conversationSessionId
         );
@@ -736,6 +742,7 @@ function ReportSubmissionEvidencePage({
         });
 
         const mergedStructuredFields = {
+          ...(reportBootstrap?.prefill.structuredFields ?? {}),
           ...(reportDraft?.structuredFields ?? {}),
           ...(captured.fields.who ? { who: captured.fields.who } : {}),
           ...(captured.fields.what ? { what: captured.fields.what } : {}),
@@ -769,19 +776,29 @@ function ReportSubmissionEvidencePage({
 
         setReportDraft(
           mergeReportFlowDraft({
-            reportId: reportDraft?.reportId,
+            reportId:
+              reportBootstrap?.report._id ??
+              reportDraft?.reportId ??
+              existingDraft?.reportId,
             title:
               reportDraft?.title ||
+              reportBootstrap?.prefill.title ||
               (initialCategory && contextFlow
                 ? `${contextFlow.title} incident report`
                 : "Incident report"),
             date:
               reportDraft?.date ||
+              reportBootstrap?.prefill.date ||
               captured.fields.when ||
               new Date().toISOString().slice(0, 10),
-            location: reportDraft?.location || captured.fields.where || "",
+            location:
+              reportDraft?.location ||
+              reportBootstrap?.prefill.location ||
+              captured.fields.where ||
+              "",
             summary:
               reportDraft?.summary ||
+              reportBootstrap?.prefill.summary ||
               captured.narrative ||
               initialMessage?.trim() ||
               "",

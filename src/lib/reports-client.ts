@@ -150,6 +150,21 @@ type ReportResponse = {
   report: ReportRecord;
 };
 
+type ReportFromConversationResponse = {
+  report: ReportRecord;
+  prefill: {
+    title: string;
+    date: string;
+    location: string;
+    summary: string;
+    incidentType?: string;
+    language: string;
+    jurisdiction: string;
+    structuredFields: Record<string, unknown>;
+    conversationSessionId: string;
+  };
+};
+
 type ReportListResponse = {
   reports: ReportRecord[];
 };
@@ -283,6 +298,23 @@ export async function updateReport(
   );
 
   return response.data.report;
+}
+
+export async function createOrUpdateReportFromConversation(input: {
+  conversationSessionId: string;
+  reportId?: string;
+}): Promise<ReportFromConversationResponse> {
+  const headers = await getSessionAwareAuthHeaders();
+  await ensureConsent(consentRequirements.reportStorage, headers);
+  const response = await reportApiRequest<ReportFromConversationResponse>(
+    `/reports/from-conversation/${input.conversationSessionId}`,
+    {
+      method: "POST",
+      body: input.reportId ? { reportId: input.reportId } : {},
+    }
+  );
+
+  return response.data;
 }
 
 export async function listReports(): Promise<ReportRecord[]> {

@@ -250,8 +250,7 @@ function isActionableConversationTriage(response: {
     response.transition.offerTriage &&
     triage &&
     triage.likelyCategory !== "general_support" &&
-    triage.confidenceScore >= 0.45 &&
-    triage.canProceedToRecommendations
+    triage.confidenceScore >= 0.45
   );
 }
 
@@ -710,7 +709,8 @@ function isNoSpeechTranscriptionError(error: unknown): boolean {
 
 function getContinueReportSubmissionHref(
   incidentCategory?: AssistantIncidentCategory,
-  conversationSessionId?: string
+  conversationSessionId?: string,
+  triageRefresh?: string
 ) {
   return {
     pathname: "/dashboard",
@@ -718,16 +718,22 @@ function getContinueReportSubmissionHref(
       view: "reportsubmissionsupport",
       category: incidentCategory,
       conversationSessionId,
+      triageRefresh,
     },
   } as const;
 }
 
 function getContinueReportSubmissionPath(
   incidentCategory?: AssistantIncidentCategory,
-  conversationSessionId?: string
+  conversationSessionId?: string,
+  triageRefresh?: string
 ) {
   return getDashboardHrefString(
-    getContinueReportSubmissionHref(incidentCategory, conversationSessionId)
+    getContinueReportSubmissionHref(
+      incidentCategory,
+      conversationSessionId,
+      triageRefresh
+    )
   );
 }
 
@@ -1289,10 +1295,6 @@ function SafeSpeakAssistantConversationPage({
   );
   const [showTriageCta, setShowTriageCta] = useState(
     Boolean(existingDraft?.triageCtaVisible)
-  );
-  const continueReportSubmissionPath = getContinueReportSubmissionPath(
-    initialCategory,
-    conversationSessionId ?? undefined
   );
   const assistantEntryHref = getAssistantEntryHref(
     initialTopic,
@@ -3093,7 +3095,19 @@ function SafeSpeakAssistantConversationPage({
                       <button
                         type="button"
                         onClick={() => {
-                          router.push(continueReportSubmissionPath as Route);
+                          saveAssistantTriageSource({
+                            conversationSessionId: conversationSessionId ?? undefined,
+                            conversation: conversationMessages,
+                            timeline,
+                            incidentCategory: initialCategory,
+                          });
+                          router.push(
+                            getContinueReportSubmissionPath(
+                              initialCategory,
+                              conversationSessionId ?? undefined,
+                              String(Date.now())
+                            ) as Route
+                          );
                         }}
                         data-testid="ai-conversation-triage-button"
                         className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-[#0f5d9f] px-6 text-[12px] font-bold text-white shadow-[0_12px_28px_rgba(15,93,159,0.26)] transition hover:bg-[#0b528d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0f5d9f]"
