@@ -168,7 +168,7 @@ export async function deactivateAccount(): Promise<unknown> {
 
 export function savePrivacyExportFile(
   payload: PrivacyExportPayload,
-  filename = "safespeak-backend-data-export.json"
+  filename = "safespeak-data-export.json"
 ): void {
   if (typeof window === "undefined" || typeof document === "undefined") {
     return;

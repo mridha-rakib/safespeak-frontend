@@ -51,7 +51,7 @@ cp .env.example .env.local
 Default local integration values are already included:
 
 - `NEXT_PUBLIC_API_BASE_URL=/api/v1`
-- `SAFESPEAK_BACKEND_ORIGIN=http://localhost:5000`
+- `SAFESPEAK_BACKEND_ORIGIN=http://127.0.0.1:8000`
 
 The frontend now talks to same-origin `/api/...` paths and Next.js rewrites those requests to your backend services, including the backend AI and RAG endpoints. This keeps browser code free of hardcoded localhost or deployment URLs and removes the old separate AI-agent dependency for the timeline assistant flow.
 
@@ -64,7 +64,7 @@ The frontend now talks to same-origin `/api/...` paths and Next.js rewrites thos
 ## SafeSpeak integration notes
 
 - Dashboard home now routes to explicit SafeSpeak scope flows for reporting, support, ScamShield, resources, local-intelligence placeholder, and Smart Dialler.
-- For Vercel or any hosted frontend, keep `NEXT_PUBLIC_API_BASE_URL=/api/v1` and set `SAFESPEAK_BACKEND_ORIGIN` to your backend origin, for example `https://safespeak-backend-ules.onrender.com`.
+- For Vercel or any hosted frontend, point both `NEXT_PUBLIC_API_BASE_URL` and `SAFESPEAK_BACKEND_ORIGIN` at your FastAPI backend origin, for example `https://your-fastapi-backend.example.com/api/v1` and `https://your-fastapi-backend.example.com`.
 - Persistent dashboard safety controls include Quick Exit, 000, 1800RESPECT, language toggle, covert-mode state, and Smart Dialler access.
 - Learn & Resources now uses `/dashboard?view=resources` as the main library entry, while micro-education remains separately reachable.
 - Landing page internals were intentionally left unchanged in this task.
