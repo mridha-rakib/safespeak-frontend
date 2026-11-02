@@ -1,4 +1,7 @@
 import { PHASE_DEVELOPMENT_SERVER } from "next/constants.js";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 function stripTrailingSlashes(value) {
   return value.replace(/\/+$/, "");
